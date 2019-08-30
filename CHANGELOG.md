@@ -8,4 +8,4 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - Project creation
 - Deployment to GitHub Pages
 
-[0.0.1]: https://github.com/quentin-boitel/quentin-boitel.github.io/tree/master
+[0.0.1]: https://github.com/qbtl/qbtl.github.io/tree/master

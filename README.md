@@ -4,7 +4,7 @@ This repository contains all files from Quentin Boitel personnal website hosted 
 
 ## ChangeLog
 
-All versions are listed inside the [CHANGELOG](https://www.github.com/quentin-boitel/quentin-boitel.github.io/blob/master/CHANGELOG.md)
+All versions are listed inside the [CHANGELOG](https://www.github.com/qbtl/qbtl.github.io/blob/master/CHANGELOG.md)
 
 ## LICENSE
 

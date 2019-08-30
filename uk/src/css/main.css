@@ -44,17 +44,17 @@ html {
     }
     #mainNav .navbar-brand {
       padding: 10px 20px;
-      color: black;
+      color: white;
     }
     #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-      color: rgba(0, 0, 0, 0.6);
+      color: rgba(255, 255, 255, 0.6);
     }
     #mainNav .navbar-nav > li.nav-item > a {
       padding: 10px 20px;
-      color: black;
+      color: white;
     }
     #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
-      color: rgba(0, 0, 0, 0.6);
+      color: rgba(255, 255, 255, 0.6);
     }
   }
   
