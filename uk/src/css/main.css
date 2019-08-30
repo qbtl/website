@@ -169,20 +169,20 @@ html {
     text-align: left;
   }
   
-  .bgimg-3 .container {
+  .container {
     padding: 50px 0 65px;
   }
   
-  .bgimg-3 .container .list-inline {
+  .container .list-inline {
     margin: 0;
     padding: 0;
   }
   
-  .bgimg-3 .container .list-inline .list-inline-item a span{
-    color:black;
+  .container .list-inline .list-inline-item a span{
+    color:white;
   }
   
-  .bgimg-3 .container .copyright {
+  .container .copyright {
     font-size: 14px;
     margin-bottom: 0;
     text-align: center;
