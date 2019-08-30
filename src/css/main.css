@@ -1,0 +1,261 @@
+html {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+}
+
+#mainNav {
+  position: absolute;
+  border-bottom: 1px solid #e9ecef;
+  background-color: white;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+#mainNav .navbar-toggler {
+  font-size: 12px;
+  font-weight: 800;
+  padding: 13px;
+  text-transform: uppercase;
+  color: #343a40;
+}
+
+#mainNav .navbar-nav > li.nav-item > a {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 992px) {
+  #mainNav {
+    border-bottom: 1px solid transparent;
+    background: transparent;
+  }
+  #mainNav .navbar-nav > li.nav-item > a {
+    padding: 10px 20px;
+    color: white;
+  }
+  #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #mainNav {
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  #mainNav.is-fixed {
+    /* when the user scrolls down, we hide the header right above the viewport */
+    position: fixed;
+    top: -67px;
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+    border-bottom: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  #mainNav.is-fixed .navbar-nav > li.nav-item > a {
+    color: #212529;
+  }
+  #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
+    color: #0085A1;
+  }
+  #mainNav.is-visible {
+    /* if the user changes the scrolling direction, we show the header */
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+header.masthead {
+  background: no-repeat center center;
+  background-image: #868e96;
+  background-attachment: scroll;
+  position: relative;
+  background-size: cover;
+}
+
+header.masthead .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.55;
+}
+
+header.masthead .site-heading {
+  padding: 200px 0 150px;
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  header.masthead .site-heading {
+    padding: 200px 0;
+  }
+}
+
+header.masthead .site-heading {
+  text-align: center;
+}
+
+header.masthead .site-heading h1 {
+  font-size: 30px;
+  margin-top: 0;
+}
+
+header.masthead .site-heading .subheading {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.1;
+  display: block;
+  margin: 10px 0 0;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+  header.masthead .site-heading h1 {
+    font-size: 80px;
+  }
+}
+
+header.masthead .site-heading p.subheading.caps {
+  text-transform: capitalize;
+}
+
+.container .row div div {
+  padding: 100px 0 150px;
+}
+
+.container .row div div.about .text-left {
+  text-align: left;
+}
+
+.container .row div div.contact .text-right {
+  text-align: right;
+}
+
+.container .row div div.portfolio .text-left {
+  text-align: left;
+}
+
+.container {
+  padding: 50px 0 65px;
+}
+
+.container .list-inline {
+  margin: 0;
+  padding: 0;
+}
+
+.container .list-inline .list-inline-item a span{
+  color:white;
+}
+
+.container .copyright {
+  font-size: 14px;
+  margin-bottom: 0;
+  text-align: center;
+  color: black;
+  opacity: 1;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3{
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("../img/light-bg.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("../img/something-more.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("../img/mountains.jpg");
+  min-height: 200px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: black;
+  text-transform: capitalize;
+}
+
+.caption span.border {
+  background-color: black;
+  color: white;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  text-transform: capitalize;
+}
+
+div.parralax-box h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+
+div.parralax-div {
+  position: relative;
+}
+
+div.parralax-box {
+  color:white;
+  background-color:black;
+  opacity: 1;
+  text-align: center;
+  padding: 50px 80px;
+}
+
+div.parralax-box p {
+  text-align: center;
+}
+
+div.parralax-box img {
+  width: 50%;
+}
+
+div.parralax-box div.information p {
+  text-align: center;
+}
+
+div.parralax-box div.information p a.mail {
+  text-decoration: none;
+  color: white;
+}
