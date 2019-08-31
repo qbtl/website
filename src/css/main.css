@@ -15,6 +15,13 @@ body {
   border-bottom: 1px solid #e9ecef;
   background-color: white;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding: 0 0 0 0;
+  padding-top: -100px;
+}
+
+#mainNav .navbar-brand {
+  font-weight: 800;
+  color: black;
 }
 
 
@@ -23,7 +30,8 @@ body {
   font-weight: 800;
   padding: 13px;
   text-transform: uppercase;
-  color: #343a40;
+  color: black;
+  border-color: black;
 }
 
 #mainNav .navbar-nav > li.nav-item > a {
@@ -31,12 +39,21 @@ body {
   font-weight: 800;
   letter-spacing: 1px;
   text-transform: uppercase;
+  color: black;
 }
 
 @media only screen and (min-width: 992px) {
   #mainNav {
     border-bottom: 1px solid transparent;
     background: transparent;
+  }
+  #mainNav .navbar-brand {
+    padding: 10px 20px;
+    color: white;
+    display: none;
+  }
+  #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+    color: rgba(255, 255, 255, 0.6);
   }
   #mainNav .navbar-nav > li.nav-item > a {
     padding: 10px 20px;
@@ -66,6 +83,12 @@ body {
     border-bottom: 1px solid white;
     background-color: rgba(255, 255, 255, 0.9);
   }
+  #mainNav.is-fixed .navbar-brand {
+    color: #212529;
+  }
+  #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
+    color: #0085A1;
+  }
   #mainNav.is-fixed .navbar-nav > li.nav-item > a {
     color: #212529;
   }
@@ -76,6 +99,18 @@ body {
     /* if the user changes the scrolling direction, we show the header */
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
+  }
+}
+
+@media only screen and (max-width:992px) {
+  #mainNav .navbar-brand {
+    display: block;
+  }
+  #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+  #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
+    color: rgba(0, 0, 0, 0.6);
   }
 }
 
@@ -137,7 +172,7 @@ header.masthead .site-heading p.subheading.caps {
 }
 
 .container .row div div {
-  padding: 100px 0 150px;
+  padding: 200px 0 150px;
 }
 
 .container .row div div.about .text-left {
