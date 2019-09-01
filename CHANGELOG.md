@@ -8,7 +8,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ## [0.3.1] - 2019-09-01
 ### Added
 - Website Icon
-- social buttons title on hover
+- Social buttons title on hover
 ### Modified
 - About section image in uk translation index.html file
 
