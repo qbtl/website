@@ -216,6 +216,7 @@ header.masthead .site-heading p.subheading.caps {
 }
 
 #about .about-text .subheading{
+  opacity: 0.8;
   font-size: 20px;
   font-weight: 300;
   line-height: 1.1;
