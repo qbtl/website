@@ -176,7 +176,7 @@ header.masthead .site-heading p.subheading.caps {
 }
 
 .container {
-  padding: 50px 0 65px;
+  padding: 30px 0 50px;
 }
 
 .container .list-inline {
@@ -202,4 +202,35 @@ header.masthead .site-heading p.subheading.caps {
   font-size: 10px;
   margin-bottom: 0;
   text-align: center;
+}
+
+#about {
+  text-align: center;
+  padding: 30px 0 20px 0;
+}
+
+#about .about-text .title {
+  font-style: bold; 
+  text-transform: uppercase;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#about .about-text .subheading{
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.1;
+  display: block;
+  margin: 10px 0 20px;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#about .about-text .text {
+  font-size: 20px;
+  text-align: justify;
+  opacity: 1;
+  padding: 0 200px 0 200px;
+}
+
+#about .about-text #about-image {
+  padding: 10px 0 0 0;
 }
