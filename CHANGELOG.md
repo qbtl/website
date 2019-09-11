@@ -5,6 +5,14 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## [0.3.3] - 2019-09-11
+### Added
+- CSS Variables for the responsive about me text
+### Modified
+- About Me text is now responsive
+### Deleted
+- Portfolio section
+
 ## [0.3.2] - 2019-09-01
 ### Added
 - CODE_OF_CONDUCT file
@@ -52,6 +60,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - Deployment to GitHub Pages
 
 [Unreleased]: https://github.com/qbtl/qbtl.github.io/tree/master
+[0.3.3]: https://github.com/qbtl/qbtl.github.io/compare/v0.3.2...v0.3.3
 [0.3.2]: https://github.com/qbtl/qbtl.github.io/compare/v0.3.1...v0.3.2
 [0.3.1]: https://github.com/qbtl/qbtl.github.io/compare/v0.3.0...v0.3.1
 [0.3.0]: https://github.com/qbtl/qbtl.github.io/compare/v0.2.1...v0.3.0
