@@ -237,7 +237,7 @@ header.masthead .site-heading p.subheading.caps {
   padding: 10px 0 0 0;
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 992px) {
   #about .about-text .text {
     padding: 0 50px 0 50px;
   }

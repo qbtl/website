@@ -7,7 +7,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ### [0.3.4] - 2019-09-13
 ### Modified
-- About me text responsivibility
+- About me text responsive attributes for devices smaller than 992px
 
 ## [0.3.3] - 2019-09-11
 ### Added
