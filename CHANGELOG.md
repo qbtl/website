@@ -11,57 +11,57 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [0.3.3] - 2019-09-11
 ### Added
-- CSS Variables for the responsive about me text
+* CSS Variables for the responsive about me text
 ### Modified
-- About Me text is now responsive
+* About Me text is now responsive
 ### Deleted
-- Portfolio section
+* Portfolio section
 
 ## [0.3.2] - 2019-09-01
 ### Added
-- CODE_OF_CONDUCT file
-- CONTRIBUTING file
-- Issue templates
-- Pull Request template
+* CODE_OF_CONDUCT file
+* CONTRIBUTING file
+* Issue templates
+* Pull Request template
 
 ## [0.3.1] - 2019-09-01
 ### Added
-- Website Icon
-- Social buttons title on hover
+* Website Icon
+* Social buttons title on hover
 ### Modified
-- About section image in uk translation index.html file
+* About section image in uk translation index.html file
 
 ## [0.3.0] - 2019-09-01
 ### Added
-- About me section
+* About me section
 
 ## [0.2.1] - 2019-08-31
 ### Added
-- Version number in pages footer
+* Version number in pages footer
 ### Modified
-- Bootstrap, jQuery, Font Awesome and PopperJS CDN
-- CSS Paralax definitions
+* Bootstrap, jQuery, Font Awesome and PopperJS CDN
+* CSS Paralax definitions
 ### Deleted
-- Boostrap, jQuery, Font Awesome and PopperJS files 
+* Boostrap, jQuery, Font Awesome and PopperJS files 
 
 ## [0.2.0] - 2019-08-31
 ### Added
-- Navbar: Brand display only when mobile, Home button added
+* Navbar: Brand display only when mobile, Home button added
 
 ## [0.1.1] - 2019-08-31
 ### Modified
-- Footer update: colors and css links
+* Footer update: colors and css links
 
 ## [0.1.0] - 2019-08-30
 ### Added 
-- Translation updates
-- Font Awesome Added
-- UK version up to date with FR version
+* Translation updates
+* Font Awesome Added
+* UK version up to date with FR version
 
 ## [0.0.1] - 2019-08-30
 ### Added
-- Project creation
-- Deployment to GitHub Pages
+* Project creation
+* Deployment to GitHub Pages
 
 [Unreleased]: https://github.com/qbtl/qbtl.github.io/tree/master
 [0.3.4]: https://github.com/qbtl/qbtl.github.io/compare/v0.3.3...v0.3.4
