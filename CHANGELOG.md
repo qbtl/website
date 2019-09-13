@@ -5,9 +5,12 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
-### [0.3.4] - 2019-09-13
+## [1.0.0] - 2019-09-13
+* Final Fully Working Version
+
+### [0.3.4] - 2019-09-12
 ### Modified
-- About me text responsive attributes for devices smaller than 992px
+* About me text responsive attributes for devices smaller than 992px
 
 ## [0.3.3] - 2019-09-11
 ### Added
@@ -64,6 +67,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 * Deployment to GitHub Pages
 
 [Unreleased]: https://github.com/qbtl/qbtl.github.io/tree/master
+[1.0.0]: https://github.com/qbtl/qbtl.github.io/compare/v0.3.4...v1.0.0
 [0.3.4]: https://github.com/qbtl/qbtl.github.io/compare/v0.3.3...v0.3.4
 [0.3.3]: https://github.com/qbtl/qbtl.github.io/compare/v0.3.2...v0.3.3
 [0.3.2]: https://github.com/qbtl/qbtl.github.io/compare/v0.3.1...v0.3.2
