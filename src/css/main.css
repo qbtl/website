@@ -14,7 +14,7 @@ html{
 body{
   width: 100%;
   height: 100%;
-  background-image: url("src/img/code-bg.jpg") no-repeat center fixed;
+  background: url("src/img/macbook-bg.jpg") no-repeat center fixed;
   background-size: cover;
 }
 
@@ -47,6 +47,7 @@ header{
   height: 100%;
   position: fixed;
   top: -100vh;
+  z-index: 50;
   background-color: #16162d;
   border-bottom-right-radius: 100%;
   border-bottom-left-radius: 100%;
@@ -129,11 +130,105 @@ li{
 }
 
 .open .bar.end{
-  transform: rotate(-450deg) translateX(.8rem);
+  transform: rotate(-450deg) translateX(-.8rem);
+}
+
+.landing-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+.landing-text h1{
+  font-size: 10rem;
+  font-family: 'Tahoma', sans-serif;
+  background: linear-gradient(to top, #ffe838, #fd57bf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  user-select: none;
+}
+
+.landing-text h6{
+  font-size: 3rem;
+  font-weight: 300; 
+  background: linear-gradient(to top, #ffe838, #fd57bf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 /*End header*/
 
 /*Start about*/
+.about .container{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.about-heading{
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 0;
+  margin-bottom: 6rem;
+}
+
+.about-heading h1{
+  font-size:10rem;
+  opacity:.3;
+}
+
+.about-heading h6{
+   font-size: 2rem;
+   font-weight: 300;
+}
+
+.profile-img{
+  flex: 1;
+  margin-right: 5rem;
+}
+
+.about-details{
+  flex: 1;
+}
+
+.social-media{
+  margin-top: 5rem;
+}
+
+.social-media i{
+  font-size: 5rem;
+  transition: color 650ms;
+}
+
+.fa-instagram:hover{
+  color: #833AB4;
+
+}
+
+.fa-twitter:hover{
+  color: #38a1f3;
+  
+}
+
+.fa-github:hover{
+  color: black;
+  
+}
+
+.fa-instagram{
+  color: #833AB4;
+}
+
+.fa-twitter{
+  color: #38a1f3;
+}
+
+.fa-github{
+  color: black;
+}
 /*End about*/
 
 /*Start services*/
