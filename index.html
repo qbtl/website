@@ -10,95 +10,167 @@
 	<!-- CSS LINKS -->
 	<link rel="stylesheet" href="src/css/main.css">
 	<link rel='icon' href='src/img/logo.jpg'>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-		<div class="container">
-			<a class="navbar-brand" href="">Quentin Boitel</a>
-			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-				data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-				aria-label="Toggle navigation">
-				Menu
-				<i class="fas fa-bars"></i>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarResponsive">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="">Accueil</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#about">À propos</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="uk/"><img src="src/flags/United-Kingdom.png" /> UK</a>
-					</li>
-				</ul>
-			</div>
+	<header>
+		<div class="menu-toggler">
+			<div class="bar half start"></div>
+			<div class="bar"></div>
+			<div class="bar half end"></div>
 		</div>
-	</nav>
-
-	<header class="masthead" style="background-image: url('src/img/mountains.jpg')">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-md-10 mx-auto">
-					<div class="site-heading">
-						<h1>Quentin Boitel</h1>
-						<span class="subheading">Élève de terminale au lycée / Jeune développeur web</span>
-					</div>
-				</div>
-			</div>
+		<nav class="top-nav">
+			<ul class="nav-list">
+				<li>
+					<a href="" class="nav-link">Home</a>
+				</li>
+				<li>
+					<a href="#about" class="nav-link">About</a>
+				</li>
+				<li>
+					<a href="#portfolio" class="nav-link">Portfolio</a>
+				</li>
+				<li>
+					<a href="#experience" class="nav-link">Experience</a>
+				</li>
+				<li>
+					<a href="#contact" class="nav-link">Contact</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="landing-text">
+			<h1>Quentin Boitel</h1>
+			<h6>Front End Web Developer</h6>
+		</div>
 	</header>
 
-	<div class="container-fluid" id="about">
-		<div class="about-text">
-			<h1 class="title">À propos de moi</h1>
-			<p class="subheading"><i>Tout ce que vous devez savoir</i></p>
-			<p class="text text-center">
-				Actuellement au lycée, j'utilise mon temps libre pour construire des apps, sites web, etc.
-			</p>
-			<p class="text">
-				Je travaille en ce moment sur mon site personnel, mais j'envisage de créer par la suite ma propre application pour ainsi être présent 
-				sur toutes les plateformes. Mon but étant d'intégrer une école d'informatique et me former en tant que développeur Full-Stack ("Développeur côté client et serveur").
-				Aujourd'hui, mon rêve est de créer une application ou un site révolutionnaire dans le monde de l'informatique.
-			</p>
-			<img src="src/img/code-bg.jpg" style="width: 60%;" id="about-image"/>
-		</div>
-	</div>
-
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-8 col-md-10 mx-auto">
-				<ul class="list-inline text-center">
-					<li class="list-inline-item">
-						<a href="https://www.instagram.com/ic3retr0/?hl=fr">
-							<span class="fa-stack fa-lg" title="Instagram (ic3retr0)">
-								<i class="fas fa-circle fa-stack-2x"></i>
-								<i class="fab fa-instagram fa-stack-1x fa-inverse" style="color: black;"></i>
-							</span>
+	<section class="about" id="about">
+		<div class="container">
+			<div class="profile-img">
+				<img src="src/img/mountains.jpg" alt="Me">
+			</div>
+			<div class="about-details">
+				<div class="about-heading">
+					<h1>About</h1>
+					<h6>Myself</h6>
+				</div>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Voluptate pariatur, consequatur fugit sequi dolor adipisci quaerat explicabo
+					quo nostrum soluta perspiciatis impedit iste, minus necessitatibus
+					sed illo recusandae odio odit.
+				</p>
+			</div>
+			<div class="social-media">
+				<ul class="nav-list">
+					<li>
+						<a href="" class="icon-link">
+							<i class="fab fa-instagram"></i>
 						</a>
 					</li>
-					<li class="list-inline-item">
-						<a href="https://www.github.com/qbtl">
-							<span class="fa-stack fa-lg" title="GitHub (qbtl)">
-								<i class="fas fa-circle fa-stack-2x"></i>
-								<i class="fab fa-github fa-stack-1x fa-inverse" style="color: black"></i>
-							</span>
+					<li>
+						<a href="" class="icon-link">
+							<i class="fab fa-twitter"></i>
+						</a>
+					</li>
+					<li>
+						<a href="" class="icon-link">
+							<i class="fab fa-github"></i>
 						</a>
 					</li>
 				</ul>
-				<br>
-				<p class="copyright"><b>Copyright &copy; 2019 Quentin Boitel</b></p>
-				<p class="version"><b>v1.0.0</b></p>
 			</div>
 		</div>
-	</div>
+	</section>
+
+	<section class="portfolio" id="portfolio">
+		<div class="container">
+			<div class="section-heading">
+				<h1>Portfolio</h1>
+				<h6>View some of my recent work</h6>
+			</div>
+			<div class="portfolio-item">
+				<div class="portfolio-img">
+					<img src="src/img/mountains.jpg" alt="">
+				</div>
+				<div class="portfolio-description">
+					<h6>Web Development</h6>
+					<h1>Blog Website</h1>
+					<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+					</p>
+				</div>
+				<a href="#" class="cta">View details</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="experience" id="experience">
+		<div class="container">
+			<div class="section-heading">
+				<h1>Work Experience</h1>
+				<h6>Past and current jobs</h6>
+			</div>
+			<div class="timeline">
+				<ul>
+					<li class="date" data-date="2017 • Present">
+						<h1>Google</h1>
+						<p>
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+						</p>
+					</li>
+					<li class="date" data-date="2016 • 2017">
+						<h1>Apple</h1>
+						<p>
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+						</p>
+					</li>
+					<li class="date" data-date="2014 • 2016">
+						<h1>Microsoft</h1>
+						<p>
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+						</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="contact" id="contact">
+		<div class="container">
+			<div class="section-heading">
+				<h1>Contact</h1>
+				<h6>Let's work together</h6>
+			</div>
+			<form action="">
+				<label for="name">Name: </label>
+				<input type="text" id="name" name="name" placeholder="Enter your name..." required>
+				<label for="email">Email: </label>
+				<input type="email" id="email" name="email" placeholder="Enter your email..." required>
+				<label for="subject">Subject: </label>
+				<textarea name="subject" id="subject" cols="10" rows="10"></textarea>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+	</section>
+
+	<footer class="copyright">
+		<div class="up" id="up">
+			<i class="fas fa-chevron-up"></i>
+			<p>Copyright &copy; 2019 Quentin Boitel</p>
+			<p class="version">v1.1.0</p>
+		</div>
+	</footer>
 
 	<script src="https://kit.fontawesome.com/62048cceec.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script src="src/js/main.js"></script>
 </body>
 
 </html>
