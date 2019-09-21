@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Accueil | Quentin Boitel</title>
+	<title>Home | Quentin Boitel</title>
 
 	<!-- CSS LINKS -->
 	<link rel="stylesheet" href="src/css/main.css">
@@ -41,21 +41,25 @@
 		</nav>
 		<div class="landing-text">
 			<h1>Quentin Boitel</h1>
-			<h6>Front End Web Developer</h6>
+			<h6>High School Student / Front End Web Developer</h6>
 		</div>
 	</header>
 
 	<section class="about" id="about">
-		<div class="container">
-			<div class="profile-img">
+		<div class="container container-fluid">
+			<div class="profile-img" data-aos="fade-right" data-aos-delay="300">
 				<img src="src/img/mountains.jpg" alt="Me">
 			</div>
-			<div class="about-details">
+			<div class="about-details" data-aos="fade-left" data-aos-delay="600">
 				<div class="about-heading">
 					<h1>About</h1>
 					<h6>Myself</h6>
 				</div>
 				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Voluptate pariatur, consequatur fugit sequi dolor adipisci quaerat explicabo
+					quo nostrum soluta perspiciatis impedit iste, minus necessitatibus
+					sed illo recusandae odio odit.
 					Lorem ipsum dolor sit amet consectetur adipisicing elit.
 					Voluptate pariatur, consequatur fugit sequi dolor adipisci quaerat explicabo
 					quo nostrum soluta perspiciatis impedit iste, minus necessitatibus
@@ -91,18 +95,46 @@
 				<h6>View some of my recent work</h6>
 			</div>
 			<div class="portfolio-item">
-				<div class="portfolio-img">
+				<div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
 					<img src="src/img/mountains.jpg" alt="">
 				</div>
-				<div class="portfolio-description">
+				<div class="portfolio-description" data-aos="fade-left" data-aos-delay="600">
 					<h6>Web Development</h6>
 					<h1>Blog Website</h1>
 					<p>
 						Lorem ipsum dolor sit, amet consectetur adipisicing elit.
 						Lorem ipsum dolor sit, amet consectetur adipisicing elit.
 					</p>
+					<a href="#" class="cta">View details</a>
 				</div>
-				<a href="#" class="cta">View details</a>
+			</div>
+			<div class="portfolio-item">
+				<div class="portfolio-description" data-aos="fade-right" data-aos-delay="600">
+					<h6>Web Development</h6>
+					<h1>Blog Website</h1>
+					<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+					</p>
+					<a href="#" class="cta">View details</a>
+				</div>
+				<div class="portfolio-img has-margin-right" data-aos="fade-left" data-aos-delay="300">
+					<img src="src/img/mountains.jpg" alt="">
+				</div>
+			</div>
+			<div class="portfolio-item">
+				<div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
+					<img src="src/img/mountains.jpg" alt="">
+				</div>
+				<div class="portfolio-description" data-aos="fade-left" data-aos-delay="600">
+					<h6>Web Development</h6>
+					<h1>Blog Website</h1>
+					<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+					</p>
+					<a href="#" class="cta">View details</a>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -113,24 +145,24 @@
 				<h1>Work Experience</h1>
 				<h6>Past and current jobs</h6>
 			</div>
-			<div class="timeline">
+			<div class="timeline" data-aos="fade-down" data-aos-delay="300">
 				<ul>
 					<li class="date" data-date="2017 • Present">
-						<h1>Google</h1>
+						<h1>Google Fr.</h1>
 						<p>
 							Lorem ipsum dolor sit, amet consectetur adipisicing elit.
 							Lorem ipsum dolor sit, amet consectetur adipisicing elit.
 						</p>
 					</li>
 					<li class="date" data-date="2016 • 2017">
-						<h1>Apple</h1>
+						<h1>Apple Fr.</h1>
 						<p>
 							Lorem ipsum dolor sit, amet consectetur adipisicing elit.
 							Lorem ipsum dolor sit, amet consectetur adipisicing elit.
 						</p>
 					</li>
 					<li class="date" data-date="2014 • 2016">
-						<h1>Microsoft</h1>
+						<h1>Microsoft FR.</h1>
 						<p>
 							Lorem ipsum dolor sit, amet consectetur adipisicing elit.
 							Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -145,15 +177,15 @@
 		<div class="container">
 			<div class="section-heading">
 				<h1>Contact</h1>
-				<h6>Let's work together</h6>
+				<h6>Let's work together !</h6>
 			</div>
-			<form action="">
+			<form action="" data-aos="fade-up" data-aos-delay="300">
 				<label for="name">Name: </label>
 				<input type="text" id="name" name="name" placeholder="Enter your name..." required>
 				<label for="email">Email: </label>
 				<input type="email" id="email" name="email" placeholder="Enter your email..." required>
 				<label for="subject">Subject: </label>
-				<textarea name="subject" id="subject" cols="10" rows="10"></textarea>
+				<textarea name="subject" id="subject" cols="10" rows="10" required></textarea>
 				<input type="submit" value="Submit">
 			</form>
 		</div>
@@ -162,9 +194,9 @@
 	<footer class="copyright">
 		<div class="up" id="up">
 			<i class="fas fa-chevron-up"></i>
-			<p>Copyright &copy; 2019 Quentin Boitel</p>
-			<p class="version">v1.1.0</p>
 		</div>
+		<p>Copyright &copy; 2019 Quentin Boitel</p>
+		<p class="version">v2.0.0</p>
 	</footer>
 
 	<script src="https://kit.fontawesome.com/62048cceec.js"></script>
