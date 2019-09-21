@@ -5,6 +5,12 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## [2.0.0] - 2019-09-21
+### Added
+* Website background images
+### Modified
+* Changed all design of the website to make it much more modern
+
 ## [1.0.0] - 2019-09-13
 * Final Fully Working Version
 
@@ -67,6 +73,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 * Deployment to GitHub Pages
 
 [Unreleased]: https://github.com/qbtl/qbtl.github.io/tree/master
+[2.0.0]: https://github.com/qbtl/qbtl.github.io/compare/v1.0.0...v2.0.0
 [1.0.0]: https://github.com/qbtl/qbtl.github.io/compare/v0.3.4...v1.0.0
 [0.3.4]: https://github.com/qbtl/qbtl.github.io/compare/v0.3.3...v0.3.4
 [0.3.3]: https://github.com/qbtl/qbtl.github.io/compare/v0.3.2...v0.3.3

@@ -1,32 +1,29 @@
-(function($) {
-    "use strict"; // Start of use strict
+$(document).ready(function() {
+  $('.menu-toggler').on('click', function() {
+    $(this).toggleClass('open');
+    $('.top-nav').toggleClass('open');
+  });
 
-    // Show the navbar when the page is scrolled up
-    var MQL = 992;
-  
-    //primary navigation slide-in effect
-    if ($(window).width() > MQL) {
-      var headerHeight = $('#mainNav').height();
-      $(window).on('scroll', {
-          previousTop: 0
-        },
-        function() {
-          var currentTop = $(window).scrollTop();
-          //check if user is scrolling up
-          if (currentTop < this.previousTop) {
-            //if scrolling up...
-            if (currentTop > 0 && $('#mainNav').hasClass('is-fixed')) {
-              $('#mainNav').addClass('is-visible');
-            } else {
-              $('#mainNav').removeClass('is-visible is-fixed');
-            }
-          } else if (currentTop > this.previousTop) {
-            //if scrolling down...
-            $('#mainNav').removeClass('is-visible');
-            if (currentTop > headerHeight && !$('#mainNav').hasClass('is-fixed')) $('#mainNav').addClass('is-fixed');
-          }
-          this.previousTop = currentTop;
-        });
-    }
-  
-  })(jQuery); // End of use strict
+  $('.top-nav .nav-list .nav-link').on('click', function() {
+    $('.menu-toggler').removeClass('open');
+    $('.top-nav').removeClass('open');
+  });
+
+  $('nav ul li a[href*="#"]').on('click', function() {
+    $('html, body').animate({
+      scrollTop: $($(this).attr('href')).offset().top
+    }, 2000);
+  });
+
+  $('#up').on('click', function() {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 2000);
+  });
+
+  AOS.init({
+    easing: 'ease',
+    duration: 1800,
+    once: true
+  });
+});
