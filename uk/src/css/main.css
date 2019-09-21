@@ -1,4 +1,5 @@
 /*Start global*/
+@font-face { font-family: The Historia Demo; src: url('../fonts/TheHistoriaDemo.ttf'); } 
 * {
   margin: 0;
   padding: 0;
