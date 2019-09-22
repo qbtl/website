@@ -260,9 +260,23 @@ li {
   transition: color 650ms;
 }
 
+.list-inline {
+  margin: 0;
+  padding: 0;
+}
+
+.fa-instagram {
+  color: #833AB4;
+
+}
+
 .fa-instagram:hover {
   color: #833AB4;
 
+}
+
+.fa-twitter{
+  color: #38a1f3;
 }
 
 .fa-twitter:hover {
@@ -271,8 +285,7 @@ li {
 }
 
 .fa-github:hover {
-  color: black;
-
+  color: white;
 }
 
 /*End about*/
@@ -326,7 +339,7 @@ li {
 
 /*Start timeline*/
 .timeline ul {
-  border-left: 4px solid #ffe838;
+  border-left: 4px solid;
   border-radius: .8rem;
   background-color: rgba(0, 0, 0, 0.05);
   margin: 0 auto;
@@ -376,12 +389,12 @@ li {
 
 .timeline .date::after {
   content: '';
-  box-shadow: 0 0 0 4px #fd57bf;
+  box-shadow: 0 0 0 4px white;
   border-radius: 100%;
   left: -8rem;
   height: 1.5rem;
   width: 1.5rem;
-  background-color: #313534;
+  background-color: black;
 }
 
 /*End timeline*/
@@ -403,7 +416,7 @@ textarea {
   margin-top: 5px;
   margin-bottom: 5px;
   border: none;
-  outline-color: #fd57bf;
+  outline-color: white;
   border-radius: .8rem; 
 }
 
@@ -412,7 +425,7 @@ input[type="submit"] {
   left: 50%;
   transform: translateX(-50%);
   width: 50%;
-  background-color: #fd57fd;
+  background-color: #20a00f;
   color: #eee;
   padding: 1rem 2rem;
   border-radius: .8rem;
@@ -423,7 +436,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   color: whitesmoke;
-  background-color: #ffe838;
+  background-color: #138609;
 }
 
 /*End contact*/
@@ -467,15 +480,15 @@ input[type="submit"]:hover {
 /*Start animations*/
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.99);
   }
 
   70% {
-    box-shadow: 0 0 0 10rem rgba(253, 87, 191, 0);
+    box-shadow: 0 0 0 10rem rgba(255, 255, 255, 0);
   }
 
   100% {
-    box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
   }
 }
 /*End animations*/
