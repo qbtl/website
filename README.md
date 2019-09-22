@@ -8,11 +8,9 @@ All versions are listed inside the [CHANGELOG](https://www.github.com/qbtl/qbtl.
 
 ## CONTRIBUTING AND CODE OF CONDUCT
 
-Please read the [CONTRIBUTING.md](https://www.github.com/qbtl/qbtl.github.io/blob/master/CONTRIBUTING.md) file and the [CODE_OF_CONDUCT.md](https://www.github.com/qbtl/qbtl.github.io/blob/master/CODE_OF_CONDUCT.md) file
+Please read the [CONTRIBUTING](https://www.github.com/qbtl/qbtl.github.io/blob/master/CONTRIBUTING.md) file and the [CODE_OF_CONDUCT](https://www.github.com/qbtl/qbtl.github.io/blob/master/CODE_OF_CONDUCT.md) file
 
 ## LICENSE
-
-Copyright 2019 Quentin Boitel
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
