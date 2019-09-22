@@ -1,5 +1,9 @@
 /*Start global*/
-@font-face { font-family: The Historia Demo; src: url('../fonts/TheHistoriaDemo.ttf'); } 
+@font-face {
+  font-family: The Historia Demo;
+  src: url('../fonts/TheHistoriaDemo.ttf');
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +23,7 @@ body {
   background-size: cover;
 }
 
-section{
+section {
   padding: 6rem 0;
 }
 
@@ -86,9 +90,10 @@ img {
   margin-bottom: 1rem;
 }
 
-.has-margin-right{
+.has-margin-right {
   margin-right: 5rem;
 }
+
 /*End reusable*/
 
 /*Start header*/
@@ -249,6 +254,7 @@ li {
 
 .about-details {
   flex: 1;
+  text-align: justify;
 }
 
 .social-media {
@@ -275,7 +281,7 @@ li {
 
 }
 
-.fa-twitter{
+.fa-twitter {
   color: #38a1f3;
 }
 
@@ -291,14 +297,14 @@ li {
 /*End about*/
 
 /*Start portfolio*/
-.portfolio-item{
+.portfolio-item {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 5rem;
 }
 
-.portfolio-item:last-child{
+.portfolio-item:last-child {
   margin-bottom: 0;
 }
 
@@ -310,20 +316,21 @@ li {
   flex: 1;
 }
 
-.portfolio-description h1{
+.portfolio-description h1 {
   font-size: 3rem;
   font-weight: 300;
+  font-family: 'The Historia Demo';
   margin: 1rem 0;
 }
 
-.portfolio-description h6{
+.portfolio-description h6 {
   font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: 300;
   opacity: .3;
 }
 
-.portfolio-description .cta{
+.portfolio-description .cta {
   display: inline-block;
   margin-top: 2.5rem;
   font-size: 1.5rem;
@@ -332,9 +339,10 @@ li {
   transition: color 650ms;
 }
 
-.portfolio-description .cta:hover{
+.portfolio-description .cta:hover {
   color: #2f67cd;
 }
+
 /*End services*/
 
 /*Start timeline*/
@@ -417,7 +425,7 @@ textarea {
   margin-bottom: 5px;
   border: none;
   outline-color: white;
-  border-radius: .8rem; 
+  border-radius: .8rem;
 }
 
 input[type="submit"] {
@@ -465,7 +473,7 @@ input[type="submit"]:hover {
   right: 5rem;
   border-radius: 100%;
   display: flex;
-  animation: pulse 2s infinite;
+  animation: pulse 1.5s infinite;
   cursor: pointer;
 }
 
@@ -491,152 +499,154 @@ input[type="submit"]:hover {
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
   }
 }
+
 /*End animations*/
 
 /*Start media queries*/
 @media screen and (max-width: 768px) {
-  body{
+  body {
     background: url('../img/sitebg2.jpg') no-repeat center fixed;
     background-size: cover;
   }
 
-  header{
+  header {
     padding: 5rem 0;
   }
 
-  section{
+  section {
     padding: 0;
   }
 
-  .landing-text h1{
+  .landing-text h1 {
     font-size: 10rem;
   }
 
-  .landing-text h6{
+  .landing-text h6 {
     font-size: 1.7rem;
   }
 
-  .nav-list{
+  .nav-list {
     flex-direction: column;
   }
 
-  .nav-list li{
-    margin: 2rem 0; 
+  .nav-list li {
+    margin: 2rem 0;
   }
 
-  .nav-link{
+  .nav-link {
     font-size: 4.5rem;
   }
 
-  .about-heading h1{
+  .about-heading h1 {
     font-size: 8rem;
   }
 
-  .section-heading h1{
+  .section-heading h1 {
     font-size: 3rem;
   }
 
-  .about-details .nav-list{
+  .about-details .nav-list {
     flex-direction: initial;
   }
 
-  .about-details li{
+  .about-details li {
     margin: 0 2rem;
   }
 
-  .about .container{
+  .about .container {
     flex-direction: column;
   }
 
-  .profile-img{
+  .profile-img {
     margin: 0 0 7rem 0;
   }
 
-  .portfolio-item{
+  .portfolio-item {
     flex-direction: column;
   }
 
-  .portfolio-img{
+  .portfolio-img {
     margin: 0 0 2rem 0;
     order: 1;
   }
 
-  .portfolio-description{
+  .portfolio-description {
     margin: 0;
     order: 2;
   }
 
-  .timeline ul{
+  .timeline ul {
     margin: 0 0 0 auto;
   }
 
-  .timeline .date::before{
+  .timeline .date::before {
     left: -21rem;
   }
 
-  .timeline .date::after{
+  .timeline .date::after {
     left: -8rem;
   }
 }
 
 @media screen and (max-width:600px) {
-  header{
+  header {
     padding: 5rem 0;
   }
 
-  .menu-toggler{
+  .menu-toggler {
     top: 2rem;
     right: 2rem;
   }
 
-  .landing-text h1{
+  .landing-text h1 {
     font-size: 8rem;
   }
 
-  .landing-text h6{
+  .landing-text h6 {
     font-size: 1.4rem;
   }
 
-  .nav-link{
+  .nav-link {
     font-size: 3.5rem;
   }
 
-  .about .container{
+  .about .container {
     flex-direction: column;
   }
 
-  .profile-img{
+  .profile-img {
     margin: 0 0 7rem 0;
   }
 
-  .portfolio-item{
+  .portfolio-item {
     flex-direction: column;
   }
 
-  .portfolio-img{
+  .portfolio-img {
     margin: 0 0 2rem 0;
     order: 1;
   }
 
-  .portfolio-description{
+  .portfolio-description {
     margin: 0;
     order: 2;
   }
 
-  .timeline p{
+  .timeline p {
     font-size: 1.6rem;
   }
 
-  .timeline .date::before{
+  .timeline .date::before {
     font-size: 1.4rem;
   }
 
-  form{
+  form {
     width: 100%;
   }
 
-  .up{
+  .up {
     right: 2rem;
   }
 }
+
 /*End media queries*/
