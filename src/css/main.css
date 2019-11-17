@@ -252,6 +252,10 @@ li {
   margin: 0 5rem 0 5rem;
 }
 
+.profile-img img{
+  border-radius: 0.8rem;
+}
+
 .about-details {
   flex: 1;
   text-align: justify;
@@ -310,6 +314,10 @@ li {
 
 .portfolio-img {
   flex: 1;
+}
+
+.portfolio-img img{
+  border-radius: 0.8rem;
 }
 
 .portfolio-description {
