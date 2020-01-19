@@ -1,0 +1,670 @@
+/*Start global*/
+@font-face {
+    font-family: The Historia Demo;
+    src: url('../fonts/TheHistoriaDemo.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: #eee;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: url('../img/sitebg.jpg') no-repeat center fixed;
+    background-size: cover;
+}
+
+section {
+    padding: 6rem 0;
+}
+
+a {
+    text-decoration: none;
+    color: #eee;
+}
+
+p {
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+img {
+    width: 100%;
+}
+
+/*End global*/
+
+/*Start reusable*/
+.container {
+    width: 90%;
+    max-width: 120rem;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.section-heading {
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+
+.section-heading h1 {
+    font-size: 3.5rem;
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+    font-weight: 300;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.section-heading h1::before,
+.section-heading h1::after {
+    content: '';
+    position: absolute;
+    bottom: -.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.section-heading h1::before {
+    width: 10rem;
+    height: 3px;
+    border-radius: .8rem;
+}
+
+.section-heading h6 {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.has-margin-right {
+    margin-right: 5rem;
+}
+
+/*End reusable*/
+
+/*Start header*/
+header {
+    width: 100%;
+    height: 100%;
+}
+
+.top-nav {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: -100vh;
+    z-index: 50;
+    background-color: #16162d;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    transition: all 650ms cubic-bezier(1, 0, 0, 1);
+}
+
+.nav-list {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    margin: 0 2rem;
+}
+
+.nav-link {
+    font-family: 'The Historia Demo', sans-serif;
+    font-size: 5rem;
+    padding: 1rem;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    background: linear-gradient(to top, #ffe838, #fd57bf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.top-nav.open {
+    top: 0;
+    border-radius: initial;
+}
+
+.menu-toggler {
+    position: absolute;
+    top: 5rem;
+    right: 5rem;
+    width: 5rem;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 1500;
+    transition: transform 650ms ease-out;
+}
+
+.menu-toggler.open {
+    transform: rotate(-45deg);
+}
+
+.bar {
+    background: linear-gradient(to right, #ffe838, #fd57bf);
+    width: 100%;
+    height: 4px;
+    border-radius: .8rem;
+}
+
+.bar.half {
+    width: 50%;
+}
+
+.bar.start {
+    transform-origin: right;
+    transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+}
+
+.open .bar.start {
+    transform: rotate(-450deg) translateX(.8rem);
+}
+
+.bar.end {
+    align-self: flex-end;
+    transform-origin: left;
+    transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+}
+
+.open .bar.end {
+    transform: rotate(-450deg) translateX(-.8rem);
+}
+
+.landing-text {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    margin-top: 250px;
+    margin-bottom: 250px;
+}
+
+.landing-text h1 {
+    font-size: 15rem;
+    font-family: 'The Historia Demo', sans-serif;
+    background: linear-gradient(to top, #ffe838, #fd57bf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    user-select: none;
+    border: none !important;
+}
+
+.landing-text h3 {
+    font-size: 5rem;
+    font-family: 'The Historia Demo', sans-serif;
+    background: linear-gradient(to top, #ffe838, #fd57bf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    user-select: none;
+    border: none !important;
+}
+
+.landing-text h6 {
+    font-size: 3rem;
+    font-weight: 300;
+    background: linear-gradient(to top, #ffe838, #fd57bf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*End header*/
+
+/*Start about*/
+.about .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem 0;
+}
+
+.about-heading {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 0;
+    margin-bottom: 6rem;
+}
+
+.about-heading h1 {
+    font-size: 10rem;
+    opacity: .3;
+}
+
+.about-heading h6 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.profile-img {
+    flex: 1;
+    margin: 0 5rem 0 5rem;
+}
+
+.profile-img img {
+    border-radius: 0.8rem;
+}
+
+.about-details {
+    flex: 1;
+    text-align: justify;
+}
+
+.social-media {
+    margin-top: 5rem;
+}
+
+.social-media i {
+    font-size: 5rem;
+    transition: color 650ms;
+}
+
+.list-inline {
+    margin: 0;
+    padding: 0;
+}
+
+.fa-instagram {
+    color: #833AB4;
+
+}
+
+.fa-instagram:hover {
+    color: #833AB4;
+
+}
+
+.fa-twitter {
+    color: #38a1f3;
+}
+
+.fa-twitter:hover {
+    color: #38a1f3;
+
+}
+
+.fa-github:hover {
+    color: white;
+}
+
+/*End about*/
+
+/*Start portfolio*/
+.portfolio-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.portfolio-item:last-child {
+    margin-bottom: 0;
+}
+
+.portfolio-img {
+    flex: 1;
+}
+
+.portfolio-img img {
+    border-radius: 0.8rem;
+}
+
+.portfolio-description {
+    flex: 1;
+}
+
+.portfolio-description h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    font-family: 'The Historia Demo';
+    margin: 1rem 0;
+}
+
+.portfolio-description h6 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    opacity: .3;
+}
+
+.portfolio-description .cta {
+    display: inline-block;
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #3883ff;
+    transition: color 650ms;
+}
+
+.portfolio-description .cta:hover {
+    color: #2f67cd;
+}
+
+/*End services*/
+
+/*Start timeline*/
+.timeline ul {
+    border-left: 4px solid;
+    border-radius: .8rem;
+    background-color: rgba(0, 0, 0, 0.05);
+    margin: 0 auto;
+    position: relative;
+    padding: 5rem;
+    list-style: none;
+    text-align: left;
+    width: 70%;
+}
+
+.timeline h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    opacity: 1;
+}
+
+.timeline .date {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+}
+
+.timeline .date:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+
+.timeline .date::before,
+.timeline .date::after {
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.timeline .date::before {
+    content: attr(data-date);
+    left: -21rem;
+    text-align: right;
+    min-width: 12rem;
+    font-size: 1.5rem;
+}
+
+.timeline .date::after {
+    content: '';
+    box-shadow: 0 0 0 4px white;
+    border-radius: 100%;
+    left: -8rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: black;
+}
+
+/*End timeline*/
+
+/*Start contact*/
+form {
+    width: 70%;
+    margin: 0 auto;
+}
+
+form label {
+    font-size: 1.5rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none;
+    outline-color: white;
+    border-radius: .8rem;
+}
+
+input[type="submit"] {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    background-color: #20a00f;
+    color: #eee;
+    padding: 1rem 2rem;
+    border-radius: .8rem;
+    cursor: pointer;
+    transition: background 650ms;
+    margin-bottom: 1rem;
+}
+
+input[type="submit"]:hover {
+    color: whitesmoke;
+    background-color: #138609;
+}
+
+/*End contact*/
+
+/*Start footer*/
+.copyright {
+    width: 100%;
+    text-align: center;
+    background-color: #16162d;
+    padding: 2rem 0;
+    position: relative;
+}
+
+.version {
+    font-size: 13px;
+    color: #868e96;
+    font-weight: bolder;
+}
+
+.up {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    background-color: #eee;
+    top: -2.5rem;
+    right: 5rem;
+    border-radius: 100%;
+    display: flex;
+    animation: pulse 1.5s infinite;
+    cursor: pointer;
+}
+
+.up i {
+    color: #16162d;
+    font-size: 2rem;
+    margin: auto;
+}
+
+/*End footer*/
+
+/*Start animations*/
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.99);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10rem rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+/*End animations*/
+
+/*Start media queries*/
+@media screen and (max-width: 768px) {
+    body {
+        background: url('../img/sitebg2.jpg') no-repeat center fixed;
+        background-size: cover;
+    }
+
+    header {
+        padding: 5rem 0;
+    }
+
+    section {
+        padding: 0;
+    }
+
+    .landing-text h1 {
+        font-size: 10rem;
+    }
+
+    .landing-text h6 {
+        font-size: 1.7rem;
+    }
+
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .nav-list li {
+        margin: 2rem 0;
+    }
+
+    .nav-link {
+        font-size: 4.5rem;
+    }
+
+    .about-heading h1 {
+        font-size: 8rem;
+    }
+
+    .section-heading h1 {
+        font-size: 3rem;
+    }
+
+    .about-details .nav-list {
+        flex-direction: initial;
+    }
+
+    .about-details li {
+        margin: 0 2rem;
+    }
+
+    .about .container {
+        flex-direction: column;
+    }
+
+    .profile-img {
+        margin: 0 0 7rem 0;
+    }
+
+    .portfolio-item {
+        flex-direction: column;
+    }
+
+    .portfolio-img {
+        margin: 0 0 2rem 0;
+        order: 1;
+    }
+
+    .portfolio-description {
+        margin: 0;
+        order: 2;
+    }
+
+    .timeline ul {
+        margin: 0 0 0 auto;
+    }
+
+    .timeline .date::before {
+        left: -21rem;
+    }
+
+    .timeline .date::after {
+        left: -8rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    header {
+        padding: 5rem 0;
+    }
+
+    .menu-toggler {
+        top: 2rem;
+        right: 2rem;
+    }
+
+    .landing-text h1 {
+        font-size: 8rem;
+    }
+
+    .landing-text h6 {
+        font-size: 1.4rem;
+    }
+
+    .nav-link {
+        font-size: 3.5rem;
+    }
+
+    .about .container {
+        flex-direction: column;
+    }
+
+    .profile-img {
+        margin: 0 0 7rem 0;
+    }
+
+    .portfolio-item {
+        flex-direction: column;
+    }
+
+    .portfolio-img {
+        margin: 0 0 2rem 0;
+        order: 1;
+    }
+
+    .portfolio-description {
+        margin: 0;
+        order: 2;
+    }
+
+    .timeline p {
+        font-size: 1.6rem;
+    }
+
+    .timeline .date::before {
+        font-size: 1.4rem;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .up {
+        right: 2rem;
+    }
+}
+
+/*End media queries*/

@@ -1,12 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>The Simple Blog</title>
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
+
 <body>
-    
+    <header>
+        <div class="menu-toggler">
+            <div class="bar half start"></div>
+            <div class="bar"></div>
+            <div class="bar half end"></div>
+        </div>
+        <nav class="top-nav">
+            <ul class="nav-list">
+                <li>
+                    <a href="" class="nav-link">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">Link 1</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">Link 2</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">Link 3</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">Link 4</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="landing-text">
+            <h3>The Simple Blog</h3>
+            <h1>Your name</h1>
+            <h6>Your job / your studies</h6>
+        </div>
+    </header>
+
+    <section class="about" id="about">
+        <div class="container container-fluid">
+            <div class="profile-img" data-aos="fade-right" data-aos-delay="300">
+                <img src="src/img/something-more.jpg" alt="Me">
+            </div>
+            <div class="about-details" data-aos="fade-left" data-aos-delay="600">
+                <div class="about-heading">
+                    <h1>Me</h1>
+                    <h6>About</h6>
+                </div>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Natus adipisci minus architecto voluptatibus inventore esse voluptatum, 
+                    laudantium at debitis in sunt itaque, tenetur fugiat vel sit iste pariatur! 
+                    Eum, maiores.
+                </p>
+                <div class="social-media">
+                    <ul class="nav-list list-inline">
+                        <li class="list-inline-item">
+                            <a href="#" class="icon-link">
+                                <i class="fab fa-instagram">Instagram</i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="icon-link">
+                                <i class="fab fa-twitter">Twitter</i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="icon-link">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fab fa-github fa-stack-1x fa-inverse">Github</i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Portfolio</h1>
+                <h6>Check out my latest creations</h6>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
+                    <img src="src/img/mountains.jpg" alt="">
+                </div>
+                <div class="portfolio-description" data-aos="fade-left" data-aos-delay="600">
+                    <h6>Category</h6>
+                    <h1>Name</h1>
+                    <p>
+                        Description
+                    </p>
+                    <a href="examples/blog/" class="cta">Check out</a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-description" data-aos="fade-right" data-aos-delay="600">
+                    <h6>Category</h6>
+                    <h1>Name</h1>
+                    <p>
+                        Description
+                    </p>
+                    <a href="examples/merchandise/" class="cta">Check out</a>
+                </div>
+                <div class="portfolio-img has-margin-right" data-aos="fade-left" data-aos-delay="300">
+                    <img src="src/img/macbook-bg.jpg" alt="">
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
+                    <img src="src/img/code-bg.jpg" alt="">
+                </div>
+                <div class="portfolio-description" data-aos="fade-left" data-aos-delay="600">
+                    <h6>Category</h6>
+                    <h1>Name</h1>
+                    <p>
+                        Description
+                    </p>
+                    <a href="examples/tool-box/" class="cta">Check out</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Work Experience</h1>
+                <h6>Jobs</h6>
+            </div>
+            <div class="timeline" data-aos="fade-down" data-aos-delay="300">
+                <ul>
+                    <li class="date" data-date="some date">
+                        <h1>High School</h1>
+                        <p>
+                            Description of the high school degree
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Contact</h1>
+                <h6>Work Together !</h6>
+            </div>
+            <form action="" data-aos="fade-up" data-aos-delay="300">
+                <label for="name">Name: </label>
+                <input type="text" id="nom" name="nom" placeholder="Enter your name..." required>
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" placeholder="Enter your email..." required>
+                <label for="subject">Subject: </label>
+                <textarea name="sujet" id="sujet" cols="10" rows="10" required></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </section>
+
+    <footer class="copyright">
+        <div class="up" id="up">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+        <p>That's all folks and don't forget to check out my other creations</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/62048cceec.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="src/js/main.js"></script>
 </body>
+
 </html>
