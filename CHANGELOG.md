@@ -5,6 +5,15 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## [3.0.0] - 2020-03-25
+v2.1.0 is released with v3.0.0
+### Added
+* The Simple Blog to portfolio
+### Modified
+* Changed some text
+### Deleted
+* Temporarly deleted portfolio fixture to ensure the site stability and property
+
 ## [2.0.0] - 2019-09-21
 ### Added
 * Website background images
@@ -73,6 +82,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 * Deployment to GitHub Pages
 
 [Unreleased]: https://github.com/qbtl/qbtl.github.io/tree/master
+[3.0.0]: https://github.com/qbtl/qbtl.github.io/compare/v2.0.0...v3.0.O
 [2.0.0]: https://github.com/qbtl/qbtl.github.io/compare/v1.0.0...v2.0.0
 [1.0.0]: https://github.com/qbtl/qbtl.github.io/compare/v0.3.4...v1.0.0
 [0.3.4]: https://github.com/qbtl/qbtl.github.io/compare/v0.3.3...v0.3.4

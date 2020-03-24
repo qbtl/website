@@ -137,6 +137,7 @@ li {
 .nav-link:focus {
   background: linear-gradient(to top, #ffe838, #fd57bf);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -207,6 +208,7 @@ li {
   font-family: 'The Historia Demo', sans-serif;
   background: linear-gradient(to top, #ffe838, #fd57bf);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   user-select: none;
   border: none !important;
@@ -217,6 +219,7 @@ li {
   font-weight: 300;
   background: linear-gradient(to top, #ffe838, #fd57bf);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
