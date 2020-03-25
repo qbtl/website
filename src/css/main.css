@@ -560,6 +560,10 @@ input[type="submit"]:hover {
     margin: 0 2rem;
   }
 
+  .about-details {
+    padding-left: 4rem;
+  }
+
   .about .container {
     flex-direction: column;
   }
@@ -617,8 +621,12 @@ input[type="submit"]:hover {
     font-size: 3.5rem;
   }
 
-  .about .container {
+  /*.about .container {
     flex-direction: column;
+  } */
+
+  .about-details {
+    padding-left: 3rem;
   }
 
   .profile-img {
