@@ -252,7 +252,7 @@ li {
 
 .profile-img {
   flex: 1;
-  margin: 0 5rem;
+  margin: 0 5rem 0 5rem;
 }
 
 .profile-img img{
@@ -584,7 +584,7 @@ input[type="submit"]:hover {
   }
 
   .profile-img {
-    margin: 0 0 7rem;
+    margin: 0 0 7rem 0;
   }
 
   .portfolio-item {
@@ -592,7 +592,7 @@ input[type="submit"]:hover {
   }
 
   .portfolio-img {
-    margin: 0 0 2rem;
+    margin: 0 0 2rem 0;
     order: 1;
   }
 
@@ -641,7 +641,7 @@ input[type="submit"]:hover {
   }
 
   .profile-img {
-    margin: 0 0 7rem;
+    margin: 0 0 7rem 0;
   }
 
   .portfolio-item {
@@ -649,7 +649,7 @@ input[type="submit"]:hover {
   }
 
   .portfolio-img {
-    margin: 0 0 2rem;
+    margin: 0 0 2rem 0;
     order: 1;
   }
 
