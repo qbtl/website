@@ -419,6 +419,21 @@ li {
 /*End timeline*/
 
 /*Start contact*/
+form .mapouter {
+  position: relative;
+  margin: 0 0 3rem 0rem;
+  text-align: right;
+  height: 400px;
+  width: 806px;
+}
+
+form .gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 400px;
+  width: 806px;
+}
+
 form {
   width: 70%;
   margin: 0 auto;
