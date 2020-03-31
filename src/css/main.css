@@ -264,11 +264,11 @@ li {
   text-align: justify;
 }
 
-.social-media {
+.resume {
   margin-top: 2.5rem;
 }
 
-.social-media i {
+.resume i {
   font-size: 5rem;
   transition: color 650ms;
 }
@@ -276,10 +276,6 @@ li {
 .list-inline {
   margin: 0;
   padding: 0;
-}
-
-.fa-github:hover {
-  color: white;
 }
 
 /*End about*/
@@ -457,6 +453,24 @@ input[type="submit"]:hover {
 /*End contact*/
 
 /*Start footer*/
+.social-media {
+  margin-top: 2.5rem;
+}
+
+.social-media i {
+  font-size: 5rem;
+  transition: color 650ms;
+}
+
+.list-inline {
+  margin: 0;
+  padding: 0;
+}
+
+.fa-github:hover {
+  color: white;
+}
+
 .copyright {
   width: 100%;
   text-align: center;

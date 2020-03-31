@@ -5,6 +5,12 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## [3.1.0] - 2020-03-31
+### Added
+* Social Media links to footer (Github & Instagram)
+### Modified
+* About Me section now displays my resume
+
 ## [3.0.0] - 2020-03-25
 v2.1.0 is released with v3.0.0
 ### Added
@@ -12,7 +18,7 @@ v2.1.0 is released with v3.0.0
 ### Modified
 * Changed some text
 ### Deleted
-* Temporarly deleted portfolio fixture to ensure the site stability and property
+* Temporarly deleted portfolio fixture because it wasn't working
 
 ## [2.0.0] - 2019-09-21
 ### Added
@@ -82,6 +88,7 @@ v2.1.0 is released with v3.0.0
 * Deployment to GitHub Pages
 
 [Unreleased]: https://github.com/qbtl/qbtl.github.io/tree/master
+[3.1.0]: https://github.com/qbtl/qbtl.github.io/compare/v3.0.0...v3.1.0
 [3.0.0]: https://github.com/qbtl/qbtl.github.io/compare/v2.0.0...v3.0.O
 [2.0.0]: https://github.com/qbtl/qbtl.github.io/compare/v1.0.0...v2.0.0
 [1.0.0]: https://github.com/qbtl/qbtl.github.io/compare/v0.3.4...v1.0.0
