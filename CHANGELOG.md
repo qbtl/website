@@ -20,7 +20,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 * Font Awesome Free Kit Icons
 
 ## [0.5.0] - 2020-03-25
-v0.5.1 is released with v0.6.0
+v0.4.2 is released with v0.5.0
 ### Added
 * The Simple Blog to portfolio
 ### Modified
@@ -96,18 +96,18 @@ v0.5.1 is released with v0.6.0
 * Deployment to GitHub Pages
 
 [Unreleased]: https://github.com/qbtl/qbtl.github.io/
-[0.5.2]: https://github.com/qbtl/qbtl.github.io/compare/v0.5.1...v0.5.2
-[0.5.1]: https://github.com/qbtl/qbtl.github.io/compare/v0.5.0...v0.5.1
-[0.5.0]: https://github.com/qbtl/qbtl.github.io/compare/v0.4.1...v0.5.0
-[0.4.1]: https://github.com/qbtl/qbtl.github.io/compare/v0.4.0...v0.4.1
-[0.4.0]: https://github.com/qbtl/qbtl.github.io/compare/v0.3.4...v0.4.0
-[0.3.4]: https://github.com/qbtl/qbtl.github.io/compare/v0.3.3...v0.3.4
-[0.3.3]: https://github.com/qbtl/qbtl.github.io/compare/v0.3.2...v0.3.3
-[0.3.2]: https://github.com/qbtl/qbtl.github.io/compare/v0.3.1...v0.3.2
-[0.3.1]: https://github.com/qbtl/qbtl.github.io/compare/v0.3.0...v0.3.1
-[0.3.0]: https://github.com/qbtl/qbtl.github.io/compare/v0.2.1...v0.3.0
-[0.2.1]: https://github.com/qbtl/qbtl.github.io/compare/v0.2.0...v0.2.1
-[0.2.0]: https://github.com/qbtl/qbtl.github.io/compare/v0.1.1...v0.2.0
-[0.1.1]: https://github.com/qbtl/qbtl.github.io/compare/v0.1.0...v0.1.1
-[0.1.0]: https://github.com/qbtl/qbtl.github.io/compare/v0.0.1...v0.1.0
+[0.5.2]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.5.2
+[0.5.1]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.5.1
+[0.5.0]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.5.0
+[0.4.1]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.4.1
+[0.4.0]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.4.0
+[0.3.4]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.3.4
+[0.3.3]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.3.3
+[0.3.2]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.3.2
+[0.3.1]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.3.1
+[0.3.0]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.3.0
+[0.2.1]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.2.1
+[0.2.0]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.2.0
+[0.1.1]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.1.1
+[0.1.0]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.1.0
 [0.0.1]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.0.1
