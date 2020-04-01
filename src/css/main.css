@@ -462,11 +462,6 @@ input[type="submit"]:hover {
   transition: color 650ms;
 }
 
-.list-inline {
-  margin: 0;
-  padding: 0;
-}
-
 .fa-github:hover {
   color: white;
 }
