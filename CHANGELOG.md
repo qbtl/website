@@ -8,8 +8,11 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ## [3.1.0] - 2020-03-31
 ### Added
 * Social Media links to footer (Github & Instagram)
+* Font Awesome Pro Icons
 ### Modified
 * About Me section now displays my resume
+### Deleted
+* Font Awesome Free Kit Icons
 
 ## [3.0.0] - 2020-03-25
 v2.1.0 is released with v3.0.0
