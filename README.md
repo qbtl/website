@@ -25,3 +25,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 [Apache-2.0](https://apache.org/licenses/LICENSE-2.0) - The Apache 2.0 License
+
+### Development
+
+To all users, this website is in constant development until the version n°1.0.0 so please report issues that need to be fix
