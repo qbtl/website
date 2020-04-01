@@ -35,7 +35,7 @@ v0.4.2 is released with v0.5.0
 * Changed all design of the website to make it much more modern
 
 ## [0.4.0] - 2019-09-13
-* Final Fully Working Version
+* One of the versions that are the most advanced
 
 ### [0.3.4] - 2019-09-12
 ### Modified

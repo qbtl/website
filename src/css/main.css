@@ -280,7 +280,9 @@ li {
 
 /*End about*/
 
-/*Start portfolio*/
+/*
+Start portfolio
+
 .portfolio-item {
   display: flex;
   align-items: center;
@@ -331,7 +333,8 @@ li {
   color: #2f67cd;
 }
 
-/*End services*/
+End services
+*/
 
 /*Start timeline*/
 .timeline ul {
