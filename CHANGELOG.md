@@ -5,12 +5,12 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
-## [3.1.1] - 2020-04-01
+## [0.5.2] - 2020-04-01
 ### Modified
 * Social Media Icons size and position
 * Update [README](https://github.com/qbtl/qbtl.github.io/blob/master/README.md)
 
-## [3.1.0] - 2020-03-31
+## [0.5.1] - 2020-03-31
 ### Added
 * Social Media links to footer (Github & Instagram)
 * Font Awesome Pro Icons
@@ -19,8 +19,8 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ### Deleted
 * Font Awesome Free Kit Icons
 
-## [3.0.0] - 2020-03-25
-v2.1.0 is released with v3.0.0
+## [0.5.0] - 2020-03-25
+v0.5.1 is released with v0.6.0
 ### Added
 * The Simple Blog to portfolio
 ### Modified
@@ -28,13 +28,13 @@ v2.1.0 is released with v3.0.0
 ### Deleted
 * Temporarly deleted portfolio fixture because it wasn't working
 
-## [2.0.0] - 2019-09-21
+## [0.4.1] - 2019-09-21
 ### Added
 * Website background images
 ### Modified
 * Changed all design of the website to make it much more modern
 
-## [1.0.0] - 2019-09-13
+## [0.4.0] - 2019-09-13
 * Final Fully Working Version
 
 ### [0.3.4] - 2019-09-12
@@ -96,11 +96,11 @@ v2.1.0 is released with v3.0.0
 * Deployment to GitHub Pages
 
 [Unreleased]: https://github.com/qbtl/qbtl.github.io/
-[3.1.1]: https://github.com/qbtl/qbtl.github.io/compare/v3.1.0...v3.1.1
-[3.1.0]: https://github.com/qbtl/qbtl.github.io/compare/v3.0.0...v3.1.0
-[3.0.0]: https://github.com/qbtl/qbtl.github.io/compare/v2.0.0...v3.0.O
-[2.0.0]: https://github.com/qbtl/qbtl.github.io/compare/v1.0.0...v2.0.0
-[1.0.0]: https://github.com/qbtl/qbtl.github.io/compare/v0.3.4...v1.0.0
+[0.5.2]: https://github.com/qbtl/qbtl.github.io/compare/v0.5.1...v0.5.2
+[0.5.1]: https://github.com/qbtl/qbtl.github.io/compare/v0.5.0...v0.5.1
+[0.5.0]: https://github.com/qbtl/qbtl.github.io/compare/v0.4.1...v0.5.0
+[0.4.1]: https://github.com/qbtl/qbtl.github.io/compare/v0.4.0...v0.4.1
+[0.4.0]: https://github.com/qbtl/qbtl.github.io/compare/v0.3.4...v0.4.0
 [0.3.4]: https://github.com/qbtl/qbtl.github.io/compare/v0.3.3...v0.3.4
 [0.3.3]: https://github.com/qbtl/qbtl.github.io/compare/v0.3.2...v0.3.3
 [0.3.2]: https://github.com/qbtl/qbtl.github.io/compare/v0.3.1...v0.3.2
