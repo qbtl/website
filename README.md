@@ -1,5 +1,4 @@
-[![CodeFactor](https://www.codefactor.io/repository/github/qbtl/qbtl.github.io/badge)](https://www.codefactor.io/repository/github/qbtl/qbtl.github.io)
-# Quentin Boitel Personnal Website
+# Quentin Boitel Personnal Website  [![CodeFactor](https://www.codefactor.io/repository/github/qbtl/qbtl.github.io/badge)](https://www.codefactor.io/repository/github/qbtl/qbtl.github.io)
 
 This repository contains all files from Quentin Boitel personnal website hosted on GitHub Pages
 

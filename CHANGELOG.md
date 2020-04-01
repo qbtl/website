@@ -5,6 +5,11 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## [3.1.1] - 2020-04-01
+### Modified
+* Social Media Icons size and position
+* Update [README](https://github.com/qbtl/qbtl.github.io/blob/master/README.md)
+
 ## [3.1.0] - 2020-03-31
 ### Added
 * Social Media links to footer (Github & Instagram)
@@ -90,7 +95,8 @@ v2.1.0 is released with v3.0.0
 * Project creation
 * Deployment to GitHub Pages
 
-[Unreleased]: https://github.com/qbtl/qbtl.github.io/tree/master
+[Unreleased]: https://github.com/qbtl/qbtl.github.io/
+[3.1.1]: https://github.com/qbtl/qbtl.github.io/compare/v3.1.0...v3.1.1
 [3.1.0]: https://github.com/qbtl/qbtl.github.io/compare/v3.0.0...v3.1.0
 [3.0.0]: https://github.com/qbtl/qbtl.github.io/compare/v2.0.0...v3.0.O
 [2.0.0]: https://github.com/qbtl/qbtl.github.io/compare/v1.0.0...v2.0.0

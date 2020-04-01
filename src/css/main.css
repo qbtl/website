@@ -454,11 +454,12 @@ input[type="submit"]:hover {
 
 /*Start footer*/
 .social-media {
-  margin-top: 2.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .social-media i {
-  font-size: 5rem;
+  font-size: 4rem;
   transition: color 650ms;
 }
 
