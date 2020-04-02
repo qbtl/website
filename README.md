@@ -4,11 +4,11 @@ This repository contains all files from Quentin Boitel personnal website hosted 
 
 ## CHANGELOG
 
-All versions are listed inside the [CHANGELOG](https://www.github.com/qbtl/qbtl.github.io/blob/master/CHANGELOG.md)
+Versions, releases are listed inside the [CHANGELOG](https://www.github.com/qbtl/qbtl.github.io/blob/master/docs/CHANGELOG.md)
 
 ## CONTRIBUTING AND CODE OF CONDUCT
 
-Please read the [CONTRIBUTING](https://www.github.com/qbtl/qbtl.github.io/blob/master/CONTRIBUTING.md) file and the [CODE_OF_CONDUCT](https://www.github.com/qbtl/qbtl.github.io/blob/master/CODE_OF_CONDUCT.md) file
+Please read the [CONTRIBUTING](https://www.github.com/qbtl/qbtl.github.io/blob/master/docs/CONTRIBUTING.md) file and the [CODE_OF_CONDUCT](https://www.github.com/qbtl/qbtl.github.io/blob/master/docs/CODE_OF_CONDUCT.md) file
 
 ## LICENSE
 
