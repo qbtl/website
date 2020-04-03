@@ -1,6 +1,6 @@
 # Quentin Boitel Personnal Website
 
-This repository is the home of Quentin Boitel personnal website
+This repository is the home of Quentin Boitel personnal website.
 
 ## Code Quality
 
@@ -23,19 +23,19 @@ $ git clone https://github.com/qbtl/qbtl.github.io/
 $ cd qbtl.github.io
 ```
 
-Then create a new branch, commit your changes to the new branch, and open a pull-request to merge with master
-You'll need someone to revise your code before it can actually be merged to the master branch
+Then create a new branch, commit your changes to the new branch, and open a pull-request to merge with master.
+You'll need someone to revise your code before it can actually be merged to the master branch.
 
 ## Releases
 
 [![tag](https://img.shields.io/github/v/tag/qbtl/qbtl.github.io.svg?sort=semver)](https://github.com/qbtl/qbtl.github.io/releases/)
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
-Releases are listed inside the [CHANGELOG](https://www.github.com/qbtl/qbtl.github.io/blob/master/docs/CHANGELOG.md)
+Releases are listed inside the [CHANGELOG](https://www.github.com/qbtl/qbtl.github.io/blob/master/docs/CHANGELOG.md).
 
 ## CONTRIBUTE
 
-Before contributing to the project, please read the [CONTRIBUTING](https://www.github.com/qbtl/qbtl.github.io/blob/master/docs/CONTRIBUTING.md) file and the [CODE_OF_CONDUCT](https://www.github.com/qbtl/qbtl.github.io/blob/master/docs/CODE_OF_CONDUCT.md) file
+Before contributing to the project, please read the [CONTRIBUTING](https://www.github.com/qbtl/qbtl.github.io/blob/master/docs/CONTRIBUTING.md) file and the [CODE_OF_CONDUCT](https://www.github.com/qbtl/qbtl.github.io/blob/master/docs/CODE_OF_CONDUCT.md) file.
 
 ## LICENSE
 
