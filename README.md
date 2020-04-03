@@ -17,8 +17,11 @@ In this repository, we use :
 ## For developers
 
 Clone the source locally :
-    $ git clone <https://github.com/qbtl/qbtl.github.io/>
-    $ cd qbtl.github.io
+
+```sh
+$ git clone https://github.com/qbtl/qbtl.github.io/
+$ cd qbtl.github.io
+```
 
 Then create a new branch, commit your changes to the new branch, and open a pull-request to merge with master
 You'll need someone to revise your code before it can actually be merged to the master branch
@@ -38,7 +41,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+`http://www.apache.org/licenses/LICENSE-2.0`
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
