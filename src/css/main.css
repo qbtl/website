@@ -478,12 +478,6 @@ input[type="submit"]:hover {
   position: relative;
 }
 
-.version {
-  font-size: 13px;
-  color: #868e96;
-  font-weight: bolder;
-}
-
 .up {
   position: absolute;
   width: 5rem;
