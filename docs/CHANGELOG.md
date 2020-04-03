@@ -6,6 +6,12 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## Version [0.6.1] - Released on 2020-04-03
+
+### Fixed
+
+* documentation improvement, includes a complete rework of [README](https://github.com/qbtl/qbtl.github.io/blob/master/README.md) and [CHANGELOG](https://github.com/qbtl/qbtl.github.io/blob/master/docs/CHANGELOG.md) files.
+
 ## Version [0.6.0] - Released on 2020-04-02
 
 ### Changed
@@ -153,6 +159,7 @@ v0.4.2 is released with v0.5.0
 * Deployment to GitHub Pages
 
 [Unreleased]: https://github.com/qbtl/qbtl.github.io/
+[0.6.1]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.6.1
 [0.6.0]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.6.0
 [0.5.2]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.5.2
 [0.5.1]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.5.1
