@@ -11,6 +11,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ### Added
 
 * portfolio section to display creations from Github
+* contact form bypass, mail button to directly write an email from Default Mail App
 
 ## Version [0.6.1] - Released on 2020-04-03
 
