@@ -11,7 +11,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ### Added
 
 * portfolio section to display creations from Github
-* contact form bypass, mail button to directly write an email from Default Mail App
+* contact form issue link, bypass created
 
 ## Version [0.6.1] - Released on 2020-04-03
 
@@ -183,4 +183,4 @@ v0.4.2 is released with v0.5.0
 [0.2.0]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.2.0
 [0.1.1]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.1.1
 [0.1.0]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.1.0
-[0.0.1]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.0.1
+[0.0.1]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.0.1-alpha
