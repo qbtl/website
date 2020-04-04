@@ -29,11 +29,9 @@
 					<a href="#about" class="nav-link">A propos</a>
 				</li>
 
-				<!--
-					<li>
-						<a href="#portfolio" class="nav-link">Portfolio</a>
-					</li>
-				-->
+				<li>
+					<a href="#portfolio" class="nav-link">Portfolio</a>
+				</li>
 
 				<li>
 					<a href="#experience" class="nav-link">Experience</a>
@@ -85,8 +83,6 @@
 		</div>
 	</section>
 
-	<!--
-
 	<section class="portfolio" id="portfolio">
 		<div class="container">
 			<div class="section-heading">
@@ -95,47 +91,39 @@
 			</div>
 			<div class="portfolio-item">
 				<div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
-					<img src="src/img/mountains.jpg" alt="">
+					<img src="src/img/go-api.jpg" alt="">
 				</div>
 				<div class="portfolio-description" data-aos="fade-left" data-aos-delay="600">
-					<h6>Écriture</h6>
-					<h1>The Simple Blog</h1>
+					<h6>API</h6>
+					<h1>RESTful Go API</h1>
 					<p>
-						Modèle de blog pour vos sites web d'un nouveau genre.
+						API écrite en Go créée avec Buffalo.
+						<br><br>
+						Cette API permet de récupérer la liste des utilisateurs, de récupérer un seul utilisateur ou
+						d'en créer un.
 					</p>
-					<a href="examples/blog/" class="cta">Voir plus</a>
+					<a href="https://github.com/Dotaker/go-api/" class="cta">Voir plus</a>
 				</div>
 			</div>
-			<div class="portfolio-item">
-				<div class="portfolio-description" data-aos="fade-right" data-aos-delay="600">
-					<h6>E-commerce</h6>
-					<h1>Merchandise Website</h1>
-					<p>
-						Ce site de e-commerce vous permettra d'effectuer tout type de vente en ligne.
-					</p>
-					<a href="examples/merchandise/" class="cta">Voir plus</a>
+
+			<!--
+				<div class="portfolio-item">
+					<div class="portfolio-description" data-aos="fade-right" data-aos-delay="600">
+						<h6>E-commerce</h6>
+						<h1>Merchandise Website</h1>
+						<p>
+							Ce site de e-commerce vous permettra d'effectuer tout type de vente en ligne.
+						</p>
+						<a href="examples/merchandise/" class="cta">Voir plus</a>
+					</div>
+					<div class="portfolio-img has-margin-right" data-aos="fade-left" data-aos-delay="300">
+						<img src="src/img/work_harder.jpg" alt="">
+					</div>
 				</div>
-				<div class="portfolio-img has-margin-right" data-aos="fade-left" data-aos-delay="300">
-					<img src="src/img/macbook-bg.jpg" alt="">
-				</div>
-			</div>
-			<div class="portfolio-item">
-				<div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
-					<img src="src/img/code-bg.jpg" alt="">
-				</div>
-				<div class="portfolio-description" data-aos="fade-left" data-aos-delay="600">
-					<h6>Outils de développement</h6>
-					<h1>Tool Box</h1>
-					<p>
-						Site avec une multitude de petits outils comme des bouttons, des navbars, etc.
-					</p>
-					<a href="examples/tool-box/" class="cta">Voir plus</a>
-				</div>
-			</div>
+			-->
+
 		</div>
 	</section>
-
-	-->
 
 	<section class="experience" id="experience">
 		<div class="container">
@@ -164,6 +152,19 @@
 				<h6>Travaillons ensemble !</h6>
 			</div>
 			<form action="mailto:q.boitel2002@gmail.com" data-aos="fade-up" data-aos-delay="300">
+				<div class="alert">
+					<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+					<strong>Attention !</strong> Un problème a été détecté, veuillez lire le problème suivant : <a
+						href="https://github.com/qbtl/qbtl.github.io/issues/7">Problème n°7</a>
+				</div>
+				<br>
+				<div class="alert info">
+					<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+					<strong>Info !</strong> cliquez sur le button ci-dessous pour envoyer un mail directement sans
+					passer par le formulaire :
+					<input type="submit" class="mail" value="Envoyer un mail directement">
+				</div>
+				<br>
 				<div class="mapouter">
 					<div class="gmap_canvas">
 						<iframe width="100%" height="400" id="gmap_canvas"
@@ -177,7 +178,7 @@
 				<input type="email" id="email" name="email" placeholder="Entrer votre email..." required>
 				<label for="subject">Sujet: </label>
 				<textarea name="sujet" id="sujet" cols="10" rows="10" required></textarea>
-				<input type="submit" value="Envoyer">
+				<input type="submit" value="Envoyer" disabled>
 			</form>
 		</div>
 	</section>
@@ -198,7 +199,12 @@
 			</ul>
 		</div>
 		<p>Copyright &copy; 2020 Quentin Boitel</p>
-		<p class="version">v0.6.0</p>
+		<p class="version">
+			<a href="https://github.com/qbtl/qbtl.github.io/releases/">
+				<img src="https://img.shields.io/github/v/release/qbtl/qbtl.github.io.svg?sort=semver" width="20px"
+					height="20px">
+			</a>
+		</p>
 	</footer>
 
 	<script src="src/js/icons.js"></script>
