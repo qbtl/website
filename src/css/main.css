@@ -308,7 +308,8 @@ li {
 .portfolio-description h1 {
   font-size: 3rem;
   font-weight: 300;
-  font-family: 'The Historia Demo';
+  font-family: 'Roboto', sans-serif;
+  font-variant: small-caps;
   margin: 1rem 0;
 }
 
@@ -452,6 +453,43 @@ input[type="submit"]:hover {
   background-color: #138609;
 }
 
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  width: 100%;
+  font-size: 15px;
+}
+
+.alert.info {
+  background-color: #2196F3;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-top: -4px;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+input[type="submit"].mail {
+  margin-bottom: 0;
+  margin-top: 1rem;
+  background-color: #ff9800;
+}
+
+input[type="submit"].mail:hover {
+  background-color: orangered;
+}
 /*End contact*/
 
 /*Start footer*/
@@ -475,6 +513,10 @@ input[type="submit"]:hover {
   background-color: #16162d;
   padding: 2rem 0;
   position: relative;
+}
+
+.version {
+  margin-top: 0.5rem;
 }
 
 .up {
