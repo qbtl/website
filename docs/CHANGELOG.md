@@ -6,6 +6,16 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## Version [0.7.0] - Released on 2020-04-06
+
+### Added
+
+* portfolio js app project
+
+### Changed
+
+* README badges and version badges on pages
+
 ## Version [0.6.2] - Released on 2020-04-04
 
 ### Added
@@ -166,6 +176,7 @@ v0.4.2 is released with v0.5.0
 * Deployment to GitHub Pages
 
 [Unreleased]: https://github.com/qbtl/qbtl.github.io/
+[0.7.0]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.7.0
 [0.6.2]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.6.2
 [0.6.1]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.6.1
 [0.6.0]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.6.0

@@ -2,9 +2,13 @@
 
 This repository is the home of Quentin Boitel personnal website.
 
+## Website Status
+
+![Website](https://img.shields.io/website?labelColor=black&down_color=ED1C24&down_message=under%20maintenance&label=status&up_color=149551&up_message=up%20and%20running&url=https%3A%2F%2Fqbtl.github.io)
+
 ## Code Quality
 
-[![CodeFactor](https://www.codefactor.io/repository/github/qbtl/qbtl.github.io/badge)](https://www.codefactor.io/repository/github/qbtl/qbtl.github.io)
+![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/qbtl/qbtl.github.io/master?label=CodeFactor&labelColor=black&color=149551&logo=codefactor&logoColor=white)
 
 ## Technology / Framework
 
@@ -28,7 +32,7 @@ You'll need someone to revise your code before it can actually be merged to the 
 
 ## Releases
 
-[![release](https://img.shields.io/github/v/release/qbtl/qbtl.github.io.svg?sort=semver)](https://github.com/qbtl/qbtl.github.io/releases/)
+[![release](https://img.shields.io/github/v/release/qbtl/qbtl.github.io.svg?label=Version&labelColor=black&logo=github&sort=semver)](https://github.com/qbtl/qbtl.github.io/releases/)
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 Releases are listed inside the [CHANGELOG](https://www.github.com/qbtl/qbtl.github.io/blob/master/docs/CHANGELOG.md).
