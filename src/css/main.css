@@ -434,7 +434,7 @@ textarea {
   border-radius: .8rem;
 }
 
-input[type="submit"] {
+input[type="button"] {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -448,48 +448,11 @@ input[type="submit"] {
   margin-bottom: 1rem;
 }
 
-input[type="submit"]:hover {
+input[type="button"]:hover {
   color: whitesmoke;
   background-color: #138609;
 }
 
-.alert {
-  padding: 20px;
-  background-color: #f44336;
-  color: white;
-  width: 100%;
-  font-size: 15px;
-}
-
-.alert.info {
-  background-color: #2196F3;
-}
-
-.closebtn {
-  margin-left: 15px;
-  color: white;
-  font-weight: bold;
-  float: right;
-  margin-top: -4px;
-  font-size: 22px;
-  line-height: 20px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.closebtn:hover {
-  color: black;
-}
-
-input[type="submit"].mail {
-  margin-bottom: 0;
-  margin-top: 1rem;
-  background-color: #ff9800;
-}
-
-input[type="submit"].mail:hover {
-  background-color: orangered;
-}
 /*End contact*/
 
 /*Start footer*/

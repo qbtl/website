@@ -1,21 +1,21 @@
-$(document).ready(function() {
-  $('.menu-toggler').on('click', function() {
+$(document).ready(function () {
+  $('.menu-toggler').on('click', function () {
     $(this).toggleClass('open');
     $('.top-nav').toggleClass('open');
   });
 
-  $('.top-nav .nav-list .nav-link').on('click', function() {
+  $('.top-nav .nav-list .nav-link').on('click', function () {
     $('.menu-toggler').removeClass('open');
     $('.top-nav').removeClass('open');
   });
 
-  $('nav ul li a[href*="#"]').on('click', function() {
+  $('nav ul li a[href*="#"]').on('click', function () {
     $('html, body').animate({
       scrollTop: $($(this).attr('href')).offset().top
     }, 2000);
   });
 
-  $('#up').on('click', function() {
+  $('#up').on('click', function () {
     $('html, body').animate({
       scrollTop: 0
     }, 2000);
