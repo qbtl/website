@@ -4,11 +4,11 @@ This repository is the home of Quentin Boitel personnal website.
 
 ## Website Status
 
-![Website](https://img.shields.io/website?labelColor=black&down_color=ED1C24&down_message=under%20maintenance&label=status&up_color=149551&up_message=up%20and%20running&url=https%3A%2F%2Fqbtl.github.io)
+![website](https://img.shields.io/website?labelColor=black&down_color=ED1C24&down_message=under%20maintenance&label=status&up_color=149551&up_message=up%20and%20running&url=https%3A%2F%2Fqbtl.github.io)
 
 ## Code Quality
 
-![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/qbtl/qbtl.github.io/master?label=CodeFactor&labelColor=black&color=149551&logo=codefactor&logoColor=white)
+![codefactor](https://img.shields.io/codefactor/grade/github/qbtl/qbtl.github.io/master?label=CodeFactor&labelColor=black&color=149551&logo=codefactor&logoColor=white)
 
 ## Technology / Framework
 
