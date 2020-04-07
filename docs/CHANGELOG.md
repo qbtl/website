@@ -6,12 +6,11 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
-## Version [0.7.1-alpha] - Unreleased
+## Version [0.7.1] - Released on 2020-04-07
 
 ### Added
 
-* 404 page displays both not found and maintenance pages
-* CSS file linked to 404 page
+* custom 404 page, follow the website style
 
 ## Version [0.7.0] - Released on 2020-04-06
 
@@ -183,7 +182,7 @@ v0.4.2 is released with v0.5.0
 * Deployment to GitHub Pages
 
 [Unreleased]: https://github.com/qbtl/qbtl.github.io/
-[0.7.1-alpha]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.7.1-alpha
+[0.7.1]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.7.1
 [0.7.0]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.7.0
 [0.6.2]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.6.2
 [0.6.1]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.6.1
