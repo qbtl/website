@@ -63,7 +63,7 @@
             <p>&mdash; The Development Team &mdash; <a href="https://github.com/Dotaker/"
                     title="Development Team GitHub">@Dotaker</a>
             </p>
-            <div class="version" data-aos="fade-up" data-aos-delay="300">
+            <div class="version" data-aos="fade-up" data-aos-delay="600">
                 <p>Copyright &copy; 2020 Quentin Boitel</p>
                 <p>
                     <a href="https://github.com/qbtl/qbtl.github.io/releases/">
@@ -76,7 +76,13 @@
     </article>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="src/js/main.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease',
+            duration: 1800,
+            once: true
+        });
+    </script>
 </body>
 
 </html>
