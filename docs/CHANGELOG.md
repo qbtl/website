@@ -6,6 +6,12 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## Version [1.0.1] - Released on 2020-04-08
+
+### Fixed
+
+* responsive attributes to badges on chrome and firefox, works normally on safari
+
 ## Version [1.0.0] - Released on 2020-04-07
 
 ### Changed
@@ -194,6 +200,7 @@ v0.4.2 is released with v0.5.0
 * Deployment to GitHub Pages
 
 [Unreleased]: https://github.com/qbtl/qbtl.github.io/
+[1.0.1]: https://github.com/qbtl/qbtl.github.io/releases/tag/v1.0.1
 [1.0.0]: https://github.com/qbtl/qbtl.github.io/releases/tag/v1.0.0
 [0.7.2]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.7.2
 [0.7.1]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.7.1
