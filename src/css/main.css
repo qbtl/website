@@ -705,18 +705,6 @@ input[type="button"]:hover {
   }
 }
 
-@-webkit-keyframes titleBlur {
-  0% {
-      opacity: 0.6;
-      text-shadow: 0 5px 5px rgba(0, 0, 0, 0.6);
-  }
-
-  100% {
-      opacity: 1;
-      text-shadow: 0 5px 5px transparent;
-  }
-}
-
 @keyframes titleBlur {
   0% {
       opacity: 0.6;
@@ -726,18 +714,6 @@ input[type="button"]:hover {
   100% {
       opacity: 1;
       text-shadow: 0 5px 5px transparent;
-  }
-}
-
-@-webkit-keyframes subtitleBlur {
-  0% {
-      opacity: 0.6;
-      text-shadow: 0 5px 5px rgba(56, 196, 165, 0.6);
-  }
-
-  100% {
-      opacity: 1;
-      text-shadow: 0 5px 5px rgba(56, 196, 165, 0);
   }
 }
 
@@ -753,21 +729,6 @@ input[type="button"]:hover {
   }
 }
 
-@-webkit-keyframes pathanimation {
-  40% {
-      stroke-dasharray: 22 230;
-  }
-
-  60% {
-      stroke-dashoffset: -65;
-  }
-
-  100% {
-      stroke-dashoffset: -65;
-      stroke-dasharray: 160;
-  }
-}
-
 @keyframes pathanimation {
   40% {
       stroke-dasharray: 22 230;
@@ -778,25 +739,6 @@ input[type="button"]:hover {
   }
 
   100% {
-      stroke-dashoffset: -65;
-      stroke-dasharray: 160;
-  }
-}
-
-@-webkit-keyframes pathanimation-out {
-  100% {
-      stroke-dashoffset: 0;
-  }
-
-  60% {
-      stroke-dasharray: 22 230;
-  }
-
-  40% {
-      stroke-dashoffset: -65;
-  }
-
-  0% {
       stroke-dashoffset: -65;
       stroke-dasharray: 160;
   }
