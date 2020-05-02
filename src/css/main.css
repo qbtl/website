@@ -529,7 +529,7 @@ li {
 
 .card-title {
   margin: 0;
-  padding: 0 0 10px 0;
+  padding: 0 0 10px;
   font-size: 22px;
   color: #000;
   font-weight: bold;
@@ -542,7 +542,7 @@ li {
 
 .card-subtitle {
   margin: 0;
-  padding: 0 0 10px 0;
+  padding: 0 0 10px;
   font-size: 19px;
   color: #38c4a5;
 }
