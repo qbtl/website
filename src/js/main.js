@@ -4,8 +4,20 @@ $(document).ready(function () {
     $('.top-nav').toggleClass('open');
   });
 
+  $('.menu-icon').click(function(e){
+    e.preventDefault();
+    $this = $(this);
+    if($this.hasClass('is-opened')){
+      $this.addClass('is-closed').removeClass('is-opened');
+    }else{
+      $this.removeClass('is-closed').addClass('is-opened');
+    }
+  })
+
   $('.top-nav .nav-list .nav-link').on('click', function () {
     $('.menu-toggler').removeClass('open');
+    $('.menu-icon').removeClass('is-opened');
+    $('.menu-icon').toggleClass('is-closed');
     $('.top-nav').removeClass('open');
   });
 
