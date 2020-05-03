@@ -10,8 +10,8 @@
 }
 
 @font-face {
-  font-family: Apple;
-  src: url('../fonts/AppleGaramond.ttf');
+  font-family: Poetsen;
+  src: url('../fonts/PoetsenOne-Regular.ttf');
 }
 
 * {
@@ -337,9 +337,9 @@ li {
 }
 
 .landing-text h6 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 900;
-  font-family: Apple;
+  font-family: Poetsen;
   background-color: #B83A1B;
   -webkit-background-clip: text;
   background-clip: text;
