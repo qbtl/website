@@ -355,7 +355,7 @@ li {
   padding: 3em;
 }
 
-.box.style .image1 {
+.box.style .box-image {
   display: block;
   position: absolute;
   top: 0;
@@ -417,16 +417,6 @@ li {
 
 .box.style.right .image2 img {
   right: 0;
-}
-
-.box.style .image2 {
-  display: block;
-  position: absolute;
-  top: 0;
-  width: 50%;
-  height: 100%;
-  background: #183026;
-  overflow: hidden;
 }
 
 .box.style .image2 img {
