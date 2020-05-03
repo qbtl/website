@@ -1,6 +1,6 @@
-# Quentin Boitel Personnal Website
+# Quentin Boitel Personal Website
 
-This repository is the home of Quentin Boitel personnal website.
+This repository is the home of Quentin Boitel personal website.
 
 ## Code Quality
 

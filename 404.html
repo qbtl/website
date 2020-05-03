@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <style>
         @font-face {
+            font-family: AveFedan;
+            src: url('src/fonts/AveFedan.ttf');
+        }
+
+        @font-face {
             font-family: Qanelas;
             src: url('src/fonts/Qanelas.otf');
         }
@@ -20,35 +25,43 @@
             text-align: center;
             padding: 95px;
             font: 20px Helvetica, sans-serif;
-            color: white;
-            background-color: #659DBD;
+            color: black;
+            background-image: url("src/img/sitebg.jpg");
+            background-repeat: repeat, no-repeat;
+            background-size: auto, cover;
+            background-position: top left, center 0;
+            background-attachment: fixed, fixed;
         }
 
         h1 {
             font-size: 50px;
             font-family: 'Qanelas';
+            color: #B83A1B;
+            text-align: center;
         }
 
         article {
-            display: block;
+            display: flex;
+            flex-direction: column;
             text-align: left;
             width: 650px;
             margin: 0 auto;
         }
 
         a {
-            color: #2B7199;
+            color: #223645;
             text-decoration: none;
-            font-family: 'Qanelas';
+            font-family: 'AveFedan';
         }
 
         a:hover {
-            color: #C96567;
+            color: #B83A1B;
             text-decoration: none;
         }
 
         .version {
             text-align: center;
+            font-variant: small-caps;
             margin-top: 3rem;
         }
     </style>
@@ -68,10 +81,10 @@
             <p>Please <a href="mailto:49651680+Dotaker@users.noreply.github.com">contact</a> us for further information.
             </p>
             <p>&mdash; The Development Team &mdash; <a href="https://github.com/Dotaker/"
-                    title="Development Team GitHub">Dotaker</a>
+                    title="Development Team GitHub">@Dotaker</a>
             </p>
             <div class="version" data-aos="fade-up" data-aos-delay="600">
-                <p>Copyright &copy; 2020 Quentin Boitel</p>
+                <p><b>Copyright &copy; 2020 Quentin Boitel</b></p>
                 <p>
                     <a href="https://github.com/qbtl/qbtl.github.io/releases/">
                         <img

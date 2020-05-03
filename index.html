@@ -31,7 +31,7 @@
 					<a href="" class="nav-link">Accueil</a>
 				</li>
 				<li>
-					<a href="#about" class="nav-link">A propos</a>
+					<a href="#about" class="nav-link">À propos</a>
 				</li>
 
 				<li>
@@ -39,7 +39,7 @@
 				</li>
 
 				<li>
-					<a href="#experience" class="nav-link">Experience</a>
+					<a href="#experience" class="nav-link">Expérience</a>
 				</li>
 				<li>
 					<a href="#contact" class="nav-link">Contact</a>
@@ -47,146 +47,133 @@
 			</ul>
 		</nav>
 		<div class="landing-text">
-			<h1>Quentin Boitel</h1>
+			<h1>Quentin Boitel0</h1>
 			<h6>Élève de Terminale / Futur développeur</h6>
 		</div>
 	</header>
 
-	<section class="about" id="about">
-		<div class="container container-fluid">
-			<div class="profile-img" data-aos="fade-right" data-aos-delay="300">
-				<img src="src/img/something-more.jpg" alt="Me">
+	<article class="container box style right about" id="about">
+		<img class="image1 fit" src="src/img/something-more.jpg" alt="" />
+		<div class="inner" data-aos="fade-right" data-aos-delay="300">
+			<div class="about-heading">
+				<h1>Moi</h1>
+				<h6>À propos</h6>
 			</div>
-			<div class="about-details" data-aos="fade-left" data-aos-delay="600">
-				<div class="about-heading">
-					<h1>Moi</h1>
-					<h6>À propos</h6>
-				</div>
+			<p>
+				Étudiant de 17 ans, j'ai pour passion le développement web
+				et j'envisage de me former en tant que développeur Full-Stack
+				pour ainsi vivre de ma passion.
+				<br><br>
+				Vous trouverez mon CV ci-dessous :
+			</p>
+			<div class="resume">
+				<ul class="nav-list list-inline">
+					<li class="list-inline-item">
+						<a href="src/cv/CV_QB.pdf" target="_blank" class="icon-link">
+							<span class="fa-stack fa-lg">
+								<i class="fal fa-file-user fa-stack-1x fa-inverse"></i>
+							</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<p>
+				Je vous souhaite la bienvenue sur mon site !
+			</p>
+		</div>
+	</article>
+
+	<div class="section-heading portfolio" id="portfolio">
+		<h1>Portfolio</h1>
+		<h6>Regardez quelques unes de mes dernières créations</h6>
+	</div>
+	<article class="container box style left portfolio1">
+		<img class="image2 fit" src="src/img/gin-gonic.jpg" alt="Gin-Gonic Logo" />
+		<div class="inner" data-aos="fade-left" data-aos-delay="300">
+			<div class="portfolio-description">
+				<h6>API</h6>
+				<h1>RESTful Go API</h1>
 				<p>
-					Étudiant de 17 ans, j'ai pour passion le développement web
-					et j'envisage de me former en tant que développeur Full-Stack
-					pour ainsi vivre de ma passion.
+					API écrite en Go créée avec Gin-Gonic.
 					<br><br>
-					Vous trouverez mon CV ci-dessous :
+					Cette API permet de récupérer la liste des utilisateurs, de récupérer un seul utilisateur,
+					d'en créer ou d'en supprimer un.
 				</p>
-				<div class="resume">
-					<ul class="nav-list list-inline">
-						<li class="list-inline-item">
-							<a href="src/cv/CV_QB.pdf" target="_blank" class="icon-link">
-								<span class="fa-stack fa-lg">
-									<i class="fal fa-file-user fa-stack-1x fa-inverse"></i>
-								</span>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<br><br><br>
+				<a href="https://github.com/Dotaker/Go-Gin-RESTful-API/" class="cta">Voir plus <i
+						class="fa fa-arrow-right"></i></a>
+			</div>
+		</div>
+	</article>
+	<article class="container box style right portfolio2">
+		<img class="image1 fit" src="src/img/nodejs-logo.png" alt="NodeJS Logo" />
+		<div class="inner" data-aos="fade-right" data-aos-delay="300">
+			<div class="portfolio-description">
+				<h6>App</h6>
+				<h1>RESTful JS APP</h1>
 				<p>
-					Je vous souhaite la bienvenue sur mon site !
+					App écrite en JS créée avec Node, Express & MongoDB.
+					<br><br>
+					Cette App simule une librairie où l'on peut trier les livres par nom, auteur.
+					On peut aussi modifier un livre, un auteur ou en créer un.
 				</p>
+				<a href="https://github.com/Dotaker/mybrary/" class="cta">Voir plus <i
+						class="fa fa-arrow-right"></i></a>
 			</div>
 		</div>
-	</section>
+	</article>
 
-	<section class="portfolio" id="portfolio">
-		<div class="container">
-			<div class="section-heading">
-				<h1>Portfolio</h1>
-				<h6>Regardez quelques unes de mes dernières créations</h6>
-			</div>
-			<div class="portfolio-item">
-				<div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
-					<img src="src/img/gin-gonic.jpg" alt="">
-				</div>
-				<div class="portfolio-description" data-aos="fade-left" data-aos-delay="600">
-					<h6>API</h6>
-					<h1>RESTful Go API</h1>
-					<p>
-						API écrite en Go créée avec Gin-Gonic.
-						<br><br>
-						Cette API permet de récupérer la liste des utilisateurs, de récupérer un seul utilisateur,
-						d'en créer ou d'en supprimer un.
-					</p>
-					<a href="https://github.com/Dotaker/Go-Gin-RESTful-API/" class="cta">Voir plus <i
-							class="fa fa-arrow-right"></i></a>
-				</div>
-			</div>
-			<div class="portfolio-item">
-				<div class="portfolio-description" data-aos="fade-right" data-aos-delay="600">
-					<h6>App</h6>
-					<h1>RESTful JS APP</h1>
-					<p>
-						App écrite en JS créée avec Node, Express & MongoDB.
-						<br><br>
-						Cette App simule une librairie où l'on peut trier les livres par nom, auteur.
-						On peut aussi modifier un livre, un auteur ou en créer un.
-					</p>
-					<a href="https://github.com/Dotaker/mybrary/" class="cta">Voir plus <i
-							class="fa fa-arrow-right"></i></a>
-				</div>
-				<div class="portfolio-img has-margin-right" data-aos="fade-left" data-aos-delay="300">
-					<img src="src/img/nodejs-logo.png" alt="">
-				</div>
+	<div class="section-heading experience-heading" id="experience">
+		<h1>Mon Expérience</h1>
+		<h6>Quelques informations</h6>
+	</div>
+	<div class="card box">
+		<header class="card-thumb">
+			<img src="src/img/lycee.jpg">
+		</header>
+		<div class="card-date">
+			<span class="card-date-day">2017</span>
+			<span class="card-date-day">2020</span>
+		</div>
+		<div class="card-body">
+			<div class="card-category">Diplôme</a></div>
+			<h2 class="card-title">Baccalauréat Général Scientifique 2020</a></h2>
+			<div class="card-subtitle">Lycée Paul Cézanne &mdash; Aix-en-Provence</div>
+			<p class="card-description">
+				<b>
+					Je suis en Terminale S spécialité Maths
+					et j'utilise mon temps libre pour apprendre le développement web,
+					le développement d'applications.
+				</b>
+			</p>
+		</div>
+	</div>
+
+	<article class="container box style left contact" id="contact">
+		<div class="image2 fit">
+			<div class="gmap_canvas">
+				<iframe width="100%" height="490px" id="gmap_canvas"
+					src="https://maps.google.com/maps?q=Lyc%C3%A9e%20Paul-C%C3%A9zanne&t=&z=15&ie=UTF8&iwloc=&output=embed"
+					frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 			</div>
 		</div>
-	</section>
-
-	<section class="experience" id="experience">
-		<div class="container">
-			<div class="section-heading">
-				<h1>Mon Expérience</h1>
-				<h6>Quelques informations</h6>
-			</div>
-			<div class="card">
-				<header class="card-thumb">
-					<img src="src/img/lycee.jpg">
-				</header>
-				<div class="card-date">
-					<span class="card-date-day">2017</span>
-					<span class="card-date-day">2020</span>
-				</div>
-				<div class="card-body">
-					<div class="card-category">Diplôme</a></div>
-					<h2 class="card-title">Baccalauréat Général Scientifique 2020</a></h2>
-					<div class="card-subtitle">Lycée Paul Cézanne &mdash; Aix-en-Provence</div>
-					<p class="card-description">
-						<b>
-							Je suis en Terminale S spécialité Maths
-							et j'utilise mon temps libre pour apprendre le développement web,
-							le développement d'applications.
-						</b>
-					</p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="contact" id="contact">
-		<div class="container">
+		<div class="inner">
 			<div class="section-heading">
 				<h1>Contact</h1>
 				<h6>Travaillons ensemble !</h6>
 			</div>
-			<form action="" method="POST" data-aos="fade-up" data-aos-delay="300">
-				<br>
-				<div class="mapouter">
-					<div class="gmap_canvas">
-						<iframe width="100%" height="400" id="gmap_canvas"
-							src="https://maps.google.com/maps?q=Lyc%C3%A9e%20Paul-C%C3%A9zanne&t=&z=15&ie=UTF8&iwloc=&output=embed"
-							frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-					</div>
-				</div>
-				<label for="name">Nom: </label>
+			<form action="" method="POST">
+				<label for="name"><b>Nom: </b></label>
 				<input type="text" id="nom" name="nom" placeholder="Entrer votre nom..." required>
-				<label for="email">Email: </label>
+				<label for="email"><b>Email: </b></label>
 				<input type="email" id="email" name="email" placeholder="Entrer votre email..." required>
-				<label for="subject">Sujet: </label>
-				<textarea name="sujet" id="sujet" cols="10" rows="10" required></textarea>
+				<label for="subject"><b>Sujet: </b></label>
+				<textarea name="sujet" id="sujet" cols="10" rows="10" placeholder="De quoi souhaitez-vous me parler ?"
+					required></textarea>
 				<input type="button" value="Envoyer" onclick="send()">
 			</form>
 		</div>
-	</section>
-
+	</article>
+	
 	<footer class="copyright">
 		<div class="up" id="up">
 			<i class="fas fa-chevron-up"></i>
@@ -196,13 +183,13 @@
 				<li class="list-inline-item">
 					<a href="https://www.github.com/qbtl/" target="_blank" class="icon-link" title="Github">
 						<span class="fa-stack fa-lg">
-							<i class="fab fa-github fa-stack-1x fa-inverse"></i>
+							<i class="fab fa-github fa-stack-1x fa-inverse" style="color:#B83A1B"></i>
 						</span>
 					</a>
 				</li>
 			</ul>
 		</div>
-		<p>Copyright &copy; 2020 Quentin Boitel</p>
+		<p><b>Copyright &copy; 2020 Quentin Boitel</b></p>
 		<p class="version">
 			<a href="https://github.com/qbtl/qbtl.github.io/releases/">
 				<img src="https://img.shields.io/github/v/release/qbtl/qbtl.github.io.svg?label=Version&labelColor=black&logo=github&sort=semver"
