@@ -6,20 +6,13 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
-## Version [2.1.0] - Released on 2020-05-03
+## Version [2.0.0] - Released on 2020-05-07
 
 ### Changed
 
-* Section style, add arrows
-* General fonting
-* Background back to img
-
-## Version [2.0.0] - Released on 2020-05-02
-
-### Changed
-
-* Background img to color
+* Background img
 * Menu toggler to hamburger style
+* Section style, add arrows
 * Experience section from timeline to card style
 * General fonting
 
@@ -217,7 +210,6 @@ v0.4.2 is released with v0.5.0
 * Deployment to GitHub Pages
 
 [Unreleased]: https://github.com/qbtl/qbtl.github.io/
-[2.1.0]: https://github.com/qbtl/qbtl.github.io/releases/tag/v2.1.0
 [2.0.0]: https://github.com/qbtl/qbtl.github.io/releases/tag/v2.0.0
 [1.0.1]: https://github.com/qbtl/qbtl.github.io/releases/tag/v1.0.1
 [1.0.0]: https://github.com/qbtl/qbtl.github.io/releases/tag/v1.0.0
