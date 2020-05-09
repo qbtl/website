@@ -1,0 +1,167 @@
+/*Start reusable*/
+.container {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1140px;
+    border-radius: 15px;
+}
+
+.section-heading {
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+
+    h1 {
+        font-size: 3.5rem;
+        color: rgba(34, 54, 69, 1);
+        text-transform: uppercase;
+        font-weight: 300;
+        position: relative;
+        margin-bottom: 1rem;
+        margin-top: -10rem;
+        font-family: 'AveFedan', sans-serif;
+
+        &::before {
+            width: 10rem;
+            height: 3px;
+            border-radius: .8rem;
+        }
+    }
+
+    h6 {
+        font-size: 1.6rem;
+        font-weight: 300;
+        color: rgba(43, 113, 153, 1);
+        margin-bottom: 1rem;
+        font-family: 'retro';
+    }
+}
+
+.section-heading h1::before,
+.section-heading h1::after {
+    content: '';
+    position: absolute;
+    bottom: -.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(184, 58, 27, 1);
+}
+
+.box {
+    position: relative;
+    margin-top: 30rem;
+    margin-bottom: 30rem;
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -30rem;
+        left: 50%;
+        height: 13rem;
+        border-left: solid 1px #000;
+    }
+
+    &:before {
+        content: '';
+        display: block;
+        width: 90px;
+        height: 66px;
+        position: absolute;
+        left: 50%;
+        top: -14rem;
+        margin-left: -45px;
+        margin-top: -30px;
+        background: url("../img/arrow.svg") no-repeat;
+    }
+
+    :last-child {
+        margin-bottom: 0;
+    }
+
+    &.style {
+        background: #fff;
+        padding: 3em;
+
+        .box-image {
+            display: block;
+            position: absolute;
+            top: 0;
+            width: 50%;
+            height: 100%;
+            background: #183026;
+            overflow: hidden;
+        }
+
+        .image1 {
+            img {
+                position: absolute;
+                top: 0;
+                height: 100%;
+                width: auto;
+            }
+        }
+
+        .inner {
+            &> :last-child {
+                margin: 0;
+            }
+        }
+
+        &.right {
+            .image1 {
+                left: 0;
+
+                img {
+                    right: 0;
+                }
+            }
+
+            .inner {
+                margin-left: 50%;
+                padding-left: 3em;
+            }
+
+            .image2 {
+                left: 0;
+
+                img {
+                    right: 0;
+                }
+            }
+        }
+
+        &.left {
+            .image1 {
+                right: 0;
+
+                img {
+                    left: 0;
+                }
+            }
+
+            .inner {
+                margin-right: 50%;
+                padding-right: 3em;
+            }
+
+            .image2 {
+                right: 0;
+
+                img {
+                    left: 0;
+                }
+            }
+        }
+
+        .image2 {
+            img {
+                position: absolute;
+                top: 0;
+                height: 100%;
+                width: auto;
+            }
+        }
+    }
+}
+/*End reusable*/

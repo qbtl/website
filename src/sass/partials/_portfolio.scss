@@ -1,0 +1,65 @@
+/*Start portfolio*/
+.portfolio-description {
+    flex: 1;
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 300;
+        font-family: 'retro', sans-serif;
+        font-variant: small-caps;
+        color: #B83A1B;
+        margin: 1rem 0;
+    }
+
+    h6 {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-family: 'retro', sans-serif;
+        font-weight: 300;
+        opacity: .8;
+        color: black;
+    }
+
+    .cta {
+        display: inline-block;
+        margin-top: 2.5rem;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-family: 'retro', sans-serif;
+        color: #2B7199;
+        transition: color 650ms;
+
+        &:hover {
+            color: #2B7199;
+        }
+    }
+}
+
+.portfolio {
+    margin-bottom: -27rem;
+}
+
+.portfolio1 {
+    &::after {
+        top: -30rem;
+        height: 19rem;
+    }
+
+    &::before {
+        top: -20rem;
+    }
+}
+
+.portfolio2 {
+    margin-top: -10rem;
+
+    &::before {
+        top: -10rem;
+    }
+
+    &::after {
+        height: 20rem;
+        top: -20rem;
+    }
+}
+/*End portfolio*/

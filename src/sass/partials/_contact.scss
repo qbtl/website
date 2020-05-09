@@ -1,0 +1,119 @@
+/*Start contact & footer*/
+form {
+    width: 100%;
+    margin: 0 auto;
+
+    label {
+        font-size: 1.5rem;
+        color: #B83A1B;
+    }
+}
+
+.mapouter {
+    position: relative;
+    margin: 0 0 3rem;
+    text-align: right;
+    height: 100%;
+    width: 100%;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 100%;
+    width: 100%;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #B83A1B;
+    outline-color: black;
+    border-radius: .8rem;
+}
+
+input[type="button"] {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75%;
+    background-color: #20a00f;
+    color: #eee;
+    padding: 1rem 2rem;
+    border-radius: .8rem;
+    border: none;
+    cursor: pointer;
+    transition: background 650ms;
+    margin-bottom: 1rem;
+
+    &:hover {
+        color: whitesmoke;
+        background-color: #138609;
+    }
+}
+
+.contact {
+    margin-bottom: 5rem;
+
+    &::after {
+        height: 19rem;
+        top: -20rem;
+    }
+
+    &::before {
+        top: -10rem;
+    }
+}
+
+.social-media {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+
+    i {
+        font-size: 4rem;
+        transition: color 650ms;
+    }
+}
+
+.fa-github {
+    color: #B83A1B;
+
+    &:hover {
+        color: #B83A1B;
+    }
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0;
+    position: relative;
+    font-variant: small-caps;
+}
+
+.version {
+    margin-top: 0.5rem;
+}
+
+.up {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    background-color: #B83A1B;
+    top: 0;
+    right: 5rem;
+    border-radius: 100%;
+    display: flex;
+    animation: pulse 1.5s infinite;
+    cursor: pointer;
+
+    i {
+        color: #DCDCDC;
+        font-size: 2rem;
+        margin: auto;
+    }
+}
+/*End contact & footer*/
