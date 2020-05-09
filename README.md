@@ -22,7 +22,7 @@ Clone the source locally :
 ```sh
 $ git clone https://github.com/qbtl/qbtl.github.io/
 $ cd qbtl.github.io
-$ sass --watch sr/sass/main.scss public/css/main.css
+$ sass --watch src/sass/main.scss public/css/main.css
 ```
 
 Then create a new branch, commit your changes to the new branch, and open a pull-request to merge with master.
