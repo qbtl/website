@@ -285,6 +285,9 @@ li {
   -ms-transform: translateY(10px) !important;
   transform: translateY(10px) !important;
 }
+.menu-icon.is-opened {
+  position: fixed;
+}
 
 .menu-icon span::before,
 .menu-icon span::after {
@@ -993,5 +996,3 @@ input[type=button]:hover {
   }
 }
 /*End responsive*/
-
-/*# sourceMappingURL=main.css.map */

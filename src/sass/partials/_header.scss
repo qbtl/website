@@ -109,6 +109,10 @@ li {
             }
         }
     }
+
+    &.is-opened {
+        position: fixed;
+    }
 }
 
 .menu-icon span::before,
