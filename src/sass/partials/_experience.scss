@@ -20,12 +20,12 @@
     margin-top: 49rem;
     margin-bottom: -27rem;
     align-items: center;
-    width: 70%;
+    width: 960px;
     border-radius: 15px;
     -webkit-transform: translateX(-50%) translateY(-50%);
     -ms-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background-color: #fff;
+    background-color: $bg-white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s;
 
@@ -36,7 +36,7 @@
 
     &:hover {
         box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
-        margin-bottom: -30rem;
+        margin-bottom: -32rem;
 
         &::after {
             top: -27.75rem;
@@ -85,11 +85,11 @@
     }
 
     &::before {
-        top: -20rem;
+        top: -22rem;
     }
 
     &::after {
-        top: -30rem;
+        top: -32rem;
         height: 19rem;
     }
 }
@@ -101,11 +101,11 @@
     width: 45px;
     height: 45px;
     padding-top: 10px;
-    color: #FFF;
+    color: $text-color-white;
     text-align: center;
     line-height: 13px;
     font-weight: bold;
-    background-color: #B83A1B;
+    background-color: $bg-red;
     border-radius: 50%;
 }
 
@@ -118,7 +118,7 @@
     height: 235px;
     margin-bottom: 0;
     overflow: hidden;
-    background-color: #000;
+    background-color: $bg-black;
     transition: height 0.3s;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -139,7 +139,7 @@
 .card-body {
     position: relative;
     padding: 20px;
-    height: 140px;
+    height: 100px;
     transition: height 0.3s;
 }
 
@@ -149,18 +149,18 @@
     top: -25px;
     height: 25px;
     padding: 0 15px;
-    color: #FFF;
+    color: $text-color-white;
     font-size: 11px;
     line-height: 25px;
     text-transform: uppercase;
-    background-color: #B83A1B;
+    background-color: $bg-red;
 }
 
 .card-title {
     margin: 0;
     padding: 0 0 10px;
     font-size: 22px;
-    color: #000;
+    color: $text-color-black;
     font-weight: bold;
 }
 
@@ -168,7 +168,7 @@
     margin: 0;
     padding: 0 0 10px;
     font-size: 19px;
-    color: #B83A1B;
+    color: $text-color-red;
 }
 
 .card-description {
@@ -178,8 +178,9 @@
     bottom: 65px;
     margin: 0;
     padding: 0;
-    color: black;
+    color: $text-color-black;
     font-size: 14px;
+    font-weight: 600;
     line-height: 27px;
     opacity: 0;
     transition: opacity 0.2s, -webkit-transform 0.2s;

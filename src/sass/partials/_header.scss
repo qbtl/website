@@ -43,12 +43,12 @@ li {
     font-family: 'retro', sans-serif;
     font-size: 4rem;
     padding: 1rem;
-    color: #223645;
+    color: $text-color-darkblue;
 }
 
 .nav-link:hover,
 .nav-link:focus {
-    background-color: #B83A1B;
+    background-color: $text-color-red;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -59,17 +59,16 @@ li {
     top: 0;
     right: 5rem;
     width: 5rem;
-    height: 4rem;
+    height: 0rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
     z-index: 1500;
-    transition: transform 650ms ease-out;
 }
 
 .menu-icon {
-    margin: 25px auto;
+    margin-top: 4rem;
     position: relative;
     width: 54px;
     height: 54px;
@@ -82,7 +81,7 @@ li {
         display: block;
         width: 22px;
         height: 3px;
-        background-color: #B83A1B;
+        background-color: $text-color-red;
         -webkit-transform: translateX(-50%) translateY(-50%);
         -ms-transform: translateX(-50%) translateY(-50%);
         transform: translateX(-50%) translateY(-50%);
@@ -112,6 +111,7 @@ li {
 
     &.is-opened {
         position: fixed;
+        margin-top: 4rem;
     }
 }
 
@@ -124,7 +124,7 @@ li {
     display: block;
     width: 22px;
     height: 3px;
-    background-color: #B83A1B;
+    background-color: $text-color-red;
     -webkit-transform: translateY(-8px);
     -ms-transform: translateY(-8px);
     transform: translateY(-8px);
@@ -142,7 +142,7 @@ li {
         opacity: 0;
         fill: transparent;
         stroke-width: 3px;
-        stroke: #B83A1B;
+        stroke: $text-color-red;
         stroke-dasharray: 22 230;
         -webkit-transition: stroke-dasharray 0.5s, stroke-dashoffset 0.5s, opacity 0.5s steps(1, end);
         transition: stroke-dasharray 0.5s, stroke-dashoffset 0.5s, opacity 0.5s steps(1, end);
@@ -204,22 +204,16 @@ li {
     h1 {
         font-size: 15rem;
         font-family: 'AveFedan', sans-serif;
-        background-color: #223645;
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: $text-color-darkblue;
         user-select: none;
         border: none !important;
     }
 
     h6 {
-        font-size: 4rem;
+        font-size: 6rem;
         font-weight: 900;
         font-family: Poetsen;
-        background-color: #B83A1B;
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: $text-color-red;
     }
 }
 

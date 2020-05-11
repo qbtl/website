@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $('.menu-toggler').on('click', function () {
+  $('.menu-icon').on('click', function () {
     $(this).toggleClass('open');
     $('.top-nav').toggleClass('open');
   });
@@ -15,7 +15,6 @@ $(document).ready(function () {
   })
 
   $('.top-nav .nav-list .nav-link').on('click', function () {
-    $('.menu-toggler').removeClass('open');
     $('.menu-icon').removeClass('is-opened');
     $('.menu-icon').toggleClass('is-closed');
     $('.top-nav').removeClass('open');

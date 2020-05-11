@@ -7,7 +7,7 @@
         font-weight: 300;
         font-family: 'retro', sans-serif;
         font-variant: small-caps;
-        color: #B83A1B;
+        color: $text-color-red;
         margin: 1rem 0;
     }
 
@@ -17,7 +17,11 @@
         font-family: 'retro', sans-serif;
         font-weight: 300;
         opacity: .8;
-        color: black;
+        color: $text-color-black;
+    }
+
+    p {
+        font-weight: 600;
     }
 
     .cta {
@@ -26,11 +30,11 @@
         font-size: 1.5rem;
         text-transform: uppercase;
         font-family: 'retro', sans-serif;
-        color: #2B7199;
+        color: $text-color-lightblue;
         transition: color 650ms;
 
         &:hover {
-            color: #2B7199;
+            color: $text-color-lightblue;
         }
     }
 }
@@ -41,7 +45,7 @@
 
 .portfolio1 {
     &::after {
-        top: -30rem;
+        top: -29.75rem;
         height: 19rem;
     }
 

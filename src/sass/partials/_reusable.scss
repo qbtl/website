@@ -13,7 +13,7 @@
 
     h1 {
         font-size: 3.5rem;
-        color: rgba(34, 54, 69, 1);
+        color: $text-color-darkblue;
         text-transform: uppercase;
         font-weight: 300;
         position: relative;
@@ -31,7 +31,7 @@
     h6 {
         font-size: 1.6rem;
         font-weight: 300;
-        color: rgba(43, 113, 153, 1);
+        color: $text-color-lightblue;
         margin-bottom: 1rem;
         font-family: 'retro';
     }
@@ -44,7 +44,7 @@
     bottom: -.5rem;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(184, 58, 27, 1);
+    background-color: $bg-red;
 }
 
 .box {
@@ -59,7 +59,7 @@
         top: -30rem;
         left: 50%;
         height: 13rem;
-        border-left: solid 1px #000;
+        border-left: solid 1px $box-line;
     }
 
     &:before {
@@ -80,7 +80,7 @@
     }
 
     &.style {
-        background: #fff;
+        background: $bg-white;
         padding: 3em;
 
         .box-image {
@@ -89,7 +89,7 @@
             top: 0;
             width: 50%;
             height: 100%;
-            background: #183026;
+            background: $bg-red;
             overflow: hidden;
         }
 

@@ -19,7 +19,7 @@
 html {
   font-size: 10px;
   font-family: "Helvetica", sans-serif;
-  color: black;
+  color: #000;
   background-image: url("../img/sitebg.jpg");
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
@@ -76,7 +76,7 @@ img {
 .section-heading h6 {
   font-size: 1.6rem;
   font-weight: 300;
-  color: #2b7199;
+  color: #2B7199;
   margin-bottom: 1rem;
   font-family: "retro";
 }
@@ -88,7 +88,7 @@ img {
   bottom: -0.5rem;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #b83a1b;
+  background-color: #B83A1B;
 }
 
 .box {
@@ -121,7 +121,7 @@ img {
   margin-bottom: 0;
 }
 .box.style {
-  background: #fff;
+  background: #FFF;
   padding: 3em;
 }
 .box.style .box-image {
@@ -130,7 +130,7 @@ img {
   top: 0;
   width: 50%;
   height: 100%;
-  background: #183026;
+  background: #B83A1B;
   overflow: hidden;
 }
 .box.style .image1 img {
@@ -242,17 +242,16 @@ li {
   top: 0;
   right: 5rem;
   width: 5rem;
-  height: 4rem;
+  height: 0rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
   z-index: 1500;
-  transition: transform 650ms ease-out;
 }
 
 .menu-icon {
-  margin: 25px auto;
+  margin-top: 4rem;
   position: relative;
   width: 54px;
   height: 54px;
@@ -287,6 +286,7 @@ li {
 }
 .menu-icon.is-opened {
   position: fixed;
+  margin-top: 4rem;
 }
 
 .menu-icon span::before,
@@ -366,21 +366,15 @@ li {
 .landing-text h1 {
   font-size: 15rem;
   font-family: "AveFedan", sans-serif;
-  background-color: #223645;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #223645;
   user-select: none;
   border: none !important;
 }
 .landing-text h6 {
-  font-size: 4rem;
+  font-size: 6rem;
   font-weight: 900;
   font-family: Poetsen;
-  background-color: #B83A1B;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #B83A1B;
 }
 
 /*End header*/
@@ -418,7 +412,7 @@ li {
 /*End image*/
 /*Start about*/
 .about {
-  margin-top: -25rem;
+  margin-top: 0rem;
 }
 .about::before {
   display: none;
@@ -440,12 +434,11 @@ li {
 }
 .about-heading h6 {
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 600;
 }
 
-.about-details {
-  flex: 1;
-  text-align: justify;
+.about-description {
+  font-weight: 600;
 }
 
 .resume {
@@ -455,7 +448,7 @@ li {
 .resume i {
   font-size: 5rem;
   transition: color 650ms;
-  color: black;
+  color: #000;
 }
 
 .list-inline {
@@ -482,7 +475,10 @@ li {
   font-family: "retro", sans-serif;
   font-weight: 300;
   opacity: 0.8;
-  color: black;
+  color: #000;
+}
+.portfolio-description p {
+  font-weight: 600;
 }
 .portfolio-description .cta {
   display: inline-block;
@@ -502,7 +498,7 @@ li {
 }
 
 .portfolio1::after {
-  top: -30rem;
+  top: -29.75rem;
   height: 19rem;
 }
 .portfolio1::before {
@@ -540,12 +536,12 @@ li {
   margin-top: 49rem;
   margin-bottom: -27rem;
   align-items: center;
-  width: 70%;
+  width: 960px;
   border-radius: 15px;
   -webkit-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background-color: #fff;
+  background-color: #FFF;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s;
 }
@@ -555,7 +551,7 @@ li {
 }
 .card:hover {
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
-  margin-bottom: -30rem;
+  margin-bottom: -32rem;
 }
 .card:hover::after {
   top: -27.75rem;
@@ -595,10 +591,10 @@ li {
   transform: translateY(0);
 }
 .card::before {
-  top: -20rem;
+  top: -22rem;
 }
 .card::after {
-  top: -30rem;
+  top: -32rem;
   height: 19rem;
 }
 
@@ -646,7 +642,7 @@ li {
 .card-body {
   position: relative;
   padding: 20px;
-  height: 140px;
+  height: 100px;
   transition: height 0.3s;
 }
 
@@ -685,8 +681,9 @@ li {
   bottom: 65px;
   margin: 0;
   padding: 0;
-  color: black;
+  color: #000;
   font-size: 14px;
+  font-weight: 600;
   line-height: 27px;
   opacity: 0;
   transition: opacity 0.2s, -webkit-transform 0.2s;
@@ -699,11 +696,11 @@ li {
 
 /*End experience*/
 /*Start contact & footer*/
-form {
+.contact-form {
   width: 100%;
   margin: 0 auto;
 }
-form label {
+.contact-form label {
   font-size: 1.5rem;
   color: #B83A1B;
 }
@@ -714,6 +711,14 @@ form label {
   text-align: right;
   height: 100%;
   width: 100%;
+}
+
+iframe {
+  width: 100%;
+  height: 490px;
+  border: 0px;
+  overflow: none;
+  margin: none;
 }
 
 .gmap_canvas {
@@ -730,7 +735,7 @@ textarea {
   margin-top: 5px;
   margin-bottom: 5px;
   border: 1px solid #B83A1B;
-  outline-color: black;
+  outline-color: #000;
   border-radius: 0.8rem;
 }
 
@@ -739,8 +744,8 @@ input[type=button] {
   left: 50%;
   transform: translateX(-50%);
   width: 75%;
-  background-color: #20a00f;
-  color: #eee;
+  background-color: #20A00F;
+  color: #EEE;
   padding: 1rem 2rem;
   border-radius: 0.8rem;
   border: none;
@@ -749,7 +754,7 @@ input[type=button] {
   margin-bottom: 1rem;
 }
 input[type=button]:hover {
-  color: whitesmoke;
+  color: #F5F5F5;
   background-color: #138609;
 }
 
@@ -758,7 +763,7 @@ input[type=button]:hover {
 }
 .contact::after {
   height: 19rem;
-  top: -20rem;
+  top: -19rem;
 }
 .contact::before {
   top: -10rem;
@@ -771,6 +776,7 @@ input[type=button]:hover {
 .social-media i {
   font-size: 4rem;
   transition: color 650ms;
+  color: #B83A1B;
 }
 
 .fa-github {
@@ -992,6 +998,10 @@ input[type=button]:hover {
 }
 @media screen and (max-width: 1080px) {
   .container {
+    width: 95%;
+  }
+
+  .card {
     width: 95%;
   }
 }

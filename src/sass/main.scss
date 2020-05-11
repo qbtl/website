@@ -1,3 +1,4 @@
+@import "partials/variables";
 @font-face {
     font-family: AveFedan;
     src: url('../fonts/AveFedan.ttf');
@@ -20,7 +21,7 @@
 html {
     font-size: 10px;
     font-family: 'Helvetica', sans-serif;
-    color: black;
+    color: $text-color-black;
     background-image: url("../img/sitebg.jpg");
     background-repeat: repeat, no-repeat;
     background-size: auto, cover;

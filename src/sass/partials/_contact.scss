@@ -1,11 +1,11 @@
 /*Start contact & footer*/
-form {
+.contact-form {
     width: 100%;
     margin: 0 auto;
 
     label {
         font-size: 1.5rem;
-        color: #B83A1B;
+        color: $text-color-red;
     }
 }
 
@@ -15,6 +15,14 @@ form {
     text-align: right;
     height: 100%;
     width: 100%;
+}
+
+iframe {
+    width: 100%;
+    height: 490px;
+    border: 0px;
+    overflow: none;
+    margin: none;
 }
 
 .gmap_canvas {
@@ -30,8 +38,8 @@ textarea {
     padding: 1rem;
     margin-top: 5px;
     margin-bottom: 5px;
-    border: 1px solid #B83A1B;
-    outline-color: black;
+    border: 1px solid $text-color-red;
+    outline-color: #000;
     border-radius: .8rem;
 }
 
@@ -40,8 +48,8 @@ input[type="button"] {
     left: 50%;
     transform: translateX(-50%);
     width: 75%;
-    background-color: #20a00f;
-    color: #eee;
+    background-color: $btn-bg-color;
+    color: $text-color-grey;
     padding: 1rem 2rem;
     border-radius: .8rem;
     border: none;
@@ -50,8 +58,8 @@ input[type="button"] {
     margin-bottom: 1rem;
 
     &:hover {
-        color: whitesmoke;
-        background-color: #138609;
+        color: $btn-text-hover-color;
+        background-color: $btn-bg-hover-color;
     }
 }
 
@@ -60,7 +68,7 @@ input[type="button"] {
 
     &::after {
         height: 19rem;
-        top: -20rem;
+        top: -19rem;
     }
 
     &::before {
@@ -75,14 +83,15 @@ input[type="button"] {
     i {
         font-size: 4rem;
         transition: color 650ms;
+        color: $text-color-red;
     }
 }
 
 .fa-github {
-    color: #B83A1B;
+    color: $text-color-red;
 
     &:hover {
-        color: #B83A1B;
+        color: $text-color-red;
     }
 }
 
@@ -102,7 +111,7 @@ input[type="button"] {
     position: absolute;
     width: 5rem;
     height: 5rem;
-    background-color: #B83A1B;
+    background-color: $bg-red;
     top: 0;
     right: 5rem;
     border-radius: 100%;
@@ -111,7 +120,7 @@ input[type="button"] {
     cursor: pointer;
 
     i {
-        color: #DCDCDC;
+        color: $text-color-alt-grey;
         font-size: 2rem;
         margin: auto;
     }

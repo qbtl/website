@@ -1,6 +1,6 @@
 /*Start about*/
 .about {
-    margin-top: -25rem;
+    margin-top: 0rem;
 
     &::before {
         display: none;
@@ -25,13 +25,12 @@
 
     h6 {
         font-size: 2rem;
-        font-weight: 300;
+        font-weight: 600;
     }
 }
 
-.about-details {
-    flex: 1;
-    text-align: justify;
+.about-description {
+    font-weight: 600;
 }
 
 .resume {
@@ -41,7 +40,7 @@
     i {
         font-size: 5rem;
         transition: color 650ms;
-        color: black;
+        color: $text-color-black;
     }
 }
 
