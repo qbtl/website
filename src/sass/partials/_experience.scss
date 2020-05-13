@@ -50,15 +50,6 @@
             height: 170px;
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;
-
-            img {
-                opacity: 0.6;
-                -webkit-transform: scale(1.1);
-                -ms-transform: scale(1.1);
-                transform: scale(1.1);
-                border-top-left-radius: 15px;
-                border-top-right-radius: 15px;
-            }
         }
 
         .card-body {
@@ -118,22 +109,10 @@
     height: 235px;
     margin-bottom: 0;
     overflow: hidden;
-    background-color: $bg-black;
+    background: url('../img/lycee.jpg');
     transition: height 0.3s;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-
-    img {
-        display: flex;
-        opacity: 1;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-        transition: opacity 0.3s, -webkit-transform 0.3s;
-        transition: opacity 0.3s, transform 0.3s;
-        -webkit-transform: scale(1);
-        -ms-transform: scale(1);
-        transform: scale(1);
-    }
 }
 
 .card-body {

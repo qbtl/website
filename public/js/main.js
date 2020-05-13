@@ -4,12 +4,12 @@ $(document).ready(function () {
     $('.top-nav').toggleClass('open');
   });
 
-  $('.menu-icon').click(function(e){
+  $('.menu-icon').click(function (e) {
     e.preventDefault();
     $this = $(this);
-    if($this.hasClass('is-opened')){
+    if ($this.hasClass('is-opened')) {
       $this.addClass('is-closed').removeClass('is-opened');
-    }else{
+    } else {
       $this.removeClass('is-closed').addClass('is-opened');
     }
   })

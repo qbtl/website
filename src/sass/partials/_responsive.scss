@@ -1,97 +1,14 @@
 /*Start responsive*/
-@media screen and (max-width: 768px) {
-    header {
-        padding: 5rem 0;
-    }
-
-    section {
-        padding: 0;
-    }
-
-    .landing-text h1 {
-        font-size: 10rem;
-    }
-
-    .landing-text h6 {
-        font-size: 1.7rem;
-    }
-
-    .nav-list {
-        flex-direction: column;
-    }
-
-    .nav-list li {
-        margin: 2rem 0;
-    }
-
-    .nav-link {
-        font-size: 4.5rem;
-    }
-
-    .about-heading h1 {
-        font-size: 8rem;
-    }
-
-    .section-heading h1 {
-        font-size: 3rem;
-    }
-
-    .about-details .nav-list {
-        flex-direction: initial;
-    }
-
-    .about-details li {
-        margin: 0 2rem;
-    }
-
-    .about-details {
-        padding-left: 4rem;
-    }
-
-    .portfolio-description {
-        margin: 0;
-        order: 2;
-    }
-
-    .card-thumb img {
-        display: flex;
-    }
-
-    .card-description {
-        font-size: 10px;
-        line-height: 10px;
-        bottom: 20px;
-    }
-
-    .card-thumb {
-        height: 150px;
-    }
-
-    .card:hover .card-thumb {
-        height: 85px;
-    }
-}
-
 @media screen and (max-width:600px) {
-    header {
-        padding: 5rem 0;
-    }
-
-    .menu-toggler {
-        top: 2rem;
-        right: 2rem;
-    }
-
     .landing-text h1 {
-        font-size: 8rem;
-    }
+        &h1 {
+            font-size: 8rem;
+    
+        }
 
-    .landing-text h6 {
-        font-size: 1.4rem;
-    }
-
-    .nav-link {
-        font-size: 3.5rem;
+        &h6 {
+            font-size: 1.4rem;
+        }
     }
 
     .about-details {
@@ -103,8 +20,10 @@
         order: 2;
     }
 
-    .card {
-        margin-bottom: -10rem;
+    .card:hover .card-description {
+        font-size: 12px;
+        line-height: 12px;
+        bottom: 60px;
     }
 
     form {
@@ -113,6 +32,115 @@
 
     .up {
         right: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        padding: 0;
+    }
+
+    .landing-text {
+        &h1 {
+            font-size: 10rem;
+        }
+
+        &h6 {
+            font-size: 1.7rem;
+        }
+    }
+
+    .about-heading h1 {
+        font-size: 8rem;
+    }
+
+    .section-heading h1 {
+        font-size: 3rem;
+    }
+
+    .about-details {
+        padding-left: 4rem;
+
+        &.nav-list {
+            flex-direction: initial;
+        }
+
+        &li {
+            margin: 0 2rem;
+        }
+    }
+
+    .portfolio-description {
+        margin: 0;
+        order: 2;
+    }
+
+    .card-thumb img {
+        display: flex;
+    }
+
+    .card:hover .card-description {
+        font-size: 15px;
+        line-height: 15px;
+        bottom: 60px;
+    }
+
+    .card-thumb {
+        height: 235px;
+    }
+
+    .card:hover .card-thumb {
+        height: 170px;
+    }
+
+    .card-title {
+        padding: 0 0 2px;
+    }
+
+    .card-subtitle {
+        padding: 0 0 10px;
+    }
+
+    .card:hover .card-body {
+        height: 250px;
+    }
+
+    .card-body {
+        padding: 10px;
+    }
+
+    .card:hover .card-subtitle {
+        margin-bottom: -10rem;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .nav-link {
+        font-size: 6rem;
+    }
+
+    .nav-list {
+        flex-direction: column;
+
+        li {
+            margin: 2rem 0;
+        }
+    }
+
+    article {
+        padding: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .nav-link {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .nav-link {
+        font-size: 3.5rem;
     }
 }
 
@@ -125,6 +153,19 @@
 }
 
 @media screen and (max-width: 1080px) {
+    header {
+        padding: 5rem 0;
+    }
+
+    .landing-text {
+        &h1 {
+            font-size: 13rem;
+        }
+
+        &h6 {
+            font-size: 4rem;
+        }
+    }
 
     .container {
         width: 95%;
@@ -132,6 +173,10 @@
 
     .card {
         width: 95%;
+    }
+
+    .card-thumb img {
+        width: 100%;
     }
 
 }

@@ -186,7 +186,6 @@ img {
 header {
   width: 100%;
   height: 100%;
-  margin-bottom: 31rem;
 }
 
 .top-nav {
@@ -564,14 +563,6 @@ li {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-.card:hover .card-thumb img {
-  opacity: 0.6;
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
 .card:hover .card-body {
   height: 250px;
 }
@@ -622,21 +613,10 @@ li {
   height: 235px;
   margin-bottom: 0;
   overflow: hidden;
-  background-color: #000;
+  background: url("../img/lycee.jpg");
   transition: height 0.3s;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-}
-.card-thumb img {
-  display: flex;
-  opacity: 1;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  transition: opacity 0.3s, -webkit-transform 0.3s;
-  transition: opacity 0.3s, transform 0.3s;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
 }
 
 .card-body {
@@ -715,7 +695,7 @@ li {
 
 iframe {
   width: 100%;
-  height: 490px;
+  height: 100%;
   border: 0px;
   overflow: none;
   margin: none;
@@ -822,7 +802,7 @@ input[type=button]:hover {
     box-shadow: 0 0 0 0 rgba(184, 58, 27, 0.99);
   }
   70% {
-    box-shadow: 0 0 0 10rem rgba(184, 58, 27, 0);
+    box-shadow: 0 0 0 20px rgba(184, 58, 27, 0);
   }
   100% {
     box-shadow: 0 0 0 0 rgba(184, 58, 27, 0);
@@ -876,98 +856,12 @@ input[type=button]:hover {
   }
 }
 /*Start responsive*/
-@media screen and (max-width: 768px) {
-  header {
-    padding: 5rem 0;
-  }
-
-  section {
-    padding: 0;
-  }
-
-  .landing-text h1 {
-    font-size: 10rem;
-  }
-
-  .landing-text h6 {
-    font-size: 1.7rem;
-  }
-
-  .nav-list {
-    flex-direction: column;
-  }
-
-  .nav-list li {
-    margin: 2rem 0;
-  }
-
-  .nav-link {
-    font-size: 4.5rem;
-  }
-
-  .about-heading h1 {
-    font-size: 8rem;
-  }
-
-  .section-heading h1 {
-    font-size: 3rem;
-  }
-
-  .about-details .nav-list {
-    flex-direction: initial;
-  }
-
-  .about-details li {
-    margin: 0 2rem;
-  }
-
-  .about-details {
-    padding-left: 4rem;
-  }
-
-  .portfolio-description {
-    margin: 0;
-    order: 2;
-  }
-
-  .card-thumb img {
-    display: flex;
-  }
-
-  .card-description {
-    font-size: 10px;
-    line-height: 10px;
-    bottom: 20px;
-  }
-
-  .card-thumb {
-    height: 150px;
-  }
-
-  .card:hover .card-thumb {
-    height: 85px;
-  }
-}
 @media screen and (max-width: 600px) {
-  header {
-    padding: 5rem 0;
-  }
-
-  .menu-toggler {
-    top: 2rem;
-    right: 2rem;
-  }
-
-  .landing-text h1 {
+  .landing-text h1h1 {
     font-size: 8rem;
   }
-
-  .landing-text h6 {
+  .landing-text h1h6 {
     font-size: 1.4rem;
-  }
-
-  .nav-link {
-    font-size: 3.5rem;
   }
 
   .about-details {
@@ -979,8 +873,10 @@ input[type=button]:hover {
     order: 2;
   }
 
-  .card {
-    margin-bottom: -10rem;
+  .card:hover .card-description {
+    font-size: 12px;
+    line-height: 12px;
+    bottom: 60px;
   }
 
   form {
@@ -991,18 +887,132 @@ input[type=button]:hover {
     right: 2rem;
   }
 }
+@media screen and (max-width: 768px) {
+  section {
+    padding: 0;
+  }
+
+  .landing-texth1 {
+    font-size: 10rem;
+  }
+  .landing-texth6 {
+    font-size: 1.7rem;
+  }
+
+  .about-heading h1 {
+    font-size: 8rem;
+  }
+
+  .section-heading h1 {
+    font-size: 3rem;
+  }
+
+  .about-details {
+    padding-left: 4rem;
+  }
+  .about-details.nav-list {
+    flex-direction: initial;
+  }
+  .about-detailsli {
+    margin: 0 2rem;
+  }
+
+  .portfolio-description {
+    margin: 0;
+    order: 2;
+  }
+
+  .card-thumb img {
+    display: flex;
+  }
+
+  .card:hover .card-description {
+    font-size: 15px;
+    line-height: 15px;
+    bottom: 60px;
+  }
+
+  .card-thumb {
+    height: 235px;
+  }
+
+  .card:hover .card-thumb {
+    height: 170px;
+  }
+
+  .card-title {
+    padding: 0 0 2px;
+  }
+
+  .card-subtitle {
+    padding: 0 0 10px;
+  }
+
+  .card:hover .card-body {
+    height: 250px;
+  }
+
+  .card-body {
+    padding: 10px;
+  }
+
+  .card:hover .card-subtitle {
+    margin-bottom: -10rem;
+  }
+}
+@media screen and (max-width: 980px) {
+  .nav-link {
+    font-size: 6rem;
+  }
+
+  .nav-list {
+    flex-direction: column;
+  }
+  .nav-list li {
+    margin: 2rem 0;
+  }
+
+  article {
+    padding: 0 2rem;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .nav-link {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .nav-link {
+    font-size: 3.5rem;
+  }
+}
 @media screen and (max-width: 1680px) {
   .container {
     width: 960px;
   }
 }
 @media screen and (max-width: 1080px) {
+  header {
+    padding: 5rem 0;
+  }
+
+  .landing-texth1 {
+    font-size: 13rem;
+  }
+  .landing-texth6 {
+    font-size: 4rem;
+  }
+
   .container {
     width: 95%;
   }
 
   .card {
     width: 95%;
+  }
+
+  .card-thumb img {
+    width: 100%;
   }
 }
 /*End responsive*/

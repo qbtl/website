@@ -6,6 +6,24 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## Version [2.2.0] - Released on 2020-05-13
+
+### Added
+
+* Landing home text scalability (depends on js and media queries)
+* Card Thumb background set to img
+
+### Changed
+
+* Google Maps now responsive
+* Experience card now responsive
+* Header now responsive
+* Up button animation
+
+### Deleted
+
+* Card Thumb img attribute
+
 ## Version [2.1.1] - Released on 2020-05-10
 
 ### Changed
@@ -224,6 +242,7 @@ v0.4.2 is released with v0.5.0
 * Deployment to GitHub Pages
 
 [Unreleased]: https://github.com/qbtl/qbtl.github.io/
+[2.2.0]: https://gtihub.com/qbtl/qbtl.github.io/releases/tag/v2.2.0
 [2.1.1]: https://github.com/qbtl/qbtl.github.io/releases/tag/v2.1.1
 [2.1.0]: https://github.com/qbtl/qbtl.github.io/releases/tag/v2.1.0
 [2.0.0]: https://github.com/qbtl/qbtl.github.io/releases/tag/v2.0.0
