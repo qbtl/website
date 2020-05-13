@@ -23,10 +23,10 @@ html {
     font-family: 'Helvetica', sans-serif;
     color: $text-color-black;
     background-image: url("../img/sitebg.jpg");
-    background-repeat: repeat, no-repeat;
-    background-size: auto, cover;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: top left, center 0;
-    background-attachment: fixed, fixed;
+    background-attachment: fixed;
 }
 
 body {
