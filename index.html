@@ -16,8 +16,8 @@
 
 <body>
 	<header>
-		<div class="menu-toggler">
-			<div class="menu-icon menu-icon-svg is-closed">
+		<div class="menuToggler">
+			<div class="menuIcon menuIconSvg isClosed">
 				<span></span>
 				<svg x="0" y="0" width="54px" height="54px" viewBox="0 0 54 54">
 					<path
@@ -26,50 +26,50 @@
 				</svg>
 			</div>
 		</div>
-		<nav class="top-nav">
-			<ul class="nav-list">
+		<nav class="topNav">
+			<ul class="navList">
 				<li>
-					<a href="" class="nav-link">Accueil</a>
+					<a href="" class="navLink">Accueil</a>
 				</li>
 				<li>
-					<a href="#about" class="nav-link">À propos</a>
-				</li>
-
-				<li>
-					<a href="#portfolio" class="nav-link">Portfolio</a>
+					<a href="#about" class="navLink">À propos</a>
 				</li>
 
 				<li>
-					<a href="#experience" class="nav-link">Expérience</a>
+					<a href="#portfolio" class="navLink">Portfolio</a>
+				</li>
+
+				<li>
+					<a href="#experience" class="navLink">Expérience</a>
 				</li>
 				<li>
-					<a href="#contact" class="nav-link">Contact</a>
+					<a href="#contact" class="navLink">Contact</a>
 				</li>
 			</ul>
 		</nav>
-		<div class="landing-text">
-			<h1 id="home-text">Quentin Boitel0</h1>
+		<div class="landingText">
+			<h1 id="homeText">Quentin Boitel0</h1>
 			<h6>Lycéen</h6>
 		</div>
 	</header>
 
-	<article class="container box style right about" id="about">
-		<img class="image1 fit box-image" src="public/img/something-more.jpg" alt="About Image" />
-		<div class="inner" data-aos="fade-in" data-aos-delay="300">
-			<div class="about-heading">
+	<article class="container box style textRight about" id="about">
+		<img class="imageLeft fit boxImage" src="public/img/something-more.jpg" alt="About Image" />
+		<div class="inner aboutDetails" data-aos="fade-in" data-aos-delay="300">
+			<div class="aboutHeading">
 				<h1>Moi</h1>
 				<h6>À propos</h6>
 			</div>
-			<p class="about-description">
+			<p class="aboutDescription">
 				Étudiant de 17 ans, je souhaite devenir développeur web, donc dans c'est dans cette 
 				optique que je développe ce site.
 				<br><br>
 				Vous trouverez mon CV ci-dessous :
 			</p>
 			<div class="resume">
-				<ul class="nav-list list-inline">
-					<li class="list-inline-item">
-						<a href="public/cv/CV_QB.pdf" target="_blank" class="icon-link">
+				<ul class="navList listInline">
+					<li class="listInlineItem">
+						<a href="public/cv/CV_QB.pdf" target="_blank" class="iconLink">
 							<span class="fa-stack fa-lg">
 								<i class="fal fa-file-user fa-stack-1x fa-inverse"></i>
 							</span>
@@ -77,20 +77,20 @@
 					</li>
 				</ul>
 			</div>
-			<p class="about-description">
+			<p class="aboutDescription">
 				Je vous souhaite la bienvenue sur mon site !
 			</p>
 		</div>
 	</article>
 
-	<div class="section-heading portfolio" id="portfolio">
+	<div class="sectionHeading portfolio" id="portfolio">
 		<h1>Portfolio</h1>
 		<h6>Regardez quelques unes de mes dernières créations</h6>
 	</div>
-	<article class="container box style left portfolio1" id="test">
-		<img class="image2 fit box-image" src="public/img/gin-gonic.jpg" alt="Gin-Gonic Logo" />
+	<article class="container box style textLeft portfolioUp">
+		<img class="imageRight fit boxImage" src="public/img/gin-gonic.jpg" alt="Gin-Gonic Logo" />
 		<div class="inner" data-aos="fade-in" data-aos-delay="300">
-			<div class="portfolio-description">
+			<div class="portfolioDescription">
 				<h6>API</h6>
 				<h1>RESTful Go API</h1>
 				<p>
@@ -104,10 +104,10 @@
 			</div>
 		</div>
 	</article>
-	<article class="container box style left portfolio2">
-		<img class="image2 fit box-image" src="public/img/nodejs-logo.png" alt="NodeJS Logo" />
+	<article class="container box style textLeft portfolioDown">
+		<img class="imageRight fit boxImage" src="public/img/nodejs-logo.png" alt="NodeJS Logo" />
 		<div class="inner" data-aos="fade-in" data-aos-delay="300">
-			<div class="portfolio-description">
+			<div class="portfolioDescription">
 				<h6>App</h6>
 				<h1>RESTful JS APP</h1>
 				<p>
@@ -122,21 +122,21 @@
 		</div>
 	</article>
 
-	<div class="section-heading experience-heading" id="experience">
+	<div class="sectionHeading experienceHeading" id="experience">
 		<h1>Mon Expérience</h1>
 		<h6>Quelques informations</h6>
 	</div>
-	<div class="card box experience">
-		<header class="card-thumb"></header>
-		<div class="card-date">
-			<span class="card-date-day">2017</span>
-			<span class="card-date-day">2020</span>
+	<div class="timeline box experience">
+		<header class="timelineThumb"></header>
+		<div class="timelineDate">
+			<span class="timelineDateDay">2017</span>
+			<span class="timelineDateDay">2020</span>
 		</div>
-		<div class="card-body">
-			<div class="card-category">Diplôme</div>
-			<h2 class="card-title">Préparation au Baccalauréat Général Scientifique 2020</h2>
-			<div class="card-subtitle">Lycée Paul Cézanne &mdash; Aix-en-Provence</div>
-			<p class="card-description">
+		<div class="timelineBody">
+			<div class="timelineCategory">Diplôme</div>
+			<h2 class="timelineTitle">Préparation au Baccalauréat Général Scientifique 2020</h2>
+			<div class="timelineSubtitle">Lycée Paul Cézanne &mdash; Aix-en-Provence</div>
+			<p class="timelineDescription">
 				Dès mon entrée en seconde, j'ai suivi un enseignement de programmation (anciennement ICN), 
 				puis lors de mon stage, j'ai programmé une app web pour intéragir avec un service fourni par l'entreprise.
 				<br>
@@ -145,8 +145,8 @@
 		</div>
 	</div>
 
-	<article class="container box style left contact" id="contact">
-		<div class="image2 fit box-image">
+	<article class="container box style textLeft contact" id="contact">
+		<div class="imageRight fit boxImage">
 			<div class="gmap_canvas">
 				<iframe id="gmap_canvas"
 					src="https://maps.google.com/maps?q=Lyc%C3%A9e%20Paul-C%C3%A9zanne&t=k&z=15&ie=UTF8&iwloc=&output=embed"
@@ -154,11 +154,11 @@
 			</div>
 		</div>
 		<div class="inner">
-			<div class="section-heading">
+			<div class="sectionHeading">
 				<h1>Contact</h1>
 				<h6>Travaillons ensemble !</h6>
 			</div>
-			<div class="contact-form">
+			<div class="contactForm">
 				<label for="name"><b>Nom: </b></label>
 				<input type="text" id="name" name="nom" placeholder="Entrer votre nom..." required>
 				<label for="email"><b>Email: </b></label>
@@ -174,10 +174,10 @@
 		<div class="up" id="up">
 			<i class="fas fa-chevron-up"></i>
 		</div>
-		<div class="social-media">
-			<ul class="nav-list list-inline">
-				<li class="list-inline-item">
-					<a href="https://www.github.com/qbtl/" target="_blank" class="icon-link" title="Github">
+		<div class="socialMedia">
+			<ul class="navList listInline">
+				<li class="listInlineItem">
+					<a href="https://www.github.com/qbtl/" target="_blank" class="iconLink" title="Github">
 						<span class="fa-stack fa-lg">
 							<i class="fab fa-github fa-stack-1x fa-inverse"></i>
 						</span>

@@ -1,3 +1,6 @@
+/*------------------------------------*\
+    $BASE
+\*------------------------------------*/
 @font-face {
   font-family: AveFedan;
   src: url("../fonts/AveFedan.ttf");
@@ -45,20 +48,26 @@ img {
   width: 100%;
 }
 
-/*Start reusable*/
+/*------------------------------------*\
+    $REUSABLE
+\*------------------------------------*/
 .container {
   margin: 0 auto;
   max-width: 100%;
   width: 1140px;
   border-radius: 15px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+.container:hover {
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
 }
 
-.section-heading {
+.sectionHeading {
   text-align: center;
   margin-top: 10rem;
   margin-bottom: 2rem;
 }
-.section-heading h1 {
+.sectionHeading h1 {
   font-size: 3.5rem;
   color: #223645;
   text-transform: uppercase;
@@ -68,12 +77,12 @@ img {
   margin-top: -10rem;
   font-family: "AveFedan", sans-serif;
 }
-.section-heading h1::before {
+.sectionHeading h1::before {
   width: 10rem;
   height: 3px;
   border-radius: 0.8rem;
 }
-.section-heading h6 {
+.sectionHeading h6 {
   font-size: 1.6rem;
   font-weight: 300;
   color: #2B7199;
@@ -81,8 +90,8 @@ img {
   font-family: "retro";
 }
 
-.section-heading h1::before,
-.section-heading h1::after {
+.sectionHeading h1::before,
+.sectionHeading h1::after {
   content: "";
   position: absolute;
   bottom: -0.5rem;
@@ -124,7 +133,7 @@ img {
   background: #FFF;
   padding: 3em;
 }
-.box.style .box-image {
+.box.style .boxImage {
   display: block;
   position: absolute;
   top: 0;
@@ -133,7 +142,7 @@ img {
   background: #B83A1B;
   overflow: hidden;
 }
-.box.style .image1 img {
+.box.style .imageLeft img {
   position: absolute;
   top: 0;
   height: 100%;
@@ -142,53 +151,54 @@ img {
 .box.style .inner > :last-child {
   margin: 0;
 }
-.box.style.right .image1 {
+.box.style.textRight .imageLeft {
   left: 0;
 }
-.box.style.right .image1 img {
+.box.style.textRight .imageLeft img {
   right: 0;
 }
-.box.style.right .inner {
+.box.style.textRight .inner {
   margin-left: 50%;
   padding-left: 3em;
 }
-.box.style.right .image2 {
+.box.style.textRight .imageRight {
   left: 0;
 }
-.box.style.right .image2 img {
+.box.style.textRight .imageRight img {
   right: 0;
 }
-.box.style.left .image1 {
+.box.style.textLeft .imageLeft {
   right: 0;
 }
-.box.style.left .image1 img {
+.box.style.textLeft .imageLeft img {
   left: 0;
 }
-.box.style.left .inner {
+.box.style.textLeft .inner {
   margin-right: 50%;
   padding-right: 3em;
 }
-.box.style.left .image2 {
+.box.style.textLeft .imageRight {
   right: 0;
 }
-.box.style.left .image2 img {
+.box.style.textLeft .imageRight img {
   left: 0;
 }
-.box.style .image2 img {
+.box.style .imageRight img {
   position: absolute;
   top: 0;
   height: 100%;
   width: auto;
 }
 
-/*End reusable*/
-/*Start header*/
+/*------------------------------------*\
+    $HEADER
+\*------------------------------------*/
 header {
   width: 100%;
   height: 100%;
 }
 
-.top-nav {
+.topNav {
   width: 100%;
   height: 100%;
   position: fixed;
@@ -203,12 +213,12 @@ header {
   border-bottom-left-radius: 100%;
   transition: all 650ms cubic-bezier(1, 0, 0, 1);
 }
-.top-nav.open {
+.topNav.open {
   top: 0;
   border-radius: initial;
 }
 
-.nav-list {
+.navList {
   list-style: none;
   width: 100%;
   height: 100%;
@@ -221,22 +231,22 @@ li {
   margin: 0 2rem;
 }
 
-.nav-link {
+.navLink {
   font-family: "retro", sans-serif;
   font-size: 4rem;
   padding: 1rem;
   color: #223645;
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.navLink:hover,
+.navLink:focus {
   background-color: #B83A1B;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.menu-toggler {
+.menuToggler {
   position: absolute;
   top: 0;
   right: 5rem;
@@ -249,14 +259,14 @@ li {
   z-index: 1500;
 }
 
-.menu-icon {
+.menuIcon {
   margin-top: 4rem;
   position: relative;
   width: 54px;
   height: 54px;
   border-radius: 50%;
 }
-.menu-icon span {
+.menuIcon span {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -268,28 +278,28 @@ li {
   -ms-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
-.menu-icon span::after {
+.menuIcon span::after {
   -webkit-transform: translateY(8px) !important;
   -ms-transform: translateY(8px) !important;
   transform: translateY(8px) !important;
 }
-.menu-icon:hover span::before {
+.menuIcon:hover span::before {
   -webkit-transform: translateY(-10px);
   -ms-transform: translateY(-10px);
   transform: translateY(-10px);
 }
-.menu-icon:hover span::after {
+.menuIcon:hover span::after {
   -webkit-transform: translateY(10px) !important;
   -ms-transform: translateY(10px) !important;
   transform: translateY(10px) !important;
 }
-.menu-icon.is-opened {
+.menuIcon.isOpened {
   position: fixed;
   margin-top: 4rem;
 }
 
-.menu-icon span::before,
-.menu-icon span::after {
+.menuIcon span::before,
+.menuIcon span::after {
   content: "";
   position: absolute;
   top: 0;
@@ -305,11 +315,11 @@ li {
   transition: transform 0.5s;
 }
 
-.menu-icon-svg span {
+.menuIconSvg span {
   -webkit-transition: background 0.5s steps(1, end);
   transition: background 0.5s steps(1, end);
 }
-.menu-icon-svg svg {
+.menuIconSvg svg {
   opacity: 0;
   fill: transparent;
   stroke-width: 3px;
@@ -318,22 +328,22 @@ li {
   -webkit-transition: stroke-dasharray 0.5s, stroke-dashoffset 0.5s, opacity 0.5s steps(1, end);
   transition: stroke-dasharray 0.5s, stroke-dashoffset 0.5s, opacity 0.5s steps(1, end);
 }
-.menu-icon-svg.is-opened span {
+.menuIconSvg.isOpened span {
   -webkit-transition: background 0.5s steps(1, start);
   transition: background 0.5s steps(1, start);
   background-color: transparent;
 }
-.menu-icon-svg.is-opened span::before {
+.menuIconSvg.isOpened span::before {
   -webkit-transform: translateX(-3px) translateY(-8px) rotate(-45deg);
   -ms-transform: translateX(-3px) translateY(-8px) rotate(-45deg);
   transform: translateX(-3px) translateY(-8px) rotate(-45deg);
 }
-.menu-icon-svg.is-opened span::after {
+.menuIconSvg.isOpened span::after {
   -webkit-transform: translateX(-3px) translateY(8px) rotate(45deg) !important;
   -ms-transform: translateX(-3px) translateY(8px) rotate(45deg);
   transform: translateX(-3px) translateY(8px) rotate(45deg);
 }
-.menu-icon-svg.is-opened svg {
+.menuIconSvg.isOpened svg {
   opacity: 1;
   -webkit-transition: opacity 0.5s steps(1, start);
   transition: opacity 0.5s steps(1, start);
@@ -342,19 +352,19 @@ li {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-.menu-icon-svg.is-closed svg {
+.menuIconSvg.isClosed svg {
   -webkit-animation: pathanimation-out 0.5s linear;
   animation: pathanimation-out 0.5s linear;
 }
 
-.menu-icon-svg span::before,
-.menu-icon-svg span::after {
+.menuIconSvg span::before,
+.menuIconSvg span::after {
   -webkit-transform-origin: 100% 50%;
   -ms-transform-origin: 100% 50%;
   transform-origin: 100% 50%;
 }
 
-.landing-text {
+.landingText {
   position: relative;
   width: 100%;
   text-align: center;
@@ -362,54 +372,56 @@ li {
   margin-top: 250px;
   margin-bottom: 250px;
 }
-.landing-text h1 {
+.landingText h1 {
   font-size: 15rem;
   font-family: "AveFedan", sans-serif;
   color: #223645;
   user-select: none;
   border: none !important;
 }
-.landing-text h6 {
+.landingText h6 {
   font-size: 6rem;
   font-weight: 900;
   font-family: Poetsen;
   color: #B83A1B;
 }
 
-/*End header*/
-/*Start image*/
-.image1 {
+/*------------------------------------*\
+    $IMAGES
+\*------------------------------------*/
+.imageLeft {
   display: inline-block;
   border: 0;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
 }
-.image1.fit {
+.imageLeft.fit {
   display: block;
   width: 100%;
 }
-.image1 img {
+.imageLeft img {
   display: block;
   width: 100%;
 }
 
-.image2 {
+.imageRight {
   display: inline-block;
   border: 0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
-.image2.fit {
+.imageRight.fit {
   display: block;
   width: 100%;
 }
-.image2 img {
+.imageRight img {
   display: block;
   width: 100%;
 }
 
-/*End image*/
-/*Start about*/
+/*------------------------------------*\
+    $ABOUT
+\*------------------------------------*/
 .about {
   margin-top: 0rem;
 }
@@ -420,23 +432,23 @@ li {
   display: none;
 }
 
-.about-heading {
+.aboutHeading {
   text-align: center;
   text-transform: uppercase;
   line-height: 0;
   margin-bottom: 6rem;
   margin-top: 3rem;
 }
-.about-heading h1 {
+.aboutHeading h1 {
   font-size: 10rem;
   opacity: 0.3;
 }
-.about-heading h6 {
+.aboutHeading h6 {
   font-size: 2rem;
   font-weight: 600;
 }
 
-.about-description {
+.aboutDescription {
   font-weight: 600;
 }
 
@@ -450,17 +462,18 @@ li {
   color: #000;
 }
 
-.list-inline {
+.listInline {
   margin: 0;
   padding: 0;
 }
 
-/*End about*/
-/*Start portfolio*/
-.portfolio-description {
+/*------------------------------------*\
+    $PORTFOLIO
+\*------------------------------------*/
+.portfolioDescription {
   flex: 1;
 }
-.portfolio-description h1 {
+.portfolioDescription h1 {
   font-size: 3rem;
   font-weight: 300;
   font-family: "retro", sans-serif;
@@ -468,7 +481,7 @@ li {
   color: #B83A1B;
   margin: 1rem 0;
 }
-.portfolio-description h6 {
+.portfolioDescription h6 {
   font-size: 1.5rem;
   text-transform: uppercase;
   font-family: "retro", sans-serif;
@@ -476,10 +489,10 @@ li {
   opacity: 0.8;
   color: #000;
 }
-.portfolio-description p {
+.portfolioDescription p {
   font-weight: 600;
 }
-.portfolio-description .cta {
+.portfolioDescription .cta {
   display: inline-block;
   margin-top: 2.5rem;
   font-size: 1.5rem;
@@ -488,7 +501,7 @@ li {
   color: #2B7199;
   transition: color 650ms;
 }
-.portfolio-description .cta:hover {
+.portfolioDescription .cta:hover {
   color: #2B7199;
 }
 
@@ -496,28 +509,29 @@ li {
   margin-bottom: -27rem;
 }
 
-.portfolio1::after {
+.portfolioUp::after {
   top: -29.75rem;
   height: 19rem;
 }
-.portfolio1::before {
+.portfolioUp::before {
   top: -20rem;
 }
 
-.portfolio2 {
+.portfolioDown {
   margin-top: -10rem;
 }
-.portfolio2::before {
+.portfolioDown::before {
   top: -10rem;
 }
-.portfolio2::after {
+.portfolioDown::after {
   height: 20rem;
   top: -20rem;
 }
 
-/*End portfolio*/
-/*Start experience*/
-.experience-heading {
+/*------------------------------------*\
+    $EXPERIENCE
+\*------------------------------------*/
+.experienceHeading {
   margin-bottom: -27rem;
 }
 
@@ -529,7 +543,7 @@ li {
   top: -19.5rem;
 }
 
-.card {
+.timeline {
   position: relative;
   left: 50%;
   margin-top: 49rem;
@@ -544,52 +558,52 @@ li {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s;
 }
-.card a {
+.timeline a {
   color: inherit;
   text-decoration: none;
 }
-.card:hover {
+.timeline:hover {
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
   margin-bottom: -32rem;
 }
-.card:hover::after {
+.timeline:hover::after {
   top: -27.75rem;
 }
-.card:hover::before {
+.timeline:hover::before {
   top: -18.5rem;
 }
-.card:hover .card-thumb {
+.timeline:hover .timelineThumb {
   height: 170px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-.card:hover .card-body {
+.timeline:hover .timelineBody {
   height: 250px;
 }
-.card:hover .card-title {
+.timeline:hover .timelineTitle {
   -webkit-animation: titleBlur 0.3s;
   animation: titleBlur 0.3s;
 }
-.card:hover .card-subtitle {
+.timeline:hover .timelineSubtitle {
   -webkit-animation: subtitleBlur 0.3s;
   animation: subtitleBlur 0.3s;
 }
-.card:hover .card-description {
+.timeline:hover .timelineDescription {
   opacity: 1;
   transition-delay: 0.1s;
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
   transform: translateY(0);
 }
-.card::before {
+.timeline::before {
   top: -22rem;
 }
-.card::after {
+.timeline::after {
   top: -32rem;
   height: 19rem;
 }
 
-.card-date {
+.timelineDate {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -604,12 +618,12 @@ li {
   border-radius: 50%;
 }
 
-.card-date-day {
+.timelineDateDay {
   display: block;
   font-size: 14px;
 }
 
-.card-thumb {
+.timelineThumb {
   height: 235px;
   margin-bottom: 0;
   overflow: hidden;
@@ -619,14 +633,14 @@ li {
   border-top-right-radius: 15px;
 }
 
-.card-body {
+.timelineBody {
   position: relative;
   padding: 20px;
   height: 100px;
   transition: height 0.3s;
 }
 
-.card-category {
+.timelineCategory {
   position: absolute;
   left: 0;
   top: -25px;
@@ -639,7 +653,7 @@ li {
   background-color: #B83A1B;
 }
 
-.card-title {
+.timelineTitle {
   margin: 0;
   padding: 0 0 10px;
   font-size: 22px;
@@ -647,14 +661,14 @@ li {
   font-weight: bold;
 }
 
-.card-subtitle {
+.timelineSubtitle {
   margin: 0;
   padding: 0 0 10px;
   font-size: 19px;
   color: #B83A1B;
 }
 
-.card-description {
+.timelineDescription {
   position: absolute;
   left: 20px;
   right: 20px;
@@ -666,7 +680,6 @@ li {
   font-weight: 600;
   line-height: 27px;
   opacity: 0;
-  transition: opacity 0.2s, -webkit-transform 0.2s;
   transition: opacity 0.2s, transform 0.2s;
   transition-delay: 0s;
   -webkit-transform: translateY(25px);
@@ -674,13 +687,14 @@ li {
   transform: translateY(25px);
 }
 
-/*End experience*/
-/*Start contact & footer*/
-.contact-form {
+/*------------------------------------*\
+    $CONTACT-FOOTER
+\*------------------------------------*/
+.contactForm {
   width: 100%;
   margin: 0 auto;
 }
-.contact-form label {
+.contactForm label {
   font-size: 1.5rem;
   color: #B83A1B;
 }
@@ -749,11 +763,11 @@ input[type=button]:hover {
   top: -10rem;
 }
 
-.social-media {
+.socialMedia {
   margin-top: 0.5rem;
   margin-bottom: 1.5rem;
 }
-.social-media i {
+.socialMedia i {
   font-size: 4rem;
   transition: color 650ms;
   color: #B83A1B;
@@ -796,7 +810,9 @@ input[type=button]:hover {
   margin: auto;
 }
 
-/*End contact & footer*/
+/*------------------------------------*\
+    $ANIMATIONS
+\*------------------------------------*/
 @keyframes pulse {
   0% {
     box-shadow: 0 0 0 0 rgba(184, 58, 27, 0.99);
@@ -855,25 +871,27 @@ input[type=button]:hover {
     stroke-dasharray: 160;
   }
 }
-/*Start responsive*/
+/*------------------------------------*\
+    $RESPONSIVE
+\*------------------------------------*/
 @media screen and (max-width: 600px) {
-  .landing-text h1h1 {
+  .landingText h1 {
     font-size: 8rem;
   }
-  .landing-text h1h6 {
+  .landingText h6 {
     font-size: 1.4rem;
   }
 
-  .about-details {
+  .aboutDetails {
     padding-left: 3rem;
   }
 
-  .portfolio-description {
+  .portfolioDescription {
     margin: 0;
     order: 2;
   }
 
-  .card:hover .card-description {
+  .timeline:hover .timelineDescription {
     font-size: 12px;
     line-height: 12px;
     bottom: 60px;
@@ -892,83 +910,83 @@ input[type=button]:hover {
     padding: 0;
   }
 
-  .landing-texth1 {
+  .landingText h1 {
     font-size: 10rem;
   }
-  .landing-texth6 {
+  .landingText h6 {
     font-size: 1.7rem;
   }
 
-  .about-heading h1 {
+  .aboutHeading h1 {
     font-size: 8rem;
   }
 
-  .section-heading h1 {
-    font-size: 3rem;
+  .sectionHeading h6 {
+    font-size: 2rem;
   }
 
-  .about-details {
+  .aboutDetails {
     padding-left: 4rem;
   }
-  .about-details.nav-list {
+  .aboutDetails .navList {
     flex-direction: initial;
   }
-  .about-detailsli {
+  .aboutDetails li {
     margin: 0 2rem;
   }
 
-  .portfolio-description {
+  .portfolioDescription {
     margin: 0;
     order: 2;
   }
 
-  .card-thumb img {
+  .timelineThumb img {
     display: flex;
   }
 
-  .card:hover .card-description {
+  .timeline:hover .timelineDescription {
     font-size: 15px;
     line-height: 15px;
     bottom: 60px;
   }
 
-  .card-thumb {
+  .timelineThumb {
     height: 235px;
   }
 
-  .card:hover .card-thumb {
+  .timeline:hover .timelineThumb {
     height: 170px;
   }
 
-  .card-title {
-    padding: 0 0 2px;
+  .timelineTitle {
+    padding: 0 0 5px;
   }
 
-  .card-subtitle {
+  .timelineSubtitle {
     padding: 0 0 10px;
   }
 
-  .card:hover .card-body {
+  .timeline:hover .timelineBody {
     height: 250px;
   }
 
-  .card-body {
+  .timelineBody {
     padding: 10px;
   }
 
-  .card:hover .card-subtitle {
+  .timeline:hover .timelineSubtitle {
     margin-bottom: -10rem;
   }
 }
 @media screen and (max-width: 980px) {
-  .nav-link {
+  .navLink {
     font-size: 6rem;
   }
 
-  .nav-list {
+  .navList {
     flex-direction: column;
   }
-  .nav-list li {
+  .navList li {
     margin: 2rem 0;
   }
 
@@ -977,12 +995,12 @@ input[type=button]:hover {
   }
 }
 @media screen and (max-width: 1100px) {
-  .nav-link {
+  .navLink {
     font-size: 3rem;
   }
 }
 @media screen and (max-width: 1280px) {
-  .nav-link {
+  .navLink {
     font-size: 3.5rem;
   }
 }
@@ -996,10 +1014,10 @@ input[type=button]:hover {
     padding: 5rem 0;
   }
 
-  .landing-texth1 {
+  .landingText h1 {
     font-size: 13rem;
   }
-  .landing-texth6 {
+  .landingText h6 {
     font-size: 4rem;
   }
 
@@ -1007,12 +1025,14 @@ input[type=button]:hover {
     width: 95%;
   }
 
-  .card {
+  .timeline {
     width: 95%;
   }
 
-  .card-thumb img {
+  .timelineThumb img {
     width: 100%;
   }
 }
-/*End responsive*/
+/*------------------------------------*\
+    CSS FILE END
+\*------------------------------------*/

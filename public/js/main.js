@@ -1,23 +1,23 @@
 $(document).ready(function () {
-  $('.menu-icon').on('click', function () {
+  $('.menuIcon').on('click', function () {
     $(this).toggleClass('open');
-    $('.top-nav').toggleClass('open');
+    $('.topNav').toggleClass('open');
   });
 
-  $('.menu-icon').click(function (e) {
+  $('.menuIcon').click(function (e) {
     e.preventDefault();
     $this = $(this);
-    if ($this.hasClass('is-opened')) {
-      $this.addClass('is-closed').removeClass('is-opened');
+    if ($this.hasClass('isOpened')) {
+      $this.addClass('isClosed').removeClass('isOpened');
     } else {
-      $this.removeClass('is-closed').addClass('is-opened');
+      $this.removeClass('isClosed').addClass('isOpened');
     }
   })
 
-  $('.top-nav .nav-list .nav-link').on('click', function () {
-    $('.menu-icon').removeClass('is-opened');
-    $('.menu-icon').toggleClass('is-closed');
-    $('.top-nav').removeClass('open');
+  $('.topNav .navList .navLink').on('click', function () {
+    $('.menuIcon').removeClass('isOpened');
+    $('.menuIcon').toggleClass('isClosed');
+    $('.topNav').removeClass('open');
   });
 
   $('nav ul li a[href*="#"]').on('click', function () {
