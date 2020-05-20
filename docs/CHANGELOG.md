@@ -64,7 +64,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ### Fixed
 
-* mailling system working (issue [#7](https://github.com/qbtl/qbtl.github.io/issues/7))
+* mailling system working (issue [#7](https://github.com/qbtl/website/issues/7))
 
 ## Version [0.7.1] - Released on 2020-04-07
 
@@ -93,7 +93,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ### Fixed
 
-* documentation improvement, includes a complete rework of [README](https://github.com/qbtl/qbtl.github.io/blob/master/README.md) and [CHANGELOG](https://github.com/qbtl/qbtl.github.io/blob/master/docs/CHANGELOG.md) files.
+* documentation improvement, includes a complete rework of [README](https://github.com/qbtl/website/blob/master/README.md) and [CHANGELOG](https://github.com/qbtl/website/blob/master/docs/CHANGELOG.md) files.
 
 ## Version [0.6.0] - Released on 2020-04-02
 
@@ -106,7 +106,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ### Changed
 
 * Social Media Icons size and position
-* Update [README](https://github.com/qbtl/qbtl.github.io/blob/master/README.md)
+* Update [README](https://github.com/qbtl/website/blob/master/README.md)
 
 ## Version [0.5.1] - Released on 2020-03-31
 
@@ -241,31 +241,31 @@ v0.4.2 is released with v0.5.0
 * Project creation
 * Deployment to GitHub Pages
 
-[Unreleased]: https://github.com/qbtl/qbtl.github.io/
-[2.2.0]: https://gtihub.com/qbtl/qbtl.github.io/releases/tag/v2.2.0
-[2.1.1]: https://github.com/qbtl/qbtl.github.io/releases/tag/v2.1.1
-[2.1.0]: https://github.com/qbtl/qbtl.github.io/releases/tag/v2.1.0
-[2.0.0]: https://github.com/qbtl/qbtl.github.io/releases/tag/v2.0.0
-[1.0.1]: https://github.com/qbtl/qbtl.github.io/releases/tag/v1.0.1
-[1.0.0]: https://github.com/qbtl/qbtl.github.io/releases/tag/v1.0.0
-[0.7.2]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.7.2
-[0.7.1]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.7.1
-[0.7.0]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.7.0
-[0.6.2]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.6.2
-[0.6.1]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.6.1
-[0.6.0]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.6.0
-[0.5.2]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.5.2
-[0.5.1]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.5.1
-[0.5.0]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.5.0
-[0.4.1]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.4.1
-[0.4.0]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.4.0
-[0.3.4]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.3.4
-[0.3.3]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.3.3
-[0.3.2]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.3.2
-[0.3.1]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.3.1
-[0.3.0]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.3.0
-[0.2.1]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.2.1
-[0.2.0]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.2.0
-[0.1.1]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.1.1
-[0.1.0]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.1.0
-[0.0.1]: https://github.com/qbtl/qbtl.github.io/releases/tag/v0.0.1-alpha
+[Unreleased]: https://github.com/qbtl/website/
+[2.2.0]: https://gtihub.com/qbtl/website/releases/tag/v2.2.0
+[2.1.1]: https://github.com/qbtl/website/releases/tag/v2.1.1
+[2.1.0]: https://github.com/qbtl/website/releases/tag/v2.1.0
+[2.0.0]: https://github.com/qbtl/website/releases/tag/v2.0.0
+[1.0.1]: https://github.com/qbtl/website/releases/tag/v1.0.1
+[1.0.0]: https://github.com/qbtl/website/releases/tag/v1.0.0
+[0.7.2]: https://github.com/qbtl/website/releases/tag/v0.7.2
+[0.7.1]: https://github.com/qbtl/website/releases/tag/v0.7.1
+[0.7.0]: https://github.com/qbtl/website/releases/tag/v0.7.0
+[0.6.2]: https://github.com/qbtl/website/releases/tag/v0.6.2
+[0.6.1]: https://github.com/qbtl/website/releases/tag/v0.6.1
+[0.6.0]: https://github.com/qbtl/website/releases/tag/v0.6.0
+[0.5.2]: https://github.com/qbtl/website/releases/tag/v0.5.2
+[0.5.1]: https://github.com/qbtl/website/releases/tag/v0.5.1
+[0.5.0]: https://github.com/qbtl/website/releases/tag/v0.5.0
+[0.4.1]: https://github.com/qbtl/website/releases/tag/v0.4.1
+[0.4.0]: https://github.com/qbtl/website/releases/tag/v0.4.0
+[0.3.4]: https://github.com/qbtl/website/releases/tag/v0.3.4
+[0.3.3]: https://github.com/qbtl/website/releases/tag/v0.3.3
+[0.3.2]: https://github.com/qbtl/website/releases/tag/v0.3.2
+[0.3.1]: https://github.com/qbtl/website/releases/tag/v0.3.1
+[0.3.0]: https://github.com/qbtl/website/releases/tag/v0.3.0
+[0.2.1]: https://github.com/qbtl/website/releases/tag/v0.2.1
+[0.2.0]: https://github.com/qbtl/website/releases/tag/v0.2.0
+[0.1.1]: https://github.com/qbtl/website/releases/tag/v0.1.1
+[0.1.0]: https://github.com/qbtl/website/releases/tag/v0.1.0
+[0.0.1]: https://github.com/qbtl/website/releases/tag/v0.0.1-alpha

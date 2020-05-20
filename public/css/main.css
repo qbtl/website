@@ -82,22 +82,20 @@ img {
   height: 3px;
   border-radius: 0.8rem;
 }
-.sectionHeading h6 {
-  font-size: 1.6rem;
-  font-weight: 300;
-  color: #2B7199;
-  margin-bottom: 1rem;
-  font-family: "retro";
-}
-
-.sectionHeading h1::before,
-.sectionHeading h1::after {
+.sectionHeading h1::before, .sectionHeading h1::after {
   content: "";
   position: absolute;
   bottom: -0.5rem;
   left: 50%;
   transform: translateX(-50%);
   background-color: #B83A1B;
+}
+.sectionHeading h6 {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #2B7199;
+  margin-bottom: 1rem;
+  font-family: "retro";
 }
 
 .box {
@@ -733,7 +731,7 @@ textarea {
   border-radius: 0.8rem;
 }
 
-input[type=button] {
+input[type=submit] {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -747,9 +745,13 @@ input[type=button] {
   transition: background 650ms;
   margin-bottom: 1rem;
 }
-input[type=button]:hover {
+input[type=submit]:hover {
   color: #F5F5F5;
   background-color: #138609;
+}
+
+.recaptcha {
+  margin-left: 6rem;
 }
 
 .contact {

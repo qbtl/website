@@ -11,7 +11,6 @@
 	<link rel="stylesheet" href="public/css/main.css">
 	<link rel="icon" href="public/img/logo.jpg">
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-	<script src="public/js/mail.js"></script>
 </head>
 
 <body>
@@ -158,15 +157,20 @@
 				<h1>Contact</h1>
 				<h6>Travaillons ensemble !</h6>
 			</div>
-			<div class="contactForm">
+			<form class="contactForm" action="POST" data-netlify="true">
 				<label for="name"><b>Nom: </b></label>
 				<input type="text" id="name" name="nom" placeholder="Entrer votre nom..." required>
 				<label for="email"><b>Email: </b></label>
 				<input type="email" id="email" name="email" placeholder="Entrer votre email..." required>
 				<label for="subject"><b>Sujet: </b></label>
 				<textarea name="sujet" id="subject" cols="10" rows="10" placeholder="De quoi souhaitez-vous me parler ?" required></textarea>
-				<input type="button" value="Envoyer" onclick="send()">
-			</div>
+				<!-- Only for Netlify Hosting -->
+				<div class="recaptcha">
+					<div data-netlify-recaptcha="true"></div>
+				</div>
+				<!-- End Recaptcha -->
+				<input type="submit" value="Envoyer">
+			</form>
 		</div>
 	</article>
 
@@ -187,8 +191,8 @@
 		</div>
 		<p><b>Copyright &copy; 2020 Quentin Boitel</b></p>
 		<p class="version">
-			<a href="https://github.com/qbtl/qbtl.github.io/releases/">
-				<img src="https://img.shields.io/github/v/release/qbtl/qbtl.github.io.svg?label=Version&labelColor=black&logo=github&sort=semver"
+			<a href="https://github.com/qbtl/website/releases/">
+				<img src="https://img.shields.io/github/v/release/qbtl/website.svg?label=Version&labelColor=black&logo=github&sort=semver"
 					style="width:100px" height="20" alt="Github bagde">
 			</a>
 		</p>
