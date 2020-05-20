@@ -4,7 +4,7 @@ This repository is the home of Quentin Boitel personal website.
 
 ## Code Quality
 
-[![CodeFactor](https://www.codefactor.io/repository/github/qbtl/webiste/badge/master)](https://www.codefactor.io/repository/github/qbtl/website/overview/master)
+[![CodeFactor](https://www.codefactor.io/repository/github/qbtl/website/badge/master)](https://www.codefactor.io/repository/github/qbtl/website/overview/master)
 
 ## Technology / Framework
 
