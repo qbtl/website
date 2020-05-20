@@ -4,7 +4,7 @@ This repository is the home of Quentin Boitel personal website.
 
 ## Code Quality
 
-[![CodeFactor](https://www.codefactor.io/repository/github/qbtl/qbtl.github.io/badge/master)](https://www.codefactor.io/repository/github/qbtl/qbtl.github.io/overview/master)
+[![CodeFactor](https://www.codefactor.io/repository/github/qbtl/website/badge/master)](https://www.codefactor.io/repository/github/qbtl/website/overview/master)
 
 ## Technology / Framework
 
@@ -19,8 +19,8 @@ In this repository, we use :
 Clone the source locally :
 
 ```sh
-$ git clone https://github.com/qbtl/qbtl.github.io/
-$ cd qbtl.github.io
+$ git clone https://github.com/qbtl/website/
+$ cd website
 ```
 
 Then create a new branch, commit your changes to the new branch, and open a pull-request to merge with master.
@@ -28,14 +28,14 @@ You'll need someone to revise your code before it can actually be merged to the 
 
 ## Releases
 
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/qbtl/qbtl.github.io?logo=github&labelColor=black&label=Version&sort=semver)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/qbtl/website?logo=github&labelColor=black&label=Version&sort=semver)
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
-Releases are listed inside the [CHANGELOG](https://www.github.com/qbtl/qbtl.github.io/blob/master/docs/CHANGELOG.md).
+Releases are listed inside the [CHANGELOG](https://www.github.com/qbtl/website/blob/master/docs/CHANGELOG.md).
 
 ## CONTRIBUTE
 
-Before contributing to the project, please read the [CONTRIBUTING](https://www.github.com/qbtl/qbtl.github.io/blob/master/docs/CONTRIBUTING.md) file and the [CODE_OF_CONDUCT](https://www.github.com/qbtl/qbtl.github.io/blob/master/docs/CODE_OF_CONDUCT.md) file.
+Before contributing to the project, please read the [CONTRIBUTING](https://www.github.com/qbtl/website/blob/master/docs/CONTRIBUTING.md) file and the [CODE_OF_CONDUCT](https://www.github.com/qbtl/website/blob/master/docs/CODE_OF_CONDUCT.md) file.
 
 ## LICENSE
 
