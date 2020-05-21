@@ -1,10 +1,6 @@
-# Quentin Boitel Personal Website
+# Quentin Boitel Personal Website ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/qbtl/website?logo=github&labelColor=black&label=Version&sort=semver) [![CodeFactor](https://www.codefactor.io/repository/github/qbtl/website/badge/master)](https://www.codefactor.io/repository/github/qbtl/website/overview/master) [![Netlify Status](https://api.netlify.com/api/v1/badges/9430cb96-fdc0-4337-bb29-c6404834696d/deploy-status)](https://app.netlify.com/sites/quentinboitel/deploys)
 
 This repository is the home of Quentin Boitel personal website.
-
-## Code Quality
-
-[![CodeFactor](https://www.codefactor.io/repository/github/qbtl/website/badge/master)](https://www.codefactor.io/repository/github/qbtl/website/overview/master)
 
 ## Technology / Framework
 
@@ -25,10 +21,6 @@ $ cd website
 
 Then create a new branch, commit your changes to the new branch, and open a pull-request to merge with master.
 You'll need someone to revise your code before it can actually be merged to the master branch.
-
-## Releases
-
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/qbtl/website?logo=github&labelColor=black&label=Version&sort=semver)
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 Releases are listed inside the [CHANGELOG](https://www.github.com/qbtl/website/blob/master/docs/CHANGELOG.md).
