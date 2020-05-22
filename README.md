@@ -9,6 +9,7 @@ In this repository, we use :
 * [AOS](https://github.com/michalsnik/aos/)
 * [JQuery](https://www.jquery.com)
 * [FontAwesome](https://origin.fontawesome.com)
+* [Netlify](https://www.netlify.com) (use to host the website)
 
 ## For developers
 
