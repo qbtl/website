@@ -6,6 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Quentin Boitel | Lycéen</title>
+	<meta name="description" content="Le site web personnel de Quentin Boitel, lycéen au lycée Paul Cézanne">
+	<meta name="author" content="Quentin Boitel">
+	<meta name="keywords" content="Quentin Boitel, qbtl">
+
 
 	<!-- CSS LINKS -->
 	<link rel="stylesheet" href="public/css/main.css">
@@ -60,7 +64,7 @@
 				<h6>À propos</h6>
 			</div>
 			<p class="aboutDescription">
-				Étudiant de 17 ans, je souhaite devenir développeur web, donc dans c'est dans cette 
+				Étudiant de 17 ans, je souhaite devenir développeur web, donc dans c'est dans cette
 				optique que je développe ce site.
 				<br><br>
 				Vous trouverez mon CV ci-dessous :
@@ -136,8 +140,9 @@
 			<h2 class="timelineTitle">Préparation au Baccalauréat Général Scientifique 2020</h2>
 			<div class="timelineSubtitle">Lycée Paul Cézanne &mdash; Aix-en-Provence</div>
 			<p class="timelineDescription">
-				Dès mon entrée en seconde, j'ai suivi un enseignement de programmation (anciennement ICN), 
-				puis lors de mon stage, j'ai programmé une app web pour intéragir avec un service fourni par l'entreprise.
+				Dès mon entrée en seconde, j'ai suivi un enseignement de programmation (anciennement ICN),
+				puis lors de mon stage, j'ai programmé une app web pour intéragir avec un service fourni par
+				l'entreprise.
 				<br>
 				Depuis je continues de programmer avec différents langages et technologies (PHP, SQL, Go).
 			</p>
@@ -149,7 +154,7 @@
 			<div class="gmap_canvas">
 				<iframe id="gmap_canvas"
 					src="https://maps.google.com/maps?q=Lyc%C3%A9e%20Paul-C%C3%A9zanne&t=k&z=15&ie=UTF8&iwloc=&output=embed"
-				></iframe>
+					allowfullscreen></iframe>
 			</div>
 		</div>
 		<div class="inner">
@@ -157,45 +162,52 @@
 				<h1>Contact</h1>
 				<h6>Travaillons ensemble !</h6>
 			</div>
-			<form class="contactForm" name="contact" action="POST" data-netlify="true">
+			<form class="contactForm" action="POST" data-netlify="true">
 				<label for="name"><b>Nom: </b></label>
 				<input type="text" id="name" name="nom" placeholder="Entrer votre nom..." required>
 				<label for="email"><b>Email: </b></label>
 				<input type="email" id="email" name="email" placeholder="Entrer votre email..." required>
 				<label for="subject"><b>Sujet: </b></label>
-				<textarea name="sujet" id="subject" cols="10" rows="10" placeholder="De quoi souhaitez-vous me parler ?" required></textarea>
-				<!-- Only for Netlify Hosting -->
+				<textarea name="sujet" id="subject" cols="10" rows="10" placeholder="De quoi souhaitez-vous me parler ?"
+					required></textarea>
 				<div class="recaptcha">
 					<div data-netlify-recaptcha="true"></div>
 				</div>
-				<!-- End Recaptcha -->
 				<input type="submit" value="Envoyer">
 			</form>
 		</div>
 	</article>
 
-	<footer class="copyright">
+	<footer class="footerContainer">
 		<div class="up" id="up">
 			<i class="fas fa-chevron-up"></i>
 		</div>
-		<div class="socialMedia">
-			<ul class="navList listInline">
-				<li class="listInlineItem">
-					<a href="https://www.github.com/qbtl/" target="_blank" class="iconLink" title="Github">
-						<span class="fa-stack fa-lg">
-							<i class="fab fa-github fa-stack-1x fa-inverse"></i>
-						</span>
-					</a>
-				</li>
-			</ul>
+		<div class="leftCol">
+			<img src="public/img/logo.jpg" alt="Website Logo" class="logo">
+			<div class="socialMedia">
+				<a href="https://www.github.com/qbtl/" target="_blank"><i class="fab fa-github"></i></a>
+			</div>
+			<p class="rightsText">
+				Copyright &copy; 2020 Quentin Boitel
+			</p>
+			<p class="version">
+				<a href="https://github.com/qbtl/qbtl.github.io/releases/">
+					<img src="https://img.shields.io/github/v/release/qbtl/qbtl.github.io.svg?label=Version&labelColor=black&logo=github&sort=semver"
+						style="width:100px" height="20" alt="Github bagde">
+				</a>
+			</p>
 		</div>
-		<p><b>Copyright &copy; 2020 Quentin Boitel</b></p>
-		<p class="version">
-			<a href="https://github.com/qbtl/website/releases/">
-				<img src="https://img.shields.io/github/v/release/qbtl/website.svg?label=Version&labelColor=black&logo=github&sort=semver"
-					style="width:100px" height="20" alt="Github bagde">
-			</a>
-		</p>
+
+		<div class="rightCol">
+			<h1>À propos du site</h1>
+			<div class="border"></div>
+			<p class="aboutSiteText">
+				Je souhaite à travers ce site partager mon parcours et mes créations. 
+				<br>
+				Passionné par le web, ce site contribue à vous présenter mes compétences 
+				et vous faire profiter de mes découvertes. 
+			</p>
+		</div>
 	</footer>
 
 	<script src="public/js/icons.js"></script>
