@@ -198,6 +198,14 @@ header {
   height: 100%;
 }
 
+.heroLogo {
+  position: absolute;
+  width: 128px;
+  height: 128px;
+  left: 5rem;
+  top: 0;
+}
+
 .topNav {
   width: 100%;
   height: 100%;
@@ -216,6 +224,13 @@ header {
 .topNav.open {
   top: 0;
   border-radius: initial;
+}
+.topNav .navLogo {
+  position: absolute;
+  width: 128px;
+  height: 128px;
+  left: 5rem;
+  top: 0;
 }
 
 .navList {
@@ -754,9 +769,7 @@ input[type=submit]:hover {
 
 .recaptcha {
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  padding-left: 4rem;
+  left: 13.5%;
 }
 
 .contact {
