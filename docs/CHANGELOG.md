@@ -58,7 +58,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 * Menu toggler to hamburger style
 * Section style, add arrows
 * Experience section from timeline to card style
-* General fonting
+* General font
 
 ## Version [1.0.1] - Released on 2020-04-08
 
@@ -76,7 +76,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ### Fixed
 
-* mailling system working (issue [#7](https://github.com/qbtl/website/issues/7))
+* mailing system working (issue [#7](https://github.com/qbtl/website/issues/7))
 
 ## Version [0.7.1] - Released on 2020-04-07
 
@@ -149,7 +149,7 @@ v0.4.2 is released with v0.5.0
 
 ### Removed
 
-* Temporarly deleted portfolio fixture because it wasn't working
+* Temporary deleted portfolio fixture because it wasn't working
 
 ## Version [0.4.1] - Released on 2019-09-21
 
@@ -220,11 +220,11 @@ v0.4.2 is released with v0.5.0
 ### Changed
 
 * Bootstrap, jQuery, Font Awesome and PopperJS CDN
-* CSS Paralax definitions
+* CSS Parallax definitions
 
 ### Removed
 
-* Boostrap, jQuery, Font Awesome and PopperJS files
+* Bootstrap, jQuery, Font Awesome and PopperJS files
 
 ## Version [0.2.0] - Released on 2019-08-31
 
