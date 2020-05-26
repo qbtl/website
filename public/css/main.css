@@ -455,6 +455,11 @@ li {
   font-weight: 600;
 }
 
+.aboutImage {
+  width: 20rem;
+  height: 20rem;
+}
+
 .aboutDescription {
   font-weight: 600;
 }
@@ -568,81 +573,24 @@ li {
     $EXPERIENCE
 \*------------------------------------*/
 .experienceHeading {
-  margin-bottom: -27rem;
+  margin-bottom: -28rem;
 }
 
+.experience {
+  margin-bottom: -11rem;
+}
 .experience::after {
-  top: -30rem;
+  top: -28.5rem;
   height: 19rem;
 }
 .experience::before {
-  top: -19.5rem;
-}
-
-.timeline {
-  position: relative;
-  left: 50%;
-  margin-top: 49rem;
-  margin-bottom: -27rem;
-  align-items: center;
-  width: 960px;
-  border-radius: 15px;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  background-color: #FFF;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s;
-}
-.timeline a {
-  color: inherit;
-  text-decoration: none;
-}
-.timeline:hover {
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
-  margin-bottom: -32rem;
-}
-.timeline:hover::after {
-  top: -27.75rem;
-}
-.timeline:hover::before {
-  top: -18.5rem;
-}
-.timeline:hover .timelineThumb {
-  height: 170px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-.timeline:hover .timelineBody {
-  height: 250px;
-}
-.timeline:hover .timelineTitle {
-  -webkit-animation: titleBlur 0.3s;
-  animation: titleBlur 0.3s;
-}
-.timeline:hover .timelineSubtitle {
-  -webkit-animation: subtitleBlur 0.3s;
-  animation: subtitleBlur 0.3s;
-}
-.timeline:hover .timelineDescription {
-  opacity: 1;
-  transition-delay: 0.1s;
-  -webkit-transform: translateY(0);
-  -ms-transform: translateY(0);
-  transform: translateY(0);
-}
-.timeline::before {
-  top: -22rem;
-}
-.timeline::after {
-  top: -32rem;
-  height: 19rem;
+  top: -19rem;
 }
 
 .timelineDate {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 5px;
+  left: 500px;
   width: 45px;
   height: 45px;
   padding-top: 10px;
@@ -659,31 +607,20 @@ li {
   font-size: 14px;
 }
 
-.timelineThumb {
-  height: 235px;
-  margin-bottom: 0;
-  overflow: hidden;
-  background: url("../img/lycee.jpg");
-  transition: height 0.3s;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-
 .timelineBody {
   position: relative;
   padding: 20px;
-  height: 100px;
-  transition: height 0.3s;
+  height: 100%;
 }
 
 .timelineCategory {
   position: absolute;
-  left: 0;
-  top: -25px;
+  left: 20px;
+  top: -15px;
   height: 25px;
   padding: 0 15px;
   color: #FFF;
-  font-size: 11px;
+  font-size: 14px;
   line-height: 25px;
   text-transform: uppercase;
   background-color: #B83A1B;
@@ -691,7 +628,7 @@ li {
 
 .timelineTitle {
   margin: 0;
-  padding: 0 0 10px;
+  padding: 10px 0 15px;
   font-size: 22px;
   color: #000;
   font-weight: bold;
@@ -699,28 +636,17 @@ li {
 
 .timelineSubtitle {
   margin: 0;
-  padding: 0 0 10px;
+  padding: 0 0 15px;
   font-size: 19px;
   color: #B83A1B;
 }
 
 .timelineDescription {
-  position: absolute;
-  left: 20px;
-  right: 20px;
-  bottom: 65px;
-  margin: 0;
-  padding: 0;
   color: #000;
+  text-align: justify;
   font-size: 14px;
   font-weight: 600;
   line-height: 27px;
-  opacity: 0;
-  transition: opacity 0.2s, transform 0.2s;
-  transition-delay: 0s;
-  -webkit-transform: translateY(25px);
-  -ms-transform: translateY(25px);
-  transform: translateY(25px);
 }
 
 /*------------------------------------*\
@@ -997,10 +923,8 @@ input[type=submit]:hover {
     order: 2;
   }
 
-  .timeline:hover .timelineDescription {
-    font-size: 12px;
-    line-height: 12px;
-    bottom: 60px;
+  .timelineDate {
+    opacity: 0;
   }
 
   form {
@@ -1046,42 +970,16 @@ input[type=submit]:hover {
     order: 2;
   }
 
-  .timelineThumb img {
-    display: flex;
-  }
-
-  .timeline:hover .timelineDescription {
-    font-size: 15px;
-    line-height: 15px;
-    bottom: 60px;
-  }
-
-  .timelineThumb {
-    height: 235px;
-  }
-
-  .timeline:hover .timelineThumb {
-    height: 170px;
-  }
-
-  .timelineTitle {
-    padding: 0 0 5px;
-  }
-
-  .timelineSubtitle {
-    padding: 0 0 10px;
-  }
-
-  .timeline:hover .timelineBody {
-    height: 250px;
-  }
-
   .timelineBody {
     padding: 10px;
   }
 
-  .timeline:hover .timelineSubtitle {
-    margin-bottom: -10rem;
+  .timelineCategory {
+    left: 10px;
+  }
+
+  .timelineDate {
+    left: 275px !important;
   }
 
   .footerContainer {
@@ -1121,6 +1019,10 @@ input[type=submit]:hover {
   article {
     padding: 0 2rem;
   }
+
+  .timelineDate {
+    left: 400px;
+  }
 }
 @media screen and (max-width: 1100px) {
   .navLink {
@@ -1134,7 +1036,7 @@ input[type=submit]:hover {
 }
 @media screen and (max-width: 1680px) {
   .container {
-    width: 960px;
+    width: 85%;
   }
 }
 @media screen and (max-width: 1080px) {
@@ -1151,14 +1053,6 @@ input[type=submit]:hover {
 
   .container {
     width: 95%;
-  }
-
-  .timeline {
-    width: 95%;
-  }
-
-  .timelineThumb img {
-    width: 100%;
   }
 }
 /*------------------------------------*\
