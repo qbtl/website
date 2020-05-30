@@ -5,12 +5,12 @@
 
 function homeScale(x) {
     if (x.matches) { // If media query matches
-        document.getElementById('homeText').innerHTML = "Quentin Boitel0".replace('0', '8');
+        document.getElementById('homeText').innerHTML = "Quentin" + "<br>" + "Boitel0".replace('0', '8');
     } else {
         document.getElementById('homeText').innerHTML = "Quentin Boitel0"
     }
 };
 
-var x = window.matchMedia("(max-width: 982px)");
+var x = window.matchMedia("(max-width: 768px)");
 homeScale(x); // Call listener function at run time
 x.addListener(homeScale);

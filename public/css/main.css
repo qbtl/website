@@ -28,6 +28,7 @@ html {
   background-size: cover;
   background-position: top left, center 0;
   background-attachment: fixed;
+  overflow-x: hidden;
 }
 
 body {
@@ -65,7 +66,7 @@ img {
 }
 .sectionHeading h1 {
   font-size: 3.5rem;
-  color: #223645;
+  color: #175676;
   text-transform: uppercase;
   font-weight: 300;
   position: relative;
@@ -81,7 +82,7 @@ img {
 .sectionHeading h6 {
   font-size: 1.6rem;
   font-weight: 300;
-  color: #2B7199;
+  color: #3498DB;
   margin-bottom: 1rem;
   font-family: "retro";
 }
@@ -93,7 +94,7 @@ img {
   bottom: -0.5rem;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #B83A1B;
+  background-color: #ED6A5E;
 }
 
 .box {
@@ -168,8 +169,13 @@ img {
 \*------------------------------------*/
 header {
   width: 100%;
-  height: 100vh;
+  min-height: 689px;
+  height: 100%;
   position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/code.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .mainNav {
@@ -177,17 +183,17 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 60px;
-  background-color: #FFFFFF;
+  background-color: #FFF;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
   padding: 0 5%;
   top: 0;
   z-index: 1000;
   position: fixed;
   width: 100%;
-  border-bottom: 3px solid #000;
+  border-bottom: 3px solid #0072BB;
 }
 .mainNav .logo {
-  color: #000;
+  color: #0072BB;
   font-size: 22px;
   width: 200px;
   font-family: AveFedan;
@@ -198,13 +204,13 @@ header {
 }
 .mainNav ul li a {
   margin: 30px;
-  color: #000;
+  color: #3498DB;
   font-size: 15px;
   font-weight: 500;
   font-family: Poetsen;
 }
 .mainNav ul li a.active {
-  background-color: #B83A1B;
+  background-color: #0072BB;
   padding: 5px;
   border-radius: 10px;
   color: #FFF;
@@ -216,7 +222,7 @@ header {
 .mainNav .burger div {
   width: 25px;
   height: 5px;
-  background-color: #000;
+  background-color: #ED6A5E;
   margin: 5px;
   transition: all 0.5s ease;
 }
@@ -233,38 +239,29 @@ header {
   transform: rotate(45deg) translate(-8px, -9px);
 }
 
-.background {
-  height: 700px;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.text-container {
+.textContainer {
   position: absolute;
   left: 13%;
   top: 58%;
   transform: translate(-13%, -58%);
 }
-.text-container h1 {
+.textContainer h1 {
   font-family: AveFedan;
   font-weight: bold;
-  color: #B83A1B;
-  font-size: 60px;
+  color: #ED6A5E;
+  font-size: 8rem;
 }
-.text-container h3 {
+.textContainer h3 {
   font-family: retro;
   font-weight: bold;
   letter-spacing: 1px;
-  color: #2B7199;
+  color: #3498DB;
   font-size: 30px;
 }
-.text-container h1, .text-container h3 {
-  line-height: 0px;
+.textContainer h1, .textContainer h3 {
   margin: 55px 0px 25px;
 }
-.text-container button {
+.textContainer button {
   width: 130px;
   height: 42px;
   border-radius: 10px;
@@ -274,40 +271,18 @@ header {
   outline: none;
   margin: 20px 0;
 }
-.text-container button.down-cv {
+.textContainer button.downCv {
   background-color: #FFF;
-  color: #B83A1B;
-  border: none;
-  transition: background-color 0.6s ease;
+  color: #0072BB;
+  border: 3px solid #0072BB;
+  transition: all 1s ease;
 }
-.text-container button:hover {
-  background-color: #B83A1B;
+.textContainer button:hover {
+  background-color: #0072BB;
   color: #FFF;
 }
-.text-container button:active {
+.textContainer button:active {
   transform: scale(1.1);
-}
-
-.landingText {
-  position: relative;
-  width: 100%;
-  text-align: center;
-  z-index: 1;
-  margin-top: 250px;
-  margin-bottom: 250px;
-}
-.landingText h1 {
-  font-size: 15rem;
-  font-family: "AveFedan", sans-serif;
-  color: #223645;
-  user-select: none;
-  border: none !important;
-}
-.landingText h6 {
-  font-size: 6rem;
-  font-weight: 900;
-  font-family: Poetsen;
-  color: #B83A1B;
 }
 
 /*------------------------------------*\
@@ -395,7 +370,7 @@ header {
   font-weight: 300;
   font-family: "retro", sans-serif;
   font-variant: small-caps;
-  color: #B83A1B;
+  color: #0072BB;
   margin: 1rem 0;
 }
 .portfolioDescription h6 {
@@ -404,7 +379,7 @@ header {
   font-family: "retro", sans-serif;
   font-weight: 300;
   opacity: 0.8;
-  color: #000;
+  color: #175676;
 }
 .portfolioDescription p {
   font-weight: 600;
@@ -415,11 +390,11 @@ header {
   font-size: 1.5rem;
   text-transform: uppercase;
   font-family: "retro", sans-serif;
-  color: #2B7199;
+  color: #ED6A5E;
   transition: color 650ms;
 }
 .portfolioDescription .cta:hover {
-  color: #223645;
+  color: #3498DB;
 }
 
 .portfolio {
@@ -450,7 +425,7 @@ header {
 .timelineDate {
   position: absolute;
   top: 5px;
-  left: 475px;
+  left: 45%;
   width: 45px;
   height: 45px;
   padding-top: 10px;
@@ -458,7 +433,7 @@ header {
   text-align: center;
   line-height: 13px;
   font-weight: bold;
-  background-color: #B83A1B;
+  background-color: #ED6A5E;
   border-radius: 50%;
 }
 
@@ -483,14 +458,14 @@ header {
   font-size: 14px;
   line-height: 25px;
   text-transform: uppercase;
-  background-color: #B83A1B;
+  background-color: #ED6A5E;
 }
 
 .timelineTitle {
   margin: 0;
   padding: 10px 0 15px;
   font-size: 22px;
-  color: #000;
+  color: #0072BB;
   font-weight: bold;
 }
 
@@ -498,7 +473,7 @@ header {
   margin: 0;
   padding: 0 0 15px;
   font-size: 19px;
-  color: #B83A1B;
+  color: #3498DB;
 }
 
 .timelineDescription {
@@ -523,7 +498,7 @@ header {
 }
 .contactForm label {
   font-size: 1.5rem;
-  color: #B83A1B;
+  color: #0072BB;
 }
 
 .mapouter {
@@ -553,11 +528,14 @@ input,
 textarea {
   width: 100%;
   padding: 1rem;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #B83A1B;
-  outline-color: #000;
+  margin: 1rem 0;
+  border: 1px solid #3498DB;
+  outline-color: #3498DB;
   border-radius: 0.8rem;
+}
+input:checked,
+textarea:checked {
+  border-color: #3498DB;
 }
 
 input[type=submit] {
@@ -601,7 +579,7 @@ input[type=submit]:hover {
   position: absolute;
   width: 5rem;
   height: 5rem;
-  background-color: #B83A1B;
+  background-color: #0072BB;
   top: 0;
   right: 5rem;
   border-radius: 100%;
@@ -636,13 +614,13 @@ input[type=submit]:hover {
 }
 .rightCol h1 {
   font-size: 26px;
-  color: #2B7199;
+  color: #0072BB;
 }
 .rightCol .border {
   margin: 0.8rem 0;
   width: 100px;
   height: 4px;
-  background: #B83A1B;
+  background: #ED6A5E;
 }
 .rightCol .aboutSiteText {
   width: 85%;
@@ -657,7 +635,7 @@ input[type=submit]:hover {
   margin-bottom: 2rem;
   border-radius: 30%;
   box-shadow: 0 5px 15px -5px black;
-  color: #B83A1B;
+  color: #0072BB;
   overflow: hidden;
   position: relative;
 }
@@ -671,7 +649,7 @@ input[type=submit]:hover {
   position: absolute;
   width: 120%;
   height: 120%;
-  background: #B83A1B;
+  background: #3498DB;
   transform: rotate(45deg);
   left: -110%;
   top: 90%;
@@ -691,13 +669,13 @@ input[type=submit]:hover {
 \*------------------------------------*/
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(184, 58, 27, 0.99);
+    box-shadow: 0 0 0 0 rgba(0, 114, 187, 0.99);
   }
   70% {
-    box-shadow: 0 0 0 20px rgba(184, 58, 27, 0);
+    box-shadow: 0 0 0 20px rgba(0, 114, 187, 0);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(184, 58, 27, 0);
+    box-shadow: 0 0 0 0 rgba(0, 114, 187, 0);
   }
 }
 @keyframes navLinksFade {
@@ -728,13 +706,6 @@ input[type=submit]:hover {
     $RESPONSIVE
 \*------------------------------------*/
 @media screen and (max-width: 600px) {
-  .landingText h1 {
-    font-size: 8rem;
-  }
-  .landingText h6 {
-    font-size: 1.4rem;
-  }
-
   .aboutDetails {
     padding-left: 3rem;
   }
@@ -742,14 +713,6 @@ input[type=submit]:hover {
   .portfolioDescription {
     margin: 0;
     order: 2;
-  }
-
-  .timelineDate {
-    opacity: 0;
-  }
-
-  form {
-    width: 100%;
   }
 
   .up {
@@ -771,11 +734,9 @@ input[type=submit]:hover {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    width: 25%;
+    width: 100%;
     transform: translateX(100%);
     transition: transform 0.3s ease-in;
-    border-left: 3px solid #000;
-    border-top: 3px solid #000;
   }
   .mainNav ul li {
     opacity: 0;
@@ -784,22 +745,37 @@ input[type=submit]:hover {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+  .mainNav ul li a:any-link.active {
+    padding: 15px;
+  }
   .mainNav .burger {
     display: block;
   }
   .mainNav .navActive {
     transform: translateX(0%);
+    overflow-y: hidden;
+  }
+
+  .textContainer {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 5px;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .textContainer h1 {
+    text-align: center;
+    font-size: 70px;
+  }
+  .textContainer h3 {
+    font-size: 40px;
+  }
+  .textContainer h1, .textContainer h3 {
+    margin: 25px 0 5px;
   }
 
   section {
     padding: 0;
-  }
-
-  .landingText h1 {
-    font-size: 10rem;
-  }
-  .landingText h6 {
-    font-size: 1.7rem;
   }
 
   .aboutHeading h1 {
@@ -824,7 +800,7 @@ input[type=submit]:hover {
   }
 
   .timelineDate {
-    left: 275px !important;
+    left: 40%;
   }
 
   .footerContainer {
@@ -862,12 +838,12 @@ input[type=submit]:hover {
     margin: 15px;
   }
 
-  article {
+  section {
     padding: 0 2rem;
   }
 
   .timelineDate {
-    left: 400px;
+    left: 40%;
   }
 }
 @media screen and (max-width: 1680px) {
@@ -876,17 +852,6 @@ input[type=submit]:hover {
   }
 }
 @media screen and (max-width: 1080px) {
-  header {
-    padding: 5rem 0;
-  }
-
-  .landingText h1 {
-    font-size: 13rem;
-  }
-  .landingText h6 {
-    font-size: 4rem;
-  }
-
   .container {
     width: 95%;
   }
