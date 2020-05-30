@@ -6,6 +6,19 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## Version [2.4.0] - Released on 2020-05-30
+
+### Changed
+
+* hero section
+* navbar
+* box style
+* 404 page
+
+### Deleted
+
+* arrow svg
+
 ## Version [2.3.2] - Released on 2020-05-27
 
 ### Changed
@@ -268,6 +281,7 @@ v0.4.2 is released with v0.5.0
 * Deployment to GitHub Pages
 
 [Unreleased]: https://github.com/qbtl/website/
+[2.4.0]: https://github.com/qbtl/website/releases/tag/v2.4.0
 [2.3.2]: https://github.com/qbtl/website/releases/tag/v2.3.2
 [2.3.1]: https://github.com/qbtl/website/releases/tag/v2.3.1
 [2.3.0]: https://gtihub.com/qbtl/website/releases/tag/v2.3.0
