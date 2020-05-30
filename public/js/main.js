@@ -1,29 +1,16 @@
 $(document).ready(function () {
-  $('.menuIcon').on('click', function () {
-    $(this).toggleClass('open');
-    $('.topNav').toggleClass('open');
-  });
-
-  $('.menuIcon').click(function (e) {
-    e.preventDefault();
-    $this = $(this);
-    if ($this.hasClass('isOpened')) {
-      $this.addClass('isClosed').removeClass('isOpened');
-    } else {
-      $this.removeClass('isClosed').addClass('isOpened');
-    }
-  })
-
-  $('.topNav .navList .navLink').on('click', function () {
-    $('.menuIcon').removeClass('isOpened');
-    $('.menuIcon').toggleClass('isClosed');
-    $('.topNav').removeClass('open');
-  });
-
   $('nav ul li a[href*="#"]').on('click', function () {
     $('html, body').animate({
       scrollTop: $($(this).attr('href')).offset().top
     }, 2000);
+    $('.homeNav').removeClass('active');
+    $('.aboutNav').removeClass('active');
+    $('.portfolioNav').removeClass('active');
+    $('.experienceNav').removeClass('active');
+    $('.contactNav').removeClass('active');
+    $(this).addClass('active');
+    $('.navLinks').removeClass('navActive');
+    $('.burger').removeClass('toggle')
   });
 
   $('#up').on('click', function () {
@@ -38,3 +25,23 @@ $(document).ready(function () {
     once: true
   });
 });
+
+const navSlide = () => {
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.navLinks');
+  const navLinks = document.querySelectorAll('.navLinks li');
+
+  burger.addEventListener('click', () => {
+    // Toggle Nav
+    nav.classList.toggle('navActive');
+    // Animate Links 
+    navLinks.forEach((link, index) => {
+      link.style.animation = `navLinksFade .5s ease forwards ${index / 10 + 0,1}s`
+      console.log(index / 10)
+    });
+    // Burger animation 
+    burger.classList.toggle('toggle');
+  });
+}
+
+navSlide();
