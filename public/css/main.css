@@ -35,7 +35,7 @@ body {
   height: 100%;
 }
 
-a {
+a:any-link {
   text-decoration: none;
 }
 
@@ -55,17 +55,13 @@ img {
   margin: 0 auto;
   max-width: 100%;
   width: 1140px;
-  border-radius: 15px;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
-}
-.container:hover {
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+  position: relative;
 }
 
 .sectionHeading {
   text-align: center;
   margin-top: 10rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
 }
 .sectionHeading h1 {
   font-size: 3.5rem;
@@ -102,35 +98,12 @@ img {
 
 .box {
   position: relative;
-  margin-top: 30rem;
-  margin-bottom: 30rem;
-}
-.box:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: -30rem;
-  left: 50%;
-  height: 13rem;
-  border-left: solid 1px #000;
-}
-.box:before {
-  content: "";
-  display: block;
-  width: 90px;
-  height: 66px;
-  position: absolute;
-  left: 50%;
-  top: -14rem;
-  margin-left: -45px;
-  margin-top: -30px;
-  background: url("../img/arrow.svg") no-repeat;
 }
 .box :last-child {
   margin-bottom: 0;
 }
 .box.style {
-  background: #FFF;
+  background: transparent;
   padding: 3em;
 }
 .box.style .boxImage {
@@ -195,180 +168,124 @@ img {
 \*------------------------------------*/
 header {
   width: 100%;
-  height: 100%;
-}
-
-.topNav {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: -100vh;
-  z-index: 50;
-  background-image: url("../img/sitebg.jpg");
-  background-repeat: repeat, no-repeat;
-  background-size: auto, cover;
-  background-position: top left, center 0;
-  background-attachment: fixed, fixed;
-  border-bottom-right-radius: 100%;
-  border-bottom-left-radius: 100%;
-  transition: all 650ms cubic-bezier(1, 0, 0, 1);
-}
-.topNav.open {
-  top: 0;
-  border-radius: initial;
-}
-.topNav .navLogo {
-  position: absolute;
-  width: 128px;
-  height: 128px;
-  left: 5rem;
-  top: 0;
-}
-
-.navList {
-  list-style: none;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-li {
-  margin: 0 2rem;
-}
-
-.navLink {
-  font-family: "retro", sans-serif;
-  font-size: 4rem;
-  padding: 1rem;
-  color: #223645;
-}
-
-.navLink:hover,
-.navLink:focus {
-  background-color: #B83A1B;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.menuToggler {
-  position: absolute;
-  top: 0;
-  right: 5rem;
-  width: 5rem;
-  height: 0rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  cursor: pointer;
-  z-index: 1500;
-}
-
-.menuIcon {
-  margin-top: 4rem;
+  height: 100vh;
   position: relative;
-  width: 54px;
-  height: 54px;
-  border-radius: 50%;
-}
-.menuIcon span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  display: block;
-  width: 22px;
-  height: 3px;
-  background-color: #B83A1B;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-}
-.menuIcon span::after {
-  -webkit-transform: translateY(8px) !important;
-  -ms-transform: translateY(8px) !important;
-  transform: translateY(8px) !important;
-}
-.menuIcon:hover span::before {
-  -webkit-transform: translateY(-10px);
-  -ms-transform: translateY(-10px);
-  transform: translateY(-10px);
-}
-.menuIcon:hover span::after {
-  -webkit-transform: translateY(10px) !important;
-  -ms-transform: translateY(10px) !important;
-  transform: translateY(10px) !important;
-}
-.menuIcon.isOpened {
-  position: fixed;
-  margin-top: 4rem;
 }
 
-.menuIcon span::before,
-.menuIcon span::after {
-  content: "";
-  position: absolute;
+.mainNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: #FFFFFF;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  padding: 0 5%;
   top: 0;
-  left: 0;
-  display: block;
-  width: 22px;
-  height: 3px;
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  border-bottom: 3px solid #000;
+}
+.mainNav .logo {
+  color: #000;
+  font-size: 22px;
+  width: 200px;
+  font-family: AveFedan;
+}
+.mainNav ul {
+  display: flex;
+  list-style: none;
+}
+.mainNav ul li a {
+  margin: 30px;
+  color: #000;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: Poetsen;
+}
+.mainNav ul li a.active {
   background-color: #B83A1B;
-  -webkit-transform: translateY(-8px);
-  -ms-transform: translateY(-8px);
-  transform: translateY(-8px);
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
+  padding: 5px;
+  border-radius: 10px;
+  color: #FFF;
+}
+.mainNav .burger {
+  display: none;
+  cursor: pointer;
+}
+.mainNav .burger div {
+  width: 25px;
+  height: 5px;
+  background-color: #000;
+  margin: 5px;
+  transition: all 0.5s ease;
 }
 
-.menuIconSvg span {
-  -webkit-transition: background 0.5s steps(1, end);
-  transition: background 0.5s steps(1, end);
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
 }
-.menuIconSvg svg {
+
+.toggle .line2 {
   opacity: 0;
-  fill: transparent;
-  stroke-width: 3px;
-  stroke: #B83A1B;
-  stroke-dasharray: 22 230;
-  -webkit-transition: stroke-dasharray 0.5s, stroke-dashoffset 0.5s, opacity 0.5s steps(1, end);
-  transition: stroke-dasharray 0.5s, stroke-dashoffset 0.5s, opacity 0.5s steps(1, end);
-}
-.menuIconSvg.isOpened span {
-  -webkit-transition: background 0.5s steps(1, start);
-  transition: background 0.5s steps(1, start);
-  background-color: transparent;
-}
-.menuIconSvg.isOpened span::before {
-  -webkit-transform: translateX(-3px) translateY(-8px) rotate(-45deg);
-  -ms-transform: translateX(-3px) translateY(-8px) rotate(-45deg);
-  transform: translateX(-3px) translateY(-8px) rotate(-45deg);
-}
-.menuIconSvg.isOpened span::after {
-  -webkit-transform: translateX(-3px) translateY(8px) rotate(45deg) !important;
-  -ms-transform: translateX(-3px) translateY(8px) rotate(45deg);
-  transform: translateX(-3px) translateY(8px) rotate(45deg);
-}
-.menuIconSvg.isOpened svg {
-  opacity: 1;
-  -webkit-transition: opacity 0.5s steps(1, start);
-  transition: opacity 0.5s steps(1, start);
-  -webkit-animation: pathanimation 0.5s linear;
-  animation: pathanimation 0.5s linear;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-}
-.menuIconSvg.isClosed svg {
-  -webkit-animation: pathanimation-out 0.5s linear;
-  animation: pathanimation-out 0.5s linear;
 }
 
-.menuIconSvg span::before,
-.menuIconSvg span::after {
-  -webkit-transform-origin: 100% 50%;
-  -ms-transform-origin: 100% 50%;
-  transform-origin: 100% 50%;
+.toggle .line3 {
+  transform: rotate(45deg) translate(-8px, -9px);
+}
+
+.background {
+  height: 700px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.text-container {
+  position: absolute;
+  left: 13%;
+  top: 58%;
+  transform: translate(-13%, -58%);
+}
+.text-container h1 {
+  font-family: AveFedan;
+  font-weight: bold;
+  color: #B83A1B;
+  font-size: 60px;
+}
+.text-container h3 {
+  font-family: retro;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #2B7199;
+  font-size: 30px;
+}
+.text-container h1, .text-container h3 {
+  line-height: 0px;
+  margin: 55px 0px 25px;
+}
+.text-container button {
+  width: 130px;
+  height: 42px;
+  border-radius: 10px;
+  font-family: Poetsen;
+  font-weight: bold;
+  font-size: 14px;
+  outline: none;
+  margin: 20px 0;
+}
+.text-container button.down-cv {
+  background-color: #FFF;
+  color: #B83A1B;
+  border: none;
+  transition: background-color 0.6s ease;
+}
+.text-container button:hover {
+  background-color: #B83A1B;
+  color: #FFF;
+}
+.text-container button:active {
+  transform: scale(1.1);
 }
 
 .landingText {
@@ -399,8 +316,7 @@ li {
 .imageLeft {
   display: inline-block;
   border: 0;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
+  border-radius: 15px;
 }
 .imageLeft.fit {
   display: block;
@@ -414,8 +330,7 @@ li {
 .imageRight {
   display: inline-block;
   border: 0;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-radius: 15px;
 }
 .imageRight.fit {
   display: block;
@@ -430,13 +345,13 @@ li {
     $ABOUT
 \*------------------------------------*/
 .about {
-  margin-top: 0rem;
+  margin-top: 12rem;
+  margin-bottom: 13rem;
 }
-.about::before {
-  display: none;
-}
-.about::after {
-  display: none;
+
+.aboutHidden {
+  padding-top: 10rem;
+  visibility: hidden;
 }
 
 .aboutHeading {
@@ -464,37 +379,14 @@ li {
   font-weight: 600;
 }
 
-.aboutCv {
-  width: 100%;
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-.aboutCv button {
-  position: relative;
-  width: 50%;
-  background-color: #B83A1B;
-  color: #EEE;
-  padding: 1rem 2rem;
-  border-radius: 0.8rem;
-  border: none;
-  cursor: pointer;
-  transition: background 650ms;
-  margin-top: 1.5rem;
-  margin-left: 0;
-  font-size: 25px;
-}
-.aboutCv button i {
-  margin-left: 1rem;
-  font-size: 25px;
-}
-.aboutCv button:hover {
-  color: #B83A1B;
-  background-color: #FFF;
-}
-
 /*------------------------------------*\
     $PORTFOLIO
 \*------------------------------------*/
+.portfolioHidden {
+  padding-top: 6rem;
+  visibility: hidden;
+}
+
 .portfolioDescription {
   flex: 1;
 }
@@ -527,70 +419,38 @@ li {
   transition: color 650ms;
 }
 .portfolioDescription .cta:hover {
-  color: #2B7199;
+  color: #223645;
 }
 
 .portfolio {
-  margin-bottom: -27rem;
-}
-
-.portfolioUp::after {
-  top: -29.75rem;
-  height: 19rem;
-}
-.portfolioUp::before {
-  top: -20rem;
-}
-.portfolioUp:hover .portfolioDescription .cta {
-  transition: color 0.6s ease;
-  color: #B83A1B;
-}
-.portfolioUp:hover .portfolioDescription .cta:hover {
-  transition: color 0.6s ease;
-  color: #2B7199;
+  margin-top: 15rem;
+  margin-bottom: 4rem;
 }
 
 .portfolioDown {
-  margin-top: -10rem;
-}
-.portfolioDown::before {
-  top: -10rem;
-}
-.portfolioDown::after {
-  height: 20rem;
-  top: -20rem;
-}
-.portfolioDown:hover .portfolioDescription .cta {
-  transition: color 0.6s ease;
-  color: #B83A1B;
-}
-.portfolioDown:hover .portfolioDescription .cta:hover {
-  transition: color 0.6s ease;
-  color: #2B7199;
+  margin-top: 4rem;
 }
 
 /*------------------------------------*\
     $EXPERIENCE
 \*------------------------------------*/
+.timelineHidden {
+  padding-top: 12rem;
+  visibility: hidden;
+}
+
 .experienceHeading {
-  margin-bottom: -28rem;
+  margin-bottom: 2rem;
 }
 
 .experience {
-  margin-bottom: -11rem;
-}
-.experience::after {
-  top: -28.5rem;
-  height: 19rem;
-}
-.experience::before {
-  top: -19rem;
+  margin-bottom: 8rem;
 }
 
 .timelineDate {
   position: absolute;
   top: 5px;
-  left: 500px;
+  left: 475px;
   width: 45px;
   height: 45px;
   padding-top: 10px;
@@ -652,6 +512,11 @@ li {
 /*------------------------------------*\
     $CONTACT-FOOTER
 \*------------------------------------*/
+.contactHidden {
+  padding-top: 8rem;
+  visibility: hidden;
+}
+
 .contactForm {
   width: 100%;
   margin: 0 auto;
@@ -688,8 +553,8 @@ input,
 textarea {
   width: 100%;
   padding: 1rem;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   border: 1px solid #B83A1B;
   outline-color: #000;
   border-radius: 0.8rem;
@@ -716,13 +581,6 @@ input[type=submit]:hover {
 
 .contact {
   margin-bottom: 5rem;
-}
-.contact::after {
-  height: 19rem;
-  top: -19rem;
-}
-.contact::before {
-  top: -10rem;
 }
 
 .footerContainer {
@@ -842,51 +700,14 @@ input[type=submit]:hover {
     box-shadow: 0 0 0 0 rgba(184, 58, 27, 0);
   }
 }
-@keyframes titleBlur {
-  0% {
-    opacity: 0.6;
-    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.6);
+@keyframes navLinksFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
   }
-  100% {
+  to {
     opacity: 1;
-    text-shadow: 0 5px 5px transparent;
-  }
-}
-@keyframes subtitleBlur {
-  0% {
-    opacity: 0.6;
-    text-shadow: 0 5px 5px rgba(184, 58, 27, 0.6);
-  }
-  100% {
-    opacity: 1;
-    text-shadow: 0 5px 5px rgba(184, 58, 27, 0);
-  }
-}
-@keyframes pathanimation {
-  40% {
-    stroke-dasharray: 22 230;
-  }
-  60% {
-    stroke-dashoffset: -65;
-  }
-  100% {
-    stroke-dashoffset: -65;
-    stroke-dasharray: 160;
-  }
-}
-@keyframes pathanimation-out {
-  100% {
-    stroke-dashoffset: 0;
-  }
-  60% {
-    stroke-dasharray: 22 230;
-  }
-  40% {
-    stroke-dashoffset: -65;
-  }
-  0% {
-    stroke-dashoffset: -65;
-    stroke-dasharray: 160;
+    transform: translateX(0px);
   }
 }
 @keyframes socialButton {
@@ -936,6 +757,40 @@ input[type=submit]:hover {
   }
 }
 @media screen and (max-width: 768px) {
+  .mainNav .logo {
+    visibility: visible;
+    text-align: center;
+  }
+  .mainNav ul {
+    position: absolute;
+    top: 8.3vh;
+    right: 0px;
+    height: 92vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 25%;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+    border-left: 3px solid #000;
+    border-top: 3px solid #000;
+  }
+  .mainNav ul li {
+    opacity: 0;
+  }
+  .mainNav ul li a:any-link {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .mainNav .burger {
+    display: block;
+  }
+  .mainNav .navActive {
+    transform: translateX(0%);
+  }
+
   section {
     padding: 0;
   }
@@ -953,16 +808,6 @@ input[type=submit]:hover {
 
   .sectionHeading h6 {
     font-size: 2rem;
-  }
-
-  .aboutDetails {
-    padding-left: 4rem;
-  }
-  .aboutDetails .navList {
-    flex-direction: initial;
-  }
-  .aboutDetails li {
-    margin: 0 2rem;
   }
 
   .portfolioDescription {
@@ -1004,16 +849,17 @@ input[type=submit]:hover {
     text-align: center;
   }
 }
-@media screen and (max-width: 980px) {
-  .navLink {
-    font-size: 6rem;
+@media screen and (min-width: 768px) and (max-width: 980px) {
+  .mainNav {
+    align-items: center;
+    justify-content: center;
+    padding: 0;
   }
-
-  .navList {
-    flex-direction: column;
+  .mainNav .logo {
+    visibility: visible;
   }
-  .navList li {
-    margin: 2rem 0;
+  .mainNav ul li a:any-link {
+    margin: 15px;
   }
 
   article {
@@ -1022,16 +868,6 @@ input[type=submit]:hover {
 
   .timelineDate {
     left: 400px;
-  }
-}
-@media screen and (max-width: 1100px) {
-  .navLink {
-    font-size: 3rem;
-  }
-}
-@media screen and (max-width: 1280px) {
-  .navLink {
-    font-size: 3.5rem;
   }
 }
 @media screen and (max-width: 1680px) {

@@ -19,45 +19,35 @@
 
 <body>
 	<header>
-		<div class="menuToggler">
-			<div class="menuIcon menuIconSvg isClosed">
-				<span></span>
-				<svg x="0" y="0" width="54px" height="54px" viewBox="0 0 54 54">
-					<path
-						d="M16.500,27.000 C16.500,27.000 24.939,27.000 38.500,27.000 C52.061,27.000 49.945,15.648 46.510,11.367 C41.928,5.656 34.891,2.000 27.000,2.000 C13.193,2.000 2.000,13.193 2.000,27.000 C2.000,40.807 13.193,52.000 27.000,52.000 C40.807,52.000 52.000,40.807 52.000,27.000 C52.000,13.000 40.837,2.000 27.000,2.000 ">
-					</path>
-				</svg>
-			</div>
-		</div>
-		<nav class="topNav">
-			<img src="public/img/logo.jpg" alt="Website Logo" class="navLogo">
-			<ul class="navList">
-				<li>
-					<a href="" class="navLink">Accueil</a>
-				</li>
-				<li>
-					<a href="#about" class="navLink">À propos</a>
-				</li>
-
-				<li>
-					<a href="#portfolio" class="navLink">Portfolio</a>
-				</li>
-
-				<li>
-					<a href="#experience" class="navLink">Expérience</a>
-				</li>
-				<li>
-					<a href="#contact" class="navLink">Contact</a>
-				</li>
+		<nav class="mainNav">
+			<a href="" class="logo">Quentin Boitel</a>
+			<ul class="navLinks">
+				<li><a href="" class="active homeNav">Accueil</a></li>
+				<li><a href="#about" class="aboutNav">À propos</a></li>
+				<li><a href="#portfolio" class="portfolioNav">Portfolio</a></li>
+				<li><a href="#experience" class="experienceNav">Experience</a></li>
+				<li><a href="#contact" class="contactNav">Contact</a></li>
 			</ul>
+
+			<div class="burger">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</div> 
 		</nav>
-		<div class="landingText">
-			<h1 id="homeText">Quentin Boitel0</h1>
-			<h6>Lycéen</h6>
-		</div>
+
+		<img src="public/img/code.jpg" class="background">
+
+		<div class="text-container">
+            <h1>Quentin Boitel0</h1>
+            <h3>Lycéen</h3>
+            <button class="down-cv">Download CV</button>
+        </div>
+
 	</header>
 
-	<article class="container box style textRight about" id="about">
+	<div class="aboutHidden" id="about"></div>
+	<article class="container box style textRight about">
 		<img class="imageLeft fit boxImage" src="public/img/webDev.png" alt="About Image" />
 		<div class="inner aboutDetails" data-aos="fade-in" data-aos-delay="300">
 			<div class="aboutHeading">
@@ -67,18 +57,14 @@
 			<p class="aboutDescription">
 				Étudiant de 17 ans, je souhaite devenir développeur web, donc dans c'est dans cette
 				optique que je développe ce site.
-			</p>
-			<div class="aboutCv">
-				<a href="public/cv/CV_QB.pdf" target="_blank" class="aboutBtn"><button>CV <i
-							class="far fa-file-pdf"></i></button></a>
-			</div>
-			<p class="aboutDescription">
+				<br><br>
 				Je vous souhaite la bienvenue sur mon site !
 			</p>
 		</div>
 	</article>
 
-	<div class="sectionHeading portfolio" id="portfolio">
+	<div class="portfolioHidden" id="portfolio"></div>
+	<div class="sectionHeading portfolio">
 		<h1>Portfolio</h1>
 		<h6>Regardez quelques unes de mes dernières créations</h6>
 	</div>
@@ -99,8 +85,8 @@
 			</div>
 		</div>
 	</article>
-	<article class="container box style textLeft portfolioDown">
-		<img class="imageRight fit boxImage" src="public/img/books.png" alt="Books Image" />
+	<article class="container box style textRight portfolioDown">
+		<img class="imageLeft fit boxImage" src="public/img/books.png" alt="Books Image" />
 		<div class="inner" data-aos="fade-in" data-aos-delay="300">
 			<div class="portfolioDescription">
 				<h6>App</h6>
@@ -117,7 +103,8 @@
 		</div>
 	</article>
 
-	<div class="sectionHeading experienceHeading" id="experience">
+	<div class="timelineHidden" id="experience"></div>
+	<div class="sectionHeading experienceHeading">
 		<h1>Mon Expérience</h1>
 		<h6>Mon parcours</h6>
 	</div>
@@ -143,7 +130,8 @@
 		</div>
 	</article>
 
-	<article class="container box style textLeft contact" id="contact">
+	<div class="contactHidden" id="contact"></div>
+	<article class="container box style textLeft contact">
 		<div class="imageRight fit boxImage">
 			<div class="gmap_canvas">
 				<iframe id="gmap_canvas"
@@ -158,9 +146,11 @@
 			</div>
 			<form class="contactForm" action="POST" data-netlify="true">
 				<label for="name"><b>Nom: </b></label>
-				<input type="text" id="name" name="nom" placeholder="Entrer votre nom..." required>
+				<input type="text" id="name" name="nom" placeholder="Indiquez votre nom..." required>
+				<label for="first-name"><b>Prénom: </b></label>
+				<input type="text" id="first-name" name="first-name" placeholder="Indiquez votre prénom..." required>
 				<label for="email"><b>Email: </b></label>
-				<input type="email" id="email" name="email" placeholder="Entrer votre email..." required>
+				<input type="email" id="email" name="email" placeholder="Indiquez votre email..." required>
 				<label for="subject"><b>Sujet: </b></label>
 				<textarea name="sujet" id="subject" cols="10" rows="10" placeholder="De quoi souhaitez-vous me parler ?"
 					required></textarea>
