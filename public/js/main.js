@@ -31,12 +31,13 @@ const navSlide = () => {
   const nav = document.querySelector('.navLinks');
   const navLinks = document.querySelectorAll('.navLinks li');
 
-  burger.addEventListener('click', ()=>{
+  burger.addEventListener('click', () => {
     // Toggle Nav
     nav.classList.toggle('navActive');
     // Animate Links 
-    navLinks.forEach((link, index)=>{
-        link.style.animation = `navLinksFade .5s ease forwards ${index / 10 + 0,1}s`
+    navLinks.forEach((link, index) => {
+      link.style.animation = `navLinksFade .5s ease forwards ${index / 10 + 0,1}s`
+      console.log(index / 10)
     });
     // Burger animation 
     burger.classList.toggle('toggle');

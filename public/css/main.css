@@ -42,7 +42,6 @@ a:any-link {
 
 p {
   font-size: 1.8rem;
-  font-weight: 500;
 }
 
 img {
@@ -351,7 +350,7 @@ header {
 }
 
 .aboutDescription {
-  font-weight: 600;
+  line-height: 24px;
 }
 
 /*------------------------------------*\
@@ -380,9 +379,6 @@ header {
   font-weight: 300;
   opacity: 0.8;
   color: #175676;
-}
-.portfolioDescription p {
-  font-weight: 600;
 }
 .portfolioDescription .cta {
   display: inline-block;
@@ -477,10 +473,7 @@ header {
 }
 
 .timelineDescription {
-  color: #000;
   text-align: justify;
-  font-size: 14px;
-  font-weight: 600;
   line-height: 27px;
 }
 
@@ -533,10 +526,6 @@ textarea {
   outline-color: #3498DB;
   border-radius: 0.8rem;
 }
-input:checked,
-textarea:checked {
-  border-color: #3498DB;
-}
 
 input[type=submit] {
   position: relative;
@@ -544,7 +533,7 @@ input[type=submit] {
   transform: translateX(-50%);
   width: 75%;
   background-color: #20A00F;
-  color: #EEE;
+  color: #F5F5F5;
   padding: 1rem 2rem;
   border-radius: 0.8rem;
   border: none;
@@ -588,7 +577,7 @@ input[type=submit]:hover {
   cursor: pointer;
 }
 .footerContainer .up i {
-  color: #DCDCDC;
+  color: #F5F5F5;
   font-size: 2rem;
   margin: auto;
 }
@@ -656,7 +645,7 @@ input[type=submit]:hover {
 }
 .btn:hover i {
   transform: scale(1.3);
-  color: #f1f1f1;
+  color: #FFF;
 }
 .btn:hover::before {
   animation: socialButton 0.7s 1;
@@ -729,7 +718,7 @@ input[type=submit]:hover {
     top: 8.3vh;
     right: 0px;
     height: 92vh;
-    background-color: #fff;
+    background-color: #FFF;
     display: flex;
     flex-direction: column;
     align-items: center;

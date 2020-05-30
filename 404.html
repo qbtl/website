@@ -21,7 +21,15 @@
             src: url('public/fonts/Qanelas.otf');
         }
 
+        @font-face {
+            font-family: Poetsen;
+            src: url('public/fonts/PoetsenOne-Regular.ttf');
+        }
+
         body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             text-align: center;
             padding: 95px;
             font: 20px Helvetica, sans-serif;
@@ -31,12 +39,13 @@
             background-size: auto, cover;
             background-position: top left, center 0;
             background-attachment: fixed, fixed;
+            overflow: hidden;
         }
 
         h1 {
             font-size: 50px;
             font-family: 'Qanelas';
-            color: #B83A1B;
+            color: #0072BB;
             text-align: center;
         }
 
@@ -46,16 +55,17 @@
             text-align: left;
             width: 650px;
             margin: 0 auto;
+            line-height: 27px;
         }
 
         a {
-            color: #223645;
+            color: #ED6A5E;
             text-decoration: none;
             font-family: 'AveFedan';
         }
 
         a:hover {
-            color: #B83A1B;
+            color: #3498DB;
             text-decoration: none;
         }
 
@@ -75,8 +85,7 @@
                 Sorry but the page you&rsquo;re looking for isn&rsquo;t available, please go to back to the
                 <a href="/">Home</a> page.
                 <br>
-                We&rsquo;re probably performing some maintenance at the moment, sorry for the inconvenience, we&rsquo;ll
-                be back online shortly !
+                You might be lost, but what were you trying to get to ? As advice, check above.
             </p>
             <p>Please <a href="mailto:49651680+Dotaker@users.noreply.github.com">contact</a> us for further information.
             </p>
