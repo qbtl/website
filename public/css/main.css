@@ -779,7 +779,7 @@ input[type=submit]:hover {
   .textContainer {
     display: flex;
     align-items: center;
-    margin: 0 5rem 0 5rem;
+    margin: 0 5rem;
     justify-content: center;
     flex-direction: column;
     text-align: center;
@@ -821,7 +821,7 @@ input[type=submit]:hover {
   }
 
   .portfolio {
-    padding-top: 0rem;
+    padding-top: 0;
   }
 
   .portfolioDescription {
