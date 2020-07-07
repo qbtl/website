@@ -6,6 +6,17 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## Version [2.5.0] - Released on 2020-07-07
+
+### Added
+
+* isen experience card
+
+### Changed
+
+* titles
+* responsive attributes under 768px wide
+
 ## Version [2.4.0] - Released on 2020-05-30
 
 ### Changed
@@ -281,6 +292,7 @@ v0.4.2 is released with v0.5.0
 * Deployment to GitHub Pages
 
 [Unreleased]: https://github.com/qbtl/website/
+[2.5.0]: https://github.com/qbtl/website/releases/tag/v2.5.0
 [2.4.0]: https://github.com/qbtl/website/releases/tag/v2.4.0
 [2.3.2]: https://github.com/qbtl/website/releases/tag/v2.3.2
 [2.3.1]: https://github.com/qbtl/website/releases/tag/v2.3.1

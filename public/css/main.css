@@ -745,12 +745,44 @@ input[type=submit]:hover {
     overflow-y: hidden;
   }
 
+  .container img {
+    visibility: visible;
+  }
+  .container div {
+    width: 100%;
+  }
+  .container div .timelineCategory {
+    width: auto;
+  }
+  .container div .gmap_canvas {
+    display: none;
+  }
+
+  .box.style .imageLeft {
+    position: relative;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+  .box.style .imageRight {
+    position: relative;
+    margin-bottom: 3rem;
+    width: 100%;
+  }
+  .box.style.textRight .inner {
+    margin-left: 0;
+    padding-left: 1.5rem;
+  }
+  .box.style.textLeft .inner {
+    padding-left: 1.5rem;
+  }
+
   .textContainer {
     display: flex;
     align-items: center;
-    margin: 0 0 0 5px;
+    margin: 0 5rem;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
   }
   .textContainer h1 {
     text-align: center;
@@ -767,12 +799,29 @@ input[type=submit]:hover {
     padding: 0;
   }
 
+  .aboutHidden {
+    padding-top: 3rem;
+  }
+
+  .about {
+    margin-top: 11rem;
+    padding-top: 0;
+  }
+
+  .aboutDetails {
+    margin-top: 4rem;
+  }
+
   .aboutHeading h1 {
     font-size: 8rem;
   }
 
   .sectionHeading h6 {
     font-size: 2rem;
+  }
+
+  .portfolio {
+    padding-top: 0;
   }
 
   .portfolioDescription {
@@ -786,10 +835,11 @@ input[type=submit]:hover {
 
   .timelineCategory {
     left: 10px;
+    width: 20px;
   }
 
   .timelineDate {
-    left: 40%;
+    display: none;
   }
 
   .footerContainer {

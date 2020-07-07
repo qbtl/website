@@ -37,7 +37,6 @@ const navSlide = () => {
     // Animate Links 
     navLinks.forEach((link, index) => {
       link.style.animation = `navLinksFade .5s ease forwards ${index / 10 + 0,1}s`
-      console.log(index / 10)
     });
     // Burger animation 
     burger.classList.toggle('toggle');
