@@ -10,6 +10,6 @@ document.getElementById("timer").innerHTML = days + "d "
 + hours + "h " + minutes + "m " + seconds + "s "; 
     if (t < 0) { 
         clearInterval(x); 
-        document.getElementById("timer").innerHTML = "EXPIRED"; 
+        document.getElementById("timer").innerHTML = "Time expired"; 
     } 
 }, 1000); 
