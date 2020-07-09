@@ -926,7 +926,8 @@ input[type=submit]:hover {
   .textContainer h3 {
     font-size: 40px;
   }
-  .textContainer h1, .textContainer h3 {
+  .textContainer h1,
+.textContainer h3 {
     margin: 25px 0 5px;
   }
 
@@ -947,6 +948,10 @@ input[type=submit]:hover {
     margin-top: 4rem;
   }
 
+  .aboutHeading {
+    margin-bottom: 4rem;
+  }
+
   .aboutHeading h1 {
     font-size: 8rem;
   }
@@ -955,17 +960,31 @@ input[type=submit]:hover {
     font-size: 2rem;
   }
 
+  .blogHome {
+    padding-bottom: 0;
+  }
+
   .blogArticle .imageLeft {
     margin-bottom: 3rem !important;
   }
 
+  .blogCategory {
+    left: 10px;
+    width: 125px !important;
+  }
+
   .portfolio {
     padding-top: 0;
+    margin-bottom: -2rem;
   }
 
   .portfolioDescription {
     margin: 0;
     order: 2;
+  }
+
+  .experienceHeading {
+    margin-bottom: -2rem;
   }
 
   .timelineBody {
