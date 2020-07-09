@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="public/css/main.css">
 	<link rel="icon" href="public/img/logo.jpg">
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@500">
 </head>
 
 <body>
@@ -24,6 +25,7 @@
 			<ul class="navLinks">
 				<li><a href="" class="active homeNav">Accueil</a></li>
 				<li><a href="#about" class="aboutNav">À propos</a></li>
+				<li><a href="#blog" class="blogNav">Blog</a></li>
 				<li><a href="#portfolio" class="portfolioNav">Portfolio</a></li>
 				<li><a href="#experience" class="experienceNav">Experience</a></li>
 				<li><a href="#contact" class="contactNav">Contact</a></li>
@@ -59,6 +61,36 @@
 				<br><br>
 				Je vous souhaite la bienvenue sur mon site !
 			</p>
+		</div>
+	</section>
+
+	<div class="blogHidden"></div>
+	<div class="sectionHeading blog" id="blog">
+		<h1>Blog</h1>
+		<h6>Les derniers articles</h6>
+	</div>
+	<div class="blogHome">
+		<a class="blogNavAccess" target="_blank" href="blog/">Accéder au blog</a>
+	</div>
+	<section class="container box style textRight blogArticle">
+		<img class="imageLeft fit boxImage" src="public/img/forestbridge.jpg" alt="Blog Latest Article">
+		<div class="inner" data-aos="fade-in" data-aos-delay="300">
+			<div class="blogBody">
+				<div class="blogCategory">Mise à jour</div>
+				<h2 class="blogTitle">COMING SOON</h2>
+				<div class="blogSubtitle">Version 2.6.0</div>
+				<p class="blogArticleDescription">
+					La nouvelle version 2.6.0 intégrera un blog qui permettra de suivre l'évolution du site.
+					Cette nouvelle fonctionnalité sera comme un changelog mais en plus détaillé avec des explications
+					plus nombreuses sur les changements apportés entre chaque version.
+				</p>
+				<br>
+				<p>
+					Plus d'informations dans les jours à venir.
+				</p>
+				<a href="#" class="ctaBlog">Voir plus <i class="fa fa-arrow-right"></i></a>
+				<p class="timer" id="timer"></p>
+			</div>
 		</div>
 	</section>
 
@@ -142,10 +174,11 @@
 				<h2 class="timelineTitle">Première année diplôme d'ingénieur</h2>
 				<div class="timelineSubtitle">ISEN Méditerrannée &mdash; Toulon</div>
 				<p class="timelineDescription">
-					Admis en CIN1 (Cycle Informatique et Numérique), je m'apprête à decouvrir les joies d'une école d'ingénieur.
+					Admis en CIN1 (Cycle Informatique et Numérique), je m'apprête à decouvrir les joies d'une école
+					d'ingénieur.
 					<br>
-					L'ISEN est une école d'ingénieur spécialisée dans l'informatique et le numérique qui propose des formations 
-					en informatique.
+					L'ISEN est une école d'ingénieur spécialisée dans l'informatique et le numérique qui propose des
+					formations en informatique.
 				</p>
 			</div>
 		</div>
@@ -219,6 +252,7 @@
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script src="public/js/main.js"></script>
 	<script src="public/js/scale.js"></script>
+	<script src="public/js/timer.js"></script>
 </body>
 
 </html>

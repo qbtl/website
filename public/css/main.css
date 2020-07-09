@@ -42,6 +42,7 @@ a:any-link {
 
 p {
   font-size: 1.8rem;
+  font-family: "Raleway", sans-serif;
 }
 
 img {
@@ -70,7 +71,6 @@ img {
   font-weight: 300;
   position: relative;
   margin-bottom: 1rem;
-  margin-top: -10rem;
   font-family: "AveFedan", sans-serif;
 }
 .sectionHeading h1::before {
@@ -354,6 +354,134 @@ header {
 }
 
 /*------------------------------------*\
+    $BLOG
+\*------------------------------------*/
+.soonImg {
+  background-image: url("../img/forestbridge.jpg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left, center 0;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+.soonHome {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2rem 3rem !important;
+  font-family: AveFedan;
+  color: #FFF;
+  font-size: 36px;
+}
+
+.timer {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+.soonText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: #FFF;
+  font-family: "Raleway", sans-serif;
+}
+.soonText h1 {
+  font-size: 64px;
+  padding: 1rem;
+  text-align: center;
+}
+.soonText p {
+  padding: 1.5rem;
+  font-size: 18px;
+}
+
+.blog {
+  padding-top: 13rem;
+}
+
+.blogArticle {
+  margin-bottom: 5rem;
+}
+
+.blogHome {
+  text-align: center;
+  position: relative;
+  margin-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.blogNavAccess {
+  padding: 1.5rem;
+  color: #FFF;
+  font-size: 15px;
+  background-color: #3498DB;
+  border-radius: 15px;
+  transition: background-color 650ms;
+}
+.blogNavAccess:hover {
+  background-color: #ED6A5E;
+}
+
+.blogBody {
+  padding: 0 !important;
+  position: relative;
+  height: 100%;
+}
+.blogBody .blogCategory {
+  position: absolute;
+  left: 0;
+  top: -15px;
+  height: 25px;
+  padding: 0 15px;
+  color: #FFF;
+  font-size: 14px;
+  line-height: 25px;
+  text-transform: uppercase;
+  background-color: #ED6A5E;
+}
+.blogBody .blogTitle {
+  margin: 0;
+  padding: 2.25rem 0 0.75rem;
+  font-size: 22px;
+  color: #0072BB;
+  font-weight: bold;
+}
+.blogBody .blogSubtitle {
+  margin: 0;
+  padding: 0 0 15px;
+  font-size: 19px;
+  color: #3498DB;
+}
+.blogBody .blogArticleDescription {
+  text-align: justify;
+  line-height: 27px;
+}
+
+.ctaBlog {
+  display: inline-block;
+  margin-top: 0.75rem;
+  text-align: right;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: "retro", sans-serif;
+  color: #ED6A5E;
+  transition: color 650ms;
+  width: auto;
+}
+.ctaBlog:hover {
+  color: #3498DB;
+}
+
+/*------------------------------------*\
     $PORTFOLIO
 \*------------------------------------*/
 .portfolioHidden {
@@ -394,7 +522,7 @@ header {
 }
 
 .portfolio {
-  margin-top: 15rem;
+  margin-top: 5rem;
   margin-bottom: 4rem;
 }
 
@@ -406,7 +534,7 @@ header {
     $EXPERIENCE
 \*------------------------------------*/
 .timelineHidden {
-  padding-top: 12rem;
+  padding-top: 2rem;
   visibility: hidden;
 }
 
@@ -483,6 +611,10 @@ header {
 .contactHidden {
   padding-top: 8rem;
   visibility: hidden;
+}
+
+.contact div.inner .sectionHeading {
+  margin-top: 0;
 }
 
 .contactForm {
@@ -772,6 +904,9 @@ input[type=submit]:hover {
     margin-left: 0;
     padding-left: 1.5rem;
   }
+  .box.style.textRight .imageCenter {
+    width: 100%;
+  }
   .box.style.textLeft .inner {
     padding-left: 1.5rem;
   }
@@ -818,6 +953,10 @@ input[type=submit]:hover {
 
   .sectionHeading h6 {
     font-size: 2rem;
+  }
+
+  .blogArticle .imageLeft {
+    margin-bottom: 3rem !important;
   }
 
   .portfolio {

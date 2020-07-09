@@ -5,6 +5,7 @@ $(document).ready(function () {
     }, 2000);
     $('.homeNav').removeClass('active');
     $('.aboutNav').removeClass('active');
+    $('.blogNav').removeClass('active');
     $('.portfolioNav').removeClass('active');
     $('.experienceNav').removeClass('active');
     $('.contactNav').removeClass('active');
