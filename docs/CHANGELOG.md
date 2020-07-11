@@ -6,7 +6,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
-## Version [2.5.0] - Released on 2020-07-13
+## Version [2.5.0] - Released on 2020-07-11
 
 ### Added
 
@@ -17,7 +17,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 * box to card style
 * links to public folder now based on website's root
-* timer to countdown till' July 13 2020 15:00UTC+2
+* timer to countdown till' July 11 2020 16:00UTC+2
 
 ### Deleted
 
