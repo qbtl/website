@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quentin Boitel | Blog</title>
+
+
+    <!-- CSS LINKS -->
+    <link rel="icon" href="/public/img/logo.jpg">
+    <link rel="stylesheet" href="/public/css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@500">
+    <link href="https://fonts.googleapis.com/css2?family=Knewave&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="logHeader">
+        <nav class="mainNav">
+            <a href="" class="logo">Quentin Boitel</a>
+            <ul class="navLinks">
+                <li><a href="" class="active homeNav">Accueil</a></li>
+                <li><a href="#releases2" class="releasesNav2">Version 2</a></li>
+                <li><a href="#releases1" class="releasesNav1">Version 1</a></li>
+                <li><a href="#releases0" class="releasesNav0">Version 0</a></li>
+                <li><a href="/#contact" class="contactNav">Contact</a></li>
+            </ul>
+
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+
+        <div class="textContainer">
+            <h1 id="homeText">Changelog</h1>
+            <h3>Les dernières versions</h3>
+            <a href="/"><button class="backHome">Retour à l'accueil</button></a>
+        </div>
+
+    </header>
+
+    <div class="sectionHeading releases" id="releases2">
+        <h1>Version 2</h1>
+        <h6>Dernière version stable</h6>
+    </div>
+    <div class="cardSection">
+        <div class="card logReleasesLatest">
+            <div class="cardImg">
+                <img src="/public/img/forestbridge.jpg" alt="">
+            </div>
+            <div class="cardInfo">
+                <div class="cardDate">
+                    <span>10 Juillet 2020</span>
+                    <span>Écrit par <a href="https://github.com/Dotaker/" class="logAuthor">@Dotaker</a></span>
+                </div>
+                <h1 class="cardTitle">Version 2.5.0</h1>
+                <p class="cardText">
+                    La nouvelle version 2.5.0 apporte une nouvelle fonctionnalité, le changelog.
+                </p>
+                <p class="cardText">
+                    Ainsi, tout au long du développement, chaque personne pourra accéder au changelog qui liste chacune
+                    des modifications faite au site.
+                    <br><br>
+                    Cette version sera déployée le 11 juillet 2020 vers 16h.
+                </p>
+                <!-- <p class="center"><a 
+                    href="https://github.com/qbtl/website/blob/master/docs/CHANGELOG.md#version-250---released-on-2020-07-13" 
+                    class="blogPostCta">Read more</a></p> -->
+                <p class="timer" id="timer"></p>
+            </div>
+        </div>
+
+        <div class="card logReleases">
+            <div class="cardImg">
+                <img src="/public/img/forestbridge.jpg" alt="">
+            </div>
+            <div class="cardInfo">
+                <div class="cardDate">
+                    <span>30 Mai 2020</span>
+                    <span>Écrit par <a href="https://github.com/Dotaker/" class="logAuthor">@Dotaker</a></span>
+                </div>
+                <h1 class="cardTitle">Version 2.4</h1>
+                <p class="cardText">
+                    La version 2.4 aura été l'occasion de faire quelques modifications au niveau du design comme la
+                    refonte du header ainsi que de la barre de navigation.
+                </p>
+                <p class="cardText cardTextEnd">
+                    La modification également de certains éléments responsives du site et la disparition du design
+                    en forme de boite avec une flèche ont contributé à une refonte graphique du site.
+                </p>
+                <p class="center"><a
+                        href="https://github.com/qbtl/website/blob/master/docs/CHANGELOG.md#version-240---released-on-2020-05-30"
+                        class="cardCta">Voir plus <i class="fa fa-arrow-right"></i></a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="sectionHeading releases" id="releases1">
+        <h1>Version 1</h1>
+        <h6>Première version stable</h6>
+    </div>
+    <div class="cardSection">
+        <div class="card logReleasesLatest releases1">
+            <div class="cardImg">
+                <img src="/public/img/forestbridge.jpg" alt="">
+            </div>
+            <div class="cardInfo">
+                <div class="cardDate">
+                    <span>8 Avril 2020</span>
+                    <span>Écrit par <a href="https://github.com/Dotaker/" class="logAuthor">@Dotaker</a></span>
+                </div>
+                <h1 class="cardTitle">Version 1.0.1</h1>
+                <p class="cardText">
+                    La version 1.0.1 a résolu des problèmes d'adaption aux navigateurs Chrome et Firefox.
+                </p>
+                <p class="cardText cardTextEnd">
+                    C'est ainsi la première version stable du site fonctionnant sur tous les navigateurs.
+                </p>
+                <p class="center"><a
+                        href="https://github.com/qbtl/website/blob/master/docs/CHANGELOG.md#version-101---released-on-2020-04-08"
+                        class="cardCta">Voir plus <i class="fa fa-arrow-right"></i></a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="sectionHeading releases" id="releases0">
+        <h1>Version 0</h1>
+        <h6>Version de développement</h6>
+    </div>
+    <div class="cardSection">
+        <div class="card logReleasesLatest">
+            <div class="cardImg">
+                <img src="/public/img/forestbridge.jpg" alt="">
+            </div>
+            <div class="cardInfo">
+                <div class="cardDate">
+                    <span>7 Avril 2020</span>
+                    <span>Écrit par <a href="https://github.com/Dotaker/" class="logAuthor">@Dotaker</a></span>
+                </div>
+                <h1 class="cardTitle">Version 0.7.2</h1>
+                <p class="cardText">
+                    La version 0.7.2 résout le problème rencontré dans le formulaire contact lors de l'envoi d'un mail.
+                </p>
+                <p class="cardText">
+                    Ce système de mail a depuis été remplacé par Netlify Forms, un système développé et fourni par
+                    Netlify.
+                </p>
+                <p class="center"><a
+                        href="https://github.com/qbtl/website/blob/master/docs/CHANGELOG.md#version-072---released-on-2020-04-07"
+                        class="cardCta">Voir plus <i class="fa fa-arrow-right"></i></a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS SCRIPTS -->
+    <script src="/public/js/icons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="/public/js/main.js"></script>
+    <script src="/public/js/timer.js"></script>
+</body>
+
+</html>

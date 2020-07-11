@@ -52,11 +52,97 @@ img {
 /*------------------------------------*\
     $REUSABLE
 \*------------------------------------*/
-.container {
-  margin: 0 auto;
-  max-width: 100%;
-  width: 1140px;
+.cardSection {
+  width: 100%;
+  min-height: 350px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.5rem;
+  font-family: "Helvetica", sans-serif;
+}
+
+.card {
+  width: 100%;
+  max-width: 98rem;
+  padding: 3rem;
+  background-color: #fff;
+  box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  border-radius: 0.8rem;
+}
+
+.cardImg {
+  min-width: 50rem;
+  max-width: 50rem;
+  height: 40rem;
+  transform: translateX(-8rem);
   position: relative;
+}
+
+.cardImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  display: block;
+  border-radius: 0.8rem;
+}
+
+.cardDate span {
+  display: block;
+  color: #3498DB;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+
+.cardTitle {
+  font-size: 2.5rem;
+  margin: 1.5rem 0 2rem;
+  text-transform: uppercase;
+  color: #ED6A5E;
+  font-family: "Raleway", sans-serif;
+}
+
+.cardText {
+  margin-bottom: 3rem;
+  font-size: 1.8rem;
+  color: #000;
+}
+
+.cardTextEnd {
+  margin-bottom: 0;
+}
+
+.cardCta {
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  margin-top: 2rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 0.8rem;
+  background-color: #ED6A5E;
+  transition: 0.2s linear;
+}
+.cardCta:hover {
+  transform: scale(1.2);
+}
+
+.center {
+  text-align: center;
+}
+
+.timer {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  padding-top: 1rem;
 }
 
 .sectionHeading {
@@ -94,73 +180,6 @@ img {
   left: 50%;
   transform: translateX(-50%);
   background-color: #ED6A5E;
-}
-
-.box {
-  position: relative;
-}
-.box :last-child {
-  margin-bottom: 0;
-}
-.box.style {
-  background: transparent;
-  padding: 3em;
-}
-.box.style .boxImage {
-  display: block;
-  position: absolute;
-  top: 0;
-  width: 50%;
-  height: 100%;
-  background: transparent;
-  overflow: hidden;
-}
-.box.style .imageLeft img {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: auto;
-}
-.box.style .inner > :last-child {
-  margin: 0;
-}
-.box.style.textRight .imageLeft {
-  left: 0;
-}
-.box.style.textRight .imageLeft img {
-  right: 0;
-}
-.box.style.textRight .inner {
-  margin-left: 50%;
-  padding-left: 3em;
-}
-.box.style.textRight .imageRight {
-  left: 0;
-}
-.box.style.textRight .imageRight img {
-  right: 0;
-}
-.box.style.textLeft .imageLeft {
-  right: 0;
-}
-.box.style.textLeft .imageLeft img {
-  left: 0;
-}
-.box.style.textLeft .inner {
-  margin-right: 50%;
-  padding-right: 3em;
-}
-.box.style.textLeft .imageRight {
-  right: 0;
-}
-.box.style.textLeft .imageRight img {
-  left: 0;
-}
-.box.style .imageRight img {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: auto;
 }
 
 /*------------------------------------*\
@@ -261,7 +280,8 @@ header {
   margin: 55px 0 25px;
 }
 .textContainer button {
-  width: 130px;
+  width: auto;
+  padding: 10px;
   height: 42px;
   border-radius: 10px;
   font-family: Poetsen;
@@ -270,7 +290,7 @@ header {
   outline: none;
   margin: 20px 0;
 }
-.textContainer button.downCv {
+.textContainer button.downCv, .textContainer button.backHome {
   background-color: #FFF;
   color: #0072BB;
   border: 3px solid #0072BB;
@@ -285,46 +305,15 @@ header {
 }
 
 /*------------------------------------*\
-    $IMAGES
-\*------------------------------------*/
-.imageLeft {
-  display: inline-block;
-  border: 0;
-  border-radius: 15px;
-}
-.imageLeft.fit {
-  display: block;
-  width: 100%;
-}
-.imageLeft img {
-  display: block;
-  width: 100%;
-}
-
-.imageRight {
-  display: inline-block;
-  border: 0;
-  border-radius: 15px;
-}
-.imageRight.fit {
-  display: block;
-  width: 100%;
-}
-.imageRight img {
-  display: block;
-  width: 100%;
-}
-
-/*------------------------------------*\
     $ABOUT
 \*------------------------------------*/
 .about {
-  margin-top: 12rem;
+  margin-top: 13rem;
   margin-bottom: 13rem;
 }
 
 .aboutHidden {
-  padding-top: 10rem;
+  padding-top: 1.5rem;
   visibility: hidden;
 }
 
@@ -342,11 +331,6 @@ header {
 .aboutHeading h6 {
   font-size: 2rem;
   font-weight: 600;
-}
-
-.aboutImage {
-  width: 20rem;
-  height: 20rem;
 }
 
 .aboutDescription {
@@ -375,13 +359,6 @@ header {
   font-size: 36px;
 }
 
-.timer {
-  text-align: center;
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  padding-top: 1rem;
-}
-
 .soonText {
   display: flex;
   align-items: center;
@@ -405,22 +382,23 @@ header {
   font-size: 18px;
 }
 
-.blog {
-  padding-top: 13rem;
+.log {
+  padding-top: 8rem;
+  margin-top: -2rem;
 }
 
-.blogArticle {
-  margin-bottom: 5rem;
+.logSection {
+  margin-bottom: 12rem;
 }
 
-.blogHome {
+.logButton {
   text-align: center;
   position: relative;
   margin-top: 2rem;
   padding-bottom: 3rem;
 }
 
-.blogNavAccess {
+.logAccess {
   padding: 1.5rem;
   color: #FFF;
   font-size: 15px;
@@ -428,58 +406,45 @@ header {
   border-radius: 15px;
   transition: background-color 650ms;
 }
-.blogNavAccess:hover {
+.logAccess:hover {
   background-color: #ED6A5E;
 }
 
-.blogBody {
-  padding: 0 !important;
-  position: relative;
-  height: 100%;
+.logHeader {
+  margin-bottom: -9rem;
 }
-.blogBody .blogCategory {
-  position: absolute;
-  left: 0;
-  top: -15px;
-  height: 25px;
-  padding: 0 15px;
-  color: #FFF;
-  font-size: 14px;
-  line-height: 25px;
-  text-transform: uppercase;
-  background-color: #ED6A5E;
+
+.logReleases {
+  margin-top: 5rem;
+  margin-bottom: -7rem;
 }
-.blogBody .blogTitle {
-  margin: 0;
-  padding: 2.25rem 0 0.75rem;
-  font-size: 22px;
+
+.logReleasesLatest {
+  margin-top: 1.5rem;
+  margin-bottom: 5rem;
+}
+
+.releases1 {
+  margin-bottom: -7rem;
+}
+
+.releases {
+  padding-top: 7rem;
+}
+.releases h1 {
+  font-family: "Knewave" !important;
+}
+
+.backHome {
+  background-color: #FFF;
   color: #0072BB;
-  font-weight: bold;
-}
-.blogBody .blogSubtitle {
-  margin: 0;
-  padding: 0 0 15px;
-  font-size: 19px;
-  color: #3498DB;
-}
-.blogBody .blogArticleDescription {
-  text-align: justify;
-  line-height: 27px;
+  border: 3px solid #0072BB;
+  transition: all 1s ease;
 }
 
-.ctaBlog {
-  display: inline-block;
-  margin-top: 0.75rem;
-  text-align: right;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  font-family: "retro", sans-serif;
+.logAuthor {
   color: #ED6A5E;
-  transition: color 650ms;
-  width: auto;
-}
-.ctaBlog:hover {
-  color: #3498DB;
+  font-variant: small-caps;
 }
 
 /*------------------------------------*\
@@ -509,33 +474,21 @@ header {
   opacity: 0.8;
   color: #175676;
 }
-.portfolioDescription .cta {
-  display: inline-block;
-  margin-top: 2.5rem;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  font-family: "retro", sans-serif;
-  color: #ED6A5E;
-  transition: color 650ms;
-}
-.portfolioDescription .cta:hover {
-  color: #3498DB;
-}
 
 .portfolio {
-  margin-top: 5rem;
+  margin-top: 3rem;
   margin-bottom: 4rem;
 }
 
 .portfolioDown {
-  margin-top: 4rem;
+  margin-top: 10rem !important;
 }
 
 /*------------------------------------*\
     $EXPERIENCE
 \*------------------------------------*/
 .timelineHidden {
-  padding-top: 2rem;
+  padding-top: 0;
   visibility: hidden;
 }
 
@@ -548,9 +501,9 @@ header {
 }
 
 .timelineDate {
-  position: absolute;
+  position: relative;
   top: 5px;
-  left: 45%;
+  left: 90%;
   width: 45px;
   height: 45px;
   padding-top: 10px;
@@ -614,8 +567,12 @@ header {
   visibility: hidden;
 }
 
-.contact div.inner .sectionHeading {
-  margin-top: 0;
+.contactHeading {
+  margin-top: 0 !important;
+}
+
+.contact {
+  margin-bottom: 5rem;
 }
 
 .contactForm {
@@ -633,6 +590,7 @@ header {
   text-align: right;
   height: 100%;
   width: 100%;
+  border-radius: 0.8rem;
 }
 
 iframe {
@@ -641,6 +599,7 @@ iframe {
   border: 0;
   overflow: none;
   margin: none;
+  border-radius: 0.8rem;
 }
 
 .gmap_canvas {
@@ -648,6 +607,7 @@ iframe {
   background: none !important;
   height: 100%;
   width: 100%;
+  border-radius: 0.8rem;
 }
 
 input,
@@ -677,10 +637,6 @@ input[type=submit] {
 input[type=submit]:hover {
   color: #F5F5F5;
   background-color: #138609;
-}
-
-.contact {
-  margin-bottom: 5rem;
 }
 
 .footerContainer {
@@ -752,7 +708,7 @@ input[type=submit]:hover {
   display: inline-block;
   width: 90px;
   height: 90px;
-  background: transparent;
+  background: #FFF;
   margin-top: -1rem;
   margin-bottom: 2rem;
   border-radius: 30%;
@@ -878,40 +834,6 @@ input[type=submit]:hover {
     overflow-y: hidden;
   }
 
-  .container img {
-    visibility: visible;
-  }
-  .container div {
-    width: 100%;
-  }
-  .container div .timelineCategory {
-    width: auto;
-  }
-  .container div .gmap_canvas {
-    display: none;
-  }
-
-  .box.style .imageLeft {
-    position: relative;
-    margin-bottom: 2rem;
-    width: 100%;
-  }
-  .box.style .imageRight {
-    position: relative;
-    margin-bottom: 3rem;
-    width: 100%;
-  }
-  .box.style.textRight .inner {
-    margin-left: 0;
-    padding-left: 1.5rem;
-  }
-  .box.style.textRight .imageCenter {
-    width: 100%;
-  }
-  .box.style.textLeft .inner {
-    padding-left: 1.5rem;
-  }
-
   .textContainer {
     display: flex;
     align-items: center;
@@ -932,8 +854,21 @@ input[type=submit]:hover {
     margin: 25px 0 5px;
   }
 
-  section {
-    padding: 0;
+  .card {
+    padding: 2.5rem;
+    flex-direction: column;
+    margin-top: 7rem !important;
+  }
+  .card.cardLog {
+    margin-top: 5rem !important;
+    margin-bottom: -7rem;
+  }
+
+  .cardImg {
+    min-width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: -6rem;
+    transform: translate(0, -8rem);
   }
 
   .aboutHidden {
@@ -941,8 +876,8 @@ input[type=submit]:hover {
   }
 
   .about {
-    margin-top: 11rem;
-    padding-top: 0;
+    margin-top: 1rem;
+    margin-bottom: 0;
   }
 
   .aboutDetails {
@@ -961,17 +896,8 @@ input[type=submit]:hover {
     font-size: 2rem;
   }
 
-  .blogHome {
+  .blogButton {
     padding-bottom: 0;
-  }
-
-  .blogArticle .imageLeft {
-    margin-bottom: 3rem !important;
-  }
-
-  .blogCategory {
-    left: 10px;
-    width: 125px !important;
   }
 
   .portfolio {
@@ -988,17 +914,17 @@ input[type=submit]:hover {
     margin-bottom: -2rem;
   }
 
+  .timelineHidden {
+    margin-bottom: -3rem;
+  }
+
   .timelineBody {
     padding: 10px;
   }
 
   .timelineCategory {
     left: 10px;
-    width: 20px;
-  }
-
-  .timelineDate {
-    display: none;
+    width: auto;
   }
 
   .footerContainer {
@@ -1036,22 +962,38 @@ input[type=submit]:hover {
     margin: 15px;
   }
 
-  section {
-    padding: 0 2rem;
+  .card {
+    padding: 2.5rem;
+    flex-direction: column;
+    max-width: 70rem;
+    margin-top: 4rem;
+  }
+  .card.cardAbout {
+    margin-top: 0 !important;
+  }
+  .card.cardLog {
+    margin-top: 5rem;
   }
 
-  .timelineDate {
-    left: 40%;
+  .cardImg {
+    min-width: 100% !important;
+    max-width: 100% !important;
+    transform: translate(0, -8rem);
+    margin-bottom: -5rem;
   }
-}
-@media screen and (max-width: 1680px) {
-  .container {
-    width: 85%;
+
+  .releases h6 {
+    margin-bottom: 2rem;
   }
 }
 @media screen and (max-width: 1080px) {
-  .container {
-    width: 95%;
+  .card {
+    max-width: 80rem;
+  }
+
+  .cardImg {
+    min-width: 40rem;
+    max-width: 40rem;
   }
 }
 /*------------------------------------*\
