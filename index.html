@@ -12,8 +12,8 @@
 
 
 	<!-- CSS LINKS -->
-	<link rel="stylesheet" href="public/css/main.css">
-	<link rel="icon" href="public/img/logo.jpg">
+	<link rel="stylesheet" href="/public/css/main.css">
+	<link rel="icon" href="/public/img/logo.jpg">
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@500">
 </head>
@@ -25,9 +25,9 @@
 			<ul class="navLinks">
 				<li><a href="" class="active homeNav">Accueil</a></li>
 				<li><a href="#about" class="aboutNav">À propos</a></li>
-				<li><a href="#blog" class="blogNav">Blog</a></li>
 				<li><a href="#portfolio" class="portfolioNav">Portfolio</a></li>
 				<li><a href="#experience" class="experienceNav">Experience</a></li>
+				<li><a href="#changelog" class="logNav">Changelog</a></li>
 				<li><a href="#contact" class="contactNav">Contact</a></li>
 			</ul>
 
@@ -41,184 +41,209 @@
 		<div class="textContainer">
 			<h1 id="homeText">Quentin Boitel0</h1>
 			<h3>Étudiant à l&CloseCurlyQuote;ISEN Toulon</h3>
-			<a href="public/cv/CV_QB.pdf" target="_blank"><button class="downCv">Download CV</button></a>
+			<a href="/public/cv/CV_QB.pdf" target="_blank"><button class="downCv">Download CV</button></a>
 		</div>
 
 	</header>
 
 	<div class="aboutHidden" id="about"></div>
-	<section class="container box style textRight about">
-		<img class="imageLeft fit boxImage" src="public/img/webDev.png" alt="About Image" />
-		<div class="inner aboutDetails" data-aos="fade-in" data-aos-delay="300">
-			<div class="aboutHeading">
-				<h1>Moi</h1>
-				<h6>À propos</h6>
+	<div class="cardSection about">
+		<div class="card cardAbout">
+			<div class="cardImg">
+				<img src="/public/img/webDev.png" alt="">
 			</div>
-			<p class="aboutDescription">
-				Étudiant de 17 ans, je souhaite devenir développeur web.
-				Bientôt en première année à l'ISEN Méditerrannée à Toulon,
-				je me forge une bonne base de connaissances en développant ce site.
-				<br><br>
-				Je vous souhaite la bienvenue sur mon site !
-			</p>
-		</div>
-	</section>
-
-	<div class="blogHidden"></div>
-	<div class="sectionHeading blog" id="blog">
-		<h1>Blog</h1>
-		<h6>Les derniers articles</h6>
-	</div>
-	<div class="blogHome">
-		<a class="blogNavAccess" target="_blank" href="blog/">Accéder au blog</a>
-	</div>
-	<section class="container box style textRight blogArticle">
-		<img class="imageLeft fit boxImage" src="public/img/forestbridge.jpg" alt="Blog Latest Article">
-		<div class="inner" data-aos="fade-in" data-aos-delay="300">
-			<div class="blogBody">
-				<div class="blogCategory">Mise à jour</div>
-				<h2 class="blogTitle">COMING SOON</h2>
-				<div class="blogSubtitle">Version 2.6.0</div>
-				<p class="blogArticleDescription">
-					La nouvelle version 2.6.0 intégrera un blog qui permettra de suivre l'évolution du site.
-					Cette nouvelle fonctionnalité sera comme un changelog mais en plus détaillé avec des explications
-					plus nombreuses sur les changements apportés entre chaque version.
+			<div class="card-info">
+				<div class="aboutHeading">
+					<h1>Moi</h1>
+					<h6>À propos</h6>
+				</div>
+				<p class="aboutDescription">
+					Étudiant de 17 ans, je souhaite devenir développeur web.
+					Bientôt en première année à l'ISEN Méditerrannée à Toulon,
+					je me forge une bonne base de connaissances en développant ce site.
+					<br><br>
+					Je vous souhaite la bienvenue sur mon site !
 				</p>
-				<br>
-				<p>
-					Plus d'informations dans les jours à venir.
-				</p>
-				<!-- <a href="#" class="ctaBlog">Voir plus <i class="fa fa-arrow-right"></i></a> -->
-				<p class="timer" id="timer"></p>
 			</div>
 		</div>
-	</section>
+	</div>
 
 	<div class="portfolioHidden" id="portfolio"></div>
 	<div class="sectionHeading portfolio">
 		<h1>Portfolio</h1>
 		<h6>Regardez quelques unes de mes dernières créations</h6>
 	</div>
-	<section class="container box style textLeft portfolioUp">
-		<img class="imageRight fit boxImage" src="public/img/userAdd.png" alt="User Add Image" />
-		<div class="inner" data-aos="fade-in" data-aos-delay="300">
-			<div class="portfolioDescription">
-				<h6>API</h6>
-				<h1>RESTful Go API</h1>
-				<p>
-					API écrite en Go créée avec Gin-Gonic.
-					<br><br>
-					Cette API permet de récupérer la liste des utilisateurs, de récupérer un seul utilisateur,
-					d'en créer ou d'en supprimer un.
-				</p>
-				<a href="https://github.com/Dotaker/Go-Gin-RESTful-API/" class="cta">Voir plus <i
-						class="fa fa-arrow-right"></i></a>
+	<div class="cardSection">
+		<div class="card">
+			<div class="cardImg">
+				<img src="/public/img/userAdd.png" alt="">
+			</div>
+			<div class="cardInfo">
+				<div class="portfolioDescription">
+					<h6>API</h6>
+					<h1>RESTful Go API</h1>
+					<p>
+						API écrite en Go créée avec Gin-Gonic.
+						<br><br>
+						Cette API permet de récupérer la liste des utilisateurs, de récupérer un seul utilisateur,
+						d'en créer ou d'en supprimer un.
+					</p>
+					<p class="center"><a href="https://github.com/Dotaker/Go-Gin-RESTful-API/" class="cardCta">Voir plus <i
+							class="fa fa-arrow-right"></i></a></p>
+				</div>
 			</div>
 		</div>
-	</section>
-	<section class="container box style textRight portfolioDown">
-		<img class="imageLeft fit boxImage" src="public/img/books.png" alt="Books Image" />
-		<div class="inner" data-aos="fade-in" data-aos-delay="300">
-			<div class="portfolioDescription">
-				<h6>App</h6>
-				<h1>RESTful JS APP</h1>
-				<p>
-					App écrite en JS créée avec Node, Express & MongoDB.
-					<br><br>
-					Cette App simule une librairie où l'on peut trier les livres par nom, auteur.
-					On peut aussi modifier un livre, un auteur ou en créer un.
-				</p>
-				<a href="https://github.com/Dotaker/mybrary/" class="cta">Voir plus <i
-						class="fa fa-arrow-right"></i></a>
+
+		<div class="card portfolioDown">
+			<div class="cardImg">
+				<img src="/public/img/books.png" alt="">
+			</div>
+			<div class="cardInfo">
+				<div class="portfolioDescription">
+					<h6>App</h6>
+					<h1>RESTful JS APP</h1>
+					<p>
+						App écrite en JS créée avec Node, Express & MongoDB.
+						<br><br>
+						Cette App simule une librairie où l'on peut trier les livres par nom, auteur.
+						On peut aussi modifier un livre, un auteur ou en créer un.
+					</p>
+					<p class="center"><a href="https://github.com/Dotaker/mybrary/" class="cardCta">Voir plus <i
+							class="fa fa-arrow-right"></i></a></p>
+				</div>
 			</div>
 		</div>
-	</section>
+	</div>
 
 	<div class="timelineHidden" id="experience"></div>
 	<div class="sectionHeading experienceHeading">
 		<h1>Mon Expérience</h1>
 		<h6>Mon parcours</h6>
 	</div>
-	<section class="container box style textLeft experience">
-		<img class="imageRight fit boxImage" src="public/img/careerDev.png" alt="Career Timeline" />
-		<div class="inner timeline" data-aos="fade-in" data-aos-delay="300">
-			<div class="timelineDate">
-				<span class="timelineDateDay">2017</span>
-				<span class="timelineDateDay">2020</span>
+	<div class="cardSection">
+		<div class="card experience">
+			<div class="cardImg">
+				<img src="/public/img/careerDev.png" alt="">
 			</div>
-			<div class="timelineBody">
-				<div class="timelineCategory">Diplôme</div>
-				<h2 class="timelineTitle">Baccalauréat Général Scientifique 2020, mention BIEN section européenne</h2>
-				<div class="timelineSubtitle">Lycée Paul Cézanne &mdash; Aix-en-Provence</div>
-				<p class="timelineDescription">
-					Dès mon entrée en seconde, j'ai suivi un enseignement de programmation (anciennement ICN),
-					puis lors de mon stage, j'ai programmé une app web pour intéragir avec un service fourni par
-					l'entreprise.
-					<br>
-					Depuis je continues de programmer avec différents langages et technologies (PHP, SQL, Go).
-				</p>
+			<div class="cardInfo">
+				<div class="timelineDate">
+					<span class="timelineDateDay">2017</span>
+					<span class="timelineDateDay">2020</span>
+				</div>
+				<div class="timelineBody">
+					<div class="timelineCategory">Diplôme</div>
+					<h2 class="timelineTitle">Baccalauréat Général Scientifique 2020, mention BIEN section européenne
+					</h2>
+					<div class="timelineSubtitle">Lycée Paul Cézanne &mdash; Aix-en-Provence</div>
+					<p class="timelineDescription">
+						Dès mon entrée en seconde, j'ai suivi un enseignement de programmation (anciennement ICN),
+						puis lors de mon stage, j'ai programmé une app web pour intéragir avec un service fourni par
+						l'entreprise.
+						<br>
+						Depuis je continues de programmer avec différents langages et technologies (PHP, SQL, Go).
+					</p>
+				</div>
 			</div>
 		</div>
-	</section>
 
-	<!-- Nouveau panel experience -->
-	<section class="container box style textLeft experience">
-		<img class="imageRight fit boxImage" src="public/img/isen.jpg" alt="Career Timeline" />
-		<div class="inner timeline" data-aos="fade-in" data-aos-delay="300">
-			<div class="timelineDate">
-				<span class="timelineDateDay">2020</span>
-				<span class="timelineDateDay">2021</span>
+		<div class="card experience">
+			<div class="cardImg">
+				<img src="/public/img/isen.jpg" alt="">
 			</div>
-			<div class="timelineBody">
-				<div class="timelineCategory">Diplôme</div>
-				<h2 class="timelineTitle">Première année diplôme d'ingénieur</h2>
-				<div class="timelineSubtitle">ISEN Méditerrannée &mdash; Toulon</div>
-				<p class="timelineDescription">
-					Admis en CIN1 (Cycle Informatique et Numérique), je m'apprête à decouvrir les joies d'une école
-					d'ingénieur.
-					<br>
-					L'ISEN est une école d'ingénieur spécialisée dans l'informatique et le numérique qui propose des
-					formations en informatique.
-				</p>
+			<div class="cardInfo">
+				<div class="timelineDate">
+					<span class="timelineDateDay">2020</span>
+					<span class="timelineDateDay">2021</span>
+				</div>
+				<div class="timelineBody">
+					<div class="timelineCategory">Diplôme</div>
+					<h2 class="timelineTitle">Première année diplôme d'ingénieur</h2>
+					<div class="timelineSubtitle">ISEN Méditerrannée &mdash; Toulon</div>
+					<p class="timelineDescription">
+						Admis en CIN1 (Cycle Informatique et Numérique), je m'apprête à decouvrir les joies d'une école
+						d'ingénieur.
+						<br>
+						L'ISEN est une école d'ingénieur spécialisée dans l'informatique et le numérique qui propose des
+						formations en informatique.
+					</p>
+				</div>
 			</div>
 		</div>
-	</section>
+	</div>
+
+	<div class="logHidden"></div>
+	<div class="sectionHeading log" id="changelog">
+		<h1>Changelog</h1>
+		<h6>Les dernières versions</h6>
+	</div>
+	<div class="logButton">
+		<a class="logAccess" target="_blank" href="/changelog/">Accéder au changelog</a>
+	</div>
+	<div class="cardSection logSection">
+		<div class="card cardLog">
+			<div class="cardImg">
+				<img src="/public/img/forestbridge.jpg" alt="">
+			</div>
+			<div class="cardInfo">
+				<div class="cardDate">
+                    <span>10 Juillet 2020</span>
+                    <span>Écrit par <a href="https://github.com/Dotaker/" class="logAuthor">@Dotaker</a></span>
+                </div>
+				<h1 class="cardTitle">Version 2.5.0</h1>
+                <p class="cardText">
+					La nouvelle version 2.5.0 apporte une nouvelle fonctionnalité, le changelog.
+				</p>
+				<p class="cardText">
+					Ainsi, tout au long du développement, chaque personne pourra accéder au changelog qui liste chacune 
+					des modifications faite au site.
+					<br><br>
+					Cette version sera déployée le 11 juillet 2020 vers 16h.
+                </p>
+                <!-- <p class="center"><a href="/changelog/#releases2" class="cardCta">Voir plus <i class="fa fa-arrow-right"></i></a></p> -->
+                <p class="timer" id="timer"></p>
+			</div>
+		</div>
+	</div>
 
 	<div class="contactHidden" id="contact"></div>
-	<section class="container box style textLeft contact">
-		<div class="imageRight fit boxImage">
-			<div class="gmap_canvas">
-				<iframe id="gmap_canvas"
-					src="https://maps.google.com/maps?q=Lyc%C3%A9e%20Paul-C%C3%A9zanne&t=k&z=15&ie=UTF8&iwloc=&output=embed"
-					allowfullscreen></iframe>
+	<div class="cardSection contact">
+		<div class="card">
+			<div class="cardImg">
+				<div class="gmap_canvas">
+					<iframe id="gmap_canvas"
+						src="https://maps.google.com/maps?q=Lyc%C3%A9e%20Paul-C%C3%A9zanne&t=k&z=14&ie=UTF8&iwloc=&output=embed"
+						allowfullscreen></iframe>
+						FIXME: width and height of google maps to match other images width and height
+				</div>
+			</div>
+			<div class="cardInfo">
+				<div class="sectionHeading contactHeading">
+					<h1>Contact</h1>
+					<h6>Travaillons ensemble !</h6>
+				</div>
+				<form class="contactForm" action="POST" data-netlify="true">
+					<label for="name"><b>Nom: </b></label>
+					<input type="text" id="name" name="nom" placeholder="Indiquez votre nom..." required>
+					<label for="first-name"><b>Prénom: </b></label>
+					<input type="text" id="first-name" name="first-name" placeholder="Indiquez votre prénom..."
+						required>
+					<label for="email"><b>Email: </b></label>
+					<input type="email" id="email" name="email" placeholder="Indiquez votre email..." required>
+					<label for="subject"><b>Sujet: </b></label>
+					<textarea name="sujet" id="subject" cols="10" rows="10"
+						placeholder="De quoi souhaitez-vous me parler ?" required></textarea>
+					<input type="submit" value="Envoyer">
+				</form>
 			</div>
 		</div>
-		<div class="inner">
-			<div class="sectionHeading">
-				<h1>Contact</h1>
-				<h6>Travaillons ensemble !</h6>
-			</div>
-			<form class="contactForm" action="POST" data-netlify="true">
-				<label for="name"><b>Nom: </b></label>
-				<input type="text" id="name" name="nom" placeholder="Indiquez votre nom..." required>
-				<label for="first-name"><b>Prénom: </b></label>
-				<input type="text" id="first-name" name="first-name" placeholder="Indiquez votre prénom..." required>
-				<label for="email"><b>Email: </b></label>
-				<input type="email" id="email" name="email" placeholder="Indiquez votre email..." required>
-				<label for="subject"><b>Sujet: </b></label>
-				<textarea name="sujet" id="subject" cols="10" rows="10" placeholder="De quoi souhaitez-vous me parler ?"
-					required></textarea>
-				<input type="submit" value="Envoyer">
-			</form>
-		</div>
-	</section>
+	</div>
 
 	<footer class="footerContainer">
 		<div class="up" id="up">
 			<i class="fas fa-chevron-up"></i>
 		</div>
 		<div class="leftCol">
-			<img src="public/img/logo.jpg" alt="Website Logo" class="logo">
+			<img src="/public/img/logo.jpg" alt="Website Logo" class="logo">
 			<div class="socialMedia">
 				<a class="btn" href="https://www.github.com/qbtl/" target="_blank">
 					<i class="fab fa-github"></i>
@@ -247,6 +272,7 @@
 		</div>
 	</footer>
 
+	<!-- JS SCRIPTS -->
 	<script src="public/js/icons.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>

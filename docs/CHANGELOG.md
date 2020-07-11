@@ -6,7 +6,23 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
-## Version [2.5.0] - Released on 2020-07-17
+## Version [2.5.0] - Released on 2020-07-13
+
+### Added
+
+* changelog feature to check development
+* 404 page css file
+
+### Changed
+
+* box to card style
+* links to public folder now based on website's root
+* timer to countdown till' July 13 2020 15:00UTC+2
+
+### Deleted
+
+* Qanelas font
+* Blog feature abandoned
 
 ## Version [2.4.1] - Released on 2020-07-07
 
