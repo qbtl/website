@@ -572,7 +572,7 @@ header {
 }
 
 .contact {
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 .contactForm {
@@ -637,10 +637,6 @@ input[type=submit] {
 input[type=submit]:hover {
   color: #F5F5F5;
   background-color: #138609;
-}
-
-.contact {
-  margin-bottom: 5rem;
 }
 
 .footerContainer {
