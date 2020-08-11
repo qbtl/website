@@ -3,14 +3,14 @@
  * @param {x} x | Spécifie la largeur max de la fenêtre
  */
 
-function homeScale(x) {
+function header_scale(x) {
     if (x.matches) { // If media query matches
-        document.getElementById('homeText').innerHTML = "Quentin" + "<br>" + "Boitel0".replace('0', '8');
+        document.getElementById('home-text').innerHTML = "Quentin" + "<br>" + "Boitel0".replace('0', '8');
     } else {
-        document.getElementById('homeText').innerHTML = "Quentin Boitel0"
+        document.getElementById('home-text').innerHTML = "Quentin Boitel0"
     }
 };
 
 var x = window.matchMedia("(max-width: 768px)");
-homeScale(x); // Call listener function at run time
-x.addListener(homeScale);
+header_scale(x); // Call listener function at run time
+x.addListener(header_scale);

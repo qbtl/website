@@ -23,7 +23,7 @@ html {
   font-size: 10px;
   font-family: "Helvetica", sans-serif;
   color: #000;
-  background-image: url("../img/sitebg.jpg");
+  background-image: url("../img/site-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left, center 0;
@@ -52,7 +52,7 @@ img {
 /*------------------------------------*\
     $REUSABLE
 \*------------------------------------*/
-.cardSection {
+.section {
   width: 100%;
   min-height: 350px;
   height: 100%;
@@ -75,7 +75,7 @@ img {
   border-radius: 0.8rem;
 }
 
-.cardImg {
+.card-img {
   min-width: 50rem;
   max-width: 50rem;
   height: 40rem;
@@ -83,7 +83,7 @@ img {
   position: relative;
 }
 
-.cardImg img {
+.card-img img {
   width: 100%;
   height: 100%;
   object-fit: fill;
@@ -91,7 +91,7 @@ img {
   border-radius: 0.8rem;
 }
 
-.cardDate span {
+.card-date span {
   display: block;
   color: #3498DB;
   font-size: 1.5rem;
@@ -99,25 +99,25 @@ img {
   margin: 0.5rem 0;
 }
 
-.cardTitle {
+.card-title {
   font-size: 2.5rem;
   margin: 1.5rem 0 2rem;
   text-transform: uppercase;
-  color: #ED6A5E;
+  color: #CA8E3F;
   font-family: "Raleway", sans-serif;
 }
 
-.cardText {
+.card-text {
   margin-bottom: 3rem;
   font-size: 1.8rem;
   color: #000;
 }
 
-.cardTextEnd {
+.card-text-end {
   margin-bottom: 0;
 }
 
-.cardCta {
+.card-cta {
   display: inline-block;
   padding: 1.5rem 3rem;
   margin-top: 2rem;
@@ -127,10 +127,10 @@ img {
   text-decoration: none;
   color: #fff;
   border-radius: 0.8rem;
-  background-color: #ED6A5E;
+  background-color: #CA8E3F;
   transition: 0.2s linear;
 }
-.cardCta:hover {
+.card-cta:hover {
   transform: scale(1.2);
 }
 
@@ -145,12 +145,12 @@ img {
   padding-top: 1rem;
 }
 
-.sectionHeading {
+.section-heading {
   text-align: center;
   margin-top: 10rem;
   margin-bottom: 0;
 }
-.sectionHeading h1 {
+.section-heading h1 {
   font-size: 3.5rem;
   color: #175676;
   text-transform: uppercase;
@@ -159,12 +159,12 @@ img {
   margin-bottom: 1rem;
   font-family: "AveFedan", sans-serif;
 }
-.sectionHeading h1::before {
+.section-heading h1::before {
   width: 10rem;
   height: 3px;
   border-radius: 0.8rem;
 }
-.sectionHeading h6 {
+.section-heading h6 {
   font-size: 1.6rem;
   font-weight: 300;
   color: #3498DB;
@@ -172,14 +172,14 @@ img {
   font-family: "retro";
 }
 
-.sectionHeading h1::before,
-.sectionHeading h1::after {
+.section-heading h1::before,
+.section-heading h1::after {
   content: "";
   position: absolute;
   bottom: -0.5rem;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #ED6A5E;
+  background-color: #CA8E3F;
 }
 
 /*------------------------------------*\
@@ -190,13 +190,13 @@ header {
   min-height: 689px;
   height: 100%;
   position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/code.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/header-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.mainNav {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -210,76 +210,84 @@ header {
   width: 100%;
   border-bottom: 3px solid #0072BB;
 }
-.mainNav .logo {
+.navbar .logo {
   color: #0072BB;
   font-size: 22px;
   width: 200px;
   font-family: AveFedan;
 }
-.mainNav ul {
+.navbar ul {
   display: flex;
   list-style: none;
 }
-.mainNav ul li a {
+.navbar ul.navbar-list {
+  display: flex;
+  align-items: center;
+}
+.navbar ul li a {
   margin: 30px;
   color: #3498DB;
   font-size: 15px;
   font-weight: 500;
   font-family: Poetsen;
 }
-.mainNav ul li a.active {
+.navbar ul li a.active {
   background-color: #0072BB;
   padding: 5px;
   border-radius: 10px;
   color: #FFF;
 }
-.mainNav .burger {
+.navbar ul li a .github {
+  font-size: 30px;
+}
+.navbar .burger {
   display: none;
   cursor: pointer;
 }
-.mainNav .burger div {
+.navbar .burger div {
   width: 25px;
   height: 5px;
-  background-color: #ED6A5E;
+  background-color: #CA8E3F;
   margin: 5px;
   transition: all 0.5s ease;
 }
 
-.toggle .line1 {
+.toggle .line-1 {
   transform: rotate(-45deg) translate(-5px, 6px);
 }
 
-.toggle .line2 {
+.toggle .line-2 {
   opacity: 0;
 }
 
-.toggle .line3 {
+.toggle .line-3 {
   transform: rotate(45deg) translate(-8px, -9px);
 }
 
-.textContainer {
+.header-text {
   position: absolute;
   left: 13%;
   top: 58%;
   transform: translate(-13%, -58%);
 }
-.textContainer h1 {
+.header-text h1 {
   font-family: AveFedan;
   font-weight: bold;
-  color: #ED6A5E;
+  color: #CA8E3F;
   font-size: 8rem;
 }
-.textContainer h3 {
+.header-text h3 {
   font-family: retro;
   font-weight: bold;
   letter-spacing: 1px;
   color: #3498DB;
   font-size: 30px;
 }
-.textContainer h1, .textContainer h3 {
+.header-text h1,
+.header-text h3 {
   margin: 55px 0 25px;
 }
-.textContainer button {
+.header-text button {
   width: auto;
   padding: 10px;
   height: 42px;
@@ -290,17 +298,17 @@ header {
   outline: none;
   margin: 20px 0;
 }
-.textContainer button.downCv, .textContainer button.backHome {
+.header-text button.cv, .header-text button.home-return {
   background-color: #FFF;
   color: #0072BB;
   border: 3px solid #0072BB;
   transition: all 1s ease;
 }
-.textContainer button:hover {
+.header-text button:hover {
   background-color: #0072BB;
   color: #FFF;
 }
-.textContainer button:active {
+.header-text button:active {
   transform: scale(1.1);
 }
 
@@ -312,153 +320,43 @@ header {
   margin-bottom: 13rem;
 }
 
-.aboutHidden {
+.about-hidden {
   padding-top: 1.5rem;
   visibility: hidden;
 }
 
-.aboutHeading {
+.about-heading {
   text-align: center;
   text-transform: uppercase;
   line-height: 0;
   margin-bottom: 6rem;
   margin-top: 3rem;
 }
-.aboutHeading h1 {
+.about-heading h1 {
   font-size: 10rem;
   opacity: 0.3;
 }
-.aboutHeading h6 {
+.about-heading h6 {
   font-size: 2rem;
   font-weight: 600;
 }
 
-.aboutDescription {
+.about-description {
   line-height: 24px;
-}
-
-/*------------------------------------*\
-    $BLOG
-\*------------------------------------*/
-.soonImg {
-  background-image: url("../img/forestbridge.jpg") !important;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top left, center 0;
-  background-attachment: fixed;
-  overflow-x: hidden;
-}
-
-.soonHome {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 2rem 3rem !important;
-  font-family: AveFedan;
-  color: #FFF;
-  font-size: 36px;
-}
-
-.soonText {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  color: #FFF;
-  font-family: "Raleway", sans-serif;
-}
-.soonText h1 {
-  font-size: 64px;
-  padding: 1rem;
-  text-align: center;
-}
-.soonText p {
-  padding: 1.5rem;
-  font-size: 18px;
-}
-
-.log {
-  padding-top: 8rem;
-  margin-top: -2rem;
-}
-
-.logSection {
-  margin-bottom: 12rem;
-}
-
-.logButton {
-  text-align: center;
-  position: relative;
-  margin-top: 2rem;
-  padding-bottom: 3rem;
-}
-
-.logAccess {
-  padding: 1.5rem;
-  color: #FFF;
-  font-size: 15px;
-  background-color: #3498DB;
-  border-radius: 15px;
-  transition: background-color 650ms;
-}
-.logAccess:hover {
-  background-color: #ED6A5E;
-}
-
-.logHeader {
-  margin-bottom: -9rem;
-}
-
-.logReleases {
-  margin-top: 5rem;
-  margin-bottom: -7rem;
-}
-
-.logReleasesLatest {
-  margin-top: 1.5rem;
-  margin-bottom: 5rem;
-}
-
-.releases1 {
-  margin-bottom: -7rem;
-}
-
-.releases {
-  padding-top: 7rem;
-}
-.releases h1 {
-  font-family: "Knewave" !important;
-}
-
-.backHome {
-  background-color: #FFF;
-  color: #0072BB;
-  border: 3px solid #0072BB;
-  transition: all 1s ease;
-}
-
-.logAuthor {
-  color: #ED6A5E;
-  font-variant: small-caps;
 }
 
 /*------------------------------------*\
     $PORTFOLIO
 \*------------------------------------*/
-.portfolioHidden {
+.portfolio-hidden {
   padding-top: 6rem;
   visibility: hidden;
 }
 
-.portfolioDescription {
+.portfolio-description {
   flex: 1;
 }
-.portfolioDescription h1 {
+.portfolio-description h1 {
   font-size: 3rem;
   font-weight: 300;
   font-family: "retro", sans-serif;
@@ -466,7 +364,7 @@ header {
   color: #0072BB;
   margin: 1rem 0;
 }
-.portfolioDescription h6 {
+.portfolio-description h6 {
   font-size: 1.5rem;
   text-transform: uppercase;
   font-family: "retro", sans-serif;
@@ -480,19 +378,19 @@ header {
   margin-bottom: 4rem;
 }
 
-.portfolioDown {
+.portfolio-down {
   margin-top: 10rem !important;
 }
 
 /*------------------------------------*\
     $EXPERIENCE
 \*------------------------------------*/
-.timelineHidden {
+.exp-hidden {
   padding-top: 0;
   visibility: hidden;
 }
 
-.experienceHeading {
+.exp-heading {
   margin-bottom: 2rem;
 }
 
@@ -500,7 +398,7 @@ header {
   margin-bottom: 8rem;
 }
 
-.timelineDate {
+.exp-date {
   position: relative;
   top: 5px;
   left: 90%;
@@ -511,22 +409,22 @@ header {
   text-align: center;
   line-height: 13px;
   font-weight: bold;
-  background-color: #ED6A5E;
+  background-color: #CA8E3F;
   border-radius: 50%;
 }
 
-.timelineDateDay {
+.exp-date-day {
   display: block;
   font-size: 14px;
 }
 
-.timelineBody {
+.exp-body {
   position: relative;
   padding: 20px;
   height: 100%;
 }
 
-.timelineCategory {
+.exp-category {
   position: absolute;
   left: 20px;
   top: -15px;
@@ -536,10 +434,10 @@ header {
   font-size: 14px;
   line-height: 25px;
   text-transform: uppercase;
-  background-color: #ED6A5E;
+  background-color: #CA8E3F;
 }
 
-.timelineTitle {
+.exp-title {
   margin: 0;
   padding: 10px 0 15px;
   font-size: 22px;
@@ -547,14 +445,14 @@ header {
   font-weight: bold;
 }
 
-.timelineSubtitle {
+.exp-subtitle {
   margin: 0;
   padding: 0 0 15px;
   font-size: 19px;
   color: #3498DB;
 }
 
-.timelineDescription {
+.exp-description {
   text-align: justify;
   line-height: 27px;
 }
@@ -562,12 +460,12 @@ header {
 /*------------------------------------*\
     $CONTACT-FOOTER
 \*------------------------------------*/
-.contactHidden {
+.contact-hidden {
   padding-top: 8rem;
   visibility: hidden;
 }
 
-.contactHeading {
+.contact-heading {
   margin-top: 0 !important;
 }
 
@@ -575,11 +473,11 @@ header {
   margin-bottom: 5rem;
 }
 
-.contactForm {
+.contact-form {
   width: 100%;
   margin: 0 auto;
 }
-.contactForm label {
+.contact-form label {
   font-size: 1.5rem;
   color: #0072BB;
 }
@@ -639,7 +537,7 @@ input[type=submit]:hover {
   background-color: #138609;
 }
 
-.footerContainer {
+.footer {
   max-width: 1300px;
   margin: auto;
   padding: 0 20px;
@@ -649,11 +547,11 @@ input[type=submit]:hover {
   align-items: center;
   flex-wrap: wrap-reverse;
 }
-.footerContainer img.logo {
+.footer img.logo {
   width: 150px;
   height: 150px;
 }
-.footerContainer .up {
+.footer .up {
   position: absolute;
   width: 5rem;
   height: 5rem;
@@ -665,81 +563,61 @@ input[type=submit]:hover {
   animation: pulse 1.5s infinite;
   cursor: pointer;
 }
-.footerContainer .up i {
+.footer .up i {
   color: #F5F5F5;
   font-size: 2rem;
   margin: auto;
 }
 
-.leftCol {
+.left {
   width: 45%;
   text-align: center;
   justify-content: center;
   align-items: center;
   padding-bottom: 3rem;
 }
-.leftCol .rightsText {
+.left .badge {
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  font-size: 0.75em;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: center;
+  border-radius: 0.25rem;
+  background-color: #CA8E3F;
+}
+.left .badge.rounded-pill {
+  border-radius: 50rem !important;
+}
+.left .copy-text {
   font-variant: small-caps;
   font-weight: 600;
 }
-.leftCol .version {
-  margin-top: 0.5rem;
+.left .version {
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 
-.rightCol {
+.right {
   width: 55%;
   padding-bottom: 3rem;
 }
-.rightCol h1 {
+.right h1 {
   font-size: 26px;
   color: #0072BB;
 }
-.rightCol .border {
+.right .border {
   margin: 0.8rem 0;
-  width: 100px;
+  width: 35%;
   height: 4px;
-  background: #ED6A5E;
+  border-radius: 15px;
+  background: #CA8E3F;
 }
-.rightCol .aboutSiteText {
+.right .footer-text {
   width: 85%;
-}
-
-.btn {
-  display: inline-block;
-  width: 90px;
-  height: 90px;
-  background: #FFF;
-  margin-top: -1rem;
-  margin-bottom: 2rem;
-  border-radius: 30%;
-  box-shadow: 0 5px 15px -5px black;
-  color: #0072BB;
-  overflow: hidden;
-  position: relative;
-}
-.btn i {
-  line-height: 90px;
-  font-size: 36px;
-  transition: 0.2s linear;
-}
-.btn::before {
-  content: "";
-  position: absolute;
-  width: 120%;
-  height: 120%;
-  background: #3498DB;
-  transform: rotate(45deg);
-  left: -110%;
-  top: 90%;
-}
-.btn:hover i {
-  transform: scale(1.3);
-  color: #FFF;
-}
-.btn:hover::before {
-  animation: socialButton 0.7s 1;
-  top: -10%;
-  left: -10%;
 }
 
 /*------------------------------------*\
@@ -756,7 +634,7 @@ input[type=submit]:hover {
     box-shadow: 0 0 0 0 rgba(0, 114, 187, 0);
   }
 }
-@keyframes navLinksFade {
+@keyframes navbar-fade {
   from {
     opacity: 0;
     transform: translateX(50px);
@@ -766,29 +644,15 @@ input[type=submit]:hover {
     transform: translateX(0);
   }
 }
-@keyframes socialButton {
-  0% {
-    left: -110%;
-    top: 90%;
-  }
-  50% {
-    left: 10%;
-    top: -30%;
-  }
-  100% {
-    top: -10%;
-    left: -10%;
-  }
-}
 /*------------------------------------*\
     $RESPONSIVE
 \*------------------------------------*/
 @media screen and (max-width: 600px) {
-  .aboutDetails {
+  .about-details {
     padding-left: 3rem;
   }
 
-  .portfolioDescription {
+  .portfolio-description {
     margin: 0;
     order: 2;
   }
@@ -798,11 +662,11 @@ input[type=submit]:hover {
   }
 }
 @media screen and (max-width: 768px) {
-  .mainNav .logo {
+  .navbar .logo {
     visibility: visible;
     text-align: center;
   }
-  .mainNav ul {
+  .navbar ul {
     position: absolute;
     top: 8.3vh;
     right: 0;
@@ -816,25 +680,25 @@ input[type=submit]:hover {
     transform: translateX(100%);
     transition: transform 0.3s ease-in;
   }
-  .mainNav ul li {
+  .navbar ul li {
     opacity: 0;
   }
-  .mainNav ul li a:any-link {
+  .navbar ul li a:any-link {
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  .mainNav ul li a:any-link.active {
+  .navbar ul li a:any-link.active {
     padding: 15px;
   }
-  .mainNav .burger {
+  .navbar .burger {
     display: block;
   }
-  .mainNav .navActive {
+  .navbar .navbar-active {
     transform: translateX(0%);
     overflow-y: hidden;
   }
 
-  .textContainer {
+  .header-text {
     display: flex;
     align-items: center;
     margin: 0 5rem;
@@ -842,15 +706,15 @@ input[type=submit]:hover {
     flex-direction: column;
     text-align: center;
   }
-  .textContainer h1 {
+  .header-text h1 {
     text-align: center;
     font-size: 70px;
   }
-  .textContainer h3 {
+  .header-text h3 {
     font-size: 40px;
   }
-  .textContainer h1,
-.textContainer h3 {
+  .header-text h1,
+.header-text h3 {
     margin: 25px 0 5px;
   }
 
@@ -859,19 +723,15 @@ input[type=submit]:hover {
     flex-direction: column;
     margin-top: 7rem !important;
   }
-  .card.cardLog {
-    margin-top: 5rem !important;
-    margin-bottom: -7rem;
-  }
 
-  .cardImg {
+  .card-img {
     min-width: 100% !important;
     max-width: 100% !important;
     margin-bottom: -6rem;
     transform: translate(0, -8rem);
   }
 
-  .aboutHidden {
+  .about-hidden {
     padding-top: 3rem;
   }
 
@@ -880,24 +740,20 @@ input[type=submit]:hover {
     margin-bottom: 0;
   }
 
-  .aboutDetails {
+  .about-details {
     margin-top: 4rem;
   }
 
-  .aboutHeading {
+  .about-heading {
     margin-bottom: 4rem;
   }
 
-  .aboutHeading h1 {
+  .about-heading h1 {
     font-size: 8rem;
   }
 
-  .sectionHeading h6 {
+  .section-heading h6 {
     font-size: 2rem;
-  }
-
-  .blogButton {
-    padding-bottom: 0;
   }
 
   .portfolio {
@@ -905,60 +761,60 @@ input[type=submit]:hover {
     margin-bottom: -2rem;
   }
 
-  .portfolioDescription {
+  .portfolio-description {
     margin: 0;
     order: 2;
   }
 
-  .experienceHeading {
+  .exp-heading {
     margin-bottom: -2rem;
   }
 
-  .timelineHidden {
+  .exp-hidden {
     margin-bottom: -3rem;
   }
 
-  .timelineBody {
+  .exp-body {
     padding: 10px;
   }
 
-  .timelineCategory {
+  .exp-category {
     left: 10px;
     width: auto;
   }
 
-  .footerContainer {
+  .footer {
     max-width: 600px;
     position: relative;
   }
-  .footerContainer .up {
+  .footer .up {
     right: 1rem;
     top: -4rem;
   }
 
-  .rightCol {
+  .right {
     width: 100%;
     margin-bottom: 0;
   }
-  .rightCol .aboutSiteText {
+  .right .footer-text {
     width: 100%;
   }
 
-  .leftCol {
+  .left {
     width: 100%;
     text-align: center;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 980px) {
-  .mainNav {
+  .navbar {
     align-items: center;
     justify-content: space-evenly;
     padding: 0;
   }
-  .mainNav .logo {
+  .navbar .logo {
     visibility: visible;
   }
-  .mainNav ul li a:any-link {
+  .navbar ul li a:any-link {
     margin: 15px;
   }
 
@@ -968,22 +824,15 @@ input[type=submit]:hover {
     max-width: 70rem;
     margin-top: 4rem;
   }
-  .card.cardAbout {
+  .card.card-about {
     margin-top: 0 !important;
   }
-  .card.cardLog {
-    margin-top: 5rem;
-  }
 
-  .cardImg {
+  .card-img {
     min-width: 100% !important;
     max-width: 100% !important;
     transform: translate(0, -8rem);
     margin-bottom: -5rem;
-  }
-
-  .releases h6 {
-    margin-bottom: 2rem;
   }
 }
 @media screen and (max-width: 1080px) {
@@ -991,7 +840,7 @@ input[type=submit]:hover {
     max-width: 80rem;
   }
 
-  .cardImg {
+  .card-img {
     min-width: 40rem;
     max-width: 40rem;
   }

@@ -6,7 +6,7 @@ body {
     padding: 95px;
     font: 20px "Raleway", sans-serif;
     color: black;
-    background-image: url("/public/img/sitebg.jpg");
+    background-image: url("/public/img/site-bg.jpg");
     background-repeat: repeat, no-repeat;
     background-size: auto, cover;
     background-position: top left, center 0;
@@ -30,7 +30,7 @@ article {
 }
 
 a {
-    color: #ED6A5E;
+    color: #CA8E3F;
     text-decoration: none;
     font-variant: small-caps;
     font-weight: bold;
@@ -45,4 +45,22 @@ a:hover {
     text-align: center;
     font-variant: small-caps;
     margin-top: 3rem;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    font-size: 0.75em;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: center;
+    border-radius: 0.25rem;
+    background-color: #CA8E3F;
+}
+
+.rounded-pill {
+    border-radius: 50rem !important;
 }

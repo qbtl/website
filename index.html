@@ -20,44 +20,44 @@
 
 <body>
 	<header>
-		<nav class="mainNav">
+		<nav class="navbar">
 			<a href="" class="logo">Quentin Boitel</a>
-			<ul class="navLinks">
-				<li><a href="" class="active homeNav">Accueil</a></li>
-				<li><a href="#about" class="aboutNav">À propos</a></li>
-				<li><a href="#portfolio" class="portfolioNav">Portfolio</a></li>
-				<li><a href="#experience" class="experienceNav">Experience</a></li>
-				<li><a href="#changelog" class="logNav">Changelog</a></li>
-				<li><a href="#contact" class="contactNav">Contact</a></li>
+			<ul class="navbar-list">
+				<li><a href="" class="active navbar-home">Accueil</a></li>
+				<li><a href="#about" class="navbar-about">À propos</a></li>
+				<li><a href="#portfolio" class="navbar-portfolio">Portfolio</a></li>
+				<li><a href="#experience" class="navbar-exp">Experience</a></li>
+				<li><a href="#contact" class="navbar-contact">Contact</a></li>
+				<li><a href="https://github.com/qbtl/"><i class="fab fa-github github"></i></a></li>
 			</ul>
 
 			<div class="burger">
-				<div class="line1"></div>
-				<div class="line2"></div>
-				<div class="line3"></div>
+				<div class="line-1"></div>
+				<div class="line-2"></div>
+				<div class="line-3"></div>
 			</div>
 		</nav>
 
-		<div class="textContainer">
-			<h1 id="homeText">Quentin Boitel0</h1>
+		<div class="header-text">
+			<h1 id="home-text">Quentin Boitel0</h1>
 			<h3>Étudiant à l&CloseCurlyQuote;ISEN Toulon</h3>
-			<a href="/public/cv/CV_QB.pdf" target="_blank"><button class="downCv">Download CV</button></a>
+			<a href="/public/cv/CV_QB.pdf" target="_blank"><button class="cv">Download CV</button></a>
 		</div>
 
 	</header>
 
-	<div class="aboutHidden" id="about"></div>
-	<div class="cardSection about">
-		<div class="card cardAbout">
-			<div class="cardImg">
-				<img src="/public/img/webDev.png" alt="">
+	<div class="about-hidden" id="about"></div>
+	<div class="section about">
+		<div class="card card-about">
+			<div class="card-img">
+				<img src="/public/img/about-animate.svg" alt="About Image">
 			</div>
 			<div class="card-info">
-				<div class="aboutHeading">
+				<div class="about-heading">
 					<h1>Moi</h1>
 					<h6>À propos</h6>
 				</div>
-				<p class="aboutDescription">
+				<p class="about-description">
 					Étudiant de 17 ans, je souhaite devenir développeur web.
 					Bientôt en première année à l'ISEN Méditerrannée à Toulon,
 					je me forge une bonne base de connaissances en développant ce site.
@@ -68,18 +68,18 @@
 		</div>
 	</div>
 
-	<div class="portfolioHidden" id="portfolio"></div>
-	<div class="sectionHeading portfolio">
+	<div class="portfolio-hidden" id="portfolio"></div>
+	<div class="section-heading portfolio">
 		<h1>Portfolio</h1>
 		<h6>Regardez quelques unes de mes dernières créations</h6>
 	</div>
-	<div class="cardSection">
+	<div class="section">
 		<div class="card">
-			<div class="cardImg">
-				<img src="/public/img/userAdd.png" alt="">
+			<div class="card-img">
+				<img src="/public/img/add-user-animate.svg" alt="User Image">
 			</div>
-			<div class="cardInfo">
-				<div class="portfolioDescription">
+			<div class="card-info">
+				<div class="portfolio-description">
 					<h6>API</h6>
 					<h1>RESTful Go API</h1>
 					<p>
@@ -88,18 +88,18 @@
 						Cette API permet de récupérer la liste des utilisateurs, de récupérer un seul utilisateur,
 						d'en créer ou d'en supprimer un.
 					</p>
-					<p class="center"><a href="https://github.com/Dotaker/Go-Gin-RESTful-API/" class="cardCta">Voir plus
+					<p class="center"><a href="https://github.com/Dotaker/Go-Gin-RESTful-API/" class="card-cta">Voir plus
 							<i class="fa fa-arrow-right"></i></a></p>
 				</div>
 			</div>
 		</div>
 
-		<div class="card portfolioDown">
-			<div class="cardImg">
-				<img src="/public/img/books.png" alt="">
+		<div class="card portfolio-down">
+			<div class="card-img">
+				<img src="/public/img/books.jpg" alt="Books Image">
 			</div>
-			<div class="cardInfo">
-				<div class="portfolioDescription">
+			<div class="card-info">
+				<div class="portfolio-description">
 					<h6>App</h6>
 					<h1>RESTful JS APP</h1>
 					<p>
@@ -108,34 +108,34 @@
 						Cette App simule une librairie où l'on peut trier les livres par nom, auteur.
 						On peut aussi modifier un livre, un auteur ou en créer un.
 					</p>
-					<p class="center"><a href="https://github.com/Dotaker/mybrary/" class="cardCta">Voir plus <i
+					<p class="center"><a href="https://github.com/Dotaker/mybrary/" class="card-cta">Voir plus <i
 								class="fa fa-arrow-right"></i></a></p>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="timelineHidden" id="experience"></div>
-	<div class="sectionHeading experienceHeading">
+	<div class="exp-hidden" id="experience"></div>
+	<div class="section-heading exp-heading">
 		<h1>Mon Expérience</h1>
 		<h6>Mon parcours</h6>
 	</div>
-	<div class="cardSection">
+	<div class="section">
 		<div class="card experience">
-			<div class="cardImg">
-				<img src="/public/img/careerDev.png" alt="">
+			<div class="card-img">
+				<img src="/public/img/career.jpg" alt="Career Image">
 			</div>
-			<div class="cardInfo">
-				<div class="timelineDate">
-					<span class="timelineDateDay">2017</span>
-					<span class="timelineDateDay">2020</span>
+			<div class="card-info">
+				<div class="exp-date">
+					<span class="exp-date-day">2017</span>
+					<span class="exp-date-day">2020</span>
 				</div>
-				<div class="timelineBody">
-					<div class="timelineCategory">Diplôme</div>
-					<h2 class="timelineTitle">Baccalauréat Général Scientifique 2020, mention BIEN section européenne
+				<div class="exp-body">
+					<div class="exp-category">Diplôme</div>
+					<h2 class="exp-title">Baccalauréat Général Scientifique 2020, mention BIEN section européenne
 					</h2>
-					<div class="timelineSubtitle">Lycée Paul Cézanne &mdash; Aix-en-Provence</div>
-					<p class="timelineDescription">
+					<div class="exp-subtitle">Lycée Paul Cézanne &mdash; Aix-en-Provence</div>
+					<p class="exp-description">
 						Dès mon entrée en seconde, j'ai suivi un enseignement de programmation (anciennement ICN),
 						puis lors de mon stage, j'ai programmé une app web pour intéragir avec un service fourni par
 						l'entreprise.
@@ -147,19 +147,19 @@
 		</div>
 
 		<div class="card experience">
-			<div class="cardImg">
+			<div class="card-img">
 				<img src="/public/img/isen.jpg" alt="">
 			</div>
-			<div class="cardInfo">
-				<div class="timelineDate">
-					<span class="timelineDateDay">2020</span>
-					<span class="timelineDateDay">2021</span>
+			<div class="card-info">
+				<div class="exp-date">
+					<span class="exp-date-day">2020</span>
+					<span class="exp-date-day">2021</span>
 				</div>
-				<div class="timelineBody">
-					<div class="timelineCategory">Diplôme</div>
-					<h2 class="timelineTitle">Première année diplôme d'ingénieur</h2>
-					<div class="timelineSubtitle">ISEN Méditerrannée &mdash; Toulon</div>
-					<p class="timelineDescription">
+				<div class="exp-body">
+					<div class="exp-category">Diplôme</div>
+					<h2 class="exp-title">Première année diplôme d'ingénieur</h2>
+					<div class="exp-subtitle">ISEN Méditerrannée &mdash; Toulon</div>
+					<p class="exp-description">
 						Admis en CIN1 (Cycle Informatique et Numérique), je m'apprête à decouvrir les joies d'une école
 						d'ingénieur.
 						<br>
@@ -171,55 +171,22 @@
 		</div>
 	</div>
 
-	<div class="logHidden"></div>
-	<div class="sectionHeading log" id="changelog">
-		<h1>Changelog</h1>
-		<h6>Les dernières versions</h6>
-	</div>
-	<div class="logButton">
-		<a class="logAccess" target="_blank" href="/changelog/">Accéder au changelog</a>
-	</div>
-	<div class="cardSection logSection">
-		<div class="card cardLog">
-			<div class="cardImg">
-				<img src="/public/img/forestbridge.jpg" alt="">
-			</div>
-			<div class="cardInfo">
-				<div class="cardDate">
-					<span>10 Juillet 2020</span>
-					<span>Écrit par <a href="https://github.com/Dotaker/" class="logAuthor">@Dotaker</a></span>
-				</div>
-				<h1 class="cardTitle">Version 2.5.0</h1>
-				<p class="cardText">
-					La nouvelle version 2.5.0 apporte une nouvelle fonctionnalité, le changelog.
-				</p>
-				<p class="cardText">
-					Ainsi, tout au long du développement, chaque personne pourra accéder au changelog qui liste chacune
-					des modifications faite au site.
-				</p>
-				<p class="center"><a href="/changelog/#releases2" class="cardCta">Voir plus <i
-							class="fa fa-arrow-right"></i></a></p>
-				<!-- <p class="timer" id="timer"></p> -->
-			</div>
-		</div>
-	</div>
-
-	<div class="contactHidden" id="contact"></div>
-	<div class="cardSection contact">
+	<div class="contact-hidden" id="contact"></div>
+	<div class="section contact">
 		<div class="card">
-			<div class="cardImg">
+			<div class="card-img">
 				<div class="gmap_canvas">
 					<iframe id="gmap_canvas"
-						src="https://maps.google.com/maps?q=Lyc%C3%A9e%20Paul-C%C3%A9zanne&t=k&z=14&ie=UTF8&iwloc=&output=embed"
+						src="https://maps.google.com/maps?q=ISEN%2C%20Toulon%2C%20France&t=&z=14&ie=UTF8&iwloc=&output=embed"
 						allowfullscreen></iframe>
 				</div>
 			</div>
-			<div class="cardInfo">
-				<div class="sectionHeading contactHeading">
+			<div class="card-info">
+				<div class="section-heading contact-heading">
 					<h1>Contact</h1>
 					<h6>Travaillons ensemble !</h6>
 				</div>
-				<form class="contactForm" action="POST" data-netlify="true">
+				<form class="contact-form" action="POST" data-netlify="true">
 					<label for="name"><b>Nom: </b></label>
 					<input type="text" id="name" name="nom" placeholder="Indiquez votre nom..." required>
 					<label for="first-name"><b>Prénom: </b></label>
@@ -236,32 +203,26 @@
 		</div>
 	</div>
 
-	<footer class="footerContainer">
+	<footer class="footer">
 		<div class="up" id="up">
 			<i class="fas fa-chevron-up"></i>
 		</div>
-		<div class="leftCol">
+		<div class="left">
 			<img src="/public/img/logo.jpg" alt="Website Logo" class="logo">
-			<div class="socialMedia">
-				<a class="btn" href="https://www.github.com/qbtl/" target="_blank">
-					<i class="fab fa-github"></i>
-				</a>
-			</div>
-			<p class="rightsText">
-				Copyright &copy; 2020 Quentin Boitel
-			</p>
 			<p class="version">
 				<a href="https://github.com/qbtl/qbtl.github.io/releases/">
-					<img src="https://img.shields.io/github/v/release/qbtl/qbtl.github.io.svg?label=Version&labelColor=black&logo=github&sort=semver"
-						style="width:100px" height="20" alt="Github bagde">
+					<span class="badge rounded-pill">v2.5.0</span>
 				</a>
+			</p>
+			<p class="copy-text">
+				Copyright &copy; 2020 Quentin Boitel
 			</p>
 		</div>
 
-		<div class="rightCol">
+		<div class="right">
 			<h1>À propos du site</h1>
 			<div class="border"></div>
-			<p class="aboutSiteText">
+			<p class="footer-text">
 				Je souhaite à travers ce site partager mon parcours et mes créations.
 				<br>
 				Passionné par le web, ce site contribue à vous présenter mes compétences
