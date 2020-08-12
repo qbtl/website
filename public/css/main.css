@@ -260,7 +260,7 @@ img {
 
 .navbar-item {
   color: var(--on-background) !important;
-  margin: 0 1rem 0 1rem !important;
+  margin: 0 1rem !important;
 }
 
 .navbar-menu.is-active {
