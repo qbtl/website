@@ -6,6 +6,18 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## Version [3.0.0] - Released on
+
+### Added
+
+* Bulma CSS Framework usage
+
+### Changed
+
+* navbar
+* footer
+* all differents parts of the website are now separated
+
 ## Version [2.5.0] - Released on 2020-07-11
 
 ### Added
