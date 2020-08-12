@@ -640,6 +640,7 @@ input:checked + .slider:before {
   width: 128px;
   height: 24px;
   margin-top: calc(.5em - 1px);
+  border-radius: 24px;
 }
 
 /*------------------------------------*\
