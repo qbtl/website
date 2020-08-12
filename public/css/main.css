@@ -600,9 +600,18 @@ input:checked + .slider:before {
   color: var(--primary-color) !important;
   transition: color 0.4s linear;
 }
+.breadcrumb ul li a i {
+  padding-right: 0.25rem;
+}
 
 .breadcrumb ul li a:hover {
   color: var(--on-background) !important;
+}
+
+.breadcrumb ul li a svg {
+  width: 24px;
+  height: 24px;
+  padding-right: 0.25rem;
 }
 
 .copy {
@@ -621,7 +630,7 @@ input:checked + .slider:before {
 .footer-button .tag .tag.version {
   background-color: var(--error) !important;
   color: var(--on-error) !important;
-  border-radius: 4px !important;
+  border-radius: 24px !important;
 }
 .footer-button.bck-top-btn {
   margin-bottom: 0.5rem;
