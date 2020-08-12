@@ -1,11 +1,3 @@
-/*$(document).ready(function () {
-  AOS.init({
-    easing: 'ease',
-    duration: 1800,
-    once: true
-  });
-});*/
-
 /* Dark Theme Toggle */
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 const currentTheme = localStorage.getItem('theme');
@@ -32,6 +24,12 @@ toggleSwitch.addEventListener('change', switchTheme, false);
 
 /* Navbar Burger Active */
 document.addEventListener('DOMContentLoaded', () => {
+  
+  AOS.init({
+    easing: 'ease',
+    duration: 1800,
+    once: true
+  });
 
   // Get all "navbar-burger" elements
   const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
