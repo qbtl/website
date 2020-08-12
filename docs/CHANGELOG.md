@@ -17,6 +17,11 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 * navbar
 * footer
 * all differents parts of the website are now separated
+* AOS support in Vanilla JS
+
+### Deleted
+
+* jQuery
 
 ## Version [2.5.0] - Released on 2020-07-11
 
@@ -322,6 +327,7 @@ v0.4.2 is released with v0.5.0
 * Deployment to GitHub Pages
 
 [Unreleased]: https://github.com/qbtl/website/
+[3.0.0]: https://github.com/qbtl/website/releases/tag/v3.0.0
 [2.5.0]: https://github.com/qbtl/website/releases/tag/v2.5.0
 [2.4.1]: https://github.com/qbtl/website/releases/tag/v2.4.1
 [2.4.0]: https://github.com/qbtl/website/releases/tag/v2.4.0
