@@ -9,7 +9,8 @@ In this repository, we use :
 * [AOS](https://github.com/michalsnik/aos/)
 * [JQuery](https://www.jquery.com)
 * [FontAwesome](https://origin.fontawesome.com)
-* [Netlify](https://www.netlify.com) (used to host the website)
+* [Netlify](https://www.netlify.com)
+* [gitflow](https://github.com/nvie/gitflow)
 
 ## For developers
 
@@ -18,10 +19,12 @@ Clone the source locally :
 ```sh
 $ git clone https://github.com/qbtl/website/
 $ cd website
+$ git flow feature start feature_name // Make sure you installed gitflow first
+// Once you have finished working on the new feature
+$ git flow feature finish feature_name
 ```
 
-Then create a new branch, commit your changes to the new branch, and open a pull-request to merge with master.
-You'll need someone to revise your code before it can actually be merged to the master branch.
+Since this project uses GitFlow to automates the git workflow, you don't need to create a pull request by yourself, to install gitflow check the [installation](https://github.com/nvie/gitflow/wiki/Installation) guide
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 Releases are listed inside the [CHANGELOG](https://www.github.com/qbtl/website/blob/master/docs/CHANGELOG.md).
