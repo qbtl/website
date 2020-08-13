@@ -372,6 +372,9 @@ input:checked + .slider i.fa-sun {
 
 .slider i.fa-moon {
   visibility: hidden;
+  position: relative;
+  padding-top: 0.625rem;
+  padding-right: 0.25rem;
 }
 
 input:checked + .slider:before {
@@ -385,12 +388,6 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
-}
-
-.slider i.fa-moon {
-  position: relative;
-  padding-top: 0.625rem;
-  padding-right: 0.25rem;
 }
 
 .slider i.fa-sun {
