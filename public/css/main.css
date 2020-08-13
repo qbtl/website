@@ -362,7 +362,7 @@ input:checked + .slider {
   background-color: var(--on-background);
 }
 
-input:checked + .slider i.fa-moon {
+input:checked + div.slider i.fa-moon {
   visibility: visible;
 }
 
