@@ -61,10 +61,6 @@ html[data-theme=dark] {
   background-color: var(--background) !important;
 }
 
-.notification {
-  background-color: var(--surface) !important;
-}
-
 body {
   width: 100%;
   height: 100%;
@@ -83,149 +79,6 @@ img {
   width: 100%;
 }
 
-/*------------------------------------*\
-    $REUSABLE
-\*------------------------------------*/
-.tile .tile.is-child {
-  background-color: var(--surface) !important;
-}
-
-/*
-.section {
-    width: 100%;
-    min-height: 350px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0 1.5rem;
-    font-family: "Helvetica", sans-serif;
-}
-
-.test {
-    width: 100%;
-    max-width: 98rem;
-    padding: 3rem;
-    background-color: var(--surface) !important;
-    box-shadow: 0 1.4rem 8rem rgba(0,0,0,0.4);
-    display: flex;
-    align-items: center;
-    border-radius: .8rem;
-}
-
-.card-img {
-    min-width: 50rem;
-    max-width: 50rem;
-    height: 40rem;
-    transform: translateX(-8rem);
-    position: relative;
-}
-
-.card-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-    display: block;
-    border-radius: .8rem;
-}
-
-.card-date span{
-    display: block;
-    color: $carolinaBlue;
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin: .5rem 0;
-}
-
-.card-title{
-    font-size: 2.5rem;
-    margin: 1.5rem 0 2rem;
-    text-transform: uppercase;
-    color: $harvest-gold;
-    font-family: "Raleway", sans-serif;
-}
-
-.card-text {
-    margin-bottom: 3rem;
-    font-size: 1.8rem;
-    color: $black;
-}
-
-.card-text-end {
-    margin-bottom: 0;
-}
-
-.card-cta {
-    display: inline-block;
-    padding: 1.5rem 3rem;
-    margin-top: 2rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: #fff;
-    border-radius: .8rem;
-    background-color: $harvest-gold;
-    transition: 0.2s linear;
-
-    &:hover {
-        transform: scale(1.2);
-    }
-}
-
-.center {
-    text-align: center;
-}
-
-.timer {
-    text-align: center;
-    font-family: "Raleway", sans-serif;
-    font-weight: bold;
-    padding-top: 1rem;
-}
-
-.section-heading {
-    text-align: center;
-    margin-top: 10rem;
-    margin-bottom: 0;
-
-    h1 {
-        font-size: 3.5rem;
-        color: $blueSapphire;
-        text-transform: uppercase;
-        font-weight: 300;
-        position: relative;
-        margin-bottom: 1rem;
-        font-family: 'AveFedan', sans-serif;
-
-        &::before {
-            width: 10rem;
-            height: 3px;
-            border-radius: .8rem;
-        }
-    }
-
-    h6 {
-        font-size: 1.6rem;
-        font-weight: 300;
-        color: $carolinaBlue;
-        margin-bottom: 1rem;
-        font-family: 'retro';
-    }
-}
-
-.section-heading h1::before,
-.section-heading h1::after {
-    content: '';
-    position: absolute;
-    bottom: -.5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: $harvest-gold;
-}
-
-*/
 /*------------------------------------*\
     $HEADER
 \*------------------------------------*/
@@ -431,160 +284,20 @@ input:checked + .slider:before {
 }
 
 /*------------------------------------*\
-    $ABOUT
+    $TILES
 \*------------------------------------*/
-/*
-.about {
-    margin-top: 13rem;
-    margin-bottom: 13rem;
+.tile .tile.is-child {
+  padding: 0 !important;
+  background-color: transparent !important;
+  box-shadow: transparent !important;
+  border-radius: 24px !important;
+}
+.tile .tile.is-child img {
+  border-radius: 24px;
+  width: 100%;
+  height: 100%;
 }
 
-.about-hidden {
-    padding-top: 1.5rem;
-    visibility: hidden;
-}
-
-.about-heading {
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 0;
-    margin-bottom: 6rem;
-    margin-top: 3rem;
-
-    h1 {
-        font-size: 10rem;
-        opacity: .3;
-    }
-
-    h6 {
-        font-size: 2rem;
-        font-weight: 600;
-    }
-}
-
-.about-description {
-    line-height: 24px;
-}
-*/
-/*------------------------------------*\
-    $PORTFOLIO
-\*------------------------------------*/
-/*
-.portfolio-hidden {
-    padding-top: 6rem;
-    visibility: hidden;
-}
-
-.portfolio-description {
-    flex: 1;
-
-    h1 {
-        font-size: 3rem;
-        font-weight: 300;
-        font-family: 'retro', sans-serif;
-        font-variant: small-caps;
-        color: $frenchBlue;
-        margin: 1rem 0;
-    }
-
-    h6 {
-        font-size: 1.5rem;
-        text-transform: uppercase;
-        font-family: 'retro', sans-serif;
-        font-weight: 300;
-        opacity: .8;
-        color: $blueSapphire;
-    }
-}
-
-.portfolio {
-    margin-top: 3rem;
-    margin-bottom: 4rem;
-}
-
-.portfolio-down {
-    margin-top: 10rem !important;
-}
-*/
-/*------------------------------------*\
-    $EXPERIENCE
-\*------------------------------------*/
-/*
-.exp-hidden {
-    padding-top: 0;
-    visibility: hidden;
-}
-
-.exp-heading {
-    margin-bottom: 2rem;
-}
-
-.experience {
-    margin-bottom: 8rem;
-}
-
-.exp-date {
-    position: relative;
-    top: 5px;
-    left: 90%;
-    width: 45px;
-    height: 45px;
-    padding-top: 10px;
-    color: $white;
-    text-align: center;
-    line-height: 13px;
-    font-weight: bold;
-    background-color: $harvest-gold;
-    border-radius: 50%;
-}
-
-.exp-date-day {
-    display: block;
-    font-size: 14px;
-}
-
-.exp-body {
-    position: relative;
-    padding: 20px;
-    height: 100%;
-}
-
-.exp-category {
-    position: absolute;
-    left: 20px;
-    top: -15px;
-    height: 25px;
-    padding: 0 15px;
-    color: $white;
-    font-size: 14px;
-    line-height: 25px;
-    text-transform: uppercase;
-    background-color: $harvest-gold;
-}
-
-.exp-title {
-    margin: 0;
-    padding: 10px 0 15px;
-    font-size: 22px;
-    color: $frenchBlue;
-    font-weight: bold;
-}
-
-.exp-subtitle {
-    margin: 0;
-    padding: 0 0 15px;
-    font-size: 19px;
-    color: $carolinaBlue;
-}
-
-.exp-description {
-    text-align: justify;
-    line-height: 27px;
-}
-*/
-/*------------------------------------*\
-    $CONTACT
-\*------------------------------------*/
 /*------------------------------------*\
     $FOOTER
 \*------------------------------------*/
@@ -597,6 +310,7 @@ input:checked + .slider:before {
   color: var(--primary-color) !important;
   transition: color 0.4s linear;
 }
+
 .breadcrumb ul li a i {
   padding-right: 0.25rem;
 }
@@ -620,15 +334,18 @@ input:checked + .slider:before {
   background-color: var(--surface) !important;
   color: var(--on-background) !important;
 }
+
 .footer-button .tag {
   background-color: var(--surface);
   color: var(--on-background);
 }
+
 .footer-button .tag .tag.version {
   background-color: var(--error) !important;
   color: var(--on-error) !important;
   border-radius: 24px !important;
 }
+
 .footer-button.bck-top-btn {
   margin-bottom: 0.5rem;
 }
@@ -640,238 +357,6 @@ input:checked + .slider:before {
   border-radius: 24px;
 }
 
-/*------------------------------------*\
-    $ANIMATIONS
-\*------------------------------------*/
-/*
-@keyframes pulse {
-    0% {
-        box-shadow: 0 0 0 0 rgba(0, 114, 187, 0.99);
-    }
-
-    70% {
-        box-shadow: 0 0 0 20px rgba(0, 114, 187, 0);
-    }
-
-    100% {
-        box-shadow: 0 0 0 0 rgba(0, 114, 187, 0);
-    }
-}
-
-@keyframes navbar-fade {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-*/
-/*------------------------------------*\
-    $RESPONSIVE
-\*------------------------------------*/
-/*
-@media screen and (max-width:600px) {
-    .about-details {
-        padding-left: 3rem;
-    }
-
-    .portfolio-description {
-        margin: 0;
-        order: 2;
-    }
-
-    .up {
-        right: 2rem;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .navbar {
-        .logo {
-            visibility: visible;
-            text-align: center;
-        }
-
-        ul {
-            position: absolute;
-            top: 8.3vh;
-            right: 0;
-            height: 92vh;
-            background-color: $white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
-            width: 100%;
-            transform: translateX(100%);
-            transition: transform .3s ease-in;
-
-
-            li {
-                opacity: 0;
-
-                a:any-link {
-                    margin-top: 20px;
-                    margin-bottom: 20px;
-
-                    &.active {
-                        padding: 15px;
-                    }
-                }
-            }
-        }
-
-        .burger {
-            display: block;
-        }
-
-        .navbar-active {
-            transform: translateX(0%);
-            overflow-y: hidden;
-        }
-    }
-
-    .header-text {
-        display: flex;
-        align-items: center;
-        margin: 0 5rem;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-
-        h1 {
-            text-align: center;
-            font-size: 70px;
-        }
-
-        h3 {
-            font-size: 40px;
-        }
-
-        h1,
-        h3 {
-            margin: 25px 0 5px;
-        }
-    }
-
-    .card {
-        padding: 2.5rem;
-        flex-direction: column;
-        margin-top: 7rem !important;
-    }
-
-    .card-img {
-        min-width: 100% !important;
-        max-width: 100% !important;
-        margin-bottom: -6rem;
-        transform: translate(0, -8rem);
-    }
-
-    .about-hidden {
-        padding-top: 3rem;
-    }
-
-    .about {
-        margin-top: 1rem;
-        margin-bottom: 0;
-    }
-
-    .about-details {
-        margin-top: 4rem;
-    }
-
-    .about-heading {
-        margin-bottom: 4rem;
-    }
-
-    .about-heading h1 {
-        font-size: 8rem;
-    }
-
-    .section-heading h6 {
-        font-size: 2rem;
-    }
-
-    .portfolio {
-        padding-top: 0;
-        margin-bottom: -2rem;
-    }
-
-    .portfolio-description {
-        margin: 0;
-        order: 2;
-    }
-
-    .exp-heading {
-        margin-bottom: -2rem;
-    }
-
-    .exp-hidden {
-        margin-bottom: -3rem;
-    }
-
-    .exp-body {
-        padding: 10px;
-    }
-
-    .exp-category {
-        left: 10px;
-        width: auto;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 980px) {
-    .navbar {
-        align-items: center;
-        justify-content: space-evenly;
-        padding: 0;
-
-        .logo {
-            visibility: visible;
-        }
-
-        ul {
-            li {
-                a:any-link {
-                    margin: 15px;
-                }
-            }
-        }
-    }
-
-    .card {
-        padding: 2.5rem;
-        flex-direction: column;
-        max-width: 70rem;
-        margin-top: 4rem;
-
-        &.card-about {
-            margin-top: 0 !important;
-        }
-    }
-
-    .card-img {
-        min-width: 100% !important;
-        max-width: 100% !important;
-        transform: translate(0, -8rem);
-        margin-bottom: -5rem;
-    }
-}
-
-@media screen and (max-width: 1080px) {
-    .card {
-        max-width: 80rem;
-    }
-
-    .card-img {
-        min-width: 40rem;
-        max-width: 40rem;
-    }
-}
-*/
 /*------------------------------------*\
     CSS FILE END
 \*------------------------------------*/
