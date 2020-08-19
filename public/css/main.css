@@ -11,6 +11,8 @@
   --on-background: #000000;
   --on-surface: #000000;
   --on-error: #FFFFFF;
+  --white: #FFFFFF;
+  --pre-release: #E45A15;
 }
 
 [data-theme=dark] {
@@ -26,6 +28,7 @@
   --on-surface: #FFFFFF;
   --on-error: #000000;
   --white: #FFFFFF;
+  --pre-release: #E45A15;
 }
 
 /*------------------------------------*\
@@ -310,15 +313,12 @@ input:checked + .slider:before {
   color: var(--primary-color) !important;
   transition: color 0.4s linear;
 }
-
-.breadcrumb ul li a i {
-  padding-right: 0.25rem;
-}
-
 .breadcrumb ul li a:hover {
   color: var(--on-background) !important;
 }
-
+.breadcrumb ul li a i {
+  padding-right: 0.25rem;
+}
 .breadcrumb ul li a svg {
   width: 24px;
   height: 24px;
@@ -327,12 +327,14 @@ input:checked + .slider:before {
 
 .copy {
   font-size: 1rem;
+  font-family: Helvetica, sans-serif;
 }
 
 .footer-button {
   border: none !important;
   background-color: var(--surface) !important;
   color: var(--on-background) !important;
+  padding: 0.5em !important;
 }
 
 .footer-button .tag {
@@ -341,9 +343,10 @@ input:checked + .slider:before {
 }
 
 .footer-button .tag .tag.version {
-  background-color: var(--error) !important;
-  color: var(--on-error) !important;
+  background-color: var(--pre-release) !important;
+  color: var(--white) !important;
   border-radius: 24px !important;
+  font-weight: 600;
 }
 
 .footer-button.bck-top-btn {
