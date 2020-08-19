@@ -7,7 +7,6 @@ This repository is the home of Quentin Boitel personal website.
 In this repository, we use :
 
 * [AOS](https://github.com/michalsnik/aos/)
-* [JQuery](https://www.jquery.com)
 * [FontAwesome](https://origin.fontawesome.com)
 * [Netlify](https://www.netlify.com)
 * [gitflow](https://github.com/nvie/gitflow)
