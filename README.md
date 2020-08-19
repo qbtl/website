@@ -1,4 +1,4 @@
-# Quentin Boitel Personal Website ![GitHub release (latest SemVer)](https://img.shields.io/github/v/tag/qbtl/website?include_prereleases&logo=github&labelColor=black&label=Version) [![CodeFactor](https://www.codefactor.io/repository/github/qbtl/website/badge/master)](https://www.codefactor.io/repository/github/qbtl/website/overview/master) [![Netlify Status](https://api.netlify.com/api/v1/badges/9430cb96-fdc0-4337-bb29-c6404834696d/deploy-status)](https://app.netlify.com/sites/quentinboitel/deploys)
+# Quentin Boitel Personal Website ![GitHub tag](https://img.shields.io/github/v/tag/qbtl/website?include_prereleases&logo=github&labelColor=black&label=Version) [![CodeFactor](https://www.codefactor.io/repository/github/qbtl/website/badge/master)](https://www.codefactor.io/repository/github/qbtl/website/overview/master) [![Netlify Status](https://api.netlify.com/api/v1/badges/9430cb96-fdc0-4337-bb29-c6404834696d/deploy-status)](https://app.netlify.com/sites/quentinboitel/deploys)
 
 This repository is the home of Quentin Boitel personal website.
 
