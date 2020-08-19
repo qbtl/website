@@ -111,12 +111,13 @@ img {
 }
 
 .navbar-brand .navbar-item:hover {
-  border: none !important;
+  border-bottom: 1px solid transparent !important;
 }
 
 .navbar-item {
   color: var(--on-background) !important;
   margin: 0 1rem !important;
+  border-bottom: 2px solid var(--background);
 }
 
 .navbar-menu.is-active {
