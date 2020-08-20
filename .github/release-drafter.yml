@@ -14,6 +14,7 @@ include-labels:
   - 'feature'
   - 'fix'
   - 'chore'
+no-changes-template: '* No changes'
 template: |
   ## What’s Changed
 
