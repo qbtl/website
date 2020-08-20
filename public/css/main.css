@@ -299,6 +299,28 @@ input:checked + .slider:before {
 }
 
 /*------------------------------------*\
+    $PORTFOLIO
+\*------------------------------------*/
+h1.portfolio-title {
+  color: var(--primary-color);
+}
+
+hr.portfolio-divider {
+  width: 30%;
+  height: 4px;
+  border-radius: 24px;
+  background-color: var(--secondary-color) !important;
+}
+
+p.portfolio-text {
+  color: var(--primary-color) !important;
+}
+
+.app {
+  padding: 5.25rem;
+}
+
+/*------------------------------------*\
     $TILES
 \*------------------------------------*/
 .tile .tile.is-child {
