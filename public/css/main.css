@@ -111,7 +111,7 @@ img {
 }
 
 .navbar-brand .navbar-item:hover {
-  border-bottom: 1px solid transparent !important;
+  border-bottom: 2px solid transparent !important;
 }
 
 .navbar-item {
@@ -285,6 +285,17 @@ input:checked + .slider:before {
   font-size: 2.5rem;
   font-family: retro;
   padding-top: 1rem;
+}
+
+/*------------------------------------*\
+    $ABOUT
+\*------------------------------------*/
+.about div.about-text p.about-text-primary {
+  color: var(--primary-color) !important;
+  margin-top: 2.5rem !important;
+}
+.about div.about-text p.about-text-secondary {
+  color: var(--secondary-color) !important;
 }
 
 /*------------------------------------*\
