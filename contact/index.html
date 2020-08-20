@@ -84,66 +84,64 @@
 
     <div class="hero is-fullheight-with-navbar">
         <div class="hero-body">
-            <div class="container has-text-centered">
+            <div class="container has-text-left contact">
                 <div class="columns is-variable is-8 is-0-mobile is-0-tablet is-0-desktop">
-                    <div class="column is-half half-column">
-                        <h1 class="title">Quentin Boitel8</h1>
-                        <h2 class="subtitle">Élève à l&OpenCurlyQuote;ISEN</h2>
+                    <div class="column is-half">
+                        <h1 class="title is-1 contact-title">Entrons en contact.</h1>
+                        <hr class="contact-divider">
+                        <p class="contact-text">Vous avez des <strong>idées</strong> en tête ?<br>Ou vous voulez juste me poser
+                            <strong>question</strong> ?<br>Dans ce cas, ne hésitez pas à me <strong>contacter</strong>.</p>
                     </div>
                     <div class="column is-half">
-                        <img src="/public/img/header-bg.jpg" class="hero-image" alt="Hero Image">
+                        <form action="POST" name="contact" data-netlify="true">
+                            <div class="field">
+                                <label class="label">Nom complet</label>
+                                <div class="control has-icons-left">
+                                    <input class="input" type="text" required>
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-user"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Email</label>
+                                <div class="control has-icons-left">
+                                    <input class="input" type="email" required>
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                </div>
+
+                                <div class="field">
+                                    <label class="label">Message</label>
+                                    <div class="control">
+                                        <textarea class="textarea" required></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="field">
+                                    <div class="control">
+                                        <label class="checkbox">
+                                            <input type="checkbox" required>
+                                            J'accepte les <a href="#">termes et conditions</a>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="field is-grouped is-grouped-centered">
+                                    <div class="control">
+                                        <button class="button is-success">Envoyer</button>
+                                    </div>
+                                    <div class="control">
+                                        <button class="button is-danger">Annuler</button>
+                                    </div>
+                                </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="container is-fluid">
-        <form action="POST" name="contact" data-netlify="true">
-            <div class="field">
-                <label class="label">Nom complet</label>
-                <div class="control has-icons-left">
-                    <input class="input" type="text" placeholder="Nom">
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-user"></i>
-                    </span>
-                </div>
-            </div>
-
-            <div class="field">
-                <label class="label">Email</label>
-                <div class="control has-icons-left">
-                    <input class="input" type="email" placeholder="Email">
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-envelope"></i>
-                    </span>
-                </div>
-
-                <div class="field">
-                    <label class="label">Message</label>
-                    <div class="control">
-                        <textarea class="textarea" placeholder="Message"></textarea>
-                    </div>
-                </div>
-
-                <div class="field">
-                    <div class="control">
-                        <label class="checkbox">
-                            <input type="checkbox">
-                            I agree to the <a href="#">terms and conditions</a>
-                        </label>
-                    </div>
-                </div>
-
-                <div class="field is-grouped">
-                    <div class="control">
-                        <button class="button is-link">Submit</button>
-                    </div>
-                    <div class="control">
-                        <button class="button is-link is-light">Cancel</button>
-                    </div>
-                </div>
-        </form>
     </div>
 
     <footer class="footer">
