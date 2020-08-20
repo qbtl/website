@@ -10,6 +10,10 @@ categories:
     label: fix
   - title: 🧰 Maintenance
     label: chore
+include-labels:
+  - 'feature'
+  - 'fix'
+  - 'chore'
 template: |
   ## What’s Changed
 
