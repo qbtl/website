@@ -315,6 +315,8 @@ h1.contact-title {
 
 hr.contact-divider {
   width: 30%;
+  height: 4px;
+  border-radius: 24px;
   background-color: var(--secondary-color) !important;
 }
 
@@ -334,6 +336,9 @@ input, textarea {
 html[data-theme=light] input {
   border: 1px solid transparent !important;
 }
+html[data-theme=light] input:focus {
+  border-color: var(--on-background) !important;
+}
 html[data-theme=light] input:hover {
   border: 1px solid var(--on-background) !important;
 }
@@ -343,6 +348,9 @@ html[data-theme=light] input:hover + span.icon {
 
 html[data-theme=light] textarea {
   border: 1px solid transparent !important;
+}
+html[data-theme=light] textarea:focus {
+  border-color: var(--on-background) !important;
 }
 html[data-theme=light] textarea:hover {
   border: 1px solid var(--on-background) !important;
@@ -354,6 +362,16 @@ label {
 
 input:focus + span.icon {
   color: var(--on-background) !important;
+}
+
+input + span.icon {
+  color: var(--on-background) !important;
+}
+
+input[type=checkbox] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*------------------------------------*\
