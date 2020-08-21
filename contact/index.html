@@ -94,9 +94,9 @@
                     <div class="column is-half">
                         <form action="POST" name="contact" data-netlify="true">
                             <div class="field">
-                                <label class="label">Nom complet</label>
+                                <label class="label" for="name">Nom complet</label>
                                 <div class="control has-icons-left">
-                                    <input class="input" type="text" required>
+                                    <input class="input" type="text" id="name" name="name" required>
                                     <span class="icon is-small is-left">
                                         <i class="fas fa-user"></i>
                                     </span>
@@ -104,18 +104,18 @@
                             </div>
 
                             <div class="field">
-                                <label class="label">Email</label>
+                                <label class="label" for="email">Email</label>
                                 <div class="control has-icons-left">
-                                    <input class="input" type="email" required>
+                                    <input class="input" type="email" id="email" name="email" required>
                                     <span class="icon is-small is-left">
                                         <i class="fas fa-envelope"></i>
                                     </span>
                                 </div>
 
                                 <div class="field">
-                                    <label class="label">Message</label>
+                                    <label class="label" for="message">Message</label>
                                     <div class="control">
-                                        <textarea class="textarea" required></textarea>
+                                        <textarea class="textarea" id="message" name="message" required></textarea>
                                     </div>
                                 </div>
 
@@ -164,7 +164,7 @@
             <a class="button footer-button" href="https://github.com/qbtl/website/releases/" target="_blank"
                 rel="noopener">
                 <div class="tag">
-                    <span class="tag version">Version 1.0.0-alpha1</span>
+                    <span class="tag version">Version 1.0.0-beta</span>
                 </div>
             </a>
             <a href="https://bulma.io">
