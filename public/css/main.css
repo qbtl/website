@@ -454,8 +454,6 @@ input[type=checkbox] {
 }
 
 .footer-button .tag .tag.version {
-  background-color: var(--pre-release) !important;
-  color: var(--white) !important;
   border-radius: 24px !important;
   font-weight: 600;
 }
