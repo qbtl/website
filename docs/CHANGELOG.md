@@ -30,8 +30,8 @@ The website has been reworked entirely to ensure a good UI/UX. These changes wer
 * about section ([#218](https://github.com/qbtl/website/commit/1cff7c7237942402733613755b06a347831c26cd))
 * experience section moved inside about section ([#218](https://github.com/qbtl/website/commit/1cff7c7237942402733613755b06a347831c26cd))
 * portfolio section ([#220](https://github.com/qbtl/website/commit/24f52d1b3729f639c68e6c5a7b51c1a7cf557c83))
-* rework docs/CHANGELOG ([#240](https://github.com/qbtl/website/tree/master/))
-* rework README ([#240](https://github.com/qbtl/website/tree/master/))
+* rework docs/CHANGELOG ([#240](https://github.com/qbtl/website/commit/53303f81c09ff839a98775f418f1a2234a14a814))
+* rework README ([#240](https://github.com/qbtl/website/commit/53303f81c09ff839a98775f418f1a2234a14a814))
 
 ### Fixed ⚠️
 
