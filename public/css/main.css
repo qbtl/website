@@ -320,6 +320,11 @@ p.portfolio-text {
   padding: 5.25rem;
 }
 
+.portfolio-github svg {
+  height: 42px !important;
+  width: 42px !important;
+}
+
 /*------------------------------------*\
     $TILES
 \*------------------------------------*/
