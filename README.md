@@ -1,6 +1,10 @@
-# Quentin Boitel Personal Website ![GitHub tag](https://img.shields.io/github/v/tag/qbtl/website?include_prereleases&logo=github&labelColor=black&label=Version) [![CodeFactor](https://www.codefactor.io/repository/github/qbtl/website/badge/master)](https://www.codefactor.io/repository/github/qbtl/website/overview/master) [![Netlify Status](https://api.netlify.com/api/v1/badges/9430cb96-fdc0-4337-bb29-c6404834696d/deploy-status)](https://app.netlify.com/sites/quentinboitel/deploys)
+# Quentin Boitel Personal Website
 
 This repository is the home of Quentin Boitel personal website.
+
+## Status
+
+![GitHub tag](https://img.shields.io/github/v/tag/qbtl/website?include_prereleases&logo=github&labelColor=black&label=Version)  [![CodeFactor](https://www.codefactor.io/repository/github/qbtl/website/badge/master)](https://www.codefactor.io/repository/github/qbtl/website/overview/master)  [![Netlify Status](https://api.netlify.com/api/v1/badges/9430cb96-fdc0-4337-bb29-c6404834696d/deploy-status)](https://app.netlify.com/sites/quentinboitel/deploys)
 
 ## Technology / Framework
 
@@ -10,6 +14,11 @@ In this repository, we use :
 * [FontAwesome](https://origin.fontawesome.com)
 * [Netlify](https://www.netlify.com)
 * [gitflow](https://github.com/nvie/gitflow)
+* [Bulma](https://bulma.io/)
+
+## Documentation
+
+You can find the documentation under the ``/docs`` folder and on [GitBook](https://qbtl-github.gitbook.io/docs/)
 
 ## For developers
 
