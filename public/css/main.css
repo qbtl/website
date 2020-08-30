@@ -1,8 +1,6 @@
 :root {
-  --primary-color: #6200EE;
-  --primary-variant: #3700B3;
-  --secondary-color: #03DAC6;
-  --secondary-variant: #018786;
+  --primary-color: #FF8A00;
+  --secondary-color: #DA1B60;
   --background: #FFFFFF;
   --surface: #FFFFFF;
   --error: #B00020;
@@ -13,12 +11,15 @@
   --on-error: #FFFFFF;
   --white: #FFFFFF;
   --pre-release: #E45A15;
+  --github-color: #0366d6;
+  --portfolio-color: #29c7ac;
+  --contact-color: #48c774;
+  --cv-color: #b86bff;
 }
 
 [data-theme=dark] {
-  --primary-color: #BB86FC;
-  --primary-variant: #3700B3;
-  --secondary-color: #03DAC6;
+  --primary-color: #FF8A00;
+  --secondary-color: #DA1B60;
   --background: #121212;
   --surface: #1E1E1E;
   --error: #CF6679;
@@ -29,6 +30,10 @@
   --on-error: #000000;
   --white: #FFFFFF;
   --pre-release: #E45A15;
+  --github-color: #0366d6;
+  --portfolio-color: #29c7ac;
+  --contact-color: #48c774;
+  --cv-color: #b86bff;
 }
 
 /*------------------------------------*\
@@ -103,21 +108,43 @@ img {
 }
 
 .navbar-logo {
-  width: 50px;
-  max-height: 50px !important;
+  width: 200px;
   height: 50px;
-  background-color: var(--secondary-color);
   border-radius: 12px;
 }
 
-.navbar-brand .navbar-item:hover {
-  border-bottom: 2px solid transparent !important;
+.navbar-brand .navbar-item {
+  margin-left: 0 !important;
+}
+
+.navbar-brand .navbar-item:hover:after {
+  transform: scaleX(0) !important;
 }
 
 .navbar-item {
   color: var(--on-background) !important;
   margin: 0 1rem !important;
-  border-bottom: 2px solid var(--background);
+  position: relative;
+}
+
+.navbar-item:after {
+  content: "" !important;
+  display: block !important;
+  left: 0 !important;
+  position: absolute !important;
+  transform: scaleX(0) !important;
+  transform-origin: center left !important;
+  transition-duration: 0.4s !important;
+  transition-property: transform !important;
+  width: 100% !important;
+  bottom: -4px !important;
+  height: 2px !important;
+  background-color: var(--primary-color) !important;
+}
+
+.navbar-item:hover:after {
+  background-color: var(--primary-color) !important;
+  transform: scaleX(1) !important;
 }
 
 .navbar-menu.is-active {
@@ -127,13 +154,11 @@ img {
 
 .navbar-menu.is-active .navbar-item.is-active {
   background-color: var(--surface);
-  border-bottom: 1px solid var(--secondary-color);
 }
 
 .navbar-menu.is-active .navbar-item:hover {
   background-color: var(--surface);
   color: var(--on-background);
-  border-bottom: 1px solid var(--primary-color);
 }
 
 .navbar-menu.is-active .navbar-end .navbar-item:hover {
@@ -147,20 +172,56 @@ a.navbar-item i {
   padding-right: 0.25rem;
 }
 
-a.navbar-item:hover {
-  border-bottom: 2px solid var(--primary-color);
+a.navbar-item.is-active:after {
+  transform: scaleX(1) !important;
+  background-color: var(--primary-color) !important;
 }
 
-a.navbar-item.is-active {
-  border-bottom: 2px solid var(--secondary-color);
+a.navbar-item.is-active.navbar-item-about:after {
+  transform: scaleX(1) !important;
+  background-color: var(--secondary-color) !important;
+}
+
+a.navbar-item.is-active.navbar-item-portfolio:after {
+  transform: scaleX(1) !important;
+  background-color: var(--portfolio-color) !important;
+}
+
+a.navbar-item.is-active.navbar-item-contact:after {
+  transform: scaleX(1) !important;
+  background-color: var(--contact-color) !important;
+}
+
+.navbar-end .navbar-item:hover:after {
+  transform: scaleX(0) !important;
+}
+
+.navbar-item-about:after {
+  background-color: var(--secondary-color) !important;
+}
+
+.navbar-item-about:hover:after {
+  background-color: var(--secondary-color) !important;
+}
+
+.navbar-item-portfolio:after {
+  background-color: var(--portfolio-color) !important;
+}
+
+.navbar-item-portfolio:hover:after {
+  background-color: var(--portfolio-color) !important;
+}
+
+.navbar-item-contact:after {
+  background-color: var(--contact-color) !important;
+}
+
+.navbar-item-contact:hover:after {
+  background-color: var(--contact-color) !important;
 }
 
 .no-border {
   border: none !important;
-  border-radius: 0 !important;
-  border-bottom: 2px solid !important;
-  border-bottom-color: transparent !important;
-  transition: border-bottom-color 0.4s linear;
   background-color: var(--background) !important;
   color: var(--on-background) !important;
 }
@@ -168,11 +229,39 @@ a.navbar-item.is-active {
   color: var(--on-background);
 }
 
-.no-border:hover.github {
-  border-bottom-color: var(--primary-color) !important;
+.no-border:after {
+  content: "";
+  display: block;
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: center left;
+  transition-duration: 1s;
+  transition-property: transform;
+  width: 100%;
+  bottom: -4px;
+  height: 2px;
+  background-color: var(--background) !important;
 }
-.no-border:hover.cv {
-  border-bottom-color: var(--secondary-color) !important;
+
+.no-border.github:after {
+  background-color: var(--github-color) !important;
+}
+
+.no-border.cv:after {
+  background-color: var(--cv-color) !important;
+}
+
+.no-border:hover:after {
+  transform: scaleX(1);
+}
+
+.no-border.github:hover:after {
+  background-color: var(--github-color) !important;
+}
+
+.no-border.cv:hover:after {
+  background-color: var(--cv-color);
 }
 
 .theme-switch-wrapper {
@@ -317,18 +406,18 @@ p.parcours-text {
     $PORTFOLIO
 \*------------------------------------*/
 h1.portfolio-title {
-  color: var(--primary-color);
+  color: var(--portfolio-color);
 }
 
 hr.portfolio-divider {
   width: 30%;
   height: 4px;
   border-radius: 24px;
-  background-color: var(--secondary-color) !important;
+  background-color: var(--cv-color) !important;
 }
 
 p.portfolio-text {
-  color: var(--primary-color) !important;
+  color: var(--on-background) !important;
 }
 
 .app {
@@ -425,7 +514,7 @@ input[type=checkbox] {
   transition: color 0.4s linear;
 }
 .breadcrumb ul li a:hover {
-  color: var(--on-background) !important;
+  color: var(--secondary-color) !important;
 }
 .breadcrumb ul li a i {
   padding-right: 0.25rem;
@@ -434,6 +523,10 @@ input[type=checkbox] {
   width: 24px;
   height: 24px;
   padding-right: 0.25rem;
+}
+
+.breadcrumb ul li::before {
+  color: var(--on-background) !important;
 }
 
 .copy {
@@ -460,6 +553,14 @@ input[type=checkbox] {
 
 .footer-button.bck-top-btn {
   margin-bottom: 0.5rem;
+}
+.footer-button.bck-top-btn span {
+  color: var(--on-background);
+}
+.footer-button.bck-top-btn span i {
+  --fa-primary-color: var(--primary-color) !important;
+  --fa-secondary-color: var(--secondary-color) !important;
+  --fa-secondary-opacity: 1.0 !important ;
 }
 
 .bulma {
