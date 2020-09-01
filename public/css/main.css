@@ -69,6 +69,23 @@ html[data-theme=dark] {
   background-color: var(--background) !important;
 }
 
+/* Safari, Chrome custom scrollbar */
+html::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #ff8a00, #e52e71);
+  border-radius: 30px;
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+
+html::-webkit-scrollbar-track {
+  background: linear-gradient(90deg, var(--background), var(--background) 1px, var(--background) 0, var(--background));
+}
+
+/* End custom scrollbar */
 body {
   width: 100%;
   height: 100%;
@@ -125,6 +142,8 @@ img {
   color: var(--on-background) !important;
   margin: 0 1rem !important;
   position: relative;
+  font-variant: small-caps;
+  font-size: 17px;
 }
 
 .navbar-item:after {
@@ -512,6 +531,7 @@ input[type=checkbox] {
 .breadcrumb ul li a {
   color: var(--primary-color) !important;
   transition: color 0.4s linear;
+  font-variant: small-caps;
 }
 .breadcrumb ul li a:hover {
   color: var(--secondary-color) !important;
@@ -532,6 +552,7 @@ input[type=checkbox] {
 .copy {
   font-size: 1rem;
   font-family: Helvetica, sans-serif;
+  font-variant: small-caps;
 }
 
 .footer-button {
@@ -556,6 +577,7 @@ input[type=checkbox] {
 }
 .footer-button.bck-top-btn span {
   color: var(--on-background);
+  font-variant: small-caps;
 }
 .footer-button.bck-top-btn span i {
   --fa-primary-color: var(--primary-color) !important;
