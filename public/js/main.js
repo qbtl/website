@@ -1,3 +1,9 @@
+/*!Package Name: Website v1.2.0
+Package URI: https://quentinboitel.netlify.app/
+Description: The Package for my website
+Author: Quentin Boitel
+Version: 1.2.0*/
+
 /* Dark Theme Toggle */
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 const currentTheme = localStorage.getItem('theme');
