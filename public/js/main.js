@@ -1,8 +1,10 @@
-/*!Package Name: Website v1.2.1
+/*
+Package Name: Website v1.2.2
 Package URI: https://quentinboitel.netlify.app/
 Description: The Package for my website
 Author: Quentin Boitel
-Version: 1.2.1*/
+Version: 1.2.2
+*/
 
 /* Dark Theme Toggle */
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
