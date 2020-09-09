@@ -48,29 +48,33 @@ Version: 1.2.1*/
   font-family: AveFedan;
   src: url("../fonts/AveFedan.ttf");
 }
+
 @font-face {
   font-family: retro;
   src: url("../fonts/Retrochips.otf");
 }
+
 @font-face {
   font-family: Poetsen;
   src: url("../fonts/PoetsenOne-Regular.ttf");
 }
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
   font-size: 10px;
-  font-family: "Helvetica", sans-serif;
+  font-family: 'Helvetica', sans-serif;
   color: #000;
   overflow-x: hidden;
   background-color: var(--background) !important;
 }
 
-html[data-theme=dark] {
+html[data-theme="dark"] {
   background-color: var(--background) !important;
 }
 
@@ -81,9 +85,11 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff8a00), to(#e52e71));
   background: linear-gradient(180deg, #ff8a00, #e52e71);
   border-radius: 30px;
-  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
 }
 
 html::-webkit-scrollbar-track {
@@ -94,6 +100,14 @@ html::-webkit-scrollbar-track {
 body {
   width: 100%;
   height: 100%;
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+}
+
+a:-moz-any-link {
+  text-decoration: none;
 }
 
 a:any-link {
@@ -121,6 +135,7 @@ img {
   width: 70px !important;
   color: var(--primary-color);
 }
+
 .navbar-burger.burger:hover {
   color: var(--secondary-color);
 }
@@ -140,7 +155,8 @@ img {
 }
 
 .navbar-brand .navbar-item:hover:after {
-  transform: scaleX(0) !important;
+  -webkit-transform: scaleX(0) !important;
+          transform: scaleX(0) !important;
 }
 
 .navbar-item {
@@ -149,6 +165,7 @@ img {
   position: relative;
   font-variant: small-caps;
   font-size: 17px;
+  font-weight: bold;
 }
 
 .navbar-item:after {
@@ -156,10 +173,16 @@ img {
   display: block !important;
   left: 0 !important;
   position: absolute !important;
-  transform: scaleX(0) !important;
-  transform-origin: center left !important;
-  transition-duration: 0.4s !important;
+  -webkit-transform: scaleX(0) !important;
+          transform: scaleX(0) !important;
+  -webkit-transform-origin: center left !important;
+          transform-origin: center left !important;
+  -webkit-transition-duration: .4s !important;
+          transition-duration: .4s !important;
+  -webkit-transition-property: -webkit-transform !important;
+  transition-property: -webkit-transform !important;
   transition-property: transform !important;
+  transition-property: transform, -webkit-transform !important;
   width: 100% !important;
   bottom: -4px !important;
   height: 2px !important;
@@ -168,7 +191,8 @@ img {
 
 .navbar-item:hover:after {
   background-color: var(--primary-color) !important;
-  transform: scaleX(1) !important;
+  -webkit-transform: scaleX(1) !important;
+          transform: scaleX(1) !important;
 }
 
 .navbar-menu.is-active {
@@ -188,36 +212,42 @@ img {
 .navbar-menu.is-active .navbar-end .navbar-item:hover {
   border: none;
 }
+
 .navbar-menu.is-active .navbar-end .navbar-item:hover .buttons .button {
   background-color: var(--surface) !important;
 }
 
 a.navbar-item i {
-  padding-right: 0.25rem;
+  padding-right: .25rem;
 }
 
 a.navbar-item.is-active:after {
-  transform: scaleX(1) !important;
+  -webkit-transform: scaleX(1) !important;
+          transform: scaleX(1) !important;
   background-color: var(--primary-color) !important;
 }
 
 a.navbar-item.is-active.navbar-item-about:after {
-  transform: scaleX(1) !important;
+  -webkit-transform: scaleX(1) !important;
+          transform: scaleX(1) !important;
   background-color: var(--secondary-color) !important;
 }
 
 a.navbar-item.is-active.navbar-item-portfolio:after {
-  transform: scaleX(1) !important;
+  -webkit-transform: scaleX(1) !important;
+          transform: scaleX(1) !important;
   background-color: var(--portfolio-color) !important;
 }
 
 a.navbar-item.is-active.navbar-item-contact:after {
-  transform: scaleX(1) !important;
+  -webkit-transform: scaleX(1) !important;
+          transform: scaleX(1) !important;
   background-color: var(--contact-color) !important;
 }
 
 .navbar-end .navbar-item:hover:after {
-  transform: scaleX(0) !important;
+  -webkit-transform: scaleX(0) !important;
+          transform: scaleX(0) !important;
 }
 
 .navbar-item-about:after {
@@ -249,6 +279,7 @@ a.navbar-item.is-active.navbar-item-contact:after {
   background-color: var(--background) !important;
   color: var(--on-background) !important;
 }
+
 .no-border svg {
   color: var(--on-background);
 }
@@ -258,10 +289,16 @@ a.navbar-item.is-active.navbar-item-contact:after {
   display: block;
   left: 0;
   position: absolute;
-  transform: scaleX(0);
-  transform-origin: center left;
-  transition-duration: 1s;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: center left;
+          transform-origin: center left;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
   transition-property: transform;
+  transition-property: transform, -webkit-transform;
   width: 100%;
   bottom: -4px;
   height: 2px;
@@ -277,7 +314,8 @@ a.navbar-item.is-active.navbar-item-contact:after {
 }
 
 .no-border:hover:after {
-  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 .no-border.github:hover:after {
@@ -289,8 +327,12 @@ a.navbar-item.is-active.navbar-item-contact:after {
 }
 
 .theme-switch-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: none !important;
   background-color: transparent !important;
 }
@@ -314,7 +356,8 @@ a.navbar-item.is-active.navbar-item-contact:after {
   position: absolute;
   right: 0;
   top: 0;
-  transition: 0.4s;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
 .slider:before {
@@ -324,7 +367,8 @@ a.navbar-item.is-active.navbar-item-contact:after {
   height: 26px;
   left: 4px;
   position: absolute;
-  transition: 0.4s;
+  -webkit-transition: .4s;
+  transition: .4s;
   width: 26px;
 }
 
@@ -343,12 +387,13 @@ input:checked + .slider i.fa-sun {
 .slider i.fa-moon {
   visibility: hidden;
   position: relative;
-  padding-top: 0.625rem;
-  padding-right: 0.25rem;
+  padding-top: .625rem;
+  padding-right: .25rem;
 }
 
 input:checked + .slider:before {
-  transform: translateX(26px);
+  -webkit-transform: translateX(26px);
+          transform: translateX(26px);
   background-color: var(--on-secondary);
 }
 
@@ -362,8 +407,8 @@ input:checked + .slider:before {
 
 .slider i.fa-sun {
   position: relative;
-  padding-top: 0.5rem;
-  padding-left: 0.25rem;
+  padding-top: .5rem;
+  padding-left: .25rem;
 }
 
 .fa-sun {
@@ -383,16 +428,25 @@ input:checked + .slider:before {
 
 .half-column {
   text-align: center;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
   display: flex !important;
-  justify-content: center !important;
-  flex-direction: column !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
 }
+
 .half-column h1.title {
   color: var(--primary-color);
   font-size: 7rem;
   font-family: AveFedan;
   line-height: 1;
 }
+
 .half-column h2.subtitle {
   color: var(--secondary-color);
   font-size: 2.5rem;
@@ -403,27 +457,33 @@ input:checked + .slider:before {
 /*------------------------------------*\
     $ABOUT
 \*------------------------------------*/
-.about div.about-text p.about-text-primary {
-  color: var(--primary-color) !important;
-  margin-top: 2.5rem !important;
-}
-.about div.about-text p.about-text-secondary {
+.about div.about-text h1.about-text-title {
+  font-size: 2.5rem;
   color: var(--secondary-color) !important;
 }
 
+.about div.about-text p.about-text-primary {
+  color: var(--on-background) !important;
+  margin-top: 2.5rem !important;
+}
+
+.about div.about-text p.about-text-secondary {
+  color: var(--cv-color) !important;
+}
+
 h1.parcours-title {
-  color: var(--primary-color);
+  color: var(--github-color);
 }
 
 hr.parcours-divider {
   width: 30%;
   height: 4px;
   border-radius: 24px;
-  background-color: var(--secondary-color) !important;
+  background-color: var(--contact-color) !important;
 }
 
 p.parcours-text {
-  color: var(--primary-color) !important;
+  color: var(--on-background) !important;
 }
 
 /*------------------------------------*\
@@ -461,19 +521,20 @@ p.portfolio-text {
 }
 
 h1.contact-title {
-  color: var(--primary-color);
+  color: var(--contact-color);
 }
 
 hr.contact-divider {
   width: 30%;
   height: 4px;
   border-radius: 24px;
-  background-color: var(--secondary-color) !important;
+  background-color: var(--github-color) !important;
 }
 
 p.contact-text {
-  color: var(--primary-color) !important;
+  color: var(--on-background) !important;
 }
+
 p.contact-text strong {
   color: var(--pre-release) !important;
 }
@@ -484,26 +545,31 @@ input, textarea {
   color: var(--on-background) !important;
 }
 
-html[data-theme=light] input {
+html[data-theme="light"] input {
   border: 1px solid transparent !important;
 }
-html[data-theme=light] input:focus {
+
+html[data-theme="light"] input:focus {
   border-color: var(--on-background) !important;
 }
-html[data-theme=light] input:hover {
+
+html[data-theme="light"] input:hover {
   border: 1px solid var(--on-background) !important;
 }
-html[data-theme=light] input:hover + span.icon {
+
+html[data-theme="light"] input:hover + span.icon {
   color: var(--on-background) !important;
 }
 
-html[data-theme=light] textarea {
+html[data-theme="light"] textarea {
   border: 1px solid transparent !important;
 }
-html[data-theme=light] textarea:focus {
+
+html[data-theme="light"] textarea:focus {
   border-color: var(--on-background) !important;
 }
-html[data-theme=light] textarea:hover {
+
+html[data-theme="light"] textarea:hover {
   border: 1px solid var(--on-background) !important;
 }
 
@@ -519,10 +585,16 @@ input + span.icon {
   color: var(--on-background) !important;
 }
 
-input[type=checkbox] {
+input[type="checkbox"] {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /*------------------------------------*\
@@ -535,15 +607,20 @@ input[type=checkbox] {
 
 .breadcrumb ul li a {
   color: var(--primary-color) !important;
+  -webkit-transition: color 0.4s linear;
   transition: color 0.4s linear;
   font-variant: small-caps;
+  font-weight: bold;
 }
+
 .breadcrumb ul li a:hover {
   color: var(--secondary-color) !important;
 }
+
 .breadcrumb ul li a i {
   padding-right: 0.25rem;
 }
+
 .breadcrumb ul li a svg {
   width: 24px;
   height: 24px;
@@ -558,13 +635,14 @@ input[type=checkbox] {
   font-size: 1rem;
   font-family: Helvetica, sans-serif;
   font-variant: small-caps;
+  font-weight: bold;
 }
 
 .footer-button {
   border: none !important;
   background-color: var(--surface) !important;
   color: var(--on-background) !important;
-  padding: 0.5em !important;
+  padding: .5em !important;
 }
 
 .footer-button .tag {
@@ -574,20 +652,23 @@ input[type=checkbox] {
 
 .footer-button .tag .tag.version {
   border-radius: 24px !important;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 .footer-button.bck-top-btn {
   margin-bottom: 0.5rem;
 }
+
 .footer-button.bck-top-btn span {
   color: var(--on-background);
   font-variant: small-caps;
 }
+
 .footer-button.bck-top-btn span i {
   --fa-primary-color: var(--primary-color) !important;
   --fa-secondary-color: var(--secondary-color) !important;
-  --fa-secondary-opacity: 1.0 !important ;
+  --fa-secondary-opacity: 1.0 !important
+        ;
 }
 
 .bulma {
