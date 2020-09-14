@@ -1,3 +1,11 @@
+/*
+Package Name: GitHub Profile v1.2.3
+Package URI: https://quentinboitel.netlify.app/
+Description: The GitHub Profile Package for my website
+Author: Quentin Boitel
+Version: 1.2.3
+*/
+
 const APIURL = "https://api.github.com/users/";
 
 const main = document.getElementById("github-profile");

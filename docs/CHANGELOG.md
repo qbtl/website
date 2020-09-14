@@ -13,7 +13,32 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
-# [1.2.2] - 2020-08-01
+# [1.2.3] - 2020-09-14
+
+## What's New ❗️
+
+We added a new feature, the github profile. This new feature adds new informations inside the portfolio section. Changes were also made to images and padding as beeen added to the contact section.
+
+### Added ✅
+
+* github profile
+
+### Changed ✳️
+
+* images size
+* padding (contact)
+
+### Fixed ⚠️
+
+No bugs were fixed in this version. If you found one, please [open an issue on GitHub](https://github.com/qbtl/website/issues)
+
+### Removed ❌
+
+No feature nor file were removed in this version.
+
+---
+
+# [1.2.2] - 2020-09-09
 
 ## What's New ❗️
 
@@ -38,7 +63,7 @@ No feature nor file were removed in this version.
 
 ---
 
-# [1.2.1] - 2020-08-01
+# [1.2.1] - 2020-09-02
 
 ## What's New ❗️
 
@@ -62,7 +87,7 @@ No feature nor file were removed in this version.
 
 ---
 
-# [1.2.0] - 2020-08-01
+# [1.2.0] - 2020-09-01
 
 ## What's New ❗️
 
@@ -140,6 +165,7 @@ No bugs were fixed in this version. If you found one, please [open an issue on G
 
 * jQuery ([#191](https://github.com/qbtl/website/commit/2867a0ca72720c0f1a8579ef0e234b2a9e8e0613))
 
+[1.2.3]: https://github.com/qbtl/website/releases/tag/v1.2.3
 [1.2.2]: https://github.com/qbtl/website/releases/tag/v1.2.2
 [1.2.1]: https://github.com/qbtl/website/releases/tag/v1.2.1
 [1.2.0]: https://github.com/qbtl/website/releases/tag/v1.2.0
