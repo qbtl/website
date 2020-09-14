@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*
 Theme Name: Website v1.2.2
 Theme URI: https://quentinboitel.netlify.app/
@@ -6,6 +5,7 @@ Description: The Theme for my website
 Author: Quentin Boitel
 Version: 1.2.2
 */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 :root {
   --primary-color: #FF8A00;
   --secondary-color: #DA1B60;
@@ -424,8 +424,10 @@ input:checked + .slider:before {
 
 .hero-image {
   position: relative;
-  width: 500px;
-  height: 400px;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
   border-radius: 32px;
 }
 
@@ -490,6 +492,164 @@ p.parcours-text {
 }
 
 /*------------------------------------*\
+    $GITHUB-PROFILE
+\*------------------------------------*/
+.card {
+  background-color: #DCDCDC !important;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5rem;
+  height: 100%;
+  max-width: 100%;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+}
+
+html[data-theme="dark"] .card {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(var(--background)), to(var(--background)));
+  background-image: linear-gradient(0deg, var(--background) 0%, var(--background) 100%);
+  -webkit-box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(220, 220, 220, 0.1);
+          box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(220, 220, 220, 0.1);
+}
+
+.avatar {
+  border: 10px solid var(--github-color);
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 150px;
+}
+
+.user-info {
+  color: var(--on-background);
+  margin-left: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.user-info h2 {
+  margin-top: 0;
+  font-size: 40px;
+  margin-bottom: 2rem;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.user-info a {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: 1rem 0;
+  font-weight: 900;
+}
+
+.user-info ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+  max-width: 100%;
+}
+
+.user-info ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-variant: small-caps;
+  color: var(--github-color);
+}
+
+.user-info ul li strong {
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+  color: var(--on-background);
+}
+
+.user-info ul li.twitter a strong:hover {
+  -webkit-transition: color .5s linear;
+  transition: color .5s linear;
+  color: var(--github-color);
+}
+
+.repo {
+  background-color: var(--github-color);
+  border-radius: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: .5rem !important;
+}
+
+.repo:hover {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  color: var(--on-background);
+  background-color: var(--surface);
+}
+
+html[data-theme="light"] .repo:hover {
+  color: var(--background);
+}
+
+#repos {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*------------------------------------*\
     $PORTFOLIO
 \*------------------------------------*/
 h1.portfolio-title {
@@ -516,11 +676,26 @@ p.portfolio-text {
   width: 42px !important;
 }
 
+.portfolio-image {
+  width: 100%;
+  height: 400px;
+}
+
 /*------------------------------------*\
     $CONTACT
 \*------------------------------------*/
 .contact {
-  padding: 3.75rem !important;
+  padding: 12rem 0;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 !important;
+  }
 }
 
 h1.contact-title {
