@@ -220,6 +220,25 @@ img {
   background-color: var(--surface) !important;
 }
 
+@media screen and (max-width: 1024px) {
+  .navbar-menu.is-active {
+    color: var(--on-background);
+    background-color: var(--background);
+  }
+  .navbar-menu.is-active .navbar-item.is-active {
+    background-color: var(--surface);
+  }
+  .navbar-menu.is-active .navbar-item:hover {
+    color: var(--on-background);
+  }
+  .navbar-menu.is-active .navbar-end .navbar-item:hover {
+    border: none;
+  }
+  .navbar-menu.is-active .navbar-end .navbar-item:hover .buttons .button {
+    background-color: var(--surface) !important;
+  }
+}
+
 a.navbar-item i {
   padding-right: .25rem;
 }
