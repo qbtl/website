@@ -9,8 +9,8 @@ Version: 1.2.3
 :root {
   --primary-color: #FF8A00;
   --secondary-color: #DA1B60;
-  --background: #FFFFFF;
-  --surface: #FFFFFF;
+  --background: #DCDCDC;
+  --surface: #DCDCDC;
   --error: #B00020;
   --on-primary: #FFFFFF;
   --on-secondary: #000000;
@@ -19,10 +19,8 @@ Version: 1.2.3
   --on-error: #FFFFFF;
   --white: #FFFFFF;
   --pre-release: #E45A15;
-  --github-color: #0366d6;
   --portfolio-color: #29c7ac;
   --contact-color: #48c774;
-  --cv-color: #b86bff;
 }
 
 [data-theme=dark] {
@@ -38,28 +36,16 @@ Version: 1.2.3
   --on-error: #000000;
   --white: #FFFFFF;
   --pre-release: #E45A15;
-  --github-color: #0366d6;
   --portfolio-color: #29c7ac;
   --contact-color: #48c774;
-  --cv-color: #b86bff;
 }
 
 /*------------------------------------*\
     $BASE
 \*------------------------------------*/
 @font-face {
-  font-family: AveFedan;
-  src: url("../fonts/AveFedan.ttf");
-}
-
-@font-face {
-  font-family: retro;
-  src: url("../fonts/Retrochips.otf");
-}
-
-@font-face {
-  font-family: Poetsen;
-  src: url("../fonts/PoetsenOne-Regular.ttf");
+  font-family: Code;
+  src: url("../fonts/CodeDemo-Bold.otf");
 }
 
 * {
@@ -79,6 +65,13 @@ html {
 
 html[data-theme="dark"] {
   background-color: var(--background) !important;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+}
+
+html[data-theme="light"] {
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
 }
 
 /* Safari, Chrome custom scrollbar */
@@ -126,6 +119,11 @@ img {
   width: 100%;
 }
 
+.cv svg {
+  width: 36px;
+  height: 36px;
+}
+
 /*------------------------------------*\
     $HEADER
 \*------------------------------------*/
@@ -166,9 +164,9 @@ img {
   color: var(--on-background) !important;
   margin: 0 1rem !important;
   position: relative;
-  font-variant: small-caps;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: bold;
+  font-family: Code !important;
 }
 
 .navbar-item:after {
@@ -214,10 +212,11 @@ img {
 
 .navbar-menu.is-active .navbar-end .navbar-item:hover {
   border: none;
+  background-color: transparent !important;
 }
 
 .navbar-menu.is-active .navbar-end .navbar-item:hover .buttons .button {
-  background-color: var(--surface) !important;
+  background-color: transparent !important;
 }
 
 @media screen and (max-width: 1024px) {
@@ -230,12 +229,6 @@ img {
   }
   .navbar-menu.is-active .navbar-item:hover {
     color: var(--on-background);
-  }
-  .navbar-menu.is-active .navbar-end .navbar-item:hover {
-    border: none;
-  }
-  .navbar-menu.is-active .navbar-end .navbar-item:hover .buttons .button {
-    background-color: var(--surface) !important;
   }
 }
 
@@ -294,58 +287,6 @@ a.navbar-item.is-active.navbar-item-contact:after {
 
 .navbar-item-contact:hover:after {
   background-color: var(--contact-color) !important;
-}
-
-.no-border {
-  border: none !important;
-  background-color: var(--background) !important;
-  color: var(--on-background) !important;
-}
-
-.no-border svg {
-  color: var(--on-background);
-}
-
-.no-border:after {
-  content: "";
-  display: block;
-  left: 0;
-  position: absolute;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transform-origin: center left;
-          transform-origin: center left;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
-  width: 100%;
-  bottom: -4px;
-  height: 2px;
-  background-color: var(--background) !important;
-}
-
-.no-border.github:after {
-  background-color: var(--github-color) !important;
-}
-
-.no-border.cv:after {
-  background-color: var(--cv-color) !important;
-}
-
-.no-border:hover:after {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-}
-
-.no-border.github:hover:after {
-  background-color: var(--github-color) !important;
-}
-
-.no-border.cv:hover:after {
-  background-color: var(--cv-color);
 }
 
 .theme-switch-wrapper {
@@ -451,7 +392,7 @@ input:checked + .slider:before {
 }
 
 .half-column {
-  text-align: center;
+  text-align: left;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -466,16 +407,131 @@ input:checked + .slider:before {
 
 .half-column h1.title {
   color: var(--primary-color);
-  font-size: 7rem;
-  font-family: AveFedan;
+  font-size: 5rem;
+  font-family: Code;
+  font-variant: initial !important;
   line-height: 1;
+  padding: 1.5rem 0;
+  margin: 0;
 }
 
 .half-column h2.subtitle {
   color: var(--secondary-color);
   font-size: 2.5rem;
-  font-family: retro;
-  padding-top: 1rem;
+  font-family: Code, sans-serif;
+  font-weight: bold;
+  font-variant: initial !important;
+}
+
+.half-column h3.subtitle-subtitle {
+  font-size: 1.5rem;
+  color: rgba(218, 27, 96, 0.7);
+  padding-bottom: 1rem;
+  font-weight: bold;
+  font-family: Code;
+  font-variant: initial !important;
+}
+
+.icon-bar {
+  width: 90px;
+  background-color: var(--white);
+  position: relative;
+  padding: 1rem;
+  border-radius: 25px;
+}
+
+html[data-theme="dark"] .icon-bar {
+  background-color: var(--surface) !important;
+}
+
+html[data-theme="dark"] .icon-bar a {
+  color: white;
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: black;
+  font-size: 36px;
+}
+
+.twitter {
+  color: #55ACEE !important;
+}
+
+.instagram {
+  color: #833AB4 !important;
+}
+
+.cv svg {
+  width: 36px;
+  height: 36px;
+}
+
+.github svg {
+  margin-top: 10px;
+  width: 36px;
+  height: 36px;
+}
+
+@media screen and (max-width: 1130px) {
+  .icon-bar {
+    display: none;
+  }
+}
+
+.btn {
+  z-index: 1;
+  overflow: hidden;
+  position: relative;
+  width: 30% !important;
+  height: 60% !important;
+  padding: 15px 50px !important;
+  border-radius: 36px;
+  cursor: pointer;
+  font-size: 1em;
+  letter-spacing: 2px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  font-weight: bold;
+  margin: 5px 0;
+  font-family: Code;
+  border: 4px solid var(--secondary-color) !important;
+  color: var(--on-primary) !important;
+  background-color: var(--secondary-color) !important;
+  -webkit-box-shadow: 0 5px 10px rgba(218, 27, 96, 0.05), 0 15px 40px rgba(218, 27, 96, 0.9) !important;
+          box-shadow: 0 5px 10px rgba(218, 27, 96, 0.05), 0 15px 40px rgba(218, 27, 96, 0.9) !important;
+}
+
+.btn:before {
+  content: "" !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  width: 0% !important;
+  height: 100% !important;
+  background: var(--background) !important;
+  z-index: -1 !important;
+  -webkit-transition: 0.2s ease !important;
+  transition: 0.2s ease !important;
+}
+
+.btn:hover {
+  color: var(--secondary-color) !important;
+  background: var(--background) !important;
+  -webkit-transition: 0.2s ease !important;
+  transition: 0.2s ease !important;
+}
+
+html[data-theme="dark"] .btn {
+  color: var(--white) !important;
+}
+
+.btn:hover:before {
+  width: 100% !important;
 }
 
 /*------------------------------------*\
@@ -484,6 +540,7 @@ input:checked + .slider:before {
 .about div.about-text h1.about-text-title {
   font-size: 2.5rem;
   color: var(--secondary-color) !important;
+  font-weight: bold;
 }
 
 .about div.about-text p.about-text-primary {
@@ -492,11 +549,12 @@ input:checked + .slider:before {
 }
 
 .about div.about-text p.about-text-secondary {
-  color: var(--cv-color) !important;
+  color: var(--contact-color) !important;
+  font-weight: bold;
 }
 
 h1.parcours-title {
-  color: var(--github-color);
+  color: var(--secondary-color);
 }
 
 hr.parcours-divider {
@@ -529,14 +587,12 @@ p.parcours-text {
 }
 
 html[data-theme="dark"] .card {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(var(--background)), to(var(--background)));
-  background-image: linear-gradient(0deg, var(--background) 0%, var(--background) 100%);
-  -webkit-box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(220, 220, 220, 0.1);
-          box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(220, 220, 220, 0.1);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(var(--surface)), to(var(--surface)));
+  background-image: linear-gradient(0deg, var(--surface) 0%, var(--surface) 100%);
 }
 
 .avatar {
-  border: 10px solid var(--github-color);
+  border: 10px solid var(--portfolio-color);
   border-radius: 50%;
   height: 150px;
   width: 150px;
@@ -608,7 +664,7 @@ html[data-theme="dark"] .card {
   font-size: 1.2rem;
   font-weight: bold;
   font-variant: small-caps;
-  color: var(--github-color);
+  color: var(--portfolio-color);
 }
 
 .user-info ul li strong {
@@ -620,11 +676,11 @@ html[data-theme="dark"] .card {
 .user-info ul li.twitter a strong:hover {
   -webkit-transition: color .5s linear;
   transition: color .5s linear;
-  color: var(--github-color);
+  color: var(--portfolio-color);
 }
 
 .repo {
-  background-color: var(--github-color);
+  background-color: var(--portfolio-color);
   border-radius: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -647,7 +703,7 @@ html[data-theme="dark"] .card {
 .repo:hover {
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
-  color: var(--on-background);
+  color: var(--portfolio-color) !important;
   background-color: var(--surface);
 }
 
@@ -679,7 +735,7 @@ hr.portfolio-divider {
   width: 30%;
   height: 4px;
   border-radius: 24px;
-  background-color: var(--cv-color) !important;
+  background-color: var(--secondary-color) !important;
 }
 
 p.portfolio-text {
@@ -725,7 +781,7 @@ hr.contact-divider {
   width: 30%;
   height: 4px;
   border-radius: 24px;
-  background-color: var(--github-color) !important;
+  background-color: var(--secondary-color) !important;
 }
 
 p.contact-text {
@@ -733,7 +789,7 @@ p.contact-text {
 }
 
 p.contact-text strong {
-  color: var(--pre-release) !important;
+  color: var(--secondary-color) !important;
 }
 
 input, textarea {
@@ -744,6 +800,7 @@ input, textarea {
 
 html[data-theme="light"] input {
   border: 1px solid transparent !important;
+  background-color: var(--white) !important;
 }
 
 html[data-theme="light"] input:focus {
@@ -760,6 +817,7 @@ html[data-theme="light"] input:hover + span.icon {
 
 html[data-theme="light"] textarea {
   border: 1px solid transparent !important;
+  background-color: var(--white) !important;
 }
 
 html[data-theme="light"] textarea:focus {
