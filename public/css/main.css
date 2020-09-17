@@ -1,9 +1,9 @@
 /*
-Theme Name: Website v1.2.3
+Theme Name: Website v1.3.0
 Theme URI: https://quentinboitel.netlify.app/
 Description: The Theme for my website
 Author: Quentin Boitel
-Version: 1.2.3
+Version: 1.3.0
 */
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 :root {
@@ -43,6 +43,21 @@ Version: 1.2.3
 /*------------------------------------*\
     $BASE
 \*------------------------------------*/
+@font-face {
+  font-family: AveFedan;
+  src: url("../fonts/AveFedan.ttf");
+}
+
+@font-face {
+  font-family: retro;
+  src: url("../fonts/Retrochips.otf");
+}
+
+@font-face {
+  font-family: Poetsen;
+  src: url("../fonts/PoetsenOne-Regular.ttf");
+}
+
 @font-face {
   font-family: Code;
   src: url("../fonts/CodeDemo-Bold.otf");
