@@ -13,6 +13,34 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
+# [1.3.0] - 2020-09-14
+
+## What's New ❗️
+
+We made some modifications to the homepage. Texts have been changed, we added social buttons and links, removed fonts and changed some colors. We added a dark mode transition for a smoother transition for dark to light and from light to dark.
+
+### Added ✅
+
+* social buttons bar
+* instagram, twitter links in footer
+
+### Changed ✳️
+
+* homepage texts
+* colors
+* dark mode transition
+
+### Fixed ⚠️
+
+No bugs were fixed in this version. If you found one, please [open an issue on GitHub](https://github.com/qbtl/website/issues)
+
+### Removed ❌
+
+* fonts (AveFedan, Retrochips, PoetsenOne)
+* colors
+
+---
+
 # [1.2.3] - 2020-09-14
 
 ## What's New ❗️
@@ -165,6 +193,7 @@ No bugs were fixed in this version. If you found one, please [open an issue on G
 
 * jQuery ([#191](https://github.com/qbtl/website/commit/2867a0ca72720c0f1a8579ef0e234b2a9e8e0613))
 
+[1.3.0]: https://github.com/qbtl/website/releases/tag/v1.3.0
 [1.2.3]: https://github.com/qbtl/website/releases/tag/v1.2.3
 [1.2.2]: https://github.com/qbtl/website/releases/tag/v1.2.2
 [1.2.1]: https://github.com/qbtl/website/releases/tag/v1.2.1
