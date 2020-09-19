@@ -1,9 +1,9 @@
 /*
-Theme Name: Website v1.3.0
+Theme Name: Website v1.3.1
 Theme URI: https://quentinboitel.netlify.app/
 Description: The Theme for my website
 Author: Quentin Boitel
-Version: 1.3.0
+Version: 1.3.1
 */
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 :root {
@@ -44,23 +44,8 @@ Version: 1.3.0
     $BASE
 \*------------------------------------*/
 @font-face {
-  font-family: AveFedan;
-  src: url("../fonts/AveFedan.ttf");
-}
-
-@font-face {
-  font-family: retro;
-  src: url("../fonts/Retrochips.otf");
-}
-
-@font-face {
-  font-family: Poetsen;
-  src: url("../fonts/PoetsenOne-Regular.ttf");
-}
-
-@font-face {
   font-family: Code;
-  src: url("../fonts/CodeDemo-Bold.otf");
+  src: url("../fonts/Code.otf");
 }
 
 * {
@@ -132,11 +117,6 @@ p {
 
 img {
   width: 100%;
-}
-
-.cv svg {
-  width: 36px;
-  height: 36px;
 }
 
 /*------------------------------------*\
@@ -514,7 +494,7 @@ html[data-theme="dark"] .icon-bar a {
   font-weight: bold;
   margin: 5px 0;
   font-family: Code;
-  border: 4px solid var(--secondary-color) !important;
+  border: 3px solid var(--secondary-color) !important;
   color: var(--on-primary) !important;
   background-color: var(--secondary-color) !important;
   -webkit-box-shadow: 0 5px 10px rgba(218, 27, 96, 0.05), 0 15px 40px rgba(218, 27, 96, 0.9) !important;
@@ -542,6 +522,8 @@ html[data-theme="dark"] .icon-bar a {
 }
 
 html[data-theme="dark"] .btn {
+  -webkit-box-shadow: 0 5px 10px rgba(218, 27, 96, 0.05), 0 15px 40px rgba(218, 27, 96, 0.6) !important;
+          box-shadow: 0 5px 10px rgba(218, 27, 96, 0.05), 0 15px 40px rgba(218, 27, 96, 0.6) !important;
   color: var(--white) !important;
 }
 
@@ -946,6 +928,12 @@ input[type="checkbox"] {
   height: 24px;
   margin-top: calc(.5em - 1px);
   border-radius: 24px;
+  background-color: var(--background);
+}
+
+html[data-theme="dark"] .bulma {
+  content: url("https://bulma.io/images/made-with-bulma--white.png");
+  background-color: black;
 }
 
 /*------------------------------------*\
