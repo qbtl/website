@@ -1,9 +1,9 @@
 /*
-Package Name: Website v1.3.0
+Package Name: Website v1.3.1
 Package URI: https://quentinboitel.netlify.app/
 Description: The Package for my website
 Author: Quentin Boitel
-Version: 1.3.0
+Version: 1.3.1
 */
 
 /* Dark Theme Toggle */
@@ -33,14 +33,6 @@ toggleSwitch.addEventListener('change', switchTheme, false);
 
 /* Check if Website Content is Loaded */
 document.addEventListener('DOMContentLoaded', () => {
-  
-  /* Initiate AOS */
-  AOS.init({
-    easing: 'ease',
-    duration: 1800,
-    once: true
-  });
-
   /* Navbar Burger */
   // Get all "navbar-burger" elements
   const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
