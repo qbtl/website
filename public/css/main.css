@@ -63,13 +63,13 @@ html {
   background-color: var(--background) !important;
 }
 
-html[data-theme="dark"] {
-  background-color: var(--background) !important;
+html[data-theme="light"] {
   -webkit-transition: all .4s linear;
   transition: all .4s linear;
 }
 
-html[data-theme="light"] {
+html[data-theme="dark"] {
+  background-color: var(--background) !important;
   -webkit-transition: all .4s linear;
   transition: all .4s linear;
 }
@@ -140,12 +140,6 @@ img {
   background-color: var(--surface) !important;
 }
 
-.navbar-logo {
-  width: 200px;
-  height: 50px;
-  border-radius: 12px;
-}
-
 .navbar-brand .navbar-item {
   margin-left: 0 !important;
 }
@@ -153,6 +147,12 @@ img {
 .navbar-brand .navbar-item:hover:after {
   -webkit-transform: scaleX(0) !important;
           transform: scaleX(0) !important;
+}
+
+.navbar-brand .navbar-item .navbar-logo {
+  width: 200px;
+  height: 50px;
+  border-radius: 12px;
 }
 
 .navbar-item {
@@ -295,14 +295,14 @@ a.navbar-item.is-active.navbar-item-contact:after {
   background-color: transparent !important;
 }
 
-.theme-switch {
+.theme-switch-wrapper .theme-switch {
   display: inline-block;
   height: 34px;
   position: relative;
   width: 60px;
 }
 
-.theme-switch input {
+.theme-switch-wrapper .theme-switch input {
   display: none;
 }
 
@@ -330,29 +330,12 @@ a.navbar-item.is-active.navbar-item-contact:after {
   width: 26px;
 }
 
-input:checked + .slider {
-  background-color: var(--on-background);
-}
-
-input:checked + div.slider i.fa-moon {
-  visibility: visible;
-}
-
-input:checked + .slider i.fa-sun {
-  visibility: hidden;
-}
-
 .slider i.fa-moon {
   visibility: hidden;
   position: relative;
   padding-top: .625rem;
   padding-right: .25rem;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-          transform: translateX(26px);
-  background-color: var(--on-secondary);
+  color: #f1c40f;
 }
 
 .slider.round {
@@ -367,23 +350,43 @@ input:checked + .slider:before {
   position: relative;
   padding-top: .5rem;
   padding-left: .25rem;
-}
-
-.fa-sun {
   color: #f39c12;
 }
 
-.fa-moon {
-  color: #f1c40f;
+input:checked + .slider {
+  background-color: var(--on-background);
 }
 
-.hero-image {
+input:checked + div.slider i.fa-moon {
+  visibility: visible;
+}
+
+input:checked + .slider i.fa-sun {
+  visibility: hidden;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+          transform: translateX(26px);
+  background-color: var(--on-secondary);
+}
+
+.icon-bar {
+  width: 90px;
+  background-color: var(--white);
   position: relative;
-  width: 100%;
-  max-width: 100%;
-  height: 100%;
-  max-height: 100%;
-  border-radius: 32px;
+  padding: 1rem;
+  border-radius: 25px;
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 5px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  color: black;
+  font-size: 36px;
 }
 
 .half-column {
@@ -427,12 +430,13 @@ input:checked + .slider:before {
   font-variant: initial !important;
 }
 
-.icon-bar {
-  width: 90px;
-  background-color: var(--white);
+.hero-image {
   position: relative;
-  padding: 1rem;
-  border-radius: 25px;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  border-radius: 32px;
 }
 
 html[data-theme="dark"] .icon-bar {
@@ -443,31 +447,21 @@ html[data-theme="dark"] .icon-bar a {
   color: white;
 }
 
-.icon-bar a {
-  display: block;
-  text-align: center;
-  padding: 5px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  color: black;
-  font-size: 36px;
-}
-
-.twitter {
+html[data-theme="dark"] .icon-bar a.twitter {
   color: #55ACEE !important;
 }
 
-.instagram {
+html[data-theme="dark"] .icon-bar a.instagram {
   color: #833AB4 !important;
-}
-
-.cv svg {
-  width: 36px;
-  height: 36px;
 }
 
 .github svg {
   margin-top: 10px;
+  width: 36px;
+  height: 36px;
+}
+
+.cv svg {
   width: 36px;
   height: 36px;
 }
@@ -489,8 +483,8 @@ html[data-theme="dark"] .icon-bar a {
   cursor: pointer;
   font-size: 1em;
   letter-spacing: 2px;
-  -webkit-transition: 0.2s ease;
-  transition: 0.2s ease;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
   font-weight: bold;
   margin: 5px 0;
   font-family: Code;
@@ -510,25 +504,25 @@ html[data-theme="dark"] .icon-bar a {
   height: 100% !important;
   background: var(--background) !important;
   z-index: -1 !important;
-  -webkit-transition: 0.2s ease !important;
-  transition: 0.2s ease !important;
+  -webkit-transition: .2s ease !important;
+  transition: .2s ease !important;
 }
 
 .btn:hover {
   color: var(--secondary-color) !important;
   background: var(--background) !important;
-  -webkit-transition: 0.2s ease !important;
-  transition: 0.2s ease !important;
+  -webkit-transition: .2s ease !important;
+  transition: .2s ease !important;
+}
+
+.btn:hover:before {
+  width: 100% !important;
 }
 
 html[data-theme="dark"] .btn {
   -webkit-box-shadow: 0 5px 10px rgba(218, 27, 96, 0.05), 0 15px 40px rgba(218, 27, 96, 0.6) !important;
           box-shadow: 0 5px 10px rgba(218, 27, 96, 0.05), 0 15px 40px rgba(218, 27, 96, 0.6) !important;
   color: var(--white) !important;
-}
-
-.btn:hover:before {
-  width: 100% !important;
 }
 
 /*------------------------------------*\
@@ -666,7 +660,7 @@ html[data-theme="dark"] .card {
 
 .user-info ul li strong {
   font-size: 1.2rem;
-  margin-left: 0.5rem;
+  margin-left: .5rem;
   color: var(--on-background);
 }
 
@@ -857,10 +851,14 @@ input[type="checkbox"] {
   color: var(--primary-color) !important;
 }
 
+.breadcrumb ul li:before {
+  color: var(--on-background) !important;
+}
+
 .breadcrumb ul li a {
   color: var(--primary-color) !important;
-  -webkit-transition: color 0.4s linear;
-  transition: color 0.4s linear;
+  -webkit-transition: color .4s linear;
+  transition: color .4s linear;
   font-variant: small-caps;
   font-weight: bold;
 }
@@ -870,17 +868,13 @@ input[type="checkbox"] {
 }
 
 .breadcrumb ul li a i {
-  padding-right: 0.25rem;
+  padding-right: .25rem;
 }
 
 .breadcrumb ul li a svg {
   width: 24px;
   height: 24px;
-  padding-right: 0.25rem;
-}
-
-.breadcrumb ul li::before {
-  color: var(--on-background) !important;
+  padding-right: .25rem;
 }
 
 .copy {
@@ -908,7 +902,7 @@ input[type="checkbox"] {
 }
 
 .footer-button.bck-top-btn {
-  margin-bottom: 0.5rem;
+  margin-bottom: .5rem;
 }
 
 .footer-button.bck-top-btn span {
