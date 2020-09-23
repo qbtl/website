@@ -1,10 +1,11 @@
 @charset "UTF-8";
+
 /*
-Theme Name: Website 404 v1.3.1
+Theme Name: Website 404 v1.3.2
 Theme URI: https://quentinboitel.netlify.app/
 Description: The Theme for my website 404 page
 Author: Quentin Boitel
-Version: 1.3.1
+Version: 1.3.2
 */
 :root {
     --primary-color: #FF8A00;
@@ -209,17 +210,17 @@ input:checked+.slider:before {
     position: relative;
     padding: 1rem;
     border-radius: 25px;
-  }
-  
-  html[data-theme="dark"] .icon-bar {
+}
+
+html[data-theme="dark"] .icon-bar {
     background-color: var(--surface) !important;
-  }
-  
-  html[data-theme="dark"] .icon-bar a {
+}
+
+html[data-theme="dark"] .icon-bar a {
     color: white;
-  }
-  
-  .icon-bar a {
+}
+
+.icon-bar a {
     display: block;
     text-align: center;
     padding: 5px;
@@ -227,23 +228,23 @@ input:checked+.slider:before {
     transition: all 0.3s ease;
     color: black;
     font-size: 36px;
-  }
-  
-  .twitter {
+}
+
+.twitter {
     color: #55ACEE !important;
-  }
-  
-  .instagram {
+}
+
+.instagram {
     color: #833AB4 !important;
-  }
-  
-  .cv svg {
+}
+
+.cv svg {
     width: 36px;
     height: 36px;
-  }
-  
-  .github svg {
+}
+
+.github svg {
     margin-top: 10px;
     width: 36px;
     height: 36px;
-  }
+}
