@@ -89,7 +89,7 @@ p {
     font-family: "Nunito Sans";
     border: 4px solid var(--secondary-color);
     color: var(--on-background) !important;
-    box-shadow: 0 5px 10px rgba(218, 27, 96, 0.05), 0 15px 40px rgba(218, 27, 96, 0.9) !important;
+    box-shadow: 0 5px 10px rgba(218, 27, 96, 0.05), 0 15px 40px rgba(218, 27, 96, 0.6) !important;
 }
 
 .btn:before {
@@ -236,6 +236,10 @@ html[data-theme="dark"] .icon-bar a {
 
 .instagram {
     color: #833AB4 !important;
+}
+
+.dribbble {
+    color: #ea4c89 !important;
 }
 
 .cv svg {

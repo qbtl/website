@@ -8,7 +8,9 @@ Version: 1.3.2
 
 /* Dark Theme Toggle */
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+const theme = localStorage.setItem('theme', 'dark');
 const currentTheme = localStorage.getItem('theme');
+document.documentElement.setAttribute('data-theme', currentTheme);
 
 if (currentTheme) {
   document.documentElement.setAttribute('data-theme', currentTheme);
@@ -55,7 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
-
 });
 
 /* Back to Top Button */
