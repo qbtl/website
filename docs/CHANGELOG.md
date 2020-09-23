@@ -13,6 +13,30 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
+# [1.3.3] - 2020-09-23
+
+## What's New ❗️
+
+We modified the about page to make it a bit more modern, it now displays more informartion, skills, and tiny about text.
+
+### Added ✅
+
+No features were added in this version.
+
+### Changed ✳️
+
+* about page, made it modern looking
+
+### Fixed ⚠️
+
+No bugs were fixed in this version. If you found one, please [open an issue on GitHub](https://github.com/qbtl/website/issues)
+
+### Removed ❌
+
+* images
+
+---
+
 # [1.3.2] - 2020-09-23
 
 ## What's New ❗️
@@ -245,6 +269,7 @@ No bugs were fixed in this version. If you found one, please [open an issue on G
 
 * jQuery ([#191](https://github.com/qbtl/website/commit/2867a0ca72720c0f1a8579ef0e234b2a9e8e0613))
 
+[1.3.3]: https://github.com/qbtl/website/releases/tag/v1.3.3
 [1.3.2]: https://github.com/qbtl/website/releases/tag/v1.3.2
 [1.3.1]: https://github.com/qbtl/website/releases/tag/v1.3.1
 [1.3.0]: https://github.com/qbtl/website/releases/tag/v1.3.0

@@ -70,8 +70,6 @@ html[data-theme="light"] {
 
 html[data-theme="dark"] {
   background-color: var(--background) !important;
-  -webkit-transition: all .4s linear;
-  transition: all .4s linear;
 }
 
 /* Safari, Chrome custom scrollbar */
@@ -528,35 +526,127 @@ html[data-theme="dark"] .btn {
 /*------------------------------------*\
     $ABOUT
 \*------------------------------------*/
-.about div.about-text h1.about-text-title {
-  font-size: 2.5rem;
-  color: var(--secondary-color) !important;
-  font-weight: bold;
+.about {
+  color: var(--on-background);
 }
 
-.about div.about-text p.about-text-primary {
+.about div.about-section h1.about-section-title {
+  font-size: 3.5rem;
+  color: var(--secondary-color) !important;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.about div.about-section p.about-text {
   color: var(--on-background) !important;
   margin-top: 2.5rem !important;
 }
 
-.about div.about-text p.about-text-secondary {
-  color: var(--contact-color) !important;
+.about div.about-section img.about-img {
+  border-radius: 50%;
+  height: 20rem;
+  width: 20rem;
+}
+
+.about-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.about-list li {
+  padding: .5rem;
+  font-size: 20px;
+}
+
+.about-list li i {
+  margin-right: .25rem;
+}
+
+.about-list-values {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-list-values progress {
+  margin: 1rem;
+  padding: 1px;
+}
+
+.about-list-skills li {
+  padding: .725rem;
+}
+
+.about-list-skills li.html {
+  color: #f14668;
   font-weight: bold;
 }
 
-h1.parcours-title {
-  color: var(--secondary-color);
+.about-list-skills li.css {
+  color: #3273dc;
+  font-weight: bold;
 }
 
-hr.parcours-divider {
-  width: 30%;
-  height: 4px;
-  border-radius: 24px;
-  background-color: var(--contact-color) !important;
+.about-list-skills li.js {
+  color: #ffdd57;
+  font-weight: bold;
 }
 
-p.parcours-text {
-  color: var(--on-background) !important;
+@media screen and (max-width: 769px) {
+  .about-list {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .about-list-values {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .js-progress {
+    margin-bottom: 24px !important;
+  }
 }
 
 /*------------------------------------*\
