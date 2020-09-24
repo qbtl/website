@@ -1,14 +1,16 @@
 /*
-Package Name: Website v1.3.2
+Package Name: Website v1.4.0
 Package URI: https://quentinboitel.netlify.app/
 Description: The Package for my website
 Author: Quentin Boitel
-Version: 1.3.2
+Version: 1.4.0
 */
 
 /* Dark Theme Toggle */
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+const theme = localStorage.setItem('theme', 'dark');
 const currentTheme = localStorage.getItem('theme');
+document.documentElement.setAttribute('data-theme', currentTheme);
 
 if (currentTheme) {
   document.documentElement.setAttribute('data-theme', currentTheme);
@@ -55,7 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
-
 });
 
 /* Back to Top Button */

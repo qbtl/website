@@ -13,6 +13,32 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
+# [1.4.0] - 2020-09-23
+
+## What's New ❗️
+
+We modified the about page to make it a bit more modern, it now displays more informartion, skills, and tiny about text.
+
+### Added ✅
+
+* dribbble account social icon ([#293](https://github.com/qbtl/website/commit/d79b9d117a72e75caa0a60d202af914d3a5f3d99))
+
+### Changed ✳️
+
+* about page, made it modern looking ([#292](https://github.com/qbtl/website/commit/3331fa024669ff8b16c3b633570d4448713a7251))
+* portfolio section ([#293](https://github.com/qbtl/website/commit/d79b9d117a72e75caa0a60d202af914d3a5f3d99))
+* force dark mode preferred scheme as dark but it is still changeable ([#293](https://github.com/qbtl/website/commit/d79b9d117a72e75caa0a60d202af914d3a5f3d99))
+
+### Fixed ⚠️
+
+No bugs were fixed in this version. If you found one, please [open an issue on GitHub](https://github.com/qbtl/website/issues)
+
+### Removed ❌
+
+* images ([#292](https://github.com/qbtl/website/commit/3331fa024669ff8b16c3b633570d4448713a7251))
+
+---
+
 # [1.3.2] - 2020-09-23
 
 ## What's New ❗️
@@ -245,6 +271,7 @@ No bugs were fixed in this version. If you found one, please [open an issue on G
 
 * jQuery ([#191](https://github.com/qbtl/website/commit/2867a0ca72720c0f1a8579ef0e234b2a9e8e0613))
 
+[1.4.0]: https://github.com/qbtl/website/releases/tag/v1.4.0
 [1.3.2]: https://github.com/qbtl/website/releases/tag/v1.3.2
 [1.3.1]: https://github.com/qbtl/website/releases/tag/v1.3.1
 [1.3.0]: https://github.com/qbtl/website/releases/tag/v1.3.0
