@@ -17,7 +17,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ## What's New ❗️
 
-We made some smalls modifications in the overall design, with changes to some colors properties and portfolio cards, which are now modern and much more intuitives.
+We made some smalls modifications in the overall design, with changes to some colors properties and portfolio cards, which are now modern and much more intuitive.
 
 ### Added ✅
 
