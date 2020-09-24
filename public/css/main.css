@@ -434,7 +434,7 @@ input:checked + .slider:before {
   max-width: 100%;
   height: 100%;
   max-height: 100%;
-  border-radius: 32px;
+  border-radius: 20px;
 }
 
 html[data-theme="dark"] .icon-bar {
@@ -457,10 +457,18 @@ html[data-theme="dark"] .icon-bar a {
   color: #ea4c89 !important;
 }
 
+.github {
+  color: white;
+}
+
 .github svg {
   margin-top: 10px;
   width: 36px;
   height: 36px;
+}
+
+.cv {
+  color: var(--primary-color) !important;
 }
 
 .cv svg {
@@ -656,11 +664,9 @@ html[data-theme="dark"] .btn {
 /*------------------------------------*\
     $GITHUB-PROFILE
 \*------------------------------------*/
-.card {
-  background-color: #DCDCDC !important;
-  border-radius: 30px;
-  -webkit-box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
+.github-card {
+  background-color: var(--background) !important;
+  border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -671,13 +677,8 @@ html[data-theme="dark"] .btn {
   font-family: "Poppins", sans-serif;
 }
 
-html[data-theme="dark"] .card {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(var(--surface)), to(var(--surface)));
-  background-image: linear-gradient(0deg, var(--surface) 0%, var(--surface) 100%);
-}
-
 @media screen and (max-width: 820px) {
-  .card {
+  .github-card {
     display: none;
   }
   .portfolio {
@@ -770,12 +771,12 @@ html[data-theme="dark"] .card {
 .user-info ul li.twitter a strong:hover {
   -webkit-transition: color .5s linear;
   transition: color .5s linear;
-  color: var(--portfolio-color);
+  color: #55ACEE;
 }
 
 .repo {
-  background-color: var(--portfolio-color);
-  border-radius: 32px;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -824,17 +825,20 @@ html[data-theme="light"] .repo:hover {
 h1.portfolio-title {
   color: var(--portfolio-color);
   margin-top: 1rem;
+  padding: 0 32px !important;
 }
 
 hr.portfolio-divider {
-  width: 100%;
+  width: 50%;
   height: 4px;
   border-radius: 24px;
   background-color: var(--secondary-color) !important;
+  margin: 0 32px !important;
 }
 
 p.portfolio-text {
   color: var(--on-background) !important;
+  padding: 10px 32px !important;
 }
 
 a.portfolio-github svg {
@@ -842,9 +846,46 @@ a.portfolio-github svg {
   width: 42px !important;
 }
 
+.portfolio-cta ul li a.portfolio-github {
+  color: #55ACEE !important;
+}
+
+.portfolio-cta ul li a.portfolio-github:hover {
+  color: #ea4c89 !important;
+}
+
+html[data-theme="light"] .portfolio-cta ul li a.portfolio-github {
+  color: #55ACEE !important;
+}
+
+html[data-theme="light"] .portfolio-cta ul li a.portfolio-github:hover {
+  color: #ea4c89 !important;
+}
+
 .portfolio-image {
-  width: 700px;
+  width: 100% !important;
+  max-width: 100% !important;
   height: 400px;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.portfolio-card {
+  background-color: var(--surface);
+  padding-top: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin: 0 16px;
+  border-radius: 20px !important;
+}
+
+@media screen and (max-width: 769px) {
+  .portfolio-card {
+    margin: 32px 16px !important;
+  }
+  .portfolio-card-top {
+    margin-top: 16px !important;
+  }
 }
 
 /*------------------------------------*\
@@ -887,6 +928,7 @@ input, textarea {
   background-color: var(--surface) !important;
   border: 1px solid var(--surface) !important;
   color: var(--on-background) !important;
+  border-radius: 10px !important;
 }
 
 html[data-theme="light"] input {
@@ -952,19 +994,15 @@ input[type="checkbox"] {
 }
 
 .breadcrumb ul li:before {
-  color: var(--on-background) !important;
+  color: var(--surface) !important;
 }
 
 .breadcrumb ul li a {
-  color: var(--primary-color) !important;
+  color: white !important;
   -webkit-transition: color .4s linear;
   transition: color .4s linear;
   font-variant: small-caps;
   font-weight: bold;
-}
-
-.breadcrumb ul li a:hover {
-  color: var(--secondary-color) !important;
 }
 
 .breadcrumb ul li a i {
@@ -975,6 +1013,50 @@ input[type="checkbox"] {
   width: 24px;
   height: 24px;
   padding-right: .25rem;
+}
+
+.breadcrumb ul li a.home {
+  color: var(--primary-color) !important;
+}
+
+.breadcrumb ul li a.dribbble {
+  color: #ea4c89 !important;
+}
+
+.breadcrumb ul li a.instagram {
+  color: #833AB4 !important;
+}
+
+.breadcrumb ul li a.twitter {
+  color: #55ACEE !important;
+}
+
+.breadcrumb ul li a.contact {
+  color: var(--contact-color) !important;
+}
+
+html[data-theme="light"] .breadcrumb ul li a {
+  color: black !important;
+}
+
+html[data-theme="light"] .breadcrumb ul li a.home {
+  color: var(--primary-color) !important;
+}
+
+html[data-theme="light"] .breadcrumb ul li a.dribbble {
+  color: #ea4c89 !important;
+}
+
+html[data-theme="light"] .breadcrumb ul li a.instagram {
+  color: #833AB4 !important;
+}
+
+html[data-theme="light"] .breadcrumb ul li a.twitter {
+  color: #55ACEE !important;
+}
+
+html[data-theme="light"] .breadcrumb ul li a.contact {
+  color: var(--contact-color) !important;
 }
 
 .copy {

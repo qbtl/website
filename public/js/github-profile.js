@@ -30,7 +30,7 @@ async function getRepos(username) {
 
 function createUserCard(user) {
     const cardHTML = `
-        <div class="card">
+        <div class="github-card">
             <div>
                 <a href="${user.html_url}"><img class="avatar" src="${user.avatar_url}" alt="${user.name}"/></a>
             </div>
