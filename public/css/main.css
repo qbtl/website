@@ -780,7 +780,7 @@ html[data-theme="dark"] .btn {
 }
 
 .container-fluid {
-  margin-right: 0rem !important;
+  margin-right: 0 !important;
 }
 
 .portfolio-projects {
@@ -1137,8 +1137,6 @@ html[data-theme="dark"] .btn {
 
 .tags a {
   font-style: normal;
-  font-weight: 700;
-  font-size: .5rem;
   color: #7a7a8c;
   text-transform: uppercase;
   font-weight: bold;
