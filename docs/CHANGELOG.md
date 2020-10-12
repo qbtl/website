@@ -29,6 +29,7 @@ We made a rework of the portfolio cards to a new modern design inspired by css-t
 * portfolio card
 * website icon
 * Github profle card
+* img folder to images folder
 
 ### Fixed ⚠️
 
