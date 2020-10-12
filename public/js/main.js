@@ -1,9 +1,9 @@
 /*
-Package Name: Website v1.4.1
+Package Name: Website v1.4.2
 Package URI: https://quentinboitel.netlify.app/
 Description: The Package for my website
 Author: Quentin Boitel
-Version: 1.4.1
+Version: 1.4.2
 */
 
 /* Dark Theme Toggle */
