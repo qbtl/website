@@ -13,6 +13,32 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
+# [1.5.0] - 2020-10-15
+
+## What's New ❗️
+
+We made some big changes, we removed the light mode to only keep the dark mode which is way better. We moved the navbar links to the right of the screen
+to ensure readability and accessibility. The JS library ScrollReveal have been added to add animations on page scroll.
+
+### Added ✅
+
+* ScrollReveal
+
+### Changed ✳️
+
+* navbar links to right
+
+### Fixed ⚠️
+
+No bugs were fixed in this version. If you found one, please [open an issue on GitHub](https://github.com/qbtl/website/issues)
+
+### Removed ❌
+
+* light mode
+* theme switcher
+
+---
+
 # [1.4.3] - 2020-10-14
 
 ## What's New ❗️
@@ -21,11 +47,11 @@ We modified the header image to a gif, and the header text.
 
 ### Added ✅
 
-* code typing gif
+* code typing gif ([#313](https://github.com/qbtl/website/commit/ad70e8b1542860014c003be22a31ea08395405a4))
 
 ### Changed ✳️
 
-* header text
+* header text ([#313](https://github.com/qbtl/website/commit/ad70e8b1542860014c003be22a31ea08395405a4))
 
 ### Fixed ⚠️
 
@@ -45,15 +71,15 @@ We made a rework of the portfolio cards to a new modern design inspired by css-t
 
 ### Added ✅
 
-* new updated cv
-* CodeQL GitHub workflow
+* new updated cv ([#305](https://github.com/qbtl/website/commit/2c5dc4b9bee723b1cd0d8d59140a168045657474))
+* CodeQL GitHub workflow ([#305](https://github.com/qbtl/website/commit/2c5dc4b9bee723b1cd0d8d59140a168045657474))
 
 ### Changed ✳️
 
-* portfolio card
-* website icon
-* Github profle card
-* img folder to images folder
+* portfolio card ([#305](https://github.com/qbtl/website/commit/2c5dc4b9bee723b1cd0d8d59140a168045657474))
+* website icon ([#305](https://github.com/qbtl/website/commit/2c5dc4b9bee723b1cd0d8d59140a168045657474))
+* Github profle card ([#305](https://github.com/qbtl/website/commit/2c5dc4b9bee723b1cd0d8d59140a168045657474))
+* img folder to images folder ([#310](https://github.com/qbtl/website/commit/22d65c0a6a244c631c43fc543bccbd0ff4d5c8eb))
 
 ### Fixed ⚠️
 
@@ -77,8 +103,8 @@ No feature have been added
 
 ### Changed ✳️
 
-* portfolio card
-* github card background color
+* portfolio card ([#301](https://github.com/qbtl/website/commit/5cc926411d1e32eca6674384dded8d9c837c599f))
+* github card background color ([#301](https://github.com/qbtl/website/commit/5cc926411d1e32eca6674384dded8d9c837c599f))
 
 ### Fixed ⚠️
 
@@ -128,8 +154,8 @@ No features were added in this version.
 
 ### Changed ✳️
 
-* css refactor
-* performance
+* css refactor ([#288](https://github.com/qbtl/website/commit/66212969fa9aa2355cff7d11083217292654ce51))
+* performance ([#288](https://github.com/qbtl/website/commit/66212969fa9aa2355cff7d11083217292654ce51))
 
 ### Fixed ⚠️
 
@@ -137,7 +163,7 @@ No bugs were fixed in this version. If you found one, please [open an issue on G
 
 ### Removed ❌
 
-* unused js files
+* unused js files ([#288](https://github.com/qbtl/website/commit/66212969fa9aa2355cff7d11083217292654ce51))
 
 ---
 
@@ -154,7 +180,7 @@ No features were added in this version.
 
 ### Changed ✳️
 
-* readme
+* readme ([#284](https://github.com/qbtl/website/commit/5ac07395929e4268d116765fc16b2d9c72a995d2))
 
 ### Fixed ⚠️
 
@@ -162,9 +188,9 @@ No bugs were fixed in this version. If you found one, please [open an issue on G
 
 ### Removed ❌
 
-* AOS
-* duplicate css
-* unused css
+* AOS ([#284](https://github.com/qbtl/website/commit/5ac07395929e4268d116765fc16b2d9c72a995d2))
+* duplicate css ([#284](https://github.com/qbtl/website/commit/5ac07395929e4268d116765fc16b2d9c72a995d2))
+* unused css ([#284](https://github.com/qbtl/website/commit/5ac07395929e4268d116765fc16b2d9c72a995d2))
 
 ---
 
@@ -176,14 +202,14 @@ We made some modifications to the homepage. Texts have been changed, we added so
 
 ### Added ✅
 
-* social buttons bar
-* instagram, twitter links in footer
+* social buttons bar  ([#281](https://github.com/qbtl/website/commit/20bca19889488807ea9b5ca89b65ceaf86878457))
+* instagram, twitter links in footer ([#281](https://github.com/qbtl/website/commit/20bca19889488807ea9b5ca89b65ceaf86878457))
 
 ### Changed ✳️
 
-* homepage texts
-* colors
-* dark mode transition
+* homepage texts ([#281](https://github.com/qbtl/website/commit/20bca19889488807ea9b5ca89b65ceaf86878457))
+* colors ([#281](https://github.com/qbtl/website/commit/20bca19889488807ea9b5ca89b65ceaf86878457))
+* dark mode transition ([#281](https://github.com/qbtl/website/commit/20bca19889488807ea9b5ca89b65ceaf86878457))
 
 ### Fixed ⚠️
 
@@ -191,8 +217,8 @@ No bugs were fixed in this version. If you found one, please [open an issue on G
 
 ### Removed ❌
 
-* fonts (AveFedan, Retrochips, PoetsenOne)
-* colors
+* fonts (AveFedan, Retrochips, PoetsenOne) ([#281](https://github.com/qbtl/website/commit/20bca19889488807ea9b5ca89b65ceaf86878457))
+* colors ([#281](https://github.com/qbtl/website/commit/20bca19889488807ea9b5ca89b65ceaf86878457))
 
 ---
 
@@ -204,12 +230,12 @@ We added a new feature, the github profile. This new feature adds new informatio
 
 ### Added ✅
 
-* github profile
+* github profile ([#272](https://github.com/qbtl/website/commit/2a99cd7ef63eaa915d6905821c20f1419703bfc5))
 
 ### Changed ✳️
 
-* images size
-* padding (contact)
+* images size ([#272](https://github.com/qbtl/website/commit/2a99cd7ef63eaa915d6905821c20f1419703bfc5))
+* padding (contact) ([#272](https://github.com/qbtl/website/commit/2a99cd7ef63eaa915d6905821c20f1419703bfc5))
 
 ### Fixed ⚠️
 
@@ -233,8 +259,8 @@ No features were added in this version
 
 ### Changed ✳️
 
-* font weight
-* font size
+* font weight ([#266](https://github.com/qbtl/website/commit/dc86d7e8b52c2cbec3a96934fc0c434d714aea2f))
+* font size ([#266](https://github.com/qbtl/website/commit/dc86d7e8b52c2cbec3a96934fc0c434d714aea2f))
 
 ### Fixed ⚠️
 
@@ -254,7 +280,7 @@ We added some informations about css and js file writers and verisons
 
 ### Added ✅
 
-* css, js file writers and versions
+* css, js file writers and versions ([#262](https://github.com/qbtl/website/commit/2209c9e005e3effddb1891fdbea00857c1325e53))
 
 ### Changed ✳️
 
@@ -278,12 +304,12 @@ We introduced the new custom scrollbar on Safari and Chrome, unfortunately this 
 
 ### Added ✅
 
-* custom scrollbar on Safari and Chrome
+* custom scrollbar on Safari and Chrome ([#258](https://github.com/qbtl/website/commit/516a1a7ec0efb2c4c4eb5aba327086c155098d0f))
 
 ### Changed ✳️
 
-* font variant in navbar
-* font variant in footer
+* font variant in navbar ([#258](https://github.com/qbtl/website/commit/516a1a7ec0efb2c4c4eb5aba327086c155098d0f))
+* font variant in footer ([#258](https://github.com/qbtl/website/commit/516a1a7ec0efb2c4c4eb5aba327086c155098d0f))
 
 ### Fixed ⚠️
 
@@ -291,7 +317,7 @@ No bugs were fixed in this version. If you found one, please [open an issue on G
 
 ### Removed ❌
 
-* icons in navbar
+* icons in navbar ([#258](https://github.com/qbtl/website/commit/516a1a7ec0efb2c4c4eb5aba327086c155098d0f))
 
 ---
 
@@ -303,12 +329,12 @@ The website suffers a little rework on the color side. We updated our logo and i
 
 ### Added ✅
 
-* new logo and icon
+* new logo and icon ([#247](https://github.com/qbtl/website/commit/52261826ecf3760cdfc4b553e7de7b993dd1c6cf))
 
 ### Changed ✳️
 
-* color scheme
-* border on navbar links (border now animates)
+* color scheme ([#247](https://github.com/qbtl/website/commit/52261826ecf3760cdfc4b553e7de7b993dd1c6cf))
+* border on navbar links (border now animates) ([#247](https://github.com/qbtl/website/commit/52261826ecf3760cdfc4b553e7de7b993dd1c6cf))
 
 ### Fixed ⚠️
 
@@ -316,7 +342,7 @@ No bugs were fixed in this version. If you found one, please [open an issue on G
 
 ### Removed ❌
 
-* old logo and icon
+* old logo and icon ([#247](https://github.com/qbtl/website/commit/52261826ecf3760cdfc4b553e7de7b993dd1c6cf))
 
 ---
 
@@ -348,6 +374,7 @@ No bugs were fixed in this version. If you found one, please [open an issue on G
 
 * jQuery ([#191](https://github.com/qbtl/website/commit/2867a0ca72720c0f1a8579ef0e234b2a9e8e0613))
 
+[1.5.0]: https://github.com/qbtl/website/releases/tag/v1.5.0
 [1.4.3]: https://github.com/qbtl/website/releases/tag/v1.4.3
 [1.4.2]: https://github.com/qbtl/website/releases/tag/v1.4.2
 [1.4.1]: https://github.com/qbtl/website/releases/tag/v1.4.1

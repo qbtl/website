@@ -7,7 +7,7 @@ Description: The Theme for my website 404 page
 Author: Quentin Boitel
 Version: 1.4.3
 */
-:root {
+/*:root {
     --primary-color: #FF8A00;
     --secondary-color: #DA1B60;
     --background: #DCDCDC;
@@ -22,9 +22,9 @@ Version: 1.4.3
     --pre-release: #E45A15;
     --portfolio-color: #29c7ac;
     --contact-color: #48c774;
-}
+}*/
 
-[data-theme=dark] {
+:root {
     --primary-color: #FF8A00;
     --secondary-color: #DA1B60;
     --background: #121212;
@@ -46,6 +46,22 @@ Version: 1.4.3
     src: url('../fonts/NunitoSans-Bold.ttf');
 }
 
+/* Safari, Chrome custom scrollbar */
+html::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #ff8a00, #e52e71);
+    border-radius: 30px;
+    box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, .25), inset -2px -2px 2px rgba(0, 0, 0, .25)
+}
+
+html::-webkit-scrollbar-track {
+    background: linear-gradient(90deg, var(--background), var(--background) 1px, var(--background) 0, var(--background))
+}
+
 body {
     font-family: "Nunito Sans" !important;
     font-size: 1em !important;
@@ -55,11 +71,14 @@ body {
 
 svg {
     color: var(--on-background) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
-    font-size: 7.5em !important;
-    margin: 15px 0 !important;
+    font-size: 12em !important;
+    margin: -20px 0 !important;
     font-weight: bold !important;
     color: var(--primary-color);
 }
@@ -67,10 +86,12 @@ h1 {
 h2 {
     font-weight: bold !important;
     color: var(--secondary-color);
+    font-size: 2rem !important;
 }
 
 p {
     color: var(--on-background);
+    font-size: 1.25rem !important;
 }
 
 .btn {
@@ -83,9 +104,10 @@ p {
     cursor: pointer;
     font-size: 1em;
     letter-spacing: 2px;
-    transition: 0.2s ease;
+    transition: 1s ease;
     font-weight: bold;
     margin: 15px 0;
+    width: 50%;
     font-family: "Nunito Sans";
     border: 4px solid var(--secondary-color);
     color: var(--on-background) !important;
@@ -101,122 +123,25 @@ p {
     height: 100%;
     background: var(--secondary-color);
     z-index: -1;
-    transition: 0.2s ease;
+    transition: 1s ease;
 }
 
 .btn:hover {
-    color: var(--on-primary) !important;
-    background: var(--secondary-color);
-    transition: 0.2s ease;
-}
-
-[data-theme="dark"] a .btn:hover {
     color: var(--on-background) !important;
+    background: var(--secondary-color);
+    transition: 1s ease;
 }
 
 .btn:hover:before {
     width: 100%;
 }
 
-.theme-switch-wrapper {
-    display: flex;
-    align-items: center;
-    border: none !important;
-    background-color: transparent !important;
-}
-
-.theme-switch {
-    display: inline-block;
-    height: 34px;
-    position: relative;
-    width: 60px;
-}
-
-.theme-switch input {
-    display: none;
-}
-
-.slider {
-    background-color: var(--on-background);
-    bottom: 0;
-    cursor: pointer;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: .4s;
-}
-
-.slider:before {
-    background-color: #fff;
-    bottom: 4px;
-    content: "";
-    height: 26px;
-    left: 4px;
-    position: absolute;
-    transition: .4s;
-    width: 26px;
-}
-
-input:checked+.slider {
-    background-color: var(--on-background);
-}
-
-input:checked+div.slider i.fa-moon {
-    visibility: visible;
-}
-
-input:checked+.slider i.fa-sun {
-    visibility: hidden;
-}
-
-.slider i.fa-moon {
-    visibility: hidden;
-    position: relative;
-    padding-top: .625rem;
-    padding-right: .25rem;
-}
-
-input:checked+.slider:before {
-    transform: translateX(26px);
-    background-color: var(--background) !important;
-}
-
-.slider.round {
-    border-radius: 34px;
-}
-
-.slider.round:before {
-    border-radius: 50%;
-}
-
-.slider i.fa-sun {
-    position: relative;
-    padding-top: .5rem;
-    padding-left: .25rem;
-}
-
-.fa-sun {
-    color: #f39c12;
-}
-
-.fa-moon {
-    color: #f1c40f;
-}
-
 .icon-bar {
     width: 90px;
-    background-color: var(--white);
+    background-color: var(--surface);
     position: relative;
     padding: 1rem;
     border-radius: 25px;
-}
-
-html[data-theme="dark"] .icon-bar {
-    background-color: var(--surface) !important;
-}
-
-html[data-theme="dark"] .icon-bar a {
     color: white;
 }
 
@@ -251,4 +176,10 @@ html[data-theme="dark"] .icon-bar a {
     margin-top: 10px;
     width: 36px;
     height: 36px;
+}
+
+@media screen and (max-width: 1130px) {
+    .icon-bar {
+        display: none;
+    }
 }
