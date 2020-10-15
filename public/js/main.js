@@ -1,9 +1,9 @@
 /*
-Package Name: Website v1.4.3
+Package Name: Website v1.5.0
 Package URI: https://quentinboitel.netlify.app/
 Description: The Package for my website
 Author: Quentin Boitel
-Version: 1.4.3
+Version: 1.5.0
 */
 
 /* Check if Website Content is Loaded */

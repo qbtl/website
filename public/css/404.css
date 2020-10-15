@@ -1,28 +1,12 @@
 @charset "UTF-8";
 
 /*
-Theme Name: Website 404 v1.4.3
+Theme Name: Website 404 v1.5.0
 Theme URI: https://quentinboitel.netlify.app/
 Description: The Theme for my website 404 page
 Author: Quentin Boitel
-Version: 1.4.3
+Version: 1.5.0
 */
-/*:root {
-    --primary-color: #FF8A00;
-    --secondary-color: #DA1B60;
-    --background: #DCDCDC;
-    --surface: #DCDCDC;
-    --error: #B00020;
-    --on-primary: #FFFFFF;
-    --on-secondary: #000000;
-    --on-background: #000000;
-    --on-surface: #000000;
-    --on-error: #FFFFFF;
-    --white: #FFFFFF;
-    --pre-release: #E45A15;
-    --portfolio-color: #29c7ac;
-    --contact-color: #48c774;
-}*/
 
 :root {
     --primary-color: #FF8A00;

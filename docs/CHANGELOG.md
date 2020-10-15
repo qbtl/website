@@ -22,11 +22,11 @@ to ensure readability and accessibility. The JS library ScrollReveal have been a
 
 ### Added ✅
 
-* ScrollReveal
+* ScrollReveal ([#317](https://github.com/qbtl/website/commit/a6313bf9d5aab6091683cb694f97dc060c52fbea))
 
 ### Changed ✳️
 
-* navbar links to right
+* navbar links to right ([#317](https://github.com/qbtl/website/commit/a6313bf9d5aab6091683cb694f97dc060c52fbea))
 
 ### Fixed ⚠️
 
@@ -34,8 +34,8 @@ No bugs were fixed in this version. If you found one, please [open an issue on G
 
 ### Removed ❌
 
-* light mode
-* theme switcher
+* light mode ([#317](https://github.com/qbtl/website/commit/a6313bf9d5aab6091683cb694f97dc060c52fbea))
+* theme switcher ([#317](https://github.com/qbtl/website/commit/a6313bf9d5aab6091683cb694f97dc060c52fbea))
 
 ---
 
