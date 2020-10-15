@@ -1,40 +1,26 @@
 /*
-Package Name: Website v1.4.3
+Package Name: Website v1.5.0
 Package URI: https://quentinboitel.netlify.app/
 Description: The Package for my website
 Author: Quentin Boitel
-Version: 1.4.3
+Version: 1.5.0
 */
-
-/* Dark Theme Toggle */
-const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-const theme = localStorage.setItem('theme', 'dark');
-const currentTheme = localStorage.getItem('theme');
-document.documentElement.setAttribute('data-theme', currentTheme);
-
-if (currentTheme) {
-  document.documentElement.setAttribute('data-theme', currentTheme);
-
-  if (currentTheme === 'dark') {
-    toggleSwitch.checked = true;
-  }
-}
-
-function switchTheme(e) {
-  if (e.target.checked) {
-    document.documentElement.setAttribute('data-theme', 'dark');
-    localStorage.setItem('theme', 'dark');
-  } else {
-    document.documentElement.setAttribute('data-theme', 'light');
-    localStorage.setItem('theme', 'light');
-  }
-}
-
-toggleSwitch.addEventListener('change', switchTheme, false);
-/* End Dark Theme Toggle */
 
 /* Check if Website Content is Loaded */
 document.addEventListener('DOMContentLoaded', () => {
+  /* ScrollReveal */
+  const sr = ScrollReveal({
+    origin: 'top',
+    distance: '80px',
+    duration: 2000,
+    reset: true
+  });
+  sr.reveal('.projects',{interval: 200})
+  sr.reveal('.hero-body.scroll-reveal div',{interval: 200})
+  sr.reveal('.breadcrumb ul li a',{interval: 200})
+  sr.reveal('.about-list',{interval: 600})
+  /* End ScrollReveal */
+
   /* Navbar Burger */
   // Get all "navbar-burger" elements
   const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);

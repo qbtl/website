@@ -45,16 +45,7 @@
                 </a>
             </div>
             <div class="container has-text-centered">
-                <div class="button theme-switch-wrapper">
-                    <label class="theme-switch" for="checkbox">
-                        <input type="checkbox" id="checkbox">
-                        <div class="slider round">
-                            <i class="fas fa-moon"></i>
-                            <i class="fas fa-sun"></i>
-                        </div>
-                    </label>
-                </div>
-                <div class="columns is-8" data-aos="fade-in" data-aos-delay="200">
+                <div class="columns is-8">
                     <div class="column is-half">
                         <svg fill="currentColor" viewBox="0 0 800 600">
                             <g>
@@ -336,19 +327,17 @@
                       s33.181,12.591,38.725,16.498c2.387,1.682,3.461,4.668,2.705,7.488L380.857,346.164z" />
                                         <g clip-path="url(#GlassClip)">
                                             <polygon id="glassShine" fill="none" stroke="#0E0620" stroke-width="3"
-                                                stroke-miterlimit="10" points="
-                          278.436,375.599 383.003,264.076 364.393,251.618 264.807,364.928 				" />
+                                                stroke-miterlimit="10" points="278.436,375.599 383.003,264.076 364.393,251.618 264.807,364.928" />
                                         </g>
                                     </g>
                                 </g>
                             </g>
                         </svg>
                     </div>
-                    <div class="column is-half" data-aos="fade-in" data-aos-delay="300">
+                    <div class="column is-half">
                         <h1>404</h1>
                         <h2>UH OH! You're lost.</h2>
                         <p>The page you are looking for does not exist.
-                            How you got here is a mystery.
                             <br>
                             But you can click the button below
                             to go back to the homepage.
@@ -361,39 +350,16 @@
     </div>
 
     <script src="/public/js/icons.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <script>
-        /* Dark Theme Toggle */
-        const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-        const currentTheme = localStorage.getItem('theme');
-
-        if (currentTheme) {
-            document.documentElement.setAttribute('data-theme', currentTheme);
-
-            if (currentTheme === 'dark') {
-                toggleSwitch.checked = true;
-            }
-        }
-
-        function switchTheme(e) {
-            if (e.target.checked) {
-                document.documentElement.setAttribute('data-theme', 'dark');
-                localStorage.setItem('theme', 'dark');
-            } else {
-                document.documentElement.setAttribute('data-theme', 'light');
-                localStorage.setItem('theme', 'light');
-            }
-        }
-
-        toggleSwitch.addEventListener('change', switchTheme, false);
-
-        AOS.init({
-            easing: 'ease',
-            duration: 1800,
-            once: true
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '80px',
+            duration: 2000,
+            reset: true
         });
-
+        sr.reveal('.hero-body div',{interval: 300})
         gsap.set("svg", {
             visibility: "visible"
         });
@@ -481,7 +447,7 @@
             ease: "expo.inOut",
             transformOrigin: "50% 50%",
             repeat: -1,
-            repeatDelay: 8,
+            repeatDelay: 3,
             delay: 2
         });
     </script>
