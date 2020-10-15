@@ -78,7 +78,7 @@ We made a rework of the portfolio cards to a new modern design inspired by css-t
 
 * portfolio card ([#305](https://github.com/qbtl/website/commit/2c5dc4b9bee723b1cd0d8d59140a168045657474))
 * website icon ([#305](https://github.com/qbtl/website/commit/2c5dc4b9bee723b1cd0d8d59140a168045657474))
-* Github profle card ([#305](https://github.com/qbtl/website/commit/2c5dc4b9bee723b1cd0d8d59140a168045657474))
+* Github profile card ([#305](https://github.com/qbtl/website/commit/2c5dc4b9bee723b1cd0d8d59140a168045657474))
 * img folder to images folder ([#310](https://github.com/qbtl/website/commit/22d65c0a6a244c631c43fc543bccbd0ff4d5c8eb))
 
 ### Fixed ⚠️
