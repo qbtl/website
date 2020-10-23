@@ -1,4 +1,4 @@
-src/*
+dist/sass
 */._.DS_STORE
 */*/._.DS_STORE
 */._css
