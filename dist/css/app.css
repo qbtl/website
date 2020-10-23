@@ -255,3 +255,121 @@ header.hero {
     left: 5%;
   }
 }
+.container#about {
+  padding-top: 125px;
+  font-weight: bold;
+}
+.container#about h1 {
+  color: #da1b60;
+}
+.container#about .row {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: white;
+  padding-top: 3rem;
+}
+
+.about-logo {
+  background-color: #212121;
+  border-radius: 50%;
+  padding: 0.5rem;
+  margin-top: -2rem;
+  justify-content: center !important;
+  margin-left: 25%;
+}
+
+.about-text {
+  color: white;
+  font-size: 1.5rem;
+  width: 100%;
+  height: 100%;
+  padding: 4rem;
+}
+
+.container#about .row.about-infos {
+  text-align: center;
+  padding-top: 4rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.about-infos-data {
+  text-align: left;
+  padding-right: 10rem;
+}
+
+.about-infos-text {
+  text-align: right;
+  padding-left: 4rem;
+}
+
+.pr-custom {
+  padding-right: 0 !important;
+}
+
+.pl-custom {
+  padding-left: 0 !important;
+}
+
+.about-infos-text ul li {
+  padding: 5px;
+}
+
+.about-infos-data ul li {
+  padding: 5px;
+}
+.about-infos-data ul li .progress {
+  margin: 5px;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.about-infos-text ul li.html {
+  color: #f14668;
+}
+.about-infos-text ul li.css {
+  color: #3273dc;
+}
+.about-infos-text ul li.js {
+  color: #ffdd57;
+}
+
+.about-infos-data ul li div.progress.html .progress-bar {
+  background-color: #f14668 !important;
+  width: 100%;
+  border-radius: 10px;
+}
+.about-infos-data ul li div.progress.css .progress-bar {
+  background-color: #3273dc !important;
+  width: 100%;
+  border-radius: 10px;
+}
+.about-infos-data ul li div.progress.js .progress-bar {
+  background-color: #ffdd57 !important;
+  width: 80%;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 610px) {
+  .about-logo {
+    margin-top: 0;
+    margin-left: 25%;
+    margin-bottom: -2rem;
+  }
+
+  .container#about .row {
+    padding-top: 0;
+  }
+  .container#about .row.about-infos {
+    margin-left: -50%;
+    padding-top: 0;
+  }
+
+  .about-infos-data,
+.about-infos-text {
+    padding: 0;
+  }
+}
