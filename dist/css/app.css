@@ -786,3 +786,109 @@ header.header-card {
   background-clip: text;
   border-color: #DCDCDC;
 }
+
+.container#contact {
+  padding-top: 80px;
+}
+.container#contact h1 {
+  color: #da1b60;
+}
+.container#contact form {
+  margin-top: 3rem;
+  width: auto;
+  color: white;
+}
+.container#contact form div {
+  margin: 1rem 0;
+}
+.container#contact form div div {
+  margin: 0;
+}
+.container#contact form div div.valid-feedback, .container#contact form div div.invalid-feedback {
+  margin-left: 26% !important;
+  width: fit-content;
+}
+
+input[type=text], input[type=email] {
+  width: 50% !important;
+  margin-left: 26%;
+  background-color: #212121 !important;
+  border-color: transparent !important;
+  color: white !important;
+}
+
+textarea {
+  width: 50% !important;
+  margin-left: 26% !important;
+  background-color: #212121 !important;
+  border-color: transparent !important;
+  color: white !important;
+}
+
+input[type=text]::placeholder, input[type=email]::placeholder {
+  color: #b0a9bd !important;
+}
+
+textarea::placeholder {
+  color: #b0a9bd !important;
+}
+
+input[type=checkbox] {
+  margin-left: 24.5% !important;
+  margin-right: 5px;
+}
+
+button.btn-submit {
+  display: flex !important;
+  justify-content: center !important;
+  width: 30% !important;
+  text-align: center !important;
+  margin-left: 40%;
+}
+
+@media screen and (max-width: 768px) {
+  .container#contact form {
+    margin-left: 0;
+    width: auto;
+  }
+
+  input[type=checkbox] {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  div.checkbox {
+    padding: 0 !important;
+  }
+  div.checkbox label {
+    margin-left: 0.5rem;
+    width: 90% !important;
+  }
+
+  .container#contact form div div.valid-feedback, .container#contact form div div.invalid-feedback {
+    margin-left: 0 !important;
+    width: fit-content;
+  }
+
+  div.checkbox div.invalid-feedback {
+    padding-left: 5% !important;
+  }
+
+  input[type=text], input[type=email] {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+
+  textarea {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+
+  button.btn-submit {
+    margin-left: 50%;
+    width: 50% !important;
+  }
+  button.btn-submit.btn-submit-nomargin {
+    margin-left: 0 !important;
+  }
+}

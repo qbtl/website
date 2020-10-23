@@ -367,6 +367,62 @@
 		</div>
 	</div>
 
+	<div class="container" id="contact">
+		<h1 class="text-center"><i class="fa fa-paper-plane"></i> Contact</h1>
+		<form action="POST" name="contact" data-netlify="true" class="needs-validation align-items-center" novalidate
+			action="">
+
+			<div class="form-label-group">
+				<input type="text" id="nom" class="form-control" placeholder="Votre nom" required>
+				<div class="valid-feedback">
+					Tout est bon !
+				</div>
+				<div class="invalid-feedback">
+					Veuillez renseigner un nom valide
+				</div>
+			</div>
+
+			<div class="form-label-group">
+				<input type="email" id="email" class="form-control" placeholder="Votre email" required>
+				<div class="valid-feedback">
+					Tout est bon !
+				</div>
+				<div class="invalid-feedback">
+					Veuillez renseigner un email valide
+				</div>
+			</div>
+
+			<div class="form-label-group">
+				<textarea type="email" id="message" class="form-control" placeholder="Votre message" rows="5"
+					required></textarea>
+				<div class="valid-feedback">
+					Tout est bon !
+				</div>
+				<div class="invalid-feedback">
+					Veuillez renseigner un message valide
+				</div>
+			</div>
+
+			<div class="checkbox mb-3 form-check">
+				<input class="form-check-input" type="checkbox" id="invalidCheck" required>
+				<label class="form-check-label" for="invalidCheck">
+					J'accepte de communiquer les informations personnelles indiquées ci-dessus
+				</label>
+				<div class="invalid-feedback">
+					Vous devez accepter de communiquer vos informations
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6 col-md">
+					<button class="btn btn-lg btn-success btn-submit" type="submit">Envoyer</button>
+				</div>
+				<div class="col-6 col-md">
+					<button class="btn btn-lg btn-danger btn-submit btn-submit-nomargin" type="reset">Annuler</button>
+				</div>
+			</div>
+		</form>
+	</div>
+
 	<!-- JS SCRIPTS -->
 	<script src="/dist/js/icons.js"></script>
 	<script src="/dist/js/app.js"></script>
