@@ -22,7 +22,7 @@
 body {
   width: 100%;
   height: 100%;
-  background-color: black;
+  background-color: black !important;
 }
 
 /* Safari, Chrome custom scrollbar */
@@ -46,6 +46,117 @@ a:any-link {
   text-decoration: none;
 }
 
+.navbar {
+  position: sticky !important;
+  bottom: 0 !important;
+}
+.navbar .container {
+  position: relative;
+  max-width: 1000px;
+  padding: 0.5rem;
+  background-color: #212121 !important;
+}
+
+.navbar-fixed-bottom {
+  position: sticky !important;
+  bottom: 0 !important;
+  z-index: 1000 !important;
+}
+
+.navbar-sticky-top {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1000 !important;
+}
+
+.navbar-nav {
+  display: flex !important;
+  justify-content: center !important;
+  flex-grow: 10;
+}
+
+.nav-item {
+  margin: 0 3rem;
+}
+
+.navbar-brand {
+  margin-left: 1.5rem !important;
+}
+
+.nav-link {
+  position: relative;
+  color: white !important;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.nav-link::before {
+  content: "";
+  position: absolute !important;
+  top: 5px !important;
+  left: 50%;
+  width: 100%;
+  height: 2px;
+  opacity: 0;
+  background-color: #EC3200 !important;
+  transform-origin: center;
+  transform: translate(-50%, 0) scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+.nav-link:hover::before {
+  transform: translate(-50%, 0) scaleX(1);
+  opacity: 1;
+}
+
+button.btn {
+  display: flex !important;
+  justify-content: right !important;
+  line-height: 1;
+  padding: 0.75rem !important;
+}
+
+.fa-paper-plane {
+  margin-right: 0.5rem;
+  margin-left: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    border: none !important;
+    border-radius: 0 !important;
+    background-color: transparent !important;
+    margin-top: -10px !important;
+  }
+
+  .navbar-collapse {
+    background-color: #1E1E1E;
+    border-radius: 10px;
+    margin: 0.5rem;
+  }
+
+  .navbar-toggler {
+    border-color: white !important;
+  }
+  .navbar-toggler:focus {
+    box-shadow: none !important;
+  }
+  .navbar-toggler span {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  }
+
+  .nav-item {
+    margin: 0.25rem 2rem;
+  }
+
+  button.btn {
+    margin: 0.25rem 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .nav-link:hover::before {
+    transform: translate(-50%, 0) scaleX(1);
+    width: 100%;
+  }
+}
 header.hero {
   width: 100%;
   height: 937px !important;
