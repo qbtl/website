@@ -13,11 +13,11 @@ In this repository, we use :
 * [FontAwesome](https://origin.fontawesome.com)
 * [Netlify](https://www.netlify.com)
 * [gitflow](https://github.com/nvie/gitflow)
-* [Bulma](https://bulma.io/)
+* [Bootstrap 5](https://v5.getbootstrap.com/)
 
 ## Documentation
 
-You can find the documentation under the ``/docs`` folder and on [GitBook](https://qbtl-github.gitbook.io/docs/)
+You can find the documentation under the ``/docs`` folder
 
 ## For developers
 
