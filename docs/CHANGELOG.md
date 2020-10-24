@@ -13,6 +13,37 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
+# [2.0.0] - 2020-10-23
+
+## What's New ❗️
+
+We decided to make a transition from bulma to bootstrap 5. We redesigned the website to a more simple formula.
+
+### Added ✅
+
+* bootstrap 5 ([#324](https://github.com/qbtl/website/commit/bfd4bf670271d7a94cee6b3e9b43ec3993f052f8))
+
+### Changed ✳️
+
+* navbar ([#326](https://github.com/qbtl/website/commit/ebe4d2d4898a69ecd06bb0d3c0336a107007ba5b))
+* header ([#324](https://github.com/qbtl/website/commit/bfd4bf670271d7a94cee6b3e9b43ec3993f052f8))
+* about ([#327](https://github.com/qbtl/website/commit/a05dfee91cc4fdd53612fb865079ee4701123be9))
+* portfolio ([#328](https://github.com/qbtl/website/commit/ea96f1e50484fdb49b98b287f7bbfc5e283e8fb6))
+* contact ([#329](https://github.com/qbtl/website/commit/121d94f97db95a55327b0d487b06679e361dc910))
+* footer ([#330](https://github.com/qbtl/website/commit/d31a95a036e569afb855756ca68a00ee56a140ac))
+* 404 ([#331](https://github.com/qbtl/website/commit/a5d3e90a3cfcc28c08a08f6e9979905344ae1fe8))
+* logo ([#324](https://github.com/qbtl/website/commit/bfd4bf670271d7a94cee6b3e9b43ec3993f052f8))
+
+### Fixed ⚠️
+
+No bugs were fixed in this version. If you found one, please [open an issue on GitHub](https://github.com/qbtl/website/issues)
+
+### Removed ❌
+
+* bulma ([#324](https://github.com/qbtl/website/commit/bfd4bf670271d7a94cee6b3e9b43ec3993f052f8))
+
+---
+
 # [1.5.0] - 2020-10-15
 
 ## What's New ❗️
@@ -374,6 +405,7 @@ No bugs were fixed in this version. If you found one, please [open an issue on G
 
 * jQuery ([#191](https://github.com/qbtl/website/commit/2867a0ca72720c0f1a8579ef0e234b2a9e8e0613))
 
+[2.0.0]: https://github.com/qbtl/website/releases/tag/v2.0.0
 [1.5.0]: https://github.com/qbtl/website/releases/tag/v1.5.0
 [1.4.3]: https://github.com/qbtl/website/releases/tag/v1.4.3
 [1.4.2]: https://github.com/qbtl/website/releases/tag/v1.4.2
