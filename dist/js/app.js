@@ -3,7 +3,7 @@
     Package URI: https://quentinboitel.netlify.app/dist/js/app.js
     Description: Webiste Package
     Author: Quentin Boitel
-    Version: 2.0.0
+    Version: 2.0.1
 */
 /**
  * @param {int} scrollY Window scroll from top
