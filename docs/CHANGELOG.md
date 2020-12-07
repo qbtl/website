@@ -13,6 +13,30 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
+# [2.0.1] - 2020-12-07
+
+## What's New ❗️
+
+A simple documentation rework.
+
+### Added ✅
+
+No feature have been added.
+
+### Changed ✳️
+
+* README
+
+### Fixed ⚠️
+
+No bugs were fixed in this version. If you found one, please [open an issue on GitHub](https://github.com/qbtl/website/issues)
+
+### Removed ❌
+
+No feature nor file were removed in this version
+
+---
+
 # [2.0.0] - 2020-10-23
 
 ## What's New ❗️
@@ -405,6 +429,7 @@ No bugs were fixed in this version. If you found one, please [open an issue on G
 
 * jQuery ([#191](https://github.com/qbtl/website/commit/2867a0ca72720c0f1a8579ef0e234b2a9e8e0613))
 
+[2.0.1]: https://github.com/qbtl/website/releases/tag/v2.0.1
 [2.0.0]: https://github.com/qbtl/website/releases/tag/v2.0.0
 [1.5.0]: https://github.com/qbtl/website/releases/tag/v1.5.0
 [1.4.3]: https://github.com/qbtl/website/releases/tag/v1.4.3
