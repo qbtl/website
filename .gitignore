@@ -7,13 +7,9 @@ dist/sass
 ._.DS_STORE
 ._LICENSE
 */*/._icons.js
-public/.DS_Store
-public/js/.DS_Store
-public/img/.DS_Store
-public/fonts/.DS_Store
-public/fonts/._Retrochips.otf
-public/fonts/._PoetsenOne-Regular.ttf
-public/fonts/._AveFedan.ttf
 docs/._CONTRIBUTING.md
 .github/.DS_Store
 .DS_Store
+blueprint.json
+blueprint.md
+package.json
