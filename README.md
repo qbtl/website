@@ -1,6 +1,6 @@
 <!-- ⚠️ This README has been generated from the file(s) "blueprint.md" ⚠️--><h1 align="center">Quentin Boitel Website</h1>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/qbtl/cv_website/main/images/logo-black.jpg" alt="Logo" width="90" height="auto" />
+  <img src="https://raw.githubusercontent.com/qbtl/website/master/dist/images/logo.png" alt="Logo" width="90" height="auto" />
 </p>
 <p align="center">
   <b>Welcome to the Official Repository of Quentin Boitel website</b></br>
