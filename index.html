@@ -17,361 +17,204 @@
 </head>
 
 <body>
-	<header class="hero">
-		<div class="hero-container">
-			<div class="hero-image"></div>
-			<div class="hero-text">
-				<h2>👋 Hey, je suis Quentin Boitel</h2>
-				<h1>Étudiant ingénieur</h1>
-				<h3>Développeur Web</h3>
-				<a href="/dist/cv/CV_BOITEL.pdf" target="_blank" rel="noopener">
-					<button type="button" class="cv">CV</button>
-				</a>
-			</div>
-		</div>
-	</header>
-
-	<nav class="navbar navbar-expand-md navbar-dark" id="navbar">
-		<div class="container border-2">
-			<a class="navbar-brand" href="">
-				<img src="dist/images/logo.png" width="40" height="40" class="d-inline-block align-top">
-			</a>
+	<nav class="navbar navbar-expand-md">
+		<div class="container">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav"
 				aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbar-nav">
-				<ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-					<li class="nav-item">
-						<a class="nav-link" href="">Accueil</a>
+				<ul class="navbar-nav">
+					<li class="nav-item link-home">
+						<a class="nav-link active" href="/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"
+								fill="none" id="home">
+								<path d="M0 4v7a1 1 0 001 1h3V8h4v4h3a1 1 0 001-1V4L6 0 0 4z" fill="currentColor">
+								</path>
+							</svg></a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#about">À Propos</a>
+					<li class="nav-item link-shop">
+						<a class="nav-link" href="#about"><i class="fa fa-info"></i> About me</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#portfolio">Portfolio</a>
+					<li class="nav-item link-products">
+						<a class="nav-link" href="#resume"><i class="fa fa-graduation-cap"></i> Resume</a>
+					</li>
+					<li class="nav-item link-products">
+						<a class="nav-link" href="#portfolio"><i class="fa fa-list"></i> Portfolio</a>
 					</li>
 				</ul>
-				<a href="#contact"><button type="button" class="btn btn-danger rounded"><i
-							class="fa fa-paper-plane"></i>Contact</button></a>
+				<div class="navbar-end">
+					<li class="nav-item">
+						<a class="nav-link" href="#contact"><button class="btn btn-navbar"><i
+									class="fa fa-paper-plane"></i> Contact</button></a>
+					</li>
+				</div>
 			</div>
 		</div>
 	</nav>
-
-	<div class="container" id="about">
-		<h1 class="text-center">👋 Hey, je suis Quentin BOITEL</h1>
-		<div class="row g-0">
-			<div class="col">
-				<img src="dist/images/logo.png" class="about-logo">
+	<header class="hero">
+		<div class="main-container hero-container">
+			<div class="hero-grid">
+				<div class="hero-text">
+					<h2>👋 Hey, I am <b>Quentin Boitel</b></h2>
+					<h1>Engineering Student</h1>
+					<h3>ISEN Méditérannée</h3>
+				</div>
+				<div class="hero-svg">
+					<img src="/dist/images/home.svg">
+				</div>
 			</div>
-			<div class="col">
+		</div>
+	</header>
+
+	<div class="main-container" id="about">
+		<h1 class="text-center"><i class="fa fa-info"></i> About me</h1>
+		<div class="about-flex">
+			<aside class="sidebar">
+				<img src="https://avatars.githubusercontent.com/u/54680442?v=4" class="avatar">
+				<div class="socials">
+					<a href="https://github.com/qbtl"><i class="fab fa-github-alt"></i></a>
+					<a href="https://www.instagram.com/_qbtl_"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.twitter.com/quentin_boitel"><i class="fab fa-twitter"></i></a>
+					<a href="https://www.dribbble.com/qbtl"><i class="fab fa-dribbble"></i></a>
+				</div>
+				<div class="about-infos">
+					<p><a><i class="fal fa-user"></i> 18 years old</a></p>
+					<p><a><i class="fal fa-calendar-alt"></i> August 23rd, 2002</a></p>
+					<p><a><i class="fal fa-map-marker-alt"></i> Toulon, France</a></p>
+					<p><a class="about-link" href="mailto:q.boitel@icloud.com"><i class="fal fa-envelope"></i>
+							q.boitel@icloud.com</a></p>
+				</div>
+				<a class="btn-cv"><button class="btn cv">Get my CV</button></a>
+			</aside>
+			<div class="about-main">
 				<p class="about-text">
-					Après avoir obtenu mon bac mention BIEN option section européenne en anglais en 2020,
-					j'ai intégré l'ISEN Toulon pour me former dans le numérique et ainsi devenir un développeur.
+					Je suis un étudiant ingénieur à Toulon, en France. Je suis en première année et j'aime développer
+					toutes sortes de projets open-source ou personnels.
+					Je cherche à faire évoluer le développment pour construire notre futur numérique. Mon atout est de
+					ne jamais reculer devant un défi difficile mais d'apprendre à les surmonter.
+					<br><br>
+					Je cherche un stage dans une association pour une durée de deux semaines (Juillet - Août 2021) dans
+					la Région Sud, si possible en lien avec l'informatique quelqu'elle soit.
 				</p>
-			</div>
-		</div>
-		<div class="row about-infos g-0">
-			<div class="col-6 col-sm about-infos-text">
-				<ul>
-					<li><i class="far fa-address-card"></i> Age</li>
-					<li><i class="fa fa-at"></i> Email</li>
-					<li><i class="fa fa-map-marker"></i> Adresse</li>
-				</ul>
-			</div>
-			<div class="col-6 col-sm about-infos-data pr-custom">
-				<ul>
-					<li>18</li>
-					<li>quentin.boitel@isen.yncrea.fr</li>
-					<li>Toulon, FR</li>
-				</ul>
-			</div>
-			<div class="col-6 col-sm about-infos-text pl-custom">
-				<ul>
-					<li class="html"><i class="fa fa-html5"></i> HTML5</li>
-					<li class="css"><i class="fa fa-css3"></i> CSS3</li>
-					<li class="js"><i class="fab fa-js-square"></i> JavaScript</li>
-				</ul>
-			</div>
-			<div class="col-6 col-sm about-infos-data">
-				<ul>
-					<li>
-						<div class="progress html">
-							<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-								aria-valuemax="100"></div>
-						</div>
-					</li>
-					<li>
-						<div class="progress css">
-							<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-								aria-valuemax="100"></div>
-						</div>
-					</li>
-					<li>
-						<div class="progress js">
-							<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-								aria-valuemax="100"></div>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-
-	<div class="container" id="portfolio">
-		<h1 class="text-center"><i class="fal fa-code-branch"></i> PORTFOLIO</h1>
-		<main id="github-profile"></main>
-	</div>
-
-	<div class="container">
-		<!-- SVG DEFINITIONS -->
-		<svg width="0" height="0" display="none">
-			<symbol id="half-circle" viewBox="0 0 106 57">
-				<path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-			</symbol>
-		</svg>
-		<svg width="0" height="0" class="visually-hidden">
-			<defs>
-				<linearGradient id="orange-to-pink" x1="1" x2="0" y1="1" y2="0">
-					<stop offset="0%" stop-color="#DA1B60"></stop>
-					<stop offset="100%" stop-color="#ff8a00"></stop>
-				</linearGradient>
-			</defs>
-		</svg>
-
-		<div class="portfolio-projects">
-			<header class="projects-header header-card">
-				<h2 class="header-card-title">
-					Derniers <br>projets
-				</h2>
-			</header>
-			<div class="projects-grid">
-				<article class="projects">
-					<header class="project-header">
-						<div class="project-title">
-							<div class="project-subhead">
-								Package
-								<time datetime="2020-10-07">11 Oct, 2020 </time>
+				<div class="talents">
+					<div class="languages">
+						<h1 class="mb-75">Langues</h1>
+						<div class="inner-languages">
+							<div class="progress">
+								<div class="progress-bar w-100" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+									aria-valuemax="100">
+									<div class="labels">
+										<label>Français</label>
+										<label>100%</label>
+									</div>
+								</div>
 							</div>
-							<h2>
-								<a href="https://github.com/qbtl/businness-card/packages/436627"
-									class="project-link-header">
-									Un package npm pour afficher votre carte de développeur avec vos informations
-								</a>
-							</h2>
-						</div>
-					</header>
-					<div class="project-meta">
-						<div class="project-byline">
-							<div class="author-avatar">
-								<a class="author-name" href="https://github.com/qbtl">
-									<img alt="Quentin Boitel's logo" height="80" width="80" class="portfolio-avatar"
-										src="dist/images/logo.png">
-								</a>
-								<svg class="half-circle" width="80px" height="80px">
-									<use xlink:href="#half-circle"></use>
-								</svg>
+							<div class="progress">
+								<div class="progress-bar w-80" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+									aria-valuemax="100">
+									<div class="labels">
+										<label>Anglais</label>
+										<label>80%</label>
+									</div>
+								</div>
 							</div>
-							<div class="author-name-area">
-								<div class="author-name-prefix">Auteur</div>
-								<a class="author-name" href="https://github.com/qbtl">Quentin Boitel </a>
+							<div class="progress">
+								<div class="progress-bar w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+									aria-valuemax="100">
+									<div class="labels">
+										<label>Espagnol</label>
+										<label>50%</label>
+									</div>
+								</div>
 							</div>
-						</div>
-						<div class="tags">
-							<a href="https://www.npmjs.com">npm</a>
-							<a href="https://github.com/features/packages">package</a>
 						</div>
 					</div>
-				</article>
-
-				<article class="projects">
-					<header class="project-header">
-						<div class="project-title">
-							<div class="project-subhead">
-								Extension
-								<time datetime="2020-10-07">07 Oct, 2020 </time>
+					<div class="coding-habilities">
+						<h1 class="mb-75">Compétences techniques</h1>
+						<div class="inner-coding-habilities">
+							<div class="progress">
+								<div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+									aria-valuemax="100">
+									<div class="labels">
+										<label>Développement Web</label>
+										<label>75%</label>
+									</div>
+								</div>
 							</div>
-							<h2>
-								<a href="https://github.com/qbtl/nightly-dev" class="project-link-header">
-									Thème Visual Studio Code Nightly-Dev pour les développeurs
-								</a>
-							</h2>
-						</div>
-					</header>
-					<div class="project-meta">
-						<div class="project-byline">
-							<div class="author-avatar">
-								<a class="author-name" href="https://github.com/qbtl">
-									<img alt="Quentin Boitel's logo" height="80" width="80" class="portfolio-avatar"
-										src="dist/images/logo.png">
-								</a>
-								<svg class="half-circle" width="80px" height="80px">
-									<use xlink:href="#half-circle"></use>
-								</svg>
+							<div class="progress">
+								<div class="progress-bar w-55" role="progressbar" aria-valuenow="55" aria-valuemin="0"
+									aria-valuemax="100">
+									<div class="labels">
+										<label>Développement Logiciel</label>
+										<label>55%</label>
+									</div>
+								</div>
 							</div>
-							<div class="author-name-area">
-								<div class="author-name-prefix">Auteur</div>
-								<a class="author-name" href="https://github.com/qbtl">Quentin Boitel </a>
+							<div class="progress">
+								<div class="progress-bar w-65" role="progressbar" aria-valuenow="65" aria-valuemin="0"
+									aria-valuemax="100">
+									<div class="labels">
+										<label>Gestion de projet</label>
+										<label>65%</label>
+									</div>
+								</div>
 							</div>
-						</div>
-						<div class="tags">
-							<a href="https://code.visualstudio.com">vscode</a>
-							<a href="https://code.visualstudio.com/api/get-started/your-first-extension">extension</a>
 						</div>
 					</div>
-				</article>
-				<article class="projects">
-					<header class="project-header">
-						<div class="project-title">
-							<div class="project-subhead">
-								App
-								<time datetime="2020-10-05">05 Oct, 2020 </time>
-							</div>
-							<h2>
-								<a href="https://github.com/qbtl/url-shortener" class="project-link-header">
-									Un réducteur d'urls basé sur NodeJS et MongoDB
-								</a>
-							</h2>
-						</div>
-					</header>
-					<div class="project-meta">
-						<div class="project-byline">
-							<div class="author-avatar">
-								<a class="author-name" href="https://github.com/qbtl">
-									<img alt="Quentin Boitel's logo" height="80" width="80" class="portfolio-avatar"
-										src="dist/images/logo.png">
-								</a>
-								<svg class="half-circle" width="80px" height="80px">
-									<use xlink:href="#half-circle"></use>
-								</svg>
-							</div>
-							<div class="author-name-area">
-								<div class="author-name-prefix">Auteur</div>
-								<a class="author-name" href="https://github.com/qbtl">Quentin Boitel</a>
-							</div>
-						</div>
-						<div class="tags">
-							<a href="https://www.nodejs.org">nodejs</a>
-							<a href="https://www.mongodb.com">mongodb</a>
-						</div>
-					</div>
-				</article>
-				<article class="projects">
-					<header class="project-header">
-						<div class="project-title">
-							<div class="project-subhead">
-								Admin Dashboard
-								<time datetime="2020-07-22">22 Jul, 2020 </time>
-							</div>
-							<h2 class="">
-								<a href="https://github.com/qbtl/admin-dashboard-react"
-									class="project-link-header">Dahsboard d'administration créé avec react-admin
-								</a>
-							</h2>
-						</div>
-					</header>
-					<div class="project-meta">
-						<div class="project-byline">
-							<div class="author-avatar">
-								<a class="author-name" href="https://github.com/qbtl">
-									<img alt="Quentin Boitel's logo" height="80" width="80" class="portfolio-avatar"
-										src="dist/images/logo.png">
-								</a>
-								<svg class="half-circle" width="80px" height="80px">
-									<use xlink:href="#half-circle"></use>
-								</svg>
-							</div>
-							<div class="author-name-area">
-								<div class="author-name-prefix">Auteur</div>
-								<a class="author-name" href="https://github.com/qbtl">Quentin Boitel</a>
-							</div>
-						</div>
-						<div class="tags">
-							<a href="https://www.reactjs.org">react</a>
-							<a href="https://marmelab.com/react-admin/">react-admin</a>
-						</div>
-					</div>
-				</article>
-				<article class="projects">
-					<header class="project-header">
-						<div class="project-title">
-							<div class="project-subhead">
-								Dahsboard
-								<time datetime="2020-05-07">07 Mai, 2020 </time>
-							</div>
-							<h2>
-								<a href="https://github.com/qbtl/mybrary" class="project-link-header">Dashboard de
-									gestion basé sur une API REST</a>
-							</h2>
-						</div>
-					</header>
-					<div class="project-meta">
-						<div class="project-byline">
-							<div class="author-avatar">
-								<a class="author-name" href="https://github.com/qbtl">
-									<img alt="Quentin Boitel's logo" height="80" width="80" class="portfolio-avatar"
-										src="dist/images/logo.png">
-								</a>
-								<svg class="half-circle" width="80px" height="80px">
-									<use xlink:href="#half-circle"></use>
-								</svg>
-							</div>
-							<div class="author-name-area">
-								<div class="author-name-prefix">Auteur</div>
-								<a class="author-name" href="https://github.com/qbtl">Quentin Boitel</a>
-							</div>
-						</div>
-						<div class="tags">
-							<a href="https://www.nodejs.org">nodejs</a>
-							<a href="https://en.wikipedia.org/wiki/API">api</a>
-						</div>
-					</div>
-				</article>
-				<article class="projects">
-					<header class="project-header">
-						<div class="project-title">
-							<div class="project-subhead">
-								API
-								<time datetime="2020-04-10">10 Avr, 2020 </time>
-							</div>
-							<h2>
-								<a href="https://github.com/qbtl/restful_api" class="project-link-header">REST API
-									écrite en Go</a>
-							</h2>
-						</div>
-					</header>
-					<div class="project-meta">
-						<div class="project-byline">
-							<div class="author-avatar">
-								<a class="author-name" href="https://github.com/qbtl">
-									<img alt="Quentin Boitel's logo" height="80" width="80" class="portfolio-avatar"
-										src="dist/images/logo.png">
-								</a>
-								<svg class="half-circle" width="80px" height="80px">
-									<use xlink:href="#half-circle"></use>
-								</svg>
-							</div>
-							<div class="author-name-area">
-								<div class="author-name-prefix">Auteur</div>
-								<a class="author-name" href="https://github.com/qbtl">Quentin Boitel</a>
-							</div>
-						</div>
-						<div class="tags">
-							<a href="https://en.wikipedia.org/wiki/API">api</a>
-							<a href="https://en.wikipedia.org/wiki/Representational_state_transfer">rest</a>
-							<a href="https://www.golang.org">go</a>
-						</div>
-					</div>
-				</article>
+				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="container" id="contact">
+	<div class="main-container" id="resume">
+		<h1 class="text-center"><i class="fa fa-graduation-cap"></i> Resume</h1>
+		<div class="resume-infos">
+			<div class="diplomas w-100">
+				<div class="engineering">
+					<h3>Diplôme d'ingénieur</h3>
+					<h4>ISEN Méditérannée, Toulon</h4>
+					<h4>2025</h4>
+				</div>
+				<div class="bac">
+					<h3>High School Graduation</h3>
+					<h4>Lycée Paul Cézanne, Aix-en-Provence</h4>
+					<h4>2020</h4>
+				</div>
+				<div class="brevet">
+					<h3>Middle school Graduation</h3>
+              		<h4>Collège Saint Eutrope, Aix-en-Provence</h4>
+              		<h4>2017</h4>
+				</div>
+			</div>
+			<div class="stages w-100">
+				<div class="stage">
+					<h3>La Française des Jeux</h3>
+					<h4>Vitrolles, France</h4>
+					<h4>18 au 28 Juin 2018</h4>
+					<p>Création d un site web exploitant un service RESTful.<br />
+					  Automatisation de tests du service via le site et un outil
+					  d'automatisation.<br />
+					  Technologies utilisées: HTML, CSS, JavaScript, Postman.
+					</p>
+				</div>
+				<div class="stage">
+              		<h3>La Française des Jeux</h3>
+					<h4>Vitrolles, France</h4>
+              		<h4>30 Janvier au 3 Février 2017</h4>
+              		<p>Découverte des métiers du numériques</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="main-container" id="portfolio">
+		<h1 class="text-center"><i class="fal fa-list"></i> Portfolio</h1>
+
+	</div>
+
+	<div class="main-container" id="contact">
 		<h1 class="text-center"><i class="fa fa-paper-plane"></i> Contact</h1>
-		<form action="POST" name="contact" data-netlify="true" class="needs-validation align-items-center" novalidate
-			action="">
-
+		<form action="POST" name="contact" data-netlify="true" class="needs-validation align-items-center" novalidate action="">
 			<div class="form-label-group">
 				<input type="text" id="nom" class="form-control" placeholder="Votre nom" required>
 				<div class="valid-feedback">
@@ -381,7 +224,6 @@
 					Veuillez renseigner un nom valide
 				</div>
 			</div>
-
 			<div class="form-label-group">
 				<input type="email" id="email" class="form-control" placeholder="Votre email" required>
 				<div class="valid-feedback">
@@ -391,7 +233,6 @@
 					Veuillez renseigner un email valide
 				</div>
 			</div>
-
 			<div class="form-label-group">
 				<textarea type="email" id="message" class="form-control" placeholder="Votre message" rows="5"
 					required></textarea>
@@ -402,7 +243,6 @@
 					Veuillez renseigner un message valide
 				</div>
 			</div>
-
 			<div class="checkbox mb-3 form-check">
 				<input class="form-check-input" type="checkbox" id="invalidCheck" required>
 				<label class="form-check-label" for="invalidCheck">
@@ -423,7 +263,7 @@
 		</form>
 	</div>
 
-	<footer class="container pt-4 my-md-5 pt-md-5 border-top">
+	<footer class="main-container pt-4 my-md-5 pt-md-5 border-top">
 		<button onclick="topFunction()" id="back-top" title="Go to top">Top</button>
 		<div class="row">
 			<div class="col-12 col-md">
