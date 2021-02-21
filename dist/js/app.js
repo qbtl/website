@@ -31,14 +31,13 @@
 /**
  * @param {innerHTML} button Back to top button
  */
-back_top = document.getElementById("back-top");
+//back_top = document.getElementById("back-top");
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () {
+/*window.onscroll = function () {
     scrollFunction()
 };
 function scrollFunction() {
     if (window.scrollY > 933) {
-        console.log(window.scrollY)
         back_top.style.display = "flex";
     } else {
         back_top.style.display = "none";
@@ -48,4 +47,4 @@ function scrollFunction() {
 function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
+}*/
