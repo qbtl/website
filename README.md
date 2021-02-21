@@ -37,7 +37,7 @@
 |-----------------|--------------|-----------------------------|
 | **FontAwesome** | 5.15.1       | Adds icons to the website   |
 | **gitflow**     | 0.4.1        | Helps with the Git workflow |
-| **Bootstrap**   | 5.0.0-alpha2 | CSS Framework               |
+| **Bootstrap**   | 5.0.0-beta2  | CSS Framework               |
 
 
 
@@ -68,7 +68,7 @@ There are lot's of ways to support me! I would be so happy if you gave this repo
 ## ➜ License
 	
 Licensed under [Apache-2.0](https://opensource.org/licenses/Apache-2.0).
-Copyright © 2020 [Quentin Boitel](https://quentinboitel.netlify.app)
+Copyright © 2021 [Quentin Boitel](https://quentinboitel.netlify.app)
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/water.png)](#license)
 
