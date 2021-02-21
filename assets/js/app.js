@@ -1,6 +1,6 @@
 /*
     Package Name: Website JS
-    Package URI: https://quentinboitel.netlify.app/dist/js/app.js
+    Package URI: https://quentinboitel.live/assets/js/app.js
     Description: Webiste Package
     Author: Quentin Boitel
     Version: 2.0.2
