@@ -3,7 +3,7 @@
     Package URI: https://quentinboitel.live/assets/js/app.js
     Description: Webiste Package
     Author: Quentin Boitel
-    Version: 2.0.2
+    Version: 3.0.0
 */
 /** When the page is loaded */
 

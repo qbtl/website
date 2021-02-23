@@ -13,6 +13,30 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
+# [3.0.0] - 2021-02-23
+
+## What's New ❗️
+
+Websixte design has been reworked and improved. Welcome to the new version.
+
+### Added ✅
+
+No feature have been added.
+
+### Changed ✳️
+
+* website design
+
+### Fixed ⚠️
+
+No bugs were fixed in this version. If you found one, please [open an issue on GitHub](https://github.com/qbtl/website/issues)
+
+### Removed ❌
+
+No feature nor file were removed in this version
+
+---
+
 # [2.0.2] - 2020-12-09
 
 ## What's New ❗️
@@ -454,6 +478,7 @@ No bugs were fixed in this version. If you found one, please [open an issue on G
 
 * jQuery ([#191](https://github.com/qbtl/website/commit/2867a0ca72720c0f1a8579ef0e234b2a9e8e0613))
 
+[3.0.0]: https://github.com/qbtl/website/releases/tag/v3.0.0
 [2.0.2]: https://github.com/qbtl/website/releases/tag/v2.0.2
 [2.0.1]: https://github.com/qbtl/website/releases/tag/v2.0.1
 [2.0.0]: https://github.com/qbtl/website/releases/tag/v2.0.0
