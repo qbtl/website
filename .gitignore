@@ -1,4 +1,3 @@
-dist/sass
 */._.DS_STORE
 */*/._.DS_STORE
 */._css
@@ -13,3 +12,5 @@ docs/._CONTRIBUTING.md
 blueprint.json
 blueprint.md
 package.json
+.idea/*
+assets/sass
