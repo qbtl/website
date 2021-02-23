@@ -31,18 +31,7 @@
 /**
  * @param {innerHTML} button Back to top button
  */
-//back_top = document.getElementById("back-top");
-// When the user scrolls down 20px from the top of the document, show the button
-/*window.onscroll = function () {
-    scrollFunction()
-};
-function scrollFunction() {
-    if (window.scrollY > 933) {
-        back_top.style.display = "flex";
-    } else {
-        back_top.style.display = "none";
-    }
-}
+/*back_top = document.getElementById("back-top");
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
     document.body.scrollTop = 0; // For Safari
