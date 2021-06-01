@@ -5,372 +5,187 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Quentin Boitel | Engineering Student</title>
+	<title>Quentin BOITEL - &Agrave; propos</title>
 	<meta name="description" content="Quentin Boitel's personal website, engineering student at ISEN Toulon">
 	<meta name="author" content="Quentin Boitel">
 	<meta name="keywords" content="Quentin Boitel, qbtl, student, engineering, ISEN, Toulon">
 
 	<!-- CSS LINKS -->
-	<link rel="icon" href="https://avatars.githubusercontent.com/u/54680442?v=4">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="/assets/css/app.css">
-	<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+	<script src="/assets/js/app.js" defer></script>
+	<link rel="icon" href="https://avatars.githubusercontent.com/u/54680442?v=4">
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-md">
-		<div class="container">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav"
-				aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbar-nav">
-				<ul class="navbar-nav">
-					<li class="nav-item link-home">
-						<a class="nav-link active" href="/">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="none" id="home">
-								<path d="M0 4v7a1 1 0 001 1h3V8h4v4h3a1 1 0 001-1V4L6 0 0 4z" fill="currentColor">
-								</path>
-							</svg>
-						</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#about"><i class="fa fa-info"></i> About me</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#resume"><i class="fa fa-graduation-cap"></i> Resume</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#portfolio"><i class="fa fa-list"></i> Portfolio</a>
-					</li>
-					<li class="nav-item">
-						<a href="#contact" class="nav-link"><i class="fa fa-paper-plane"></i> Contact</a>
-					</li>
-				</ul>
-			</div>
+	<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+		<symbol id="github" viewBox="0 0 16 16">
+			<path
+				d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+		</symbol>
+		<symbol id="instagram" viewBox="0 0 16 16">
+			<path
+				d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+		</symbol>
+		<symbol id="twitter" viewBox="0 0 16 16">
+			<path
+				d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+		</symbol>
+		<symbol id="arrow-right" viewBox="0 0 16 16">
+			<path fill-rule="evenodd"
+				d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+		</symbol>
+	</svg>
+	<svg style="display: none;" class="bi" width="1em" height="1em">
+		<use xlink:href="#github"></use>
+	</svg>
+	<section class="hero" data-parallax='{"y": -0.6, "r": 0, "variable": true}'>
+		<h1>
+			Quentin BOITEL
+		</h1>
+		<p>
+			&Eacute;tudiant ingénieur à l'ISEN Méditérannée à Toulon.<br />
+			Co-créateur de la platerforme TouSolidaires.
+		</p>
+		<div class="read-more">
+			<a href="#tousolidaires" title="En voir plus"><img src="/assets/images/business-3d-227.png" width="100" height="100"
+					alt="En voir plus"></a>
 		</div>
-	</nav>
-	<header class="hero">
-		<div class="main-container hero-container">
-			<div class="hero-grid">
-				<div class="hero-text">
-					<h2>👋 Hey, I am <b>Quentin Boitel</b></h2>
-					<h1>Engineering Student</h1>
-					<h3>At ISEN Méditérannée</h3>
-				</div>
-				<div class="hero-svg">
-					<img src="/assets/images/home.svg">
-				</div>
-			</div>
+	</section>
+
+	<section class="feature" id="tousolidaires" style="overflow: hidden;">
+		<div>
+			<h2 class="title">
+				TouSolidaires<br /> la plateforme,<br /> made in Toulon for Toulon
+			</h2>
+			<p>
+				Réalisé et propulsé par Quentin BOITEL et Corentin THIBAUD, étudiants de l’ISEN de Toulon, ayant pour
+				but de mettre en relation des clients et les commerçants toulonnais durant la crise de la COVID-19.
+			</p>
+			<a class="learnmore" target="_blank" rel="noreferrer" href="https://github.com/tousolidaires">
+				En savoir plus
+			</a>
 		</div>
-	</header>
-
-	<div class="main-container bg-dark" id="about">
-		<h1 class="text-center"><i class="fa fa-info"></i> About me</h1>
-		<div class="about-flex">
-			<aside class="sidebar">
-				<img src="https://avatars.githubusercontent.com/u/54680442?v=4" class="avatar">
-				<div class="socials">
-					<a href="https://github.com/qbtl"><i class="fab fa-github-alt"></i></a>
-					<a href="https://www.instagram.com/_qbtl_"><i class="fab fa-instagram"></i></a>
-					<a href="https://www.twitter.com/quentin_boitel"><i class="fab fa-twitter"></i></a>
-					<a href="https://www.dribbble.com/qbtl"><i class="fab fa-dribbble"></i></a>
-				</div>
-				<div class="about-infos">
-					<p><a><i class="fal fa-user"></i> 18 years old</a></p>
-					<p><a><i class="fal fa-calendar-alt"></i> August 23rd, 2002</a></p>
-					<p><a><i class="fal fa-map-marker-alt"></i> Toulon, France</a></p>
-					<p><a class="about-link" href="mailto:q.boitel@icloud.com"><i class="fal fa-envelope"></i>
-							q.boitel@icloud.com</a></p>
-				</div>
-				<a class="btn-cv" href="/assets/cv/CV_BOITEL.pdf" target="_blank" rel="noopener"
-					download="Quentin BOITEL's CV"><button class="btn cv">Download CV</button></a>
-			</aside>
-			<div class="about-main">
-				<p class="about-text">
-					I'm an engineering student in Toulon, France. I'm in my first year and I like to develop
-					open-source or personal projects.
-					<br>
-					I am trying to make development evolve to build our digital future.
-					My asset is never back down from a difficult challenge but learn to overcome them.
-					<br><br>
-					I am looking for an internship in an association for a period of two weeks (July - August 2021) in
-					the South of France, if possible in connection with IT whatever it is.
-				</p>
-				<div class="talents">
-					<div class="languages">
-						<h1 class="mb-75">Languages</h1>
-						<div class="inner-languages">
-							<div class="progress">
-								<div class="progress-bar w-100" role="progressbar" aria-valuenow="100" aria-valuemin="0"
-									aria-valuemax="100">
-									<div class="labels">
-										<label>French</label>
-										<label>100%</label>
-									</div>
-								</div>
-							</div>
-							<div class="progress">
-								<div class="progress-bar w-80" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-									aria-valuemax="100">
-									<div class="labels">
-										<label>English</label>
-										<label>80%</label>
-									</div>
-								</div>
-							</div>
-							<div class="progress">
-								<div class="progress-bar w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0"
-									aria-valuemax="100">
-									<div class="labels">
-										<label>Spanish</label>
-										<label>50%</label>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="coding-habilities">
-						<h1 class="mb-75">Technical skills</h1>
-						<div class="inner-coding-habilities">
-							<div class="progress">
-								<div class="progress-bar w-80" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-									aria-valuemax="100">
-									<div class="labels">
-										<label>Web Development</label>
-										<label>80%</label>
-									</div>
-								</div>
-							</div>
-							<div class="progress">
-								<div class="progress-bar w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0"
-									aria-valuemax="100">
-									<div class="labels">
-										<label>Software Development</label>
-										<label>50%</label>
-									</div>
-								</div>
-							</div>
-							<div class="progress">
-								<div class="progress-bar w-55" role="progressbar" aria-valuenow="55" aria-valuemin="0"
-									aria-valuemax="100">
-									<div class="labels">
-										<label>Project Management</label>
-										<label>55%</label>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+		<div class="illustration">
+			<img src="/assets/images/business-3d-192.png" data-parallax='{"y": 0.3, "r": 0.02}' alt="" height="313"
+				class="illustration__phone">
+			<img src="/assets/images/3d-flame-195.png" data-parallax='{"y": -0.35, "r": 0.02}' alt="" height="371"
+				class="illustration__laptop">
+			<img src="/assets/images/business-3d-245.png" data-parallax='{"y": 0.35, "r": 0.02}' alt="" width="80" height="80"
+				class="illustration__wifi">
+			<img src="/assets/images/casual-life-3d-cup.png" data-parallax='{"y": 0.45, "r": 0}' alt="" width="80" height="80"
+				class="illustration__cup">
+			<img src="/assets/images/3d-flame-69.png" data-parallax='{"y": 0.35, "r": 0.02}' alt="" width="100" height="100"
+				class="illustration__lights">
 		</div>
-	</div>
+	</section>
 
-	<div class="main-container bg-dark" id="resume">
-		<h1 class="text-center"><i class="fa fa-graduation-cap"></i> Resume</h1>
-		<div class="resume-infos">
-			<div class="diplomas w-100">
-				<h2 class="text-center"><i class="fal fa-backpack"></i> Education</h1>
-				<div class="engineering">
-					<h3>Engineering School</h3>
-					<h4>ISEN Méditérannée, Toulon, FR</h4>
-					<h4>2020 - 2025</h4>
-				</div>
-				<div class="bac">
-					<h3>High School</h3>
-					<h4>Lycée Paul Cézanne, Aix-en-Provence, FR</h4>
-					<h4>2017 - 2020</h4>
-				</div>
-				<div class="brevet">
-					<h3>Middle school Diploma</h3>
-					<h4>Collège Saint Eutrope, Aix-en-Provence, FR</h4>
-					<h4>2017</h4>
-				</div>
-			</div>
-			<div class="stages w-100">
-				<h2 class="text-center"><i class="fal fa-building"></i> Work experience</h2>
-				<div class="stage stage-1">
-					<h3>La Française des Jeux</h3>
-					<h4>Vitrolles, France</h4>
-					<h4>18th - 28th June 2018</h4>
-					<p>
-						Website creation using a RESTful API.
-						<br>
-						Tests automatisation through Postman and the website.
-						<br>
-						Used Technologies : HTML, CSS, JavaScript, Postman.
-					</p>
-				</div>
-				<div class="stage">
-					<h3>La Française des Jeux</h3>
-					<h4>Vitrolles, France</h4>
-					<h4>30th January - 3rd February 2017</h4>
-					<p>IT jobs discovery</p>
-				</div>
-			</div>
+	<section class="about" data-parallax='{"y": 0.6, "r": 0, "variable": true}'>
+		<h2 class="title">
+			Mes études
+		</h2>
+		<p class="w-75">
+			Après un brevet des collèges obtenu en 2017 avec mention très bien, je suis rentrer au lycée général avec en
+			tête de faire un bac S.
+			J'ai obtenu en 2020 mon bac S mention bien option section européenne anglais malgré la pandémie du
+			COVID-19.<br />
+			Ma passion pour l'informatique et le développement m'a logiquement mené vers une école d'ingénieur en
+			informatique.
+			C'est ainsi que j'ai intégré l'ISEN Méditérannée pour poursuivre ma passion sans empiéter et détruire mes
+			études.
+		</p>
+		<div class="read-more">
+			<a href="#projects" title="En voir plus"><img src="/assets/images/business-3d-227.png" width="100" height="100"
+					alt="En voir plus"></a>
 		</div>
-	</div>
+	</section>
 
-	<div class="main-container bg-dark" id="portfolio">
-		<h1 class="text-center"><i class="fal fa-list"></i> Portfolio</h1>
-		<div class="portfolio-grid">
-			<div class="card">
-				<div class="card-body">
-					<i class="card-date">October, 11th 2020</i>
-					<h1 class="card-title">NPM Card</h1>
-					<p class="card-text">I found a cool github repo one day and decided to use it to build my own custom
-						npm card. I called it my business card made with npm.</p>
-				</div>
-				<div class="card-footer">
-					<a class="card-footer-link" href="https://github.com/qbtl/businness-card"><i
-							class="fa fa-github-alt"></i> View it on GitHub</a>
-				</div>
-			</div>
-			<div class="card">
-				<div class="card-body">
-					<i class="card-date">October, 7th 2020</i>
-					<h1 class="card-title">Nightly-Dev</h1>
-					<p class="card-text">I was tired of the poor dark-based themes on vscode so I decided to create one
-						by myself. It works fine but needs some improvements.</p>
-				</div>
-				<div class="card-footer">
-					<a class="card-footer-link" href="https://github.com/qbtl/nightly-dev"><i
-							class="fa fa-github-alt"></i> View it on GitHub</a>
-				</div>
-			</div>
-			<div class="card">
-				<div class="card-body">
-					<i class="card-date">October, 5th 2020</i>
-					<h1 class="card-title">URL shortener</h1>
-					<p class="card-text">A url shortener is designed to reduce the length of urls which are often too
-						long. This project aims to reduce the url to replace it with a slug.</p>
-				</div>
-				<div class="card-footer">
-					<a class="card-footer-link" href="https://github.com/qbtl/url-shortener"><i
-							class="fa fa-github-alt"></i> View it on GitHub</a>
-				</div>
-			</div>
-			<div class="card">
-				<div class="card-body">
-					<i class="card-date">July, 22nd 2020</i>
-					<h1 class="card-title">Admin Dashboard</h1>
-					<p class="card-text">I always wanted to have an admin dashboard to websites I created but never
-						found a decent solution on internet. Here's why this dashboard was built for.</p>
-				</div>
-				<div class="card-footer">
-					<a class="card-footer-link" href="https://github.com/qbtl/admin-dashboard-react"><i
-							class="fa fa-github-alt"></i> View it on GitHub</a>
-				</div>
-			</div>
-			<div class="card">
-				<div class="card-body">
-					<i class="card-date">May, 7th 2020</i>
-					<h1 class="card-title">Mybrary</h1>
-					<p class="card-text">A library is a place where you store your books, then why not use a online
-						library for your books. Use Mybrary to do it. You can add book cover, description, etc.</p>
-				</div>
-				<div class="card-footer">
-					<a class="card-footer-link" href="https://github.com/qbtl/mybrary"><i class="fa fa-github-alt"></i>
-						View it on GitHub</a>
-				</div>
-			</div>
-			<div class="card">
-				<div class="card-body">
-					<i class="card-date">April, 10th 2020</i>
-					<h1 class="card-title">REST API</h1>
-					<p class="card-text">A REST API is designed to be used as web service to communicate with web apps.
-						I wrote a basic restful api skeleton in golang for anyone to use.</p>
-				</div>
-				<div class="card-footer">
-					<a class="card-footer-link" href="https://github.com/qbtl/restful_api"><i
-							class="fa fa-github-alt"></i> View it on GitHub</a>
-				</div>
-			</div>
+	<section class="feature" id="projects" style="overflow: hidden;">
+		<div class="illustration projects">
+			<img src="/assets/images/casual-life-3d-1.png" data-parallax='{"y": 0.3, "r": 0.02}' alt="" height="313"
+				class="illustration__phone">
+			<img src="/assets/images/casual-life-3d-books.png" data-parallax='{"y": -0.35, "r": 0.02}' alt="" height="371"
+				class="illustration__laptop">
+			<img src="/assets/images/casual-life-3d-stilus.png" data-parallax='{"y": 0.35, "r": 0.02}' alt="" width="80" height="80"
+				class="illustration__wifi">
+			<img src="/assets/images/github.svg" data-parallax='{"y": 0.45, "r": 0}' alt="" width="55" height="80"
+				class="illustration__cup">
+			<img src="/assets/images/casual-life-3d-puzzle.png" data-parallax='{"y": 0.35, "r": 0.02}' alt="" width="100" height="100"
+				class="illustration__lights">
 		</div>
-	</div>
+		<div>
+			<h2 class="title">
+				Mes<br /> Projets<br /> Open Source
+			</h2>
+			<p>
+				Pour en savoir plus sur mes différents projets et expérimentations sur le dévéloppement, vous trouverez
+				par exemple un thème VS Code, un Dashboard d'administration, etc.
+			</p>
+			<a class="learnmore" target="_blank" rel="noreferrer" href="https://github.com/qbtl/repositories">
+				En savoir plus
+			</a>
+		</div>
+	</section>
 
-	<div class="main-container bg-dark" id="contact">
-		<h1 class="text-center"><i class="fa fa-paper-plane"></i> Contact</h1>
-		<form action="POST" name="contact" data-netlify="true" class="needs-validation align-items-center" novalidate
-			action="">
-			<div class="form-infos">
-				<div class="form-name">
-					<label for="full-name">FULL NAME</label>
-					<input type="text" name="full-name" placeholder="Your full name" class="form-control" required>
-					<div class="valid-feedback">
-						Looks good !
-					</div>
-					<div class="invalid-feedback">
-						Please provide a valid name
-					</div>
-				</div>
-				<div class="form-email">
-					<label for="email">EMAIL</label>
-					<input type="email" name="email" placeholder="Your email" class="form-control" required>
-					<div class="valid-feedback">
-						Looks good !
-					</div>
-					<div class="invalid-feedback">
-						Please provide a valid email
-					</div>
-				</div>
-			</div>
-			<div class="form-textarea">
-				<label for="message">SUBJECT</label>
-				<textarea name="message" id="message" class="form-control" placeholder="Write something here..."
-					rows="5" required></textarea>
-				<div class="valid-feedback">
-					Looks good !
-				</div>
-				<div class="invalid-feedback">
-					Please provide a valid subject
-				</div>
-			</div>
-			<div class="form-check">
-				<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" required>
-				<label class="form-check-label" for="flexCheckChecked">
-					I agree to transmit my information
-				</label>
-				<div class="invalid-feedback">
-					You need to accept the conditions
-				</div>
-			</div>
-			<div class="form-buttons">
-				<button type="submit" class="btn btn-lg btn-success w-15">Send</button>
-				<button type="reset" class="btn btn-lg btn-danger w-15">Cancel</button>
-			</div>
-		</form>
-	</div>
+	<section class="feature" id="contact" style="overflow: hidden;">
+		<div class="contact">
+			<h2 class="title">
+				Contact
+			</h2>
+			<form name="contact" method="POST" data-netlify="true">
+				<input type="email" name="email" id="email" placeholder="Votre email" required>
+				<input type="text" name="nom" id="nom" placeholder="Votre nom" required>
+				<textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message"
+					required></textarea>
+				<button type="submit">Envoyer</button>
+			</form>
+		</div>
+		<div class="illustration contact">
+			<img src="/assets/images/business-3d-diary.png" data-parallax='{"y": 0.3, "r": 0.02}' alt="" height="240"
+				class="illustration__phone">
+			<img src="/assets/images/casual-life-3d-5.png" data-parallax='{"y": -0.35, "r": 0.02}' alt="" height="250"
+				class="illustration__laptop">
+			<img src="/assets/images/business-3d-light-bulb.png" data-parallax='{"y": 0.35, "r": 0.02}' alt="" width="70" height="80"
+				class="illustration__wifi">
+			<img src="/assets/images/business-3d-drawing-pin.png" data-parallax='{"y": 0.45, "r": 0}' alt="" width="55" height="80"
+				class="illustration__cup">
+			<img src="/assets/images/business-3d-speech-balloon.png" data-parallax='{"y": 0.35, "r": 0.02}' alt="" width="100"
+				height="100" class="illustration__lights">
+		</div>
+	</section>
 
-	<footer class="pt-3 pb-md-3 pt-md-5 bg-dark">
-		<div class="container">
-			<div class="row mx-auto">
-				<div class="col-6 col-md-1">
-					<img src="https://avatars.githubusercontent.com/u/54680442?v=4" alt="footer logo"
-						class="avatar footer-avatar">
-				</div>
-				<div class="col-6 col-md">
-					<ul class="list-unstyled footer-list socials">
-						<a href="https://github.com/qbtl" target="_blank" title="GitHub | qbtl"><i
-								class="fab fa-github-alt" aria-hidden="true"></i></a>
-						<a href="https://www.instagram.com/_qbtl_" target="_blank" title="Instagram | _qbtl_"><i
-								class="fab fa-instagram" aria-hidden="true"></i></a>
-						<a href="https://www.twitter.com/quentin_boitel" target="_blank"
-							title="Twitter | quentin_boitel"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-						<a href="https://www.dribbble.com/qbtl" target="_blank" title="Dribbble | qbtl"><i
-								class="fab fa-dribbble" aria-hidden="true"></i></a>
-					</ul>
-				</div>
-			</div>
-			<small class="d-block text-center copy"><i class="fal fa-copyright" aria-hidden="true"></i> 2021 Quentin
-				Boitel</small>
+	<footer>
+		<div class="illustration">
+			<img src="https://avatars.githubusercontent.com/u/54680442?v=4" width="200" height="200" alt="">
+		</div>
+		<div>
+			<ul class="social-links">
+				<li>
+					<a href="https://github.com/qbtl">
+						<svg class="bi" width="2em" height="2em">
+							<use xlink:href="#github"></use>
+						</svg>
+					</a>
+				</li>
+				<li>
+					<a href="https://instagram.com/_qbtl_">
+						<svg class="bi" width="2em" height="2em">
+							<use xlink:href="#instagram"></use>
+						</svg>
+					</a>
+				</li>
+				<li>
+					<a href="https://twitter.com/quentin_boitel">
+						<svg class="bi" width="2em" height="2em">
+							<use xlink:href="#twitter"></use>
+						</svg>
+					</a>
+				</li>
+			</ul>
+			<p><b>&copy; 2021 Quentin Boitel</b></p>
 		</div>
 	</footer>
-
-	<!-- JS SCRIPTS -->
-	<script src="/assets/js/icons.js"></script>
-	<script src="/assets/js/app.js"></script>
-	<script src="/assets/js/bootstrap.min.js"></script>
 </body>
 
 </html>
